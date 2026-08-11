@@ -1,0 +1,11719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Stackly Government Portal</title>
+
+    <!-- Google Font -->
+
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    
+
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="gov-header">
+
+        <div class="gov-container">
+
+            <!-- Logo -->
+
+            <a href="index.html"
+                class="logo">
+
+                <img src="images/logo.png"
+                    alt="Logo">
+
+            </a>
+
+            <!-- Navigation -->
+
+            <nav class="navbar"
+                id="navbar">
+
+                <a href="./index.html" >Home</a>
+
+                <a href="./services.html" class="active">Services</a>
+
+                <a href="./departments.html">Departments</a>
+
+                <a href="./schemes.html">Schemes</a>
+
+                <a href="./grievances.html">Grievances</a>
+
+                <a href="./contact.html">Contact</a>
+
+                <a href="./login.html">Login</a>
+
+                <a href="./register.html">Register</a>
+
+
+            </nav>
+
+            <!-- Right Buttons -->
+
+            
+
+            <!-- Mobile Menu -->
+
+            <div class="menu-btn"
+                id="menuBtn">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <style>
+        /*=========================================================
+                GOOGLE FONT & RESET
+=========================================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f5f7fb;
+    color:#222;
+    overflow-x:hidden;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+a{
+    text-decoration:none;
+}
+
+ul{
+    list-style:none;
+}
+
+button,
+input{
+    font-family:'Poppins',sans-serif;
+    outline:none;
+    border:none;
+}
+
+
+/*=========================================================
+                    COMMON CONTAINER
+=========================================================*/
+
+.gov-container{
+
+    width:min(92%,1320px);
+
+    margin:auto;
+
+}
+
+
+/*=========================================================
+                    HEADER
+=========================================================*/
+
+.gov-header{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    z-index:999;
+
+    background:#ffffff;
+
+    box-shadow:0 12px 35px rgba(0,0,0,.08);
+
+    animation:headerDown .8s ease;
+
+}
+
+.gov-header .gov-container{
+
+    height:90px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+}
+
+
+/*=========================================================
+                        LOGO
+=========================================================*/
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+.logo img{
+
+    width:185px;
+
+    transition:.4s;
+
+}
+
+.logo:hover img{
+
+    transform:scale(1.05);
+
+}
+
+
+/*=========================================================
+                    NAVIGATION
+=========================================================*/
+
+.navbar{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:38px;
+
+}
+
+.navbar a{
+
+    position:relative;
+
+    color:#222;
+
+    font-size:17px;
+
+    font-weight:500;
+
+    transition:.35s;
+
+}
+
+.navbar a.active{
+
+    color:#0d6efd;
+
+}
+
+.navbar a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-8px;
+
+    width:0;
+
+    height:2px;
+
+    background:#0d6efd;
+
+    transition:.35s;
+
+}
+
+.navbar a:hover{
+
+    color:#0d6efd;
+
+}
+
+.navbar a:hover::after{
+
+    width:100%;
+
+}
+
+
+/*=========================================================
+                    RIGHT BUTTONS
+=========================================================*/
+
+.header-right{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+.search-btn{
+
+    width:48px;
+
+    height:48px;
+
+    border-radius:14px;
+
+    background:#eef5ff;
+
+    color:#0d6efd;
+
+    font-size:18px;
+
+    transition:.35s;
+
+    cursor:pointer;
+
+}
+
+.search-btn:hover{
+
+    background:#0d6efd;
+
+    color:#fff;
+
+}
+
+.login-btn{
+
+    padding:12px 28px;
+
+    border-radius:14px;
+
+    border:2px solid #0d6efd;
+
+    color:#0d6efd;
+
+    font-weight:600;
+
+    transition:.35s;
+
+}
+
+.login-btn:hover{
+
+    background:#0d6efd;
+
+    color:#fff;
+
+}
+
+.register-btn{
+
+    padding:13px 28px;
+
+    border-radius:14px;
+
+    background:#0d6efd;
+
+    color:#fff;
+
+    font-weight:600;
+
+    transition:.35s;
+
+}
+
+.register-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 15px 30px rgba(13,110,253,.35);
+
+}
+
+
+/*=========================================================
+                    MOBILE MENU
+=========================================================*/
+
+.menu-btn{
+
+    display:none;
+
+    font-size:28px;
+
+    color:#0d6efd;
+
+    cursor:pointer;
+
+}
+
+
+/*=========================================================
+                    HERO SECTION
+=========================================================*/
+
+.hero{
+
+    position:relative;
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    padding-top:120px;
+
+    padding-bottom:260px;
+
+    overflow:hidden;
+
+}
+
+
+/*=========================================================
+                BACKGROUND IMAGE
+=========================================================*/
+
+.hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+    linear-gradient(rgba(0,0,0,.55),
+    rgba(0,0,0,.55)),
+
+    url("images/government-bg.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+    animation:bgZoom 18s linear infinite alternate;
+
+    z-index:-2;
+
+}
+
+
+/*=========================================================
+                    OVERLAY
+=========================================================*/
+
+.hero-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+    linear-gradient(
+    90deg,
+
+    rgba(0,0,0,.35),
+
+    rgba(0,0,0,.18),
+
+    rgba(0,0,0,.10));
+
+    z-index:-1;
+
+}
+
+
+/*=========================================================
+                HERO CONTAINER
+=========================================================*/
+
+.hero-container{
+
+    width:min(92%,1320px);
+
+    margin:auto;
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+.hero-content{
+
+    max-width:650px;
+
+    color:#fff;
+
+}
+
+
+/*=========================================================
+                LOAD ANIMATIONS
+=========================================================*/
+
+.reveal-left{
+
+    opacity:0;
+
+    transform:translateX(-70px);
+
+    animation:leftReveal .9s ease forwards;
+
+    animation-delay:.5s;
+
+}
+
+
+/*=========================================================
+                    KEYFRAMES
+=========================================================*/
+
+@keyframes headerDown{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(-100px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+@keyframes leftReveal{
+
+    to{
+
+        opacity:1;
+
+        transform:translateX(0);
+
+    }
+
+}
+
+@keyframes bgZoom{
+
+    from{
+
+        transform:scale(1);
+
+    }
+
+    to{
+
+        transform:scale(1.1);
+
+    }
+
+}
+
+
+/*=========================================================
+                HERO HEADING
+=========================================================*/
+
+.hero-content h1{
+
+font-size:64px;
+
+font-weight:700;
+
+line-height:1.18;
+
+margin-bottom:28px;
+
+opacity:0;
+
+animation:fadeUp .8s ease forwards;
+
+animation-delay:.8s;
+
+}
+
+.hero-content h1 span{
+
+display:block;
+
+color:#ffffff;
+
+}
+
+
+/*=========================================================
+            HERO PARAGRAPH
+=========================================================*/
+
+.hero-content p{
+
+font-size:22px;
+
+line-height:1.7;
+
+color:#f2f2f2;
+
+margin-bottom:45px;
+
+opacity:0;
+
+animation:fadeUp .8s ease forwards;
+
+animation-delay:1.2s;
+
+}
+
+
+/*=========================================================
+            SEARCH BAR
+=========================================================*/
+
+.hero-search{
+
+width:100%;
+
+max-width:760px;
+
+background:#ffffff;
+
+border-radius:18px;
+
+padding:14px;
+
+display:flex;
+
+align-items:center;
+
+gap:15px;
+
+box-shadow:
+
+0 25px 60px rgba(0,0,0,.20);
+
+opacity:0;
+
+animation:fadeUp .9s ease forwards;
+
+animation-delay:1.6s;
+
+}
+
+.search-input{
+
+flex:1;
+
+display:flex;
+
+align-items:center;
+
+gap:15px;
+
+padding:0 18px;
+
+}
+
+.search-input i{
+
+font-size:20px;
+
+color:#888;
+
+}
+
+.search-input input{
+
+width:100%;
+
+height:56px;
+
+font-size:17px;
+
+color:#222;
+
+background:transparent;
+
+}
+
+.search-input input::placeholder{
+
+color:#999;
+
+}
+
+
+/*=========================================================
+            SEARCH BUTTON
+=========================================================*/
+
+.hero-search-btn{
+
+position:relative;
+
+overflow:hidden;
+
+width:190px;
+
+height:58px;
+
+border-radius:14px;
+
+font-size:18px;
+
+font-weight:600;
+
+color:#fff;
+
+cursor:pointer;
+
+background:linear-gradient(135deg,#0d6efd,#0056d6);
+
+transition:.35s;
+
+}
+
+.hero-search-btn:hover{
+
+transform:translateY(-3px);
+
+box-shadow:0 15px 35px rgba(13,110,253,.35);
+
+}
+
+
+/*=========================================================
+            ERROR MESSAGE
+=========================================================*/
+
+.error-message{
+
+display:block;
+
+min-height:22px;
+
+margin-top:12px;
+
+color:#ffd4d4;
+
+font-size:15px;
+
+font-weight:500;
+
+}
+
+
+/*=========================================================
+        SPACE BELOW SEARCH BAR
+=========================================================*/
+
+.hero-content{
+
+padding-bottom:90px;
+
+}
+
+/* This creates a proper gap between
+the search bar and the service box */
+
+.service-wrapper{
+
+position:absolute;
+
+left:50%;
+
+transform:translateX(-50%);
+
+bottom:40px;
+
+width:min(82%,1200px);
+
+z-index:10;
+
+}
+
+
+/*=========================================================
+            HERO ANIMATIONS
+=========================================================*/
+
+@keyframes fadeUp{
+
+from{
+
+    opacity:0;
+
+    transform:translateY(45px);
+
+}
+
+to{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+}
+
+
+/*=========================================================
+            TABLET
+=========================================================*/
+
+@media(max-width:992px){
+
+.hero{
+
+padding-top:140px;
+
+padding-bottom:330px;
+
+}
+
+.hero-content{
+
+max-width:100%;
+
+padding-bottom:80px;
+
+}
+
+.hero-content h1{
+
+font-size:50px;
+
+}
+
+.hero-content p{
+
+font-size:20px;
+
+}
+
+.hero-search{
+
+max-width:100%;
+
+}
+
+.service-wrapper{
+
+width:92%;
+
+bottom:30px;
+
+}
+
+}
+
+
+/*=========================================================
+            MOBILE
+=========================================================*/
+
+@media(max-width:768px){
+
+.hero{
+
+padding-top:120px;
+
+padding-bottom:520px;
+
+}
+
+.hero-content{
+
+text-align:center;
+
+padding-bottom:60px;
+
+}
+
+.hero-content h1{
+
+font-size:38px;
+
+}
+
+.hero-content p{
+
+font-size:17px;
+
+margin-bottom:30px;
+
+}
+
+.hero-search{
+
+flex-direction:column;
+
+gap:16px;
+
+padding:18px;
+
+}
+
+.search-input{
+
+width:100%;
+
+padding:0;
+
+}
+
+.search-input input{
+
+height:50px;
+
+font-size:16px;
+
+}
+
+.hero-search-btn{
+
+width:100%;
+
+}
+
+.service-wrapper{
+
+width:94%;
+
+bottom:20px;
+
+}
+
+}
+
+
+/*=========================================================
+        SMALL MOBILE
+=========================================================*/
+
+@media(max-width:480px){
+
+.hero{
+
+padding-top:100px;
+
+padding-bottom:600px;
+
+}
+
+.hero-content h1{
+
+font-size:31px;
+
+}
+
+.hero-content p{
+
+font-size:15px;
+
+}
+
+.hero-search{
+
+padding:15px;
+
+}
+
+.search-input input{
+
+font-size:15px;
+
+}
+
+.hero-search-btn{
+
+height:52px;
+
+}
+
+.service-wrapper{
+
+width:95%;
+
+bottom:15px;
+
+}
+
+}
+
+/*=========================================================
+                FLOATING SERVICE BOX
+=========================================================*/
+
+.service-wrapper{
+
+position:absolute;
+
+left:50%;
+
+bottom:40px;
+
+transform:translateX(-50%);
+
+width:min(82%,1200px);
+
+z-index:20;
+
+opacity:0;
+
+animation:serviceReveal 1s ease forwards;
+
+animation-delay:2s;
+
+}
+
+.service-card{
+
+background:rgba(255,255,255,.98);
+
+backdrop-filter:blur(20px);
+
+border-radius:22px;
+
+padding:30px;
+
+display:grid;
+
+grid-template-columns:repeat(8,1fr);
+
+gap:22px;
+
+box-shadow:
+0 25px 60px rgba(0,0,0,.15);
+
+border:1px solid rgba(255,255,255,.4);
+
+}
+
+
+/*=========================================================
+                SERVICE ITEM
+=========================================================*/
+
+.service-item{
+
+display:flex;
+
+flex-direction:column;
+
+align-items:center;
+
+justify-content:center;
+
+text-align:center;
+
+cursor:pointer;
+
+transition:.4s;
+
+opacity:0;
+
+transform:translateY(40px);
+
+animation:itemReveal .7s ease forwards;
+
+}
+
+.service-item:hover{
+
+transform:translateY(-10px);
+
+}
+
+.service-item h4{
+
+margin-top:15px;
+
+font-size:15px;
+
+font-weight:600;
+
+color:#222;
+
+line-height:1.4;
+
+}
+
+
+/*=========================================================
+                ICON BOX
+=========================================================*/
+
+.service-icon{
+
+width:64px;
+
+height:64px;
+
+border-radius:18px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+font-size:25px;
+
+transition:.4s;
+
+}
+
+.service-item:hover .service-icon{
+
+transform:scale(1.15) rotate(6deg);
+
+}
+
+
+/*=========================================================
+                ICON COLORS
+=========================================================*/
+
+.pink{
+
+background:#fde8f2;
+
+color:#d81b60;
+
+}
+
+.blue{
+
+background:#e8f1ff;
+
+color:#2962ff;
+
+}
+
+.purple{
+
+background:#efe7ff;
+
+color:#7b1fa2;
+
+}
+
+.orange{
+
+background:#fff3e0;
+
+color:#ef6c00;
+
+}
+
+.green{
+
+background:#e8f5e9;
+
+color:#2e7d32;
+
+}
+
+.cyan{
+
+background:#e3f2fd;
+
+color:#0277bd;
+
+}
+
+.lightgreen{
+
+background:#f1f8e9;
+
+color:#558b2f;
+
+}
+
+.gray{
+
+background:#f5f5f5;
+
+color:#555;
+
+}
+
+
+/*=========================================================
+            ICON SHADOW HOVER
+=========================================================*/
+
+.service-item:hover .pink{
+
+box-shadow:0 12px 25px rgba(216,27,96,.30);
+
+}
+
+.service-item:hover .blue{
+
+box-shadow:0 12px 25px rgba(41,98,255,.30);
+
+}
+
+.service-item:hover .purple{
+
+box-shadow:0 12px 25px rgba(123,31,162,.30);
+
+}
+
+.service-item:hover .orange{
+
+box-shadow:0 12px 25px rgba(239,108,0,.30);
+
+}
+
+.service-item:hover .green{
+
+box-shadow:0 12px 25px rgba(46,125,50,.30);
+
+}
+
+.service-item:hover .cyan{
+
+box-shadow:0 12px 25px rgba(2,119,189,.30);
+
+}
+
+.service-item:hover .lightgreen{
+
+box-shadow:0 12px 25px rgba(85,139,47,.30);
+
+}
+
+.service-item:hover .gray{
+
+box-shadow:0 12px 25px rgba(90,90,90,.20);
+
+}
+
+
+/*=========================================================
+            ICON DELAYS
+=========================================================*/
+
+.delay1{
+
+animation-delay:2.2s;
+
+}
+
+.delay2{
+
+animation-delay:2.35s;
+
+}
+
+.delay3{
+
+animation-delay:2.5s;
+
+}
+
+.delay4{
+
+animation-delay:2.65s;
+
+}
+
+.delay5{
+
+animation-delay:2.8s;
+
+}
+
+.delay6{
+
+animation-delay:2.95s;
+
+}
+
+.delay7{
+
+animation-delay:3.1s;
+
+}
+
+.delay8{
+
+animation-delay:3.25s;
+
+}
+
+
+/*=========================================================
+            KEYFRAMES
+=========================================================*/
+
+@keyframes serviceReveal{
+
+from{
+
+    opacity:0;
+
+    transform:translate(-50%,70px);
+
+}
+
+to{
+
+    opacity:1;
+
+    transform:translate(-50%,0);
+
+}
+
+}
+
+@keyframes itemReveal{
+
+from{
+
+    opacity:0;
+
+    transform:translateY(35px);
+
+}
+
+to{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+}
+
+/*=========================================================
+                    LAPTOP
+=========================================================*/
+
+@media (max-width:1200px){
+
+.gov-container{
+
+    width:94%;
+
+}
+
+.hero{
+
+    padding-top:120px;
+
+    padding-bottom:300px;
+
+}
+
+.hero-content h1{
+
+    font-size:56px;
+
+}
+
+.hero-content p{
+
+    font-size:20px;
+
+}
+
+.service-wrapper{
+
+    width:90%;
+
+    bottom:30px;
+
+}
+
+.service-card{
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+    padding:28px;
+
+}
+
+}
+
+
+/*=========================================================
+                TABLET
+=========================================================*/
+
+@media (max-width:992px){
+
+.menu-btn{
+
+    display:block;
+
+    z-index:1001;
+
+}
+
+.header-right{
+
+    display:none;
+
+}
+
+.navbar{
+
+    position:fixed;
+
+    top:90px;
+
+    right:-100%;
+
+    width:300px;
+
+    height:calc(100vh - 90px);
+
+    background:#fff;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+    padding:35px;
+
+    gap:28px;
+
+    transition:.4s;
+
+    box-shadow:-10px 0 30px rgba(0,0,0,.15);
+
+}
+
+.navbar.active{
+
+    right:0;
+
+}
+
+.navbar a{
+
+    font-size:18px;
+
+}
+
+.hero{
+
+    min-height:auto;
+
+    padding-top:140px;
+
+    padding-bottom:420px;
+
+}
+
+.hero-container{
+
+    justify-content:center;
+
+}
+
+.hero-content{
+
+    max-width:100%;
+
+    text-align:center;
+
+}
+
+.hero-content h1{
+
+    font-size:48px;
+
+}
+
+.hero-content p{
+
+    font-size:19px;
+
+}
+
+.hero-search{
+
+    max-width:100%;
+
+}
+
+.service-wrapper{
+
+    width:92%;
+
+    bottom:25px;
+
+}
+
+.service-card{
+
+    grid-template-columns:repeat(4,1fr);
+
+}
+
+}
+
+
+/*=========================================================
+                MOBILE
+=========================================================*/
+
+@media (max-width:768px){
+
+.gov-header .gov-container{
+
+    height:80px;
+
+}
+
+.navbar{
+
+    top:80px;
+
+    width:100%;
+
+    right:-100%;
+
+    height:calc(100vh - 80px);
+
+}
+
+.navbar.active{
+
+    right:0;
+
+}
+
+.hero{
+
+    padding-top:110px;
+
+    padding-bottom:560px;
+
+}
+
+.hero-content{
+
+    text-align:center;
+
+}
+
+.hero-content h1{
+
+    font-size:36px;
+
+    line-height:1.3;
+
+}
+
+.hero-content p{
+
+    font-size:17px;
+
+    margin-bottom:28px;
+
+}
+
+.hero-search{
+
+    flex-direction:column;
+
+    gap:15px;
+
+    padding:18px;
+
+}
+
+.search-input{
+
+    width:100%;
+
+    padding:0;
+
+}
+
+.search-input input{
+
+    height:52px;
+
+    font-size:16px;
+
+}
+
+.hero-search-btn{
+
+    width:100%;
+
+    height:54px;
+
+}
+
+.service-wrapper{
+
+    width:95%;
+
+    bottom:20px;
+
+}
+
+.service-card{
+
+    grid-template-columns:repeat(2,1fr);
+
+    padding:22px;
+
+    gap:20px;
+
+}
+
+.service-icon{
+
+    width:58px;
+
+    height:58px;
+
+    font-size:22px;
+
+}
+
+.service-item h4{
+
+    font-size:14px;
+
+}
+
+}
+
+
+/*=========================================================
+            SMALL MOBILE
+=========================================================*/
+
+@media (max-width:480px){
+
+.logo img{
+
+    width:150px;
+
+}
+
+.hero{
+
+    padding-top:100px;
+
+    padding-bottom:620px;
+
+}
+
+.hero-content h1{
+
+    font-size:30px;
+
+}
+
+.hero-content p{
+
+    font-size:15px;
+
+}
+
+.hero-search{
+
+    padding:15px;
+
+    border-radius:16px;
+
+}
+
+.search-input{
+
+    gap:10px;
+
+}
+
+.search-input i{
+
+    font-size:18px;
+
+}
+
+.search-input input{
+
+    font-size:15px;
+
+}
+
+.hero-search-btn{
+
+    height:50px;
+
+    font-size:16px;
+
+}
+
+.service-wrapper{
+
+    width:96%;
+
+    bottom:15px;
+
+}
+
+.service-card{
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:18px;
+
+    padding:18px;
+
+}
+
+.service-icon{
+
+    width:52px;
+
+    height:52px;
+
+    font-size:20px;
+
+}
+
+.service-item h4{
+
+    font-size:13px;
+
+}
+
+}
+
+
+/*=========================================================
+            RIPPLE EFFECT
+=========================================================*/
+
+.hero-search-btn{
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.hero-search-btn .ripple{
+
+position:absolute;
+
+border-radius:50%;
+
+transform:scale(0);
+
+background:rgba(255,255,255,.45);
+
+animation:ripple .6s linear;
+
+}
+
+@keyframes ripple{
+
+to{
+
+    transform:scale(4);
+
+    opacity:0;
+
+}
+
+}
+
+
+/*=========================================================
+            SCROLL REVEAL
+=========================================================*/
+
+.reveal-up{
+
+opacity:0;
+
+transform:translateY(50px);
+
+transition:all .8s ease;
+
+}
+
+.reveal-up.show{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+.reveal-left.show{
+
+opacity:1;
+
+transform:translateX(0);
+
+}
+    </style>
+<script>
+    /*=========================================================
+                    MOBILE MENU
+=========================================================*/
+
+const menuBtn = document.getElementById("menuBtn");
+const navbar = document.getElementById("navbar");
+
+menuBtn.addEventListener("click", () => {
+
+    navbar.classList.toggle("active");
+
+    if (navbar.classList.contains("active")) {
+
+        menuBtn.innerHTML = '<i class="fa-solid fa-xmark"></i>';
+
+    } else {
+
+        menuBtn.innerHTML = '<i class="fa-solid fa-bars"></i>';
+
+    }
+
+});
+
+
+/*=========================================================
+            CLOSE MENU WHEN LINK CLICKED
+=========================================================*/
+
+document.querySelectorAll(".navbar a").forEach(link => {
+
+    link.addEventListener("click", () => {
+
+        navbar.classList.remove("active");
+
+        menuBtn.innerHTML = '<i class="fa-solid fa-bars"></i>';
+
+    });
+
+});
+
+
+/*=========================================================
+                SEARCH VALIDATION
+=========================================================*/
+
+const form = document.getElementById("searchForm");
+const searchBox = document.getElementById("searchBox");
+const error = document.getElementById("searchError");
+
+form.addEventListener("submit", function (e) {
+
+    e.preventDefault();
+
+    const value = searchBox.value.trim();
+
+    if (value === "") {
+
+        error.textContent = "Please fill the details.";
+
+        searchBox.style.border = "2px solid #ff4d4f";
+
+        searchBox.focus();
+
+        return;
+
+    }
+
+    error.textContent = "";
+
+    searchBox.style.border = "none";
+
+    /* Small animation before redirect */
+
+    document.querySelector(".hero-search-btn").innerHTML =
+        '<i class="fa-solid fa-spinner fa-spin"></i> Searching...';
+
+    setTimeout(() => {
+
+        window.location.href = "404.html";
+
+    }, 800);
+
+});
+
+
+/*=========================================================
+            REMOVE ERROR WHILE TYPING
+=========================================================*/
+
+searchBox.addEventListener("input", () => {
+
+    if (searchBox.value.trim() !== "") {
+
+        error.textContent = "";
+
+        searchBox.style.border = "none";
+
+    }
+
+});
+
+
+/*=========================================================
+            HERO CONTENT LOAD
+=========================================================*/
+
+window.addEventListener("load", () => {
+
+    const heading = document.querySelector(".hero-content h1");
+    const para = document.querySelector(".hero-content p");
+    const search = document.querySelector(".hero-search");
+    const services = document.querySelector(".service-wrapper");
+
+    setTimeout(() => {
+
+        heading.style.opacity = "1";
+        heading.style.transform = "translateY(0)";
+
+    }, 300);
+
+    setTimeout(() => {
+
+        para.style.opacity = "1";
+        para.style.transform = "translateY(0)";
+
+    }, 700);
+
+    setTimeout(() => {
+
+        search.style.opacity = "1";
+        search.style.transform = "translateY(0)";
+
+    }, 1100);
+
+    setTimeout(() => {
+
+        services.style.opacity = "1";
+        services.style.transform = "translateX(-50%)";
+
+    }, 1600);
+
+});
+
+
+/*=========================================================
+            SERVICE ITEM ANIMATION
+=========================================================*/
+
+const serviceItems = document.querySelectorAll(".service-item");
+
+serviceItems.forEach((item, index) => {
+
+    setTimeout(() => {
+
+        item.style.opacity = "1";
+
+        item.style.transform = "translateY(0px)";
+
+    }, 1900 + index * 170);
+
+});
+
+
+/*=========================================================
+            SCROLL REVEAL
+=========================================================*/
+
+const observer = new IntersectionObserver((entries) => {
+
+    entries.forEach(entry => {
+
+        if (entry.isIntersecting) {
+
+            entry.target.classList.add("show");
+
+        }
+
+    });
+
+}, {
+
+    threshold: 0.15
+
+});
+
+document.querySelectorAll(".reveal-left,.reveal-up").forEach(el => {
+
+    observer.observe(el);
+
+});
+
+
+/*=========================================================
+                BUTTON RIPPLE
+=========================================================*/
+
+const searchBtn = document.querySelector(".hero-search-btn");
+
+searchBtn.addEventListener("click", function (e) {
+
+    const ripple = document.createElement("span");
+
+    const diameter = Math.max(this.clientWidth, this.clientHeight);
+
+    ripple.style.width = ripple.style.height = diameter + "px";
+
+    ripple.style.left =
+
+        e.clientX -
+
+        this.getBoundingClientRect().left -
+
+        diameter / 2 + "px";
+
+    ripple.style.top =
+
+        e.clientY -
+
+        this.getBoundingClientRect().top -
+
+        diameter / 2 + "px";
+
+    ripple.classList.add("ripple");
+
+    const oldRipple = this.querySelector(".ripple");
+
+    if (oldRipple) {
+
+        oldRipple.remove();
+
+    }
+
+    this.appendChild(ripple);
+
+});
+
+
+/*=========================================================
+                CARD HOVER EFFECT
+=========================================================*/
+
+serviceItems.forEach(item => {
+
+    item.addEventListener("mouseenter", () => {
+
+        item.style.transform = "translateY(-10px) scale(1.05)";
+
+    });
+
+    item.addEventListener("mouseleave", () => {
+
+        item.style.transform = "translateY(0) scale(1)";
+
+    });
+
+});
+
+
+/*=========================================================
+                PARALLAX BACKGROUND
+=========================================================*/
+
+window.addEventListener("scroll", () => {
+
+    const hero = document.querySelector(".hero");
+
+    const scroll = window.pageYOffset;
+
+    hero.style.backgroundPositionY = scroll * 0.3 + "px";
+
+});
+
+
+/*=========================================================
+            SEARCH ENTER KEY
+=========================================================*/
+
+searchBox.addEventListener("keypress", (e) => {
+
+    if (e.key === "Enter") {
+
+        form.dispatchEvent(new Event("submit"));
+
+    }
+
+});
+
+
+/*=========================================================
+            PREVENT MULTIPLE CLICKS
+=========================================================*/
+
+let searching = false;
+
+form.addEventListener("submit", function (e) {
+
+    if (searching) {
+
+        e.preventDefault();
+
+        return;
+
+    }
+
+    if (searchBox.value.trim() !== "") {
+
+        searching = true;
+
+    }
+
+});
+
+
+/*=========================================================
+                PAGE LOADED
+=========================================================*/
+
+document.body.classList.add("loaded");
+
+
+console.log("Government Hero Section Loaded Successfully");
+</script>
+
+<!-- =========================
+     STACKLY SERVICES HERO START
+========================== -->
+
+<section class="stk-services-hero">
+
+    <!-- Background Image -->
+    <div class="stk-services-bg"></div>
+
+    <!-- Dark Overlay -->
+    <div class="stk-services-overlay"></div>
+
+    <!-- Hero Content -->
+    <div class="stk-services-container">
+
+        <div class="stk-services-glass stk-services-reveal stk-services-zoom">
+
+            <span class="stk-services-tag stk-services-reveal stk-services-delay-1">
+                <i class="fa-solid fa-briefcase"></i>
+                Our Services
+            </span>
+        
+            <h1 class="stk-services-title stk-services-reveal stk-services-left stk-services-delay-2">
+                Services
+            </h1>
+        
+            <p class="stk-services-description stk-services-reveal stk-services-delay-3">
+                Empowering businesses with innovative digital solutions, strategic consulting, and cutting-edge technology services.
+            </p>
+        
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================
+      STACKLY SERVICES HERO END
+========================== -->
+
+<style>
+    /* =====================================================
+   STACKLY SERVICES HERO SECTION
+   NON-CONFLICTING CSS
+===================================================== */
+
+/* Google Font (Optional) */
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap'); */
+
+/* ==========================
+   HERO SECTION
+========================== */
+
+.stk-services-hero{
+    position:relative;
+    width:100%;
+    min-height:100vh;
+    overflow:hidden;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:120px 8%;
+    box-sizing:border-box;
+}
+
+/* ==========================
+   BACKGROUND IMAGE
+========================== */
+
+.stk-services-bg{
+    position:absolute;
+    inset:0;
+
+    background-image:url("./PM-Kisan-2.webp");
+    /* Change image path if needed */
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    transform:scale(1.08);
+
+    z-index:1;
+}
+
+/* ==========================
+   OVERLAY
+========================== */
+
+.stk-services-overlay{
+    position:absolute;
+    inset:0;
+
+    background:
+    linear-gradient(
+        120deg,
+        rgba(8,22,54,.78),
+        rgba(17,72,143,.55),
+        rgba(0,0,0,.45)
+    );
+
+    z-index:2;
+}
+
+/* ==========================
+   CONTAINER
+========================== */
+
+.stk-services-container{
+
+    position:relative;
+    z-index:5;
+
+    width:100%;
+    max-width:1300px;
+
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+}
+
+/* ==========================
+   GLASS CARD
+========================== */
+
+.stk-services-glass{
+
+    width:100%;
+    max-width:620px;
+
+    padding:45px;
+
+    border-radius:28px;
+
+    background:rgba(255,255,255,.12);
+
+    border:1px solid rgba(255,255,255,.22);
+
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+
+    box-shadow:
+    0 20px 60px rgba(0,0,0,.35);
+
+}
+
+/* ==========================
+   SMALL TAG
+========================== */
+
+.stk-services-tag{
+
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+
+    padding:10px 20px;
+
+    margin-bottom:22px;
+
+    border-radius:40px;
+
+    background:rgba(255,255,255,.15);
+
+    border:1px solid rgba(255,255,255,.18);
+
+    color:#fff;
+
+    font-size:15px;
+    font-weight:600;
+
+    letter-spacing:.5px;
+}
+
+.stk-services-tag i{
+
+    color:#00e6b8;
+    font-size:15px;
+
+}
+
+/* ==========================
+   TITLE
+========================== */
+
+.stk-services-title{
+
+    color:#ffffff;
+
+    font-size:68px;
+
+    font-weight:800;
+
+    line-height:1.1;
+
+    margin-bottom:20px;
+
+    letter-spacing:.5px;
+}
+
+/* ==========================
+   DESCRIPTION
+========================== */
+
+.stk-services-description{
+
+    color:rgba(255,255,255,.92);
+
+    font-size:19px;
+
+    line-height:1.8;
+
+    max-width:550px;
+
+}
+
+/* ==========================
+   HOVER EFFECT
+========================== */
+
+.stk-services-glass:hover{
+
+    transform:translateY(-6px);
+
+    transition:.4s;
+
+    box-shadow:
+    0 25px 70px rgba(0,0,0,.45);
+
+}
+
+/* ==========================
+   LAPTOP
+========================== */
+
+@media (max-width:1200px){
+
+.stk-services-title{
+
+    font-size:58px;
+
+}
+
+.stk-services-description{
+
+    font-size:18px;
+
+}
+
+}
+
+/* ==========================
+   TABLET
+========================== */
+
+@media (max-width:992px){
+
+.stk-services-hero{
+
+    min-height:90vh;
+
+    padding:110px 6%;
+
+}
+
+.stk-services-container{
+
+    justify-content:center;
+
+}
+
+.stk-services-glass{
+
+    max-width:650px;
+
+    padding:40px;
+
+}
+
+.stk-services-title{
+
+    font-size:50px;
+
+    text-align:center;
+
+}
+
+.stk-services-description{
+
+    text-align:center;
+
+    max-width:100%;
+
+}
+
+.stk-services-tag{
+
+    margin:0 auto 20px;
+
+    display:flex;
+
+    width:fit-content;
+
+}
+
+}
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media (max-width:768px){
+
+.stk-services-hero{
+
+    padding:100px 20px 70px;
+
+    min-height:85vh;
+
+}
+
+.stk-services-glass{
+
+    padding:30px 24px;
+
+    border-radius:22px;
+
+}
+
+.stk-services-title{
+
+    font-size:38px;
+
+}
+
+.stk-services-description{
+
+    font-size:16px;
+
+    line-height:1.7;
+
+}
+
+.stk-services-tag{
+
+    padding:9px 18px;
+
+    font-size:14px;
+
+}
+
+}
+
+/* ==========================
+   SMALL MOBILE
+========================== */
+
+@media (max-width:480px){
+
+.stk-services-hero{
+
+    padding:90px 16px 60px;
+
+}
+
+.stk-services-glass{
+
+    padding:24px 18px;
+
+}
+
+.stk-services-title{
+
+    font-size:32px;
+
+}
+
+.stk-services-description{
+
+    font-size:15px;
+
+}
+
+.stk-services-tag{
+
+    font-size:13px;
+
+}
+
+}
+
+/*=========================================================
+        STACKLY SERVICES HERO ANIMATIONS
+=========================================================*/
+
+/* Smooth scrolling */
+html{
+    scroll-behavior:smooth;
+}
+
+/*=========================================================
+        BACKGROUND IMAGE ANIMATION
+=========================================================*/
+
+.stk-services-bg{
+
+    animation:stkServicesBgZoom 18s ease-in-out infinite alternate;
+
+}
+
+@keyframes stkServicesBgZoom{
+
+    0%{
+        transform:scale(1.08);
+    }
+
+    100%{
+        transform:scale(1.18);
+    }
+
+}
+
+/*=========================================================
+        GLASS CARD ENTRY
+=========================================================*/
+
+.stk-services-glass{
+
+    opacity:0;
+
+    transform:translateY(90px);
+
+    animation:stkServicesGlassLoad 1.2s ease forwards;
+
+    animation-delay:.25s;
+
+}
+
+@keyframes stkServicesGlassLoad{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(90px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/*=========================================================
+        FLOATING EFFECT
+=========================================================*/
+
+.stk-services-glass{
+
+    animation:
+        stkServicesGlassLoad 1.2s ease forwards,
+        stkServicesFloating 5s ease-in-out infinite;
+
+    animation-delay:
+        .25s,
+        1.6s;
+
+}
+
+@keyframes stkServicesFloating{
+
+    0%{
+
+        transform:translateY(0px);
+
+    }
+
+    50%{
+
+        transform:translateY(-8px);
+
+    }
+
+    100%{
+
+        transform:translateY(0px);
+
+    }
+
+}
+
+/*=========================================================
+        TAG
+=========================================================*/
+
+.stk-services-tag{
+
+    opacity:0;
+
+    transform:translateY(30px);
+
+    animation:stkServicesTag .8s ease forwards;
+
+    animation-delay:.7s;
+
+}
+
+@keyframes stkServicesTag{
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/*=========================================================
+        HEADING
+=========================================================*/
+
+.stk-services-title{
+
+    opacity:0;
+
+    transform:translateX(-70px);
+
+    animation:stkServicesHeading .9s ease forwards;
+
+    animation-delay:1s;
+
+}
+
+@keyframes stkServicesHeading{
+
+    to{
+
+        opacity:1;
+
+        transform:translateX(0);
+
+    }
+
+}
+
+/*=========================================================
+        DESCRIPTION
+=========================================================*/
+
+.stk-services-description{
+
+    opacity:0;
+
+    transform:translateY(35px);
+
+    animation:stkServicesDescription .9s ease forwards;
+
+    animation-delay:1.35s;
+
+}
+
+@keyframes stkServicesDescription{
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/*=========================================================
+        GLASS SHINE EFFECT
+=========================================================*/
+
+.stk-services-glass{
+
+    overflow:hidden;
+
+}
+
+.stk-services-glass::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:-120%;
+
+    left:-40%;
+
+    width:180px;
+
+    height:300%;
+
+    background:
+
+    linear-gradient(
+
+        rgba(255,255,255,0),
+
+        rgba(255,255,255,.30),
+
+        rgba(255,255,255,0)
+
+    );
+
+    transform:rotate(25deg);
+
+    animation:stkServicesShine 6s linear infinite;
+
+}
+
+@keyframes stkServicesShine{
+
+    from{
+
+        left:-45%;
+
+    }
+
+    to{
+
+        left:130%;
+
+    }
+
+}
+
+/*=========================================================
+        HOVER EFFECT
+=========================================================*/
+
+.stk-services-glass{
+
+    transition:
+
+        transform .4s ease,
+
+        box-shadow .4s ease,
+
+        border-color .4s ease;
+
+}
+
+.stk-services-glass:hover{
+
+    transform:translateY(-10px);
+
+    border-color:rgba(255,255,255,.40);
+
+    box-shadow:
+
+        0 20px 70px rgba(0,0,0,.45),
+
+        0 0 35px rgba(0,255,200,.18);
+
+}
+
+/*=========================================================
+        TAG HOVER
+=========================================================*/
+
+.stk-services-tag{
+
+    transition:.35s;
+
+}
+
+.stk-services-tag:hover{
+
+    background:rgba(255,255,255,.22);
+
+    transform:scale(1.05);
+
+}
+
+/*=========================================================
+        TITLE HOVER
+=========================================================*/
+
+.stk-services-title{
+
+    transition:.35s;
+
+}
+
+.stk-services-glass:hover .stk-services-title{
+
+    letter-spacing:1.5px;
+
+}
+
+/*=========================================================
+        DESCRIPTION
+=========================================================*/
+
+.stk-services-description{
+
+    transition:.4s;
+
+}
+
+.stk-services-glass:hover .stk-services-description{
+
+    color:#ffffff;
+
+}
+
+/*=========================================================
+        MOBILE OPTIMIZATION
+=========================================================*/
+
+@media(max-width:768px){
+
+.stk-services-bg{
+
+    animation-duration:20s;
+
+}
+
+.stk-services-glass{
+
+    animation-duration:1s;
+
+}
+
+.stk-services-tag{
+
+    animation-delay:.45s;
+
+}
+
+.stk-services-title{
+
+    animation-delay:.75s;
+
+}
+
+.stk-services-description{
+
+    animation-delay:1.05s;
+
+}
+
+}
+
+/*=========================================================
+        REDUCE MOTION SUPPORT
+=========================================================*/
+
+@media(prefers-reduced-motion:reduce){
+
+.stk-services-bg,
+.stk-services-glass,
+.stk-services-tag,
+.stk-services-title,
+.stk-services-description{
+
+    animation:none !important;
+
+    opacity:1 !important;
+
+    transform:none !important;
+
+}
+
+}
+
+/*=========================================================
+      STACKLY SERVICES SCROLL REVEAL
+      (Non-Conflicting)
+=========================================================*/
+
+/* Initial Hidden State */
+
+.stk-services-reveal{
+
+opacity:0;
+
+visibility:hidden;
+
+transform:translateY(80px);
+
+transition:
+    opacity .9s ease,
+    transform .9s ease,
+    visibility .9s ease;
+
+will-change:transform,opacity;
+
+}
+
+/* Active State */
+
+.stk-services-reveal.stk-services-active{
+
+opacity:1;
+
+visibility:visible;
+
+transform:translateY(0);
+
+}
+
+/* Left Animation */
+
+.stk-services-left{
+
+transform:translateX(-80px);
+
+}
+
+.stk-services-left.stk-services-active{
+
+transform:translateX(0);
+
+}
+
+/* Right Animation */
+
+.stk-services-right{
+
+transform:translateX(80px);
+
+}
+
+.stk-services-right.stk-services-active{
+
+transform:translateX(0);
+
+}
+
+/* Zoom Animation */
+
+.stk-services-zoom{
+
+transform:scale(.85);
+
+}
+
+.stk-services-zoom.stk-services-active{
+
+transform:scale(1);
+
+}
+
+/* Individual Delays */
+
+.stk-services-delay-1{
+
+transition-delay:.15s;
+
+}
+
+.stk-services-delay-2{
+
+transition-delay:.35s;
+
+}
+
+.stk-services-delay-3{
+
+transition-delay:.55s;
+
+}
+
+.stk-services-delay-4{
+
+transition-delay:.75s;
+
+}
+
+.stk-services-delay-5{
+
+transition-delay:.95s;
+
+}
+
+/* Mobile Optimization */
+
+@media(max-width:768px){
+
+.stk-services-reveal{
+
+transform:translateY(45px);
+
+transition-duration:.7s;
+
+}
+
+.stk-services-left{
+
+transform:translateX(-45px);
+
+}
+
+.stk-services-right{
+
+transform:translateX(45px);
+
+}
+
+}
+
+/* Accessibility */
+
+@media(prefers-reduced-motion:reduce){
+
+.stk-services-reveal,
+.stk-services-left,
+.stk-services-right,
+.stk-services-zoom{
+
+opacity:1 !important;
+
+visibility:visible !important;
+
+transform:none !important;
+
+transition:none !important;
+
+}
+
+}
+
+/*=========================================================
+        BACKGROUND ACTIVE EFFECT
+=========================================================*/
+
+.stk-services-bg{
+
+transition:
+    transform 8s ease,
+    filter .8s ease;
+
+}
+
+.stk-services-bg-active{
+
+transform:scale(1.12);
+
+filter:brightness(1.05);
+
+}
+</style>
+
+<script>
+    /*=========================================================
+    STACKLY SERVICES HERO
+    NON-CONFLICTING JAVASCRIPT
+=========================================================*/
+
+document.addEventListener("DOMContentLoaded", () => {
+
+/*====================================
+    REVEAL ANIMATION
+====================================*/
+
+const stkServicesRevealItems =
+    document.querySelectorAll(".stk-services-reveal");
+
+if ("IntersectionObserver" in window) {
+
+    const stkServicesObserver =
+        new IntersectionObserver((entries, observer) => {
+
+            entries.forEach(entry => {
+
+                if (entry.isIntersecting) {
+
+                    entry.target.classList.add("stk-services-active");
+
+                    observer.unobserve(entry.target);
+
+                }
+
+            });
+
+        }, {
+
+            threshold: 0.15,
+            rootMargin: "0px 0px -80px 0px"
+
+        });
+
+    stkServicesRevealItems.forEach(item => {
+
+        stkServicesObserver.observe(item);
+
+    });
+
+} else {
+
+    /* Older Browser Fallback */
+
+    stkServicesRevealItems.forEach(item => {
+
+        item.classList.add("stk-services-active");
+
+    });
+
+}
+
+/*====================================
+    BACKGROUND ACTIVE EFFECT
+====================================*/
+
+const stkServicesHero =
+    document.querySelector(".stk-services-hero");
+
+const stkServicesBackground =
+    document.querySelector(".stk-services-bg");
+
+if (stkServicesHero && stkServicesBackground) {
+
+    const stkBgObserver =
+        new IntersectionObserver((entries) => {
+
+            entries.forEach(entry => {
+
+                if (entry.isIntersecting) {
+
+                    stkServicesBackground.classList.add("stk-services-bg-active");
+
+                } else {
+
+                    stkServicesBackground.classList.remove("stk-services-bg-active");
+
+                }
+
+            });
+
+        }, {
+
+            threshold: 0.25
+
+        });
+
+    stkBgObserver.observe(stkServicesHero);
+
+}
+
+});
+    </script>
+
+
+<!-- =========================================================
+        STACKLY SERVICES SECTION START
+========================================================= -->
+
+<section class="stk-services-page">
+
+    <div class="stk-services-wrapper">
+
+        <!--=========================
+            TOP BAR
+        ==========================-->
+
+        <div class="stk-services-topbar">
+
+            <!-- Breadcrumb -->
+
+            <div class="stk-services-breadcrumb">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <span>
+                    <i class="fa-solid fa-angle-right"></i>
+                </span>
+
+                <span class="stk-services-current">
+                    Service
+                </span>
+
+            </div>
+
+            <!-- Search -->
+
+            <form class="stk-services-search-form" id="stkServiceSearchForm">
+
+                <input
+                    type="text"
+                    id="stkServiceSearch"
+                    placeholder="Search for service, department, schemes..."
+                >
+
+                <button type="submit">
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                    Search
+
+                </button>
+
+            </form>
+
+        </div>
+
+        <!--=========================
+            TITLE
+        ==========================-->
+
+        <div class="stk-services-heading-row">
+
+            <div>
+
+                <h2>
+                    All Services
+                </h2>
+
+            </div>
+
+            <span>
+                Showing 1 - 12 of 100+ Services
+            </span>
+
+        </div>
+
+        <!--=========================
+            FILTERS
+        ==========================-->
+
+        <div class="stk-services-filter-area">
+
+            <!-- Category -->
+
+            <div class="stk-filter-box">
+
+                <label>Category</label>
+
+                <select id="stkCategoryFilter">
+
+                    <option value="all">All Categories</option>
+
+                    <option value="identity">Identity</option>
+
+                    <option value="certificate">Certificate</option>
+
+                    <option value="finance">Finance</option>
+
+                    <option value="utility">Utility</option>
+
+                </select>
+
+            </div>
+
+            <!-- Department -->
+
+            <div class="stk-filter-box">
+
+                <label>Department</label>
+
+                <select id="stkDepartmentFilter">
+
+                    <option value="all">All Department</option>
+
+                    <option value="citizen">Citizen</option>
+
+                    <option value="transport">Transport</option>
+
+                    <option value="revenue">Revenue</option>
+
+                    <option value="finance">Finance</option>
+
+                </select>
+
+            </div>
+
+            <!-- Type -->
+
+            <div class="stk-filter-box">
+
+                <label>Service Type</label>
+
+                <select id="stkTypeFilter">
+
+                    <option value="all">All</option>
+
+                    <option value="online">Online</option>
+
+                    <option value="offline">Offline</option>
+
+                </select>
+
+            </div>
+
+            <!-- State -->
+
+            <div class="stk-filter-box">
+
+                <label>State</label>
+
+                <select id="stkStateFilter">
+
+                    <option value="all">All State</option>
+
+                    <option value="tamilnadu">Tamil Nadu</option>
+
+                    <option value="karnataka">Karnataka</option>
+
+                    <option value="kerala">Kerala</option>
+
+                    <option value="andhra">Andhra Pradesh</option>
+
+                </select>
+
+            </div>
+
+        </div>
+
+        <!--=========================
+            SERVICES GRID
+        ==========================-->
+
+        <div class="stk-services-grid">
+
+            <!-- Card 1 -->
+
+            <article
+                class="stk-service-card stk-services-reveal"
+                data-category="identity"
+                data-department="citizen"
+                data-type="online"
+                data-state="tamilnadu">
+
+                <div class="stk-service-icon stk-blue">
+                    <i class="fa-solid fa-id-card"></i>
+                </div>
+
+                <div class="stk-service-content">
+
+                    <h3>Aadhaar Services</h3>
+
+                    <p>
+                        Update, verify or download Aadhaar details.
+                    </p>
+
+                    <a href="404.html">
+                        Apply Now
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+            <!-- Card 2 -->
+
+            <article class="stk-service-card stk-services-reveal"
+                data-category="identity"
+                data-department="citizen"
+                data-type="online"
+                data-state="tamilnadu">
+
+                <div class="stk-service-icon stk-pink">
+                    <i class="fa-solid fa-address-card"></i>
+                </div>
+
+                <div class="stk-service-content">
+
+                    <h3>PAN Card</h3>
+
+                    <p>Apply for new PAN card or update details.</p>
+
+                    <a href="404.html">
+                        Apply Now
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+            <!-- Card 3 -->
+
+            <article class="stk-service-card stk-services-reveal"
+                data-category="identity"
+                data-department="citizen"
+                data-type="online"
+                data-state="kerala">
+
+                <div class="stk-service-icon stk-gray">
+                    <i class="fa-solid fa-passport"></i>
+                </div>
+
+                <div class="stk-service-content">
+
+                    <h3>Passport</h3>
+
+                    <p>Apply or renew your passport online.</p>
+
+                    <a href="404.html">
+                        Apply Now
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+            <!-- Card 4 -->
+
+            <article class="stk-service-card stk-services-reveal"
+                data-category="certificate"
+                data-department="revenue"
+                data-type="online"
+                data-state="tamilnadu">
+
+                <div class="stk-service-icon stk-indigo">
+                    <i class="fa-solid fa-file-lines"></i>
+                </div>
+
+                <div class="stk-service-content">
+
+                    <h3>Caste Certificate</h3>
+
+                    <p>Apply and download caste certificate.</p>
+
+                    <a href="404.html">
+                        Apply Now
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+            <!-- Card 5 -->
+
+            <article class="stk-service-card stk-services-reveal"
+                data-category="utility"
+                data-department="transport"
+                data-type="online"
+                data-state="karnataka">
+
+                <div class="stk-service-icon stk-purple">
+                    <i class="fa-solid fa-car-side"></i>
+                </div>
+
+                <div class="stk-service-content">
+
+                    <h3>Driving License</h3>
+
+                    <p>Apply for new driving license online.</p>
+
+                    <a href="404.html">
+                        Apply Now
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+            <!-- Card 6 -->
+
+            <article class="stk-service-card stk-services-reveal"
+                data-category="certificate"
+                data-department="revenue"
+                data-type="online"
+                data-state="kerala">
+
+                <div class="stk-service-icon stk-green">
+                    <i class="fa-solid fa-money-check-dollar"></i>
+                </div>
+
+                <div class="stk-service-content">
+
+                    <h3>Income Certificate</h3>
+
+                    <p>Apply for income certificate.</p>
+
+                    <a href="404.html">
+                        Apply Now
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+            <!-- Card 7 -->
+
+            <article class="stk-service-card stk-services-reveal"
+                data-category="certificate"
+                data-department="revenue"
+                data-type="offline"
+                data-state="andhra">
+
+                <div class="stk-service-icon stk-orange">
+                    <i class="fa-solid fa-house-user"></i>
+                </div>
+
+                <div class="stk-service-content">
+
+                    <h3>Domicile Certificate</h3>
+
+                    <p>Official residential proof certificate.</p>
+
+                    <a href="404.html">
+                        Apply Now
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+            <!-- Card 8 -->
+
+            <article class="stk-service-card stk-services-reveal"
+                data-category="identity"
+                data-department="citizen"
+                data-type="online"
+                data-state="karnataka">
+
+                <div class="stk-service-icon stk-red">
+                    <i class="fa-solid fa-id-badge"></i>
+                </div>
+
+                <div class="stk-service-content">
+
+                    <h3>Voter ID</h3>
+
+                    <p>New voter ID registration and correction.</p>
+
+                    <a href="404.html">
+                        Apply Now
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+            <!-- Card 9 -->
+
+            <article class="stk-service-card stk-services-reveal"
+                data-category="certificate"
+                data-department="revenue"
+                data-type="offline"
+                data-state="tamilnadu">
+
+                <div class="stk-service-icon stk-violet">
+                    <i class="fa-solid fa-certificate"></i>
+                </div>
+
+                <div class="stk-service-content">
+
+                    <h3>EWS Certificate</h3>
+
+                    <p>Economically Weaker Section certificate.</p>
+
+                    <a href="404.html">
+                        Apply Now
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+            <!-- Card 10 -->
+
+            <article class="stk-service-card stk-services-reveal"
+                data-category="finance"
+                data-department="finance"
+                data-type="online"
+                data-state="kerala">
+
+                <div class="stk-service-icon stk-dark">
+                    <i class="fa-solid fa-receipt"></i>
+                </div>
+
+                <div class="stk-service-content">
+
+                    <h3>Tax Payment</h3>
+
+                    <p>Pay taxes securely online.</p>
+
+                    <a href="404.html">
+                        Apply Now
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+            <!-- Card 11 -->
+
+            <article class="stk-service-card stk-services-reveal"
+                data-category="certificate"
+                data-department="citizen"
+                data-type="online"
+                data-state="tamilnadu">
+
+                <div class="stk-service-icon stk-lime">
+                    <i class="fa-solid fa-baby"></i>
+                </div>
+
+                <div class="stk-service-content">
+
+                    <h3>Birth Certificate</h3>
+
+                    <p>Birth registration and certificate download.</p>
+
+                    <a href="404.html">
+                        Apply Now
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+            <!-- Card 12 -->
+
+            <article class="stk-service-card stk-services-reveal"
+                data-category="utility"
+                data-department="citizen"
+                data-type="online"
+                data-state="tamilnadu">
+
+                <div class="stk-service-icon stk-silver">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+
+                <div class="stk-service-content">
+
+                    <h3>More Services</h3>
+
+                    <p>Explore more government digital services.</p>
+
+                    <a href="404.html">
+                        Apply Now
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================================================
+        STACKLY SERVICES SECTION END
+========================================================= -->
+
+
+<style>
+    /*=========================================================
+        STACKLY SERVICES PAGE
+        PART 2A
+=========================================================*/
+
+.stk-services-page{
+    width:100%;
+    padding:70px 0;
+    background:#f7f9fc;
+}
+
+.stk-services-wrapper{
+    width:min(92%,1350px);
+    margin:auto;
+}
+
+/*=========================================================
+        TOP BAR
+=========================================================*/
+
+.stk-services-topbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:30px;
+    margin-bottom:40px;
+    flex-wrap:wrap;
+}
+
+/*=========================================================
+        BREADCRUMB
+=========================================================*/
+
+.stk-services-breadcrumb{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    font-size:15px;
+}
+
+.stk-services-breadcrumb a{
+    color:#222;
+    text-decoration:none;
+    font-weight:600;
+    transition:.35s;
+}
+
+.stk-services-breadcrumb a:hover{
+    color:#0d6efd;
+}
+
+.stk-services-current{
+    color:#0d6efd;
+    font-weight:600;
+}
+
+/*=========================================================
+        SEARCH
+=========================================================*/
+
+.stk-services-search-form{
+
+    display:flex;
+    align-items:center;
+
+    width:520px;
+
+    background:#fff;
+
+    border:1px solid #d9dfe8;
+
+    border-radius:12px;
+
+    overflow:hidden;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.05);
+
+}
+
+.stk-services-search-form input{
+
+    flex:1;
+
+    border:none;
+
+    outline:none;
+
+    padding:17px 20px;
+
+    font-size:15px;
+
+    background:transparent;
+
+}
+
+.stk-services-search-form button{
+
+    border:none;
+
+    cursor:pointer;
+
+    padding:17px 28px;
+
+    background:#0d6efd;
+
+    color:#fff;
+
+    font-weight:600;
+
+    display:flex;
+
+    gap:10px;
+
+    align-items:center;
+
+    transition:.35s;
+
+}
+
+.stk-services-search-form button:hover{
+
+    background:#084db8;
+
+}
+
+/*=========================================================
+        TITLE
+=========================================================*/
+
+.stk-services-heading-row{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:30px;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.stk-services-heading-row h2{
+
+    font-size:34px;
+
+    color:#1d2939;
+
+    font-weight:700;
+
+}
+
+.stk-services-heading-row span{
+
+    color:#667085;
+
+    font-size:14px;
+
+}
+
+/*=========================================================
+        FILTERS
+=========================================================*/
+
+.stk-services-filter-area{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:18px;
+
+    margin-bottom:45px;
+
+}
+
+.stk-filter-box{
+
+    background:#fff;
+
+    border:1px solid #dbe2ea;
+
+    border-radius:12px;
+
+    padding:14px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.04);
+
+}
+
+.stk-filter-box label{
+
+    display:block;
+
+    font-size:13px;
+
+    color:#666;
+
+    margin-bottom:8px;
+
+    font-weight:600;
+
+}
+
+.stk-filter-box select{
+
+    width:100%;
+
+    border:none;
+
+    outline:none;
+
+    background:transparent;
+
+    font-size:15px;
+
+    cursor:pointer;
+
+    color:#222;
+
+    font-weight:600;
+
+}
+
+/*=========================================================
+        SERVICES GRID
+=========================================================*/
+
+.stk-services-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:28px;
+
+}
+
+/*=========================================================
+        CARD
+=========================================================*/
+
+.stk-service-card{
+
+    background:#fff;
+
+    border-radius:16px;
+
+    border:1px solid #dce3eb;
+
+    padding:26px;
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:18px;
+
+    min-height:170px;
+
+    transition:.4s;
+
+    box-shadow:0 10px 28px rgba(0,0,0,.05);
+
+}
+
+.stk-service-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.12);
+
+    border-color:#0d6efd;
+
+}
+
+/*=========================================================
+        ICON
+=========================================================*/
+
+.stk-service-icon{
+
+    width:56px;
+
+    height:56px;
+
+    border-radius:14px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:22px;
+
+    flex-shrink:0;
+
+}
+
+.stk-blue{
+    background:#e8f0ff;
+    color:#2962ff;
+}
+
+.stk-pink{
+    background:#fde7ef;
+    color:#c2185b;
+}
+
+.stk-gray{
+    background:#eef1f5;
+    color:#455a64;
+}
+
+.stk-indigo{
+    background:#e9ecff;
+    color:#304ffe;
+}
+
+.stk-purple{
+    background:#efe7ff;
+    color:#7b1fa2;
+}
+
+.stk-green{
+    background:#e7f8ea;
+    color:#2e7d32;
+}
+
+.stk-orange{
+    background:#fff1e5;
+    color:#ef6c00;
+}
+
+.stk-red{
+    background:#ffe8e8;
+    color:#e53935;
+}
+
+.stk-violet{
+    background:#f3e8ff;
+    color:#7e57c2;
+}
+
+.stk-dark{
+    background:#eceff3;
+    color:#263238;
+}
+
+.stk-lime{
+    background:#edf9e6;
+    color:#43a047;
+}
+
+.stk-silver{
+    background:#f2f4f7;
+    color:#555;
+}
+
+/*=========================================================
+        CONTENT
+=========================================================*/
+
+.stk-service-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    height:100%;
+
+    flex:1;
+
+}
+
+.stk-service-content h3{
+
+    font-size:18px;
+
+    color:#1e293b;
+
+    margin-bottom:10px;
+
+    font-weight:700;
+
+}
+
+.stk-service-content p{
+
+    color:#667085;
+
+    font-size:14px;
+
+    line-height:1.7;
+
+    margin-bottom:auto;
+
+}
+
+.stk-service-content a{
+
+    margin-top:18px;
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    color:#0d6efd;
+
+    font-weight:600;
+
+    text-decoration:none;
+
+    transition:.35s;
+
+}
+
+.stk-service-content a:hover{
+
+    gap:15px;
+
+}
+
+/*=========================================================
+        TABLET
+=========================================================*/
+
+@media(max-width:991px){
+
+.stk-services-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.stk-services-filter-area{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.stk-services-search-form{
+
+    width:100%;
+
+}
+
+}
+
+/*=========================================================
+        MOBILE
+=========================================================*/
+
+@media(max-width:768px){
+
+.stk-services-topbar{
+
+    flex-direction:column;
+
+    align-items:stretch;
+
+}
+
+.stk-services-heading-row{
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+}
+
+.stk-services-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.stk-services-filter-area{
+
+    grid-template-columns:1fr;
+
+}
+
+.stk-service-card{
+
+    min-height:auto;
+
+    padding:22px;
+
+}
+
+.stk-services-heading-row h2{
+
+    font-size:28px;
+
+}
+
+}
+
+/*=========================================================
+        SMALL MOBILE
+=========================================================*/
+
+@media(max-width:480px){
+
+.stk-services-wrapper{
+
+    width:94%;
+
+}
+
+.stk-services-search-form input{
+
+    font-size:14px;
+
+    padding:15px;
+
+}
+
+.stk-services-search-form button{
+
+    padding:15px 20px;
+
+    font-size:14px;
+
+}
+
+.stk-service-icon{
+
+    width:50px;
+
+    height:50px;
+
+    font-size:20px;
+
+}
+
+.stk-service-content h3{
+
+    font-size:16px;
+
+}
+
+}
+
+/*=========================================================
+        STACKLY SERVICES PREMIUM ANIMATIONS
+        PART 2A.1
+=========================================================*/
+
+/* Smooth Scroll */
+
+html{
+    scroll-behavior:smooth;
+}
+
+/*=========================================================
+        INITIAL HIDDEN STATE
+=========================================================*/
+
+.stk-services-reveal{
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transform:translateY(80px);
+
+    transition:
+    transform .9s cubic-bezier(.22,1,.36,1),
+    opacity .9s ease,
+    visibility .9s;
+
+    will-change:transform,opacity;
+
+}
+
+/*=========================================================
+        ACTIVE STATE
+=========================================================*/
+
+.stk-services-reveal.stk-services-active{
+
+    opacity:1;
+
+    visibility:visible;
+
+    transform:translateY(0);
+
+}
+
+/*=========================================================
+        STAGGER DELAY
+=========================================================*/
+
+.stk-service-card:nth-child(1){transition-delay:.05s;}
+.stk-service-card:nth-child(2){transition-delay:.12s;}
+.stk-service-card:nth-child(3){transition-delay:.19s;}
+.stk-service-card:nth-child(4){transition-delay:.26s;}
+.stk-service-card:nth-child(5){transition-delay:.33s;}
+.stk-service-card:nth-child(6){transition-delay:.40s;}
+.stk-service-card:nth-child(7){transition-delay:.47s;}
+.stk-service-card:nth-child(8){transition-delay:.54s;}
+.stk-service-card:nth-child(9){transition-delay:.61s;}
+.stk-service-card:nth-child(10){transition-delay:.68s;}
+.stk-service-card:nth-child(11){transition-delay:.75s;}
+.stk-service-card:nth-child(12){transition-delay:.82s;}
+
+/*=========================================================
+        CARD HOVER
+=========================================================*/
+
+.stk-service-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.stk-service-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-120%;
+
+    width:80%;
+
+    height:100%;
+
+    background:
+
+    linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,.45),
+        transparent
+    );
+
+    transform:skewX(-25deg);
+
+    transition:1s;
+
+}
+
+.stk-service-card:hover::before{
+
+    left:150%;
+
+}
+
+.stk-service-card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:
+
+    0 25px 55px rgba(0,0,0,.14);
+
+}
+
+/*=========================================================
+        ICON
+=========================================================*/
+
+.stk-service-icon{
+
+    transition:
+
+    transform .45s ease,
+
+    box-shadow .45s ease;
+
+}
+
+.stk-service-card:hover .stk-service-icon{
+
+    transform:rotate(10deg) scale(1.12);
+
+    box-shadow:
+
+    0 12px 25px rgba(0,0,0,.18);
+
+}
+
+/*=========================================================
+        HEADING
+=========================================================*/
+
+.stk-service-content h3{
+
+    transition:.35s;
+
+}
+
+.stk-service-card:hover h3{
+
+    color:#0d6efd;
+
+}
+
+/*=========================================================
+        APPLY BUTTON
+=========================================================*/
+
+.stk-service-content a{
+
+    transition:.35s;
+
+}
+
+.stk-service-content a i{
+
+    transition:.35s;
+
+}
+
+.stk-service-card:hover .stk-service-content a{
+
+    color:#0056d6;
+
+}
+
+.stk-service-card:hover .stk-service-content a i{
+
+    transform:translateX(8px);
+
+}
+
+/*=========================================================
+        SEARCH BAR
+=========================================================*/
+
+.stk-services-search-form{
+
+    transition:.35s;
+
+}
+
+.stk-services-search-form:focus-within{
+
+    border-color:#0d6efd;
+
+    box-shadow:
+
+    0 15px 35px rgba(13,110,253,.18);
+
+    transform:translateY(-2px);
+
+}
+
+/*=========================================================
+        FILTER BOX
+=========================================================*/
+
+.stk-filter-box{
+
+    transition:.35s;
+
+}
+
+.stk-filter-box:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:
+
+    0 15px 35px rgba(0,0,0,.08);
+
+}
+
+/*=========================================================
+        DROPDOWN
+=========================================================*/
+
+.stk-filter-box select{
+
+    transition:.3s;
+
+}
+
+.stk-filter-box select:focus{
+
+    color:#0d6efd;
+
+}
+
+/*=========================================================
+        BUTTON
+=========================================================*/
+
+.stk-services-search-form button{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.stk-services-search-form button::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-100%;
+
+    width:100%;
+
+    height:100%;
+
+    background:
+
+    rgba(255,255,255,.22);
+
+    transition:.45s;
+
+}
+
+.stk-services-search-form button:hover::before{
+
+    left:100%;
+
+}
+
+/*=========================================================
+        GRID
+=========================================================*/
+
+.stk-services-grid{
+
+    perspective:1000px;
+
+}
+
+/*=========================================================
+        MOBILE
+=========================================================*/
+
+@media(max-width:768px){
+
+.stk-services-reveal{
+
+    transform:translateY(45px);
+
+}
+
+.stk-service-card:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.stk-service-card:hover .stk-service-icon{
+
+    transform:scale(1.08);
+
+}
+
+}
+
+/*=========================================================
+        REDUCED MOTION
+=========================================================*/
+
+@media(prefers-reduced-motion:reduce){
+
+.stk-services-reveal,
+
+.stk-service-card,
+
+.stk-service-icon,
+
+.stk-filter-box,
+
+.stk-services-search-form{
+
+    transition:none !important;
+
+    animation:none !important;
+
+    opacity:1 !important;
+
+    transform:none !important;
+
+}
+
+}
+</style>
+
+<!--=========================================================
+        SERVICES CTA SECTION
+==========================================================-->
+
+<div class="stk-services-bottom-section stk-services-reveal">
+
+    <!-- Left Side -->
+
+    <div class="stk-services-bottom-left">
+
+        <h2>
+            Can't find the service you are looking for?
+        </h2>
+
+        <p>
+            We are here to help you discover the right government service quickly and easily.
+        </p>
+
+        <a href="404.html" class="stk-browse-btn">
+            Browse All Services
+        </a>
+
+    </div>
+
+    <!-- Right Side -->
+
+    <div class="stk-services-bottom-right">
+
+        <!-- Item -->
+
+        <div class="stk-bottom-feature stk-services-reveal">
+
+            <div class="stk-bottom-icon stk-bottom-green">
+
+                <i class="fa-solid fa-shield-halved"></i>
+
+            </div>
+
+            <div>
+
+                <h4>Secure & Reliable</h4>
+
+                <p>Your information is protected with advanced security.</p>
+
+            </div>
+
+        </div>
+
+        <!-- Item -->
+
+        <div class="stk-bottom-feature stk-services-reveal">
+
+            <div class="stk-bottom-icon stk-bottom-blue">
+
+                <i class="fa-regular fa-clock"></i>
+
+            </div>
+
+            <div>
+
+                <h4>Save Time</h4>
+
+                <p>Apply online from anywhere without visiting offices.</p>
+
+            </div>
+
+        </div>
+
+        <!-- Item -->
+
+        <div class="stk-bottom-feature stk-services-reveal">
+
+            <div class="stk-bottom-icon stk-bottom-orange">
+
+                <i class="fa-solid fa-desktop"></i>
+
+            </div>
+
+            <div>
+
+                <h4>Track Applications</h4>
+
+                <p>Monitor your application status in real-time.</p>
+
+            </div>
+
+        </div>
+
+        <!-- Item -->
+
+        <div class="stk-bottom-feature stk-services-reveal">
+
+            <div class="stk-bottom-icon stk-bottom-purple">
+
+                <i class="fa-regular fa-file-lines"></i>
+
+            </div>
+
+            <div>
+
+                <h4>Paperless Process</h4>
+
+                <p>Digital services with zero paperwork and faster approval.</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<style>
+    /*=========================================================
+        STACKLY SERVICES CTA SECTION
+=========================================================*/
+
+.stk-services-bottom-section{
+
+margin-top:70px;
+
+background:linear-gradient(135deg,#4aa7a5,#3f9898);
+
+border-radius:18px;
+
+padding:35px;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+gap:40px;
+
+overflow:hidden;
+
+box-shadow:0 18px 45px rgba(0,0,0,.12);
+
+}
+
+/*=========================================================
+    LEFT
+=========================================================*/
+
+.stk-services-bottom-left{
+
+width:340px;
+
+color:#fff;
+
+}
+
+.stk-services-bottom-left h2{
+
+font-size:30px;
+
+font-weight:700;
+
+margin-bottom:18px;
+
+line-height:1.3;
+
+}
+
+.stk-services-bottom-left p{
+
+font-size:15px;
+
+line-height:1.8;
+
+margin-bottom:28px;
+
+color:rgba(255,255,255,.92);
+
+}
+
+/*=========================================================
+    BUTTON
+=========================================================*/
+
+.stk-browse-btn{
+
+display:inline-flex;
+
+align-items:center;
+
+justify-content:center;
+
+text-decoration:none;
+
+padding:15px 30px;
+
+border-radius:10px;
+
+background:#1f63ff;
+
+color:#fff;
+
+font-weight:600;
+
+transition:.35s;
+
+}
+
+.stk-browse-btn:hover{
+
+background:#0049d9;
+
+transform:translateY(-4px);
+
+}
+
+/*=========================================================
+    RIGHT
+=========================================================*/
+
+.stk-services-bottom-right{
+
+flex:1;
+
+background:#fff;
+
+border-radius:15px;
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+overflow:hidden;
+
+}
+
+/*=========================================================
+    FEATURE
+=========================================================*/
+
+.stk-bottom-feature{
+
+padding:28px 22px;
+
+display:flex;
+
+align-items:center;
+
+gap:18px;
+
+border-right:1px solid #ececec;
+
+transition:.35s;
+
+}
+
+.stk-bottom-feature:last-child{
+
+border-right:none;
+
+}
+
+.stk-bottom-feature:hover{
+
+background:#f8fbff;
+
+}
+
+/*=========================================================
+    ICON
+=========================================================*/
+
+.stk-bottom-icon{
+
+width:56px;
+
+height:56px;
+
+border-radius:14px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:22px;
+
+flex-shrink:0;
+
+}
+
+.stk-bottom-green{
+
+background:#e8f8ea;
+
+color:#35a853;
+
+}
+
+.stk-bottom-blue{
+
+background:#edf5ff;
+
+color:#2962ff;
+
+}
+
+.stk-bottom-orange{
+
+background:#fff2e7;
+
+color:#ff7b00;
+
+}
+
+.stk-bottom-purple{
+
+background:#f4ecff;
+
+color:#8a3ffc;
+
+}
+
+/*=========================================================
+    TEXT
+=========================================================*/
+
+.stk-bottom-feature h4{
+
+font-size:18px;
+
+margin-bottom:8px;
+
+color:#1d2939;
+
+}
+
+.stk-bottom-feature p{
+
+font-size:14px;
+
+color:#667085;
+
+line-height:1.6;
+
+}
+
+/*=========================================================
+    HOVER
+=========================================================*/
+
+.stk-bottom-feature:hover{
+
+transform:translateY(-5px);
+
+}
+
+.stk-bottom-feature:hover .stk-bottom-icon{
+
+transform:rotate(10deg) scale(1.08);
+
+}
+
+.stk-bottom-icon{
+
+transition:.35s;
+
+}
+
+/*=========================================================
+    TABLET
+=========================================================*/
+
+@media(max-width:991px){
+
+.stk-services-bottom-section{
+
+flex-direction:column;
+
+align-items:stretch;
+
+}
+
+.stk-services-bottom-left{
+
+width:100%;
+
+}
+
+.stk-services-bottom-right{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.stk-bottom-feature:nth-child(2){
+
+border-right:none;
+
+}
+
+.stk-bottom-feature{
+
+border-bottom:1px solid #ececec;
+
+}
+
+.stk-bottom-feature:nth-last-child(-n+2){
+
+border-bottom:none;
+
+}
+
+}
+
+/*=========================================================
+    MOBILE
+=========================================================*/
+
+@media(max-width:768px){
+
+.stk-services-bottom-section{
+
+padding:25px;
+
+}
+
+.stk-services-bottom-left h2{
+
+font-size:24px;
+
+}
+
+.stk-services-bottom-right{
+
+grid-template-columns:1fr;
+
+}
+
+.stk-bottom-feature{
+
+border-right:none;
+
+border-bottom:1px solid #ececec;
+
+}
+
+.stk-bottom-feature:last-child{
+
+border-bottom:none;
+
+}
+
+}
+
+/*=========================================================
+    SMALL MOBILE
+=========================================================*/
+
+@media(max-width:480px){
+
+.stk-services-bottom-left h2{
+
+font-size:21px;
+
+}
+
+.stk-bottom-feature{
+
+padding:20px 16px;
+
+}
+
+.stk-bottom-feature h4{
+
+font-size:16px;
+
+}
+
+.stk-bottom-feature p{
+
+font-size:13px;
+
+}
+
+}
+</style>
+
+<script>
+    /*=========================================================
+        STACKLY SERVICES JAVASCRIPT
+        NON-CONFLICTING CODE
+=========================================================*/
+
+document.addEventListener("DOMContentLoaded", function () {
+
+/*=========================================================
+        SEARCH
+=========================================================*/
+
+const stkSearchForm = document.getElementById("stkServiceSearchForm");
+const stkSearchInput = document.getElementById("stkServiceSearch");
+
+if (stkSearchForm) {
+
+    stkSearchForm.addEventListener("submit", function (event) {
+
+        event.preventDefault();
+
+        const value = stkSearchInput.value.trim();
+
+        if (value !== "") {
+
+            window.location.href = "404.html";
+
+        } else {
+
+            stkSearchInput.focus();
+
+        }
+
+    });
+
+}
+
+/*=========================================================
+        FILTERS
+=========================================================*/
+
+const stkCategory = document.getElementById("stkCategoryFilter");
+const stkDepartment = document.getElementById("stkDepartmentFilter");
+const stkType = document.getElementById("stkTypeFilter");
+const stkState = document.getElementById("stkStateFilter");
+
+const stkCards = document.querySelectorAll(".stk-service-card");
+
+function stkFilterCards() {
+
+    const categoryValue = stkCategory.value;
+    const departmentValue = stkDepartment.value;
+    const typeValue = stkType.value;
+    const stateValue = stkState.value;
+
+    let visibleCards = 0;
+
+    stkCards.forEach(function(card){
+
+        const cardCategory = card.dataset.category;
+        const cardDepartment = card.dataset.department;
+        const cardType = card.dataset.type;
+        const cardState = card.dataset.state;
+
+        const matchCategory =
+            categoryValue === "all" || categoryValue === cardCategory;
+
+        const matchDepartment =
+            departmentValue === "all" || departmentValue === cardDepartment;
+
+        const matchType =
+            typeValue === "all" || typeValue === cardType;
+
+        const matchState =
+            stateValue === "all" || stateValue === cardState;
+
+        if(
+            matchCategory &&
+            matchDepartment &&
+            matchType &&
+            matchState
+        ){
+
+            card.style.display = "flex";
+
+            visibleCards++;
+
+        }
+
+        else{
+
+            card.style.display = "none";
+
+        }
+
+    });
+
+    stkNoResultMessage(visibleCards);
+
+}
+
+if(stkCategory){
+
+    stkCategory.addEventListener("change", stkFilterCards);
+
+    stkDepartment.addEventListener("change", stkFilterCards);
+
+    stkType.addEventListener("change", stkFilterCards);
+
+    stkState.addEventListener("change", stkFilterCards);
+
+}
+
+/*=========================================================
+        NO RESULT
+=========================================================*/
+
+function stkNoResultMessage(total){
+
+    let message = document.querySelector(".stk-no-service");
+
+    if(!message){
+
+        message = document.createElement("div");
+
+        message.className = "stk-no-service";
+
+        message.innerHTML =
+        "<i class='fa-solid fa-circle-info'></i><br>No Services Found";
+
+        document
+        .querySelector(".stk-services-grid")
+        .appendChild(message);
+
+    }
+
+    if(total===0){
+
+        message.style.display="block";
+
+    }
+
+    else{
+
+        message.style.display="none";
+
+    }
+
+}
+
+/*=========================================================
+        SCROLL REVEAL
+=========================================================*/
+
+const revealElements =
+document.querySelectorAll(".stk-services-reveal");
+
+const revealObserver =
+new IntersectionObserver(function(entries){
+
+    entries.forEach(function(entry){
+
+        if(entry.isIntersecting){
+
+            entry.target.classList.add("stk-services-active");
+
+        }
+
+    });
+
+},{
+
+    threshold:0.15
+
+});
+
+revealElements.forEach(function(item){
+
+    revealObserver.observe(item);
+
+});
+
+/*=========================================================
+        CARD STAGGER ANIMATION
+=========================================================*/
+
+const cards =
+document.querySelectorAll(".stk-service-card");
+
+const cardObserver =
+new IntersectionObserver(function(entries){
+
+    entries.forEach(function(entry){
+
+        if(entry.isIntersecting){
+
+            cards.forEach(function(card,index){
+
+                setTimeout(function(){
+
+                    card.classList.add("stk-services-active");
+
+                },index*120);
+
+            });
+
+        }
+
+    });
+
+},{
+
+    threshold:.10
+
+});
+
+if(document.querySelector(".stk-services-grid")){
+
+    cardObserver.observe(
+        document.querySelector(".stk-services-grid")
+    );
+
+}
+
+/*=========================================================
+        APPLY NOW BUTTON
+=========================================================*/
+
+const applyButtons =
+document.querySelectorAll(".stk-service-content a");
+
+applyButtons.forEach(function(button){
+
+    button.addEventListener("click",function(){
+
+        window.location.href="404.html";
+
+    });
+
+});
+
+});
+</script>
+
+
+
+<!--=========================================================
+        DOWNLOAD GOVERNMENT APP SECTION
+==========================================================-->
+
+<section class="gov-app-section" id="download-app">
+
+    <!-- Background Overlay -->
+    <div class="gov-app-overlay"></div>
+
+    <!-- Decorative Shapes -->
+    <span class="gov-shape shape-1"></span>
+    <span class="gov-shape shape-2"></span>
+    <span class="gov-shape shape-3"></span>
+
+    <div class="gov-app-container reveal-up">
+
+        <!--=================================================
+                        LEFT CONTENT
+        ==================================================-->
+
+        <div class="gov-app-content">
+
+            <span class="gov-app-badge">
+
+                <i class="fa-solid fa-mobile-screen-button"></i>
+
+                Official Government Mobile App
+
+            </span>
+
+            <h2>
+
+                Government Services
+                <br>
+                Anytime, Anywhere
+
+            </h2>
+
+            <p>
+
+                Access hundreds of government services through one
+                secure mobile application. Apply for certificates,
+                monitor application status, access welfare schemes,
+                submit grievances, pay bills, and receive important
+                government notifications directly on your smartphone.
+
+            </p>
+
+            <div class="gov-feature-list">
+
+                <div class="gov-feature-item">
+
+                    <div class="feature-icon">
+
+                        <i class="fa-solid fa-shield-halved"></i>
+
+                    </div>
+
+                    <span>100% Secure Login</span>
+
+                </div>
+
+                <div class="gov-feature-item">
+
+                    <div class="feature-icon">
+
+                        <i class="fa-solid fa-file-circle-check"></i>
+
+                    </div>
+
+                    <span>Apply Online Instantly</span>
+
+                </div>
+
+                <div class="gov-feature-item">
+
+                    <div class="feature-icon">
+
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+
+                    </div>
+
+                    <span>Real-Time Status Tracking</span>
+
+                </div>
+
+                <div class="gov-feature-item">
+
+                    <div class="feature-icon">
+
+                        <i class="fa-solid fa-bell"></i>
+
+                    </div>
+
+                    <span>Instant Notifications</span>
+
+                </div>
+
+            </div>
+
+            <div class="gov-button-group">
+
+                <a href="404.html" class="download-btn">
+
+                    <i class="fa-solid fa-download"></i>
+
+                    Download App
+
+                </a>
+
+                <a href="404.html" class="learn-btn">
+
+                    Learn More
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <!--=================================================
+                    CENTER MOBILE
+        ==================================================-->
+
+        <div class="gov-mobile-wrapper">
+
+            <div class="phone-glow"></div>
+
+            <div class="phone-ring"></div>
+
+            <div class="phone-frame">
+
+                <img
+                    src="images/mobile-government.png"
+                    alt="Government Mobile App">
+
+            </div>
+
+        </div>
+
+        <!--=================================================
+                    RIGHT SIDE
+        ==================================================-->
+
+        <div class="gov-download-box">
+
+            <h3>
+
+                Get The App
+
+            </h3>
+
+            <p>
+
+                Download from your favourite app store
+                or scan the QR Code.
+
+            </p>
+
+            <div class="store-buttons">
+
+                <a href="404.html">
+
+                    <img
+                        src="images/google-play.png"
+                        alt="Google Play">
+
+                </a>
+
+                <a href="404.html">
+
+                    <img
+                        src="images/app-store.png"
+                        alt="App Store">
+
+                </a>
+
+            </div>
+
+            <div class="qr-card">
+
+                <img
+                    src="images/qr-code.png"
+                    alt="QR Code">
+
+                <h4>
+
+                    Scan QR Code
+
+                </h4>
+
+                <span>
+
+                    Quick Download
+
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<style>
+    /*=========================================================
+        DOWNLOAD GOVERNMENT APP SECTION
+                    PART 1
+        Global Layout + Background + Container
+=========================================================*/
+
+/*================ GOOGLE FONT =================*/
+
+.gov-app-section *{
+
+margin:0;
+
+padding:0;
+
+box-sizing:border-box;
+
+}
+
+/*=================================================
+            MAIN SECTION
+=================================================*/
+
+.gov-app-section{
+
+position:relative;
+
+width:100%;
+
+padding:100px 0;
+
+overflow:hidden;
+
+background:url("../images/government-banner.jpg")
+center center/cover no-repeat;
+
+}
+
+/*=================================================
+            OVERLAY
+=================================================*/
+
+.gov-app-overlay{
+
+position:absolute;
+
+inset:0;
+
+background:linear-gradient(
+    135deg,
+    rgba(255,255,255,.88),
+    rgba(255,255,255,.72),
+    rgba(255,255,255,.42)
+);
+
+backdrop-filter:blur(2px);
+
+}
+
+/*=================================================
+        DECORATIVE SHAPES
+=================================================*/
+
+.gov-shape{
+
+position:absolute;
+
+border-radius:50%;
+
+pointer-events:none;
+
+}
+
+.shape-1{
+
+width:420px;
+
+height:420px;
+
+top:-180px;
+
+left:-180px;
+
+background:rgba(13,110,253,.08);
+
+filter:blur(50px);
+
+}
+
+.shape-2{
+
+width:320px;
+
+height:320px;
+
+bottom:-130px;
+
+right:-100px;
+
+background:rgba(0,188,212,.10);
+
+filter:blur(45px);
+
+}
+
+.shape-3{
+
+width:220px;
+
+height:220px;
+
+top:40%;
+
+right:12%;
+
+background:rgba(76,175,80,.08);
+
+filter:blur(40px);
+
+}
+
+/*=================================================
+            MAIN CONTAINER
+=================================================*/
+
+.gov-app-container{
+
+position:relative;
+
+z-index:10;
+
+width:min(92%,1380px);
+
+margin:auto;
+
+display:grid;
+
+grid-template-columns:
+    1.2fr
+    .9fr
+    .85fr;
+
+gap:60px;
+
+align-items:center;
+
+padding:60px;
+
+border-radius:36px;
+
+background:rgba(255,255,255,.20);
+
+backdrop-filter:blur(20px);
+
+border:1px solid rgba(255,255,255,.35);
+
+box-shadow:
+
+    0 25px 60px rgba(0,0,0,.12);
+
+overflow:hidden;
+
+}
+
+/*=================================================
+    PREMIUM INNER BORDER
+=================================================*/
+
+.gov-app-container::before{
+
+content:"";
+
+position:absolute;
+
+top:16px;
+
+left:16px;
+
+right:16px;
+
+bottom:16px;
+
+border-radius:26px;
+
+border:2px solid rgba(255,255,255,.45);
+
+pointer-events:none;
+
+z-index:1;
+
+}
+
+/*=================================================
+        KEEP CONTENT ABOVE BORDER
+=================================================*/
+
+.gov-app-content,
+
+.gov-mobile-wrapper,
+
+.gov-download-box{
+
+position:relative;
+
+z-index:5;
+
+}
+
+/*=================================================
+        GRID ALIGNMENT
+=================================================*/
+
+.gov-app-content{
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+}
+
+.gov-mobile-wrapper{
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+}
+
+.gov-download-box{
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+}
+
+/*=================================================
+        BACKGROUND LIGHT EFFECT
+=================================================*/
+
+.gov-app-container::after{
+
+content:"";
+
+position:absolute;
+
+width:420px;
+
+height:420px;
+
+border-radius:50%;
+
+background:rgba(255,255,255,.20);
+
+top:-180px;
+
+right:-120px;
+
+filter:blur(80px);
+
+z-index:0;
+
+}
+
+/*=================================================
+        GLASS HIGHLIGHT
+=================================================*/
+
+.gov-app-container .glass-light{
+
+display:none;
+
+}
+
+/*=================================================
+        SCROLL REVEAL
+=================================================*/
+
+.reveal-up{
+
+opacity:0;
+
+transform:translateY(90px);
+
+transition:
+
+    opacity .9s ease,
+
+    transform .9s ease;
+
+}
+
+.reveal-up.show{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+/*=================================================
+        PERFORMANCE
+=================================================*/
+
+.gov-app-container,
+
+.gov-app-content,
+
+.gov-mobile-wrapper,
+
+.gov-download-box{
+
+will-change:transform;
+
+backface-visibility:hidden;
+
+transform:translateZ(0);
+
+}
+
+/*=================================================
+        IMAGE RESET
+=================================================*/
+
+.gov-app-section img{
+
+display:block;
+
+max-width:100%;
+
+height:auto;
+
+}
+
+/*=================================================
+        LINK RESET
+=================================================*/
+
+.gov-app-section a{
+
+text-decoration:none;
+
+}
+
+/*=================================================
+        SMALL DESKTOP
+=================================================*/
+
+@media (max-width:1300px){
+
+.gov-app-container{
+
+    width:94%;
+
+    gap:45px;
+
+    padding:50px;
+
+}
+
+}
+
+/*=================================================
+        TABLET PREPARATION
+=================================================*/
+
+@media (max-width:992px){
+
+.gov-app-container{
+
+    grid-template-columns:1fr;
+
+    text-align:center;
+
+    gap:40px;
+
+    padding:45px;
+
+}
+
+}
+
+/*=================================================
+        MOBILE PREPARATION
+=================================================*/
+
+@media (max-width:768px){
+
+.gov-app-section{
+
+    padding:70px 15px;
+
+}
+
+.gov-app-container{
+
+    width:100%;
+
+    padding:30px 20px;
+
+    border-radius:28px;
+
+    gap:30px;
+
+}
+
+.gov-app-container::before{
+
+    top:10px;
+
+    left:10px;
+
+    right:10px;
+
+    bottom:10px;
+
+    border-radius:20px;
+
+}
+
+}
+
+/*=========================================================
+        DOWNLOAD GOVERNMENT APP SECTION
+                    PART 2
+        Left Content + Features + Buttons
+=========================================================*/
+
+/*=================================================
+                LEFT CONTENT
+=================================================*/
+
+.gov-app-content{
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:flex-start;
+
+width:100%;
+
+}
+
+/*=================================================
+            BADGE
+=================================================*/
+
+.gov-app-badge{
+
+display:inline-flex;
+
+align-items:center;
+
+gap:12px;
+
+padding:12px 24px;
+
+margin-bottom:28px;
+
+border-radius:50px;
+
+background:rgba(255,255,255,.55);
+
+backdrop-filter:blur(15px);
+
+border:1px solid rgba(255,255,255,.60);
+
+color:#0d6efd;
+
+font-size:15px;
+
+font-weight:700;
+
+letter-spacing:.3px;
+
+box-shadow:0 10px 30px rgba(13,110,253,.10);
+
+transition:.4s;
+
+}
+
+.gov-app-badge i{
+
+width:42px;
+
+height:42px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+border-radius:50%;
+
+background:linear-gradient(135deg,#0d6efd,#00BCD4);
+
+color:#fff;
+
+font-size:18px;
+
+transition:.4s;
+
+}
+
+/*=================================================
+            HEADING
+=================================================*/
+
+.gov-app-content h2{
+
+font-size:50px;
+
+font-weight:800;
+
+color:#16213E;
+
+line-height:1.18;
+
+margin-bottom:22px;
+
+}
+
+.gov-app-content h2 span{
+
+color:#0d6efd;
+
+}
+
+/*=================================================
+            PARAGRAPH
+=================================================*/
+
+.gov-app-content p{
+
+max-width:580px;
+
+font-size:17px;
+
+line-height:1.9;
+
+color:#5c6470;
+
+margin-bottom:35px;
+
+}
+
+/*=================================================
+            FEATURES
+=================================================*/
+
+.gov-feature-list{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:18px;
+
+width:100%;
+
+margin-bottom:40px;
+
+}
+
+/*=================================================
+            FEATURE CARD
+=================================================*/
+
+.gov-feature-item{
+
+display:flex;
+
+align-items:center;
+
+gap:15px;
+
+padding:18px;
+
+border-radius:18px;
+
+background:rgba(255,255,255,.55);
+
+backdrop-filter:blur(12px);
+
+border:1px solid rgba(255,255,255,.45);
+
+transition:.45s;
+
+}
+
+.feature-icon{
+
+width:55px;
+
+height:55px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+border-radius:18px;
+
+background:linear-gradient(
+    135deg,
+    #0d6efd,
+    #00BCD4
+);
+
+color:#fff;
+
+font-size:22px;
+
+flex-shrink:0;
+
+transition:.4s;
+
+}
+
+.gov-feature-item span{
+
+color:#1f2937;
+
+font-size:16px;
+
+font-weight:600;
+
+line-height:1.5;
+
+}
+
+/*=================================================
+            BUTTON GROUP
+=================================================*/
+
+.gov-button-group{
+
+display:flex;
+
+align-items:center;
+
+gap:18px;
+
+flex-wrap:wrap;
+
+}
+
+/*=================================================
+            DOWNLOAD BUTTON
+=================================================*/
+
+.download-btn{
+
+position:relative;
+
+display:inline-flex;
+
+align-items:center;
+
+justify-content:center;
+
+gap:12px;
+
+padding:17px 34px;
+
+border-radius:50px;
+
+background:linear-gradient(
+    135deg,
+    #0d6efd,
+    #2563eb
+);
+
+color:#fff;
+
+font-size:16px;
+
+font-weight:700;
+
+overflow:hidden;
+
+box-shadow:0 18px 40px rgba(13,110,253,.28);
+
+transition:.45s;
+
+}
+
+.download-btn i{
+
+font-size:17px;
+
+transition:.35s;
+
+}
+
+/*=================================================
+            LEARN BUTTON
+=================================================*/
+
+.learn-btn{
+
+display:inline-flex;
+
+align-items:center;
+
+justify-content:center;
+
+padding:17px 34px;
+
+border-radius:50px;
+
+border:2px solid #0d6efd;
+
+background:#fff;
+
+color:#0d6efd;
+
+font-size:16px;
+
+font-weight:700;
+
+transition:.4s;
+
+}
+
+/*=================================================
+            HOVER EFFECTS
+=================================================*/
+
+.gov-app-badge:hover{
+
+transform:translateY(-4px);
+
+box-shadow:0 20px 35px rgba(13,110,253,.18);
+
+}
+
+.gov-app-badge:hover i{
+
+transform:rotate(360deg);
+
+}
+
+.gov-feature-item:hover{
+
+transform:translateY(-8px);
+
+box-shadow:0 18px 35px rgba(0,0,0,.10);
+
+border-color:#0d6efd;
+
+}
+
+.gov-feature-item:hover .feature-icon{
+
+transform:scale(1.12);
+
+}
+
+.download-btn:hover{
+
+transform:translateY(-5px);
+
+box-shadow:0 25px 45px rgba(13,110,253,.35);
+
+}
+
+.download-btn:hover i{
+
+transform:translateX(6px);
+
+}
+
+.learn-btn:hover{
+
+background:#0d6efd;
+
+color:#fff;
+
+transform:translateY(-5px);
+
+}
+
+/*=================================================
+            RESPONSIVE
+=================================================*/
+
+@media(max-width:1200px){
+
+.gov-app-content h2{
+
+    font-size:44px;
+
+}
+
+}
+
+@media(max-width:992px){
+
+.gov-app-content{
+
+    align-items:center;
+
+    text-align:center;
+
+}
+
+.gov-app-content p{
+
+    max-width:700px;
+
+}
+
+.gov-feature-list{
+
+    max-width:700px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.gov-app-content h2{
+
+    font-size:34px;
+
+}
+
+.gov-app-content p{
+
+    font-size:15px;
+
+    margin-bottom:30px;
+
+}
+
+.gov-feature-list{
+
+    grid-template-columns:1fr;
+
+    gap:15px;
+
+}
+
+.gov-feature-item{
+
+    padding:16px;
+
+}
+
+.feature-icon{
+
+    width:50px;
+
+    height:50px;
+
+    font-size:20px;
+
+}
+
+.gov-button-group{
+
+    width:100%;
+
+    flex-direction:column;
+
+}
+
+.download-btn,
+
+.learn-btn{
+
+    width:100%;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.gov-app-badge{
+
+    font-size:13px;
+
+    padding:10px 18px;
+
+}
+
+.gov-app-content h2{
+
+    font-size:28px;
+
+}
+
+.gov-app-content p{
+
+    font-size:14px;
+
+}
+
+.gov-feature-item span{
+
+    font-size:14px;
+
+}
+
+}
+
+/*=========================================================
+        DOWNLOAD GOVERNMENT APP SECTION
+                    PART 3
+      Center Mobile Mockup + Glow + Animations
+=========================================================*/
+
+/*=================================================
+                MOBILE WRAPPER
+=================================================*/
+
+.gov-mobile-wrapper{
+
+position:relative;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+min-height:620px;
+
+width:100%;
+
+}
+
+/*=================================================
+            PHONE GLOW
+=================================================*/
+
+.phone-glow{
+
+position:absolute;
+
+width:360px;
+
+height:360px;
+
+border-radius:50%;
+
+background:radial-gradient(
+    circle,
+    rgba(13,110,253,.30) 0%,
+    rgba(0,188,212,.18) 45%,
+    rgba(255,255,255,0) 80%
+);
+
+filter:blur(20px);
+
+animation:glowPulse 4s ease-in-out infinite;
+
+z-index:1;
+
+}
+
+/*=================================================
+            OUTER RING
+=================================================*/
+
+.phone-ring{
+
+position:absolute;
+
+width:320px;
+
+height:320px;
+
+border-radius:50%;
+
+border:2px dashed rgba(13,110,253,.25);
+
+animation:ringRotate 25s linear infinite;
+
+z-index:2;
+
+}
+
+/*=================================================
+            PHONE FRAME
+=================================================*/
+
+.phone-frame{
+
+position:relative;
+
+width:280px;
+
+z-index:5;
+
+border-radius:40px;
+
+transition:.45s ease;
+
+animation:phoneFloat 4s ease-in-out infinite;
+
+}
+
+/*=================================================
+            PHONE IMAGE
+=================================================*/
+
+.phone-frame img{
+
+width:100%;
+
+display:block;
+
+border-radius:40px;
+
+filter:drop-shadow(0 35px 60px rgba(0,0,0,.30));
+
+transition:.45s;
+
+}
+
+/*=================================================
+        PHONE REFLECTION
+=================================================*/
+
+.phone-frame::before{
+
+content:"";
+
+position:absolute;
+
+top:18px;
+
+left:-45%;
+
+width:45%;
+
+height:90%;
+
+background:linear-gradient(
+    120deg,
+    transparent,
+    rgba(255,255,255,.55),
+    transparent
+);
+
+transform:skewX(-25deg);
+
+border-radius:30px;
+
+opacity:0;
+
+}
+
+/*=================================================
+        FLOATING ICONS
+=================================================*/
+
+.phone-frame::after{
+
+content:"";
+
+position:absolute;
+
+width:22px;
+
+height:22px;
+
+border-radius:50%;
+
+background:#0d6efd;
+
+top:-12px;
+
+right:-12px;
+
+box-shadow:
+
+    0 0 0 8px rgba(13,110,253,.18);
+
+animation:notificationPulse 2s infinite;
+
+}
+
+/*=================================================
+            PHONE HOVER
+=================================================*/
+
+.phone-frame:hover{
+
+transform:
+
+    scale(1.06)
+
+    rotate(-4deg);
+
+}
+
+.phone-frame:hover img{
+
+transform:scale(1.02);
+
+}
+
+.phone-frame:hover::before{
+
+animation:phoneShine .9s linear;
+
+opacity:1;
+
+}
+
+/*=================================================
+            GLOW HOVER
+=================================================*/
+
+.gov-mobile-wrapper:hover .phone-glow{
+
+background:radial-gradient(
+
+    circle,
+
+    rgba(13,110,253,.45),
+
+    rgba(0,188,212,.22),
+
+    transparent
+
+);
+
+}
+
+/*=================================================
+            FLOAT ANIMATION
+=================================================*/
+
+@keyframes phoneFloat{
+
+0%{
+
+    transform:translateY(0px);
+
+}
+
+25%{
+
+    transform:translateY(-12px);
+
+}
+
+50%{
+
+    transform:translateY(-22px);
+
+}
+
+75%{
+
+    transform:translateY(-12px);
+
+}
+
+100%{
+
+    transform:translateY(0px);
+
+}
+
+}
+
+/*=================================================
+            GLOW PULSE
+=================================================*/
+
+@keyframes glowPulse{
+
+0%{
+
+    transform:scale(.9);
+
+    opacity:.6;
+
+}
+
+50%{
+
+    transform:scale(1.12);
+
+    opacity:1;
+
+}
+
+100%{
+
+    transform:scale(.9);
+
+    opacity:.6;
+
+}
+
+}
+
+/*=================================================
+            RING ROTATION
+=================================================*/
+
+@keyframes ringRotate{
+
+from{
+
+    transform:rotate(0deg);
+
+}
+
+to{
+
+    transform:rotate(360deg);
+
+}
+
+}
+
+/*=================================================
+            SHINE EFFECT
+=================================================*/
+
+@keyframes phoneShine{
+
+from{
+
+    left:-45%;
+
+}
+
+to{
+
+    left:150%;
+
+}
+
+}
+
+/*=================================================
+        NOTIFICATION DOT
+=================================================*/
+
+@keyframes notificationPulse{
+
+0%{
+
+    box-shadow:
+    0 0 0 0 rgba(13,110,253,.45);
+
+}
+
+70%{
+
+    box-shadow:
+    0 0 0 18px rgba(13,110,253,0);
+
+}
+
+100%{
+
+    box-shadow:
+    0 0 0 0 rgba(13,110,253,0);
+
+}
+
+}
+
+/*=================================================
+        DESKTOP RESPONSIVE
+=================================================*/
+
+@media (max-width:1200px){
+
+.gov-mobile-wrapper{
+
+    min-height:520px;
+
+}
+
+.phone-frame{
+
+    width:250px;
+
+}
+
+.phone-ring{
+
+    width:290px;
+
+    height:290px;
+
+}
+
+.phone-glow{
+
+    width:320px;
+
+    height:320px;
+
+}
+
+}
+
+/*=================================================
+            TABLET
+=================================================*/
+
+@media (max-width:992px){
+
+.gov-mobile-wrapper{
+
+    min-height:460px;
+
+}
+
+.phone-frame{
+
+    width:220px;
+
+}
+
+.phone-ring{
+
+    width:250px;
+
+    height:250px;
+
+}
+
+.phone-glow{
+
+    width:270px;
+
+    height:270px;
+
+}
+
+}
+
+/*=================================================
+            MOBILE
+=================================================*/
+
+@media (max-width:768px){
+
+.gov-mobile-wrapper{
+
+    min-height:360px;
+
+}
+
+.phone-frame{
+
+    width:180px;
+
+}
+
+.phone-ring{
+
+    width:210px;
+
+    height:210px;
+
+}
+
+.phone-glow{
+
+    width:220px;
+
+    height:220px;
+
+}
+
+}
+
+/*=================================================
+        SMALL MOBILE
+=================================================*/
+
+@media (max-width:480px){
+
+.gov-mobile-wrapper{
+
+    min-height:310px;
+
+}
+
+.phone-frame{
+
+    width:155px;
+
+}
+
+.phone-ring{
+
+    width:180px;
+
+    height:180px;
+
+}
+
+.phone-glow{
+
+    width:190px;
+
+    height:190px;
+
+}
+
+}
+
+/*=========================================================
+        DOWNLOAD GOVERNMENT APP SECTION
+                    PART 4
+      Right Download Panel + Store Buttons + QR Card
+=========================================================*/
+
+/*=================================================
+                DOWNLOAD PANEL
+=================================================*/
+
+.gov-download-box{
+
+position:relative;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+width:100%;
+
+max-width:360px;
+
+margin:auto;
+
+padding:35px 30px;
+
+background:rgba(255,255,255,.45);
+
+backdrop-filter:blur(20px);
+
+border:1px solid rgba(255,255,255,.55);
+
+border-radius:30px;
+
+overflow:hidden;
+
+box-shadow:
+
+    0 20px 45px rgba(0,0,0,.12);
+
+transition:.45s;
+
+}
+
+/*=================================================
+        PANEL TOP LIGHT
+=================================================*/
+
+.gov-download-box::before{
+
+content:"";
+
+position:absolute;
+
+top:-140px;
+
+left:-140px;
+
+width:260px;
+
+height:260px;
+
+border-radius:50%;
+
+background:rgba(13,110,253,.10);
+
+filter:blur(45px);
+
+}
+
+.gov-download-box::after{
+
+content:"";
+
+position:absolute;
+
+bottom:-120px;
+
+right:-120px;
+
+width:220px;
+
+height:220px;
+
+border-radius:50%;
+
+background:rgba(0,188,212,.10);
+
+filter:blur(45px);
+
+}
+
+/*=================================================
+            TITLE
+=================================================*/
+
+.gov-download-box h3{
+
+position:relative;
+
+z-index:5;
+
+font-size:30px;
+
+font-weight:800;
+
+color:#16213E;
+
+margin-bottom:10px;
+
+text-align:center;
+
+}
+
+.gov-download-box p{
+
+position:relative;
+
+z-index:5;
+
+font-size:15px;
+
+color:#6b7280;
+
+line-height:1.7;
+
+text-align:center;
+
+margin-bottom:28px;
+
+}
+
+/*=================================================
+        STORE BUTTONS
+=================================================*/
+
+.store-buttons{
+
+position:relative;
+
+z-index:5;
+
+display:flex;
+
+flex-direction:column;
+
+gap:18px;
+
+width:100%;
+
+align-items:center;
+
+margin-bottom:28px;
+
+}
+
+.store-buttons a{
+
+display:block;
+
+width:100%;
+
+max-width:220px;
+
+}
+
+.store-buttons img{
+
+width:100%;
+
+border-radius:16px;
+
+transition:.45s;
+
+box-shadow:
+
+    0 10px 25px rgba(0,0,0,.12);
+
+}
+
+/*=================================================
+        QR CARD
+=================================================*/
+
+.qr-card{
+
+position:relative;
+
+z-index:5;
+
+width:100%;
+
+max-width:230px;
+
+padding:20px;
+
+border-radius:22px;
+
+background:rgba(255,255,255,.60);
+
+border:1px solid rgba(255,255,255,.60);
+
+text-align:center;
+
+transition:.45s;
+
+overflow:hidden;
+
+}
+
+/*=================================================
+        QR SHINE
+=================================================*/
+
+.qr-card::before{
+
+content:"";
+
+position:absolute;
+
+top:-180%;
+
+left:-60%;
+
+width:50%;
+
+height:320%;
+
+background:
+
+    linear-gradient(
+
+    90deg,
+
+    transparent,
+
+    rgba(255,255,255,.75),
+
+    transparent
+
+);
+
+transform:rotate(25deg);
+
+opacity:0;
+
+}
+
+/*=================================================
+            QR IMAGE
+=================================================*/
+
+.qr-card img{
+
+width:150px;
+
+margin:auto;
+
+margin-bottom:18px;
+
+border-radius:10px;
+
+transition:.45s;
+
+}
+
+.qr-card h4{
+
+font-size:22px;
+
+font-weight:700;
+
+color:#16213E;
+
+margin-bottom:6px;
+
+}
+
+.qr-card span{
+
+font-size:14px;
+
+color:#6b7280;
+
+}
+
+/*=================================================
+        STORE HOVER
+=================================================*/
+
+.store-buttons a:hover img{
+
+transform:
+
+    translateY(-8px)
+
+    scale(1.05);
+
+box-shadow:
+
+    0 18px 35px rgba(13,110,253,.22);
+
+}
+
+/*=================================================
+        PANEL HOVER
+=================================================*/
+
+.gov-download-box:hover{
+
+transform:translateY(-8px);
+
+box-shadow:
+
+    0 30px 55px rgba(13,110,253,.18);
+
+}
+
+/*=================================================
+        QR CARD HOVER
+=================================================*/
+
+.qr-card:hover{
+
+transform:
+
+    translateY(-6px)
+
+    scale(1.03);
+
+box-shadow:
+
+    0 20px 40px rgba(0,188,212,.18);
+
+}
+
+.qr-card:hover img{
+
+transform:scale(1.08);
+
+}
+
+.qr-card:hover::before{
+
+animation:qrShine .9s linear;
+
+opacity:1;
+
+}
+
+@keyframes qrShine{
+
+from{
+
+    left:-70%;
+
+}
+
+to{
+
+    left:170%;
+
+}
+
+}
+
+/*=================================================
+        DESKTOP
+=================================================*/
+
+@media(max-width:1200px){
+
+.gov-download-box{
+
+    max-width:320px;
+
+    padding:30px 24px;
+
+}
+
+.gov-download-box h3{
+
+    font-size:28px;
+
+}
+
+}
+
+/*=================================================
+        TABLET
+=================================================*/
+
+@media(max-width:992px){
+
+.gov-download-box{
+
+    max-width:500px;
+
+}
+
+.store-buttons{
+
+    flex-direction:row;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+}
+
+.store-buttons a{
+
+    max-width:190px;
+
+}
+
+.qr-card{
+
+    margin-top:10px;
+
+}
+
+}
+
+/*=================================================
+        MOBILE
+=================================================*/
+
+@media(max-width:768px){
+
+.gov-download-box{
+
+    width:100%;
+
+    max-width:100%;
+
+    padding:28px 20px;
+
+}
+
+.gov-download-box h3{
+
+    font-size:26px;
+
+}
+
+.store-buttons{
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+.store-buttons a{
+
+    max-width:220px;
+
+}
+
+.qr-card{
+
+    max-width:220px;
+
+}
+
+}
+
+/*=================================================
+        SMALL MOBILE
+=================================================*/
+
+@media(max-width:480px){
+
+.gov-download-box{
+
+    padding:24px 16px;
+
+    border-radius:22px;
+
+}
+
+.gov-download-box h3{
+
+    font-size:22px;
+
+}
+
+.gov-download-box p{
+
+    font-size:14px;
+
+}
+
+.store-buttons a{
+
+    max-width:180px;
+
+}
+
+.qr-card{
+
+    max-width:180px;
+
+    padding:16px;
+
+}
+
+.qr-card img{
+
+    width:120px;
+
+}
+
+.qr-card h4{
+
+    font-size:18px;
+
+}
+
+.qr-card span{
+
+    font-size:13px;
+
+}
+
+}
+
+/*=========================================================
+        DOWNLOAD GOVERNMENT APP SECTION
+                    PART 5
+        Premium Hover Effects + Animations
+=========================================================*/
+
+/*=================================================
+                SMOOTH TRANSITIONS
+=================================================*/
+
+.gov-app-section *{
+
+transition:
+    transform .45s ease,
+    box-shadow .45s ease,
+    background .45s ease,
+    border-color .45s ease,
+    color .35s ease,
+    opacity .35s ease;
+
+}
+
+/*=================================================
+        CONTAINER HOVER
+=================================================*/
+
+.gov-app-container:hover{
+
+transform:translateY(-8px);
+
+box-shadow:
+
+    0 35px 70px rgba(0,0,0,.16);
+
+}
+
+/*=================================================
+        INNER BORDER GLOW
+=================================================*/
+
+.gov-app-container::before{
+
+transition:.45s;
+
+}
+
+.gov-app-container:hover::before{
+
+border-color:#4da3ff;
+
+box-shadow:
+
+    0 0 18px rgba(13,110,253,.20),
+
+    inset 0 0 18px rgba(13,110,253,.12);
+
+}
+
+/*=================================================
+            BADGE
+=================================================*/
+
+.gov-app-badge:hover{
+
+background:#0d6efd;
+
+color:#fff;
+
+transform:
+
+    translateY(-5px)
+
+    scale(1.03);
+
+}
+
+.gov-app-badge:hover i{
+
+background:#fff;
+
+color:#0d6efd;
+
+transform:rotate(360deg);
+
+}
+
+/*=================================================
+            HEADING
+=================================================*/
+
+.gov-app-content:hover h2{
+
+color:#0d6efd;
+
+}
+
+/*=================================================
+        FEATURE CARD
+=================================================*/
+
+.gov-feature-item{
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.gov-feature-item::before{
+
+content:"";
+
+position:absolute;
+
+top:0;
+
+left:-120%;
+
+width:60%;
+
+height:100%;
+
+background:
+
+    linear-gradient(
+
+        120deg,
+
+        transparent,
+
+        rgba(255,255,255,.75),
+
+        transparent
+
+    );
+
+transform:skewX(-25deg);
+
+}
+
+.gov-feature-item:hover::before{
+
+animation:cardShine .8s linear;
+
+}
+
+.gov-feature-item:hover{
+
+background:#fff;
+
+border-color:#0d6efd;
+
+transform:
+
+    translateY(-10px)
+
+    scale(1.02);
+
+}
+
+.gov-feature-item:hover .feature-icon{
+
+transform:
+
+    rotate(360deg)
+
+    scale(1.1);
+
+}
+
+.gov-feature-item:hover span{
+
+color:#0d6efd;
+
+}
+
+/*=================================================
+        DOWNLOAD BUTTON
+=================================================*/
+
+.download-btn::before{
+
+content:"";
+
+position:absolute;
+
+top:0;
+
+left:-120%;
+
+width:60%;
+
+height:100%;
+
+background:
+
+    rgba(255,255,255,.35);
+
+transform:skewX(-25deg);
+
+}
+
+.download-btn:hover::before{
+
+animation:buttonShine .8s linear;
+
+}
+
+.download-btn:hover{
+
+transform:
+
+    translateY(-6px)
+
+    scale(1.03);
+
+}
+
+.download-btn:hover i{
+
+transform:translateX(8px);
+
+}
+
+/*=================================================
+        LEARN BUTTON
+=================================================*/
+
+.learn-btn:hover{
+
+box-shadow:
+
+    0 18px 35px rgba(13,110,253,.22);
+
+}
+
+/*=================================================
+        PHONE
+=================================================*/
+
+.gov-mobile-wrapper:hover .phone-frame{
+
+transform:
+
+    scale(1.07)
+
+    rotate(-4deg);
+
+}
+
+.gov-mobile-wrapper:hover .phone-ring{
+
+animation-duration:10s;
+
+}
+
+.gov-mobile-wrapper:hover .phone-glow{
+
+transform:scale(1.15);
+
+}
+
+/*=================================================
+        STORE BUTTONS
+=================================================*/
+
+.store-buttons a{
+
+overflow:hidden;
+
+border-radius:16px;
+
+}
+
+.store-buttons a:hover img{
+
+transform:
+
+    scale(1.06)
+
+    translateY(-8px);
+
+}
+
+/*=================================================
+        DOWNLOAD PANEL
+=================================================*/
+
+.gov-download-box:hover{
+
+background:
+
+    rgba(255,255,255,.62);
+
+}
+
+/*=================================================
+        QR CARD
+=================================================*/
+
+.qr-card:hover{
+
+border-color:#00BCD4;
+
+}
+
+.qr-card:hover img{
+
+transform:
+
+    rotate(3deg)
+
+    scale(1.08);
+
+}
+
+/*=================================================
+        FLOATING ANIMATION
+=================================================*/
+
+.gov-feature-item:nth-child(1){
+
+animation:floatCard 4s ease-in-out infinite;
+
+}
+
+.gov-feature-item:nth-child(2){
+
+animation:floatCard 4s ease-in-out infinite .4s;
+
+}
+
+.gov-feature-item:nth-child(3){
+
+animation:floatCard 4s ease-in-out infinite .8s;
+
+}
+
+.gov-feature-item:nth-child(4){
+
+animation:floatCard 4s ease-in-out infinite 1.2s;
+
+}
+
+/*=================================================
+        BUTTON PULSE
+=================================================*/
+
+.download-btn{
+
+animation:buttonPulse 3s infinite;
+
+}
+
+/*=================================================
+            KEYFRAMES
+=================================================*/
+
+@keyframes buttonPulse{
+
+0%{
+
+    box-shadow:
+
+        0 0 0 0 rgba(13,110,253,.45);
+
+}
+
+70%{
+
+    box-shadow:
+
+        0 0 0 18px rgba(13,110,253,0);
+
+}
+
+100%{
+
+    box-shadow:
+
+        0 0 0 0 rgba(13,110,253,0);
+
+}
+
+}
+
+@keyframes cardShine{
+
+from{
+
+    left:-120%;
+
+}
+
+to{
+
+    left:180%;
+
+}
+
+}
+
+@keyframes buttonShine{
+
+from{
+
+    left:-120%;
+
+}
+
+to{
+
+    left:180%;
+
+}
+
+}
+
+@keyframes floatCard{
+
+0%{
+
+    transform:translateY(0);
+
+}
+
+50%{
+
+    transform:translateY(-6px);
+
+}
+
+100%{
+
+    transform:translateY(0);
+
+}
+
+}
+
+/*=================================================
+        SCROLL REVEAL
+=================================================*/
+
+.reveal-up{
+
+opacity:0;
+
+transform:translateY(80px);
+
+}
+
+.reveal-up.show{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+/*=================================================
+    STAGGER ANIMATION
+=================================================*/
+
+.reveal-up.show .gov-feature-item:nth-child(1){
+
+transition-delay:.1s;
+
+}
+
+.reveal-up.show .gov-feature-item:nth-child(2){
+
+transition-delay:.25s;
+
+}
+
+.reveal-up.show .gov-feature-item:nth-child(3){
+
+transition-delay:.4s;
+
+}
+
+.reveal-up.show .gov-feature-item:nth-child(4){
+
+transition-delay:.55s;
+
+}
+
+/*=================================================
+        REDUCED MOTION
+=================================================*/
+
+@media (prefers-reduced-motion:reduce){
+
+*{
+
+    animation:none !important;
+
+    transition:none !important;
+
+}
+
+}
+
+/*=================================================
+        TOUCH DEVICES
+=================================================*/
+
+@media (hover:none){
+
+.gov-app-container:hover,
+
+.gov-feature-item:hover,
+
+.gov-mobile-wrapper:hover .phone-frame,
+
+.download-btn:hover,
+
+.learn-btn:hover,
+
+.store-buttons a:hover img,
+
+.qr-card:hover{
+
+    transform:none;
+
+}
+
+}
+
+/*=========================================================
+        DOWNLOAD GOVERNMENT APP SECTION
+                    PART 6
+     Desktop + Laptop Responsive (1400px - 992px)
+=========================================================*/
+
+/*=========================================================
+                    LARGE DESKTOP
+=========================================================*/
+
+@media (max-width:1400px){
+
+.gov-app-section{
+
+    padding:90px 30px;
+
+}
+
+.gov-app-container{
+
+    width:100%;
+
+    max-width:1280px;
+
+    grid-template-columns:1.15fr .9fr .85fr;
+
+    gap:50px;
+
+    padding:55px;
+
+}
+
+.gov-app-content h2{
+
+    font-size:46px;
+
+}
+
+.gov-app-content p{
+
+    font-size:16px;
+
+    max-width:540px;
+
+}
+
+.phone-frame{
+
+    width:250px;
+
+}
+
+.phone-ring{
+
+    width:300px;
+
+    height:300px;
+
+}
+
+.phone-glow{
+
+    width:330px;
+
+    height:330px;
+
+}
+
+.gov-download-box{
+
+    max-width:330px;
+
+}
+
+}
+
+/*=========================================================
+                DESKTOP
+=========================================================*/
+
+@media (max-width:1200px){
+
+.gov-app-section{
+
+    padding:85px 25px;
+
+}
+
+.gov-app-container{
+
+    grid-template-columns:
+    1.1fr
+    .9fr
+    .85fr;
+
+    gap:40px;
+
+    padding:45px;
+
+    border-radius:32px;
+
+}
+
+.gov-app-container::before{
+
+    top:14px;
+
+    left:14px;
+
+    right:14px;
+
+    bottom:14px;
+
+}
+
+.gov-app-content h2{
+
+    font-size:40px;
+
+}
+
+.gov-app-content p{
+
+    font-size:15px;
+
+}
+
+.gov-feature-list{
+
+    gap:15px;
+
+}
+
+.gov-feature-item{
+
+    padding:15px;
+
+}
+
+.feature-icon{
+
+    width:52px;
+
+    height:52px;
+
+    font-size:20px;
+
+}
+
+.phone-frame{
+
+    width:230px;
+
+}
+
+.phone-ring{
+
+    width:270px;
+
+    height:270px;
+
+}
+
+.phone-glow{
+
+    width:300px;
+
+    height:300px;
+
+}
+
+.gov-download-box{
+
+    padding:28px 24px;
+
+}
+
+}
+
+/*=========================================================
+                LAPTOP
+=========================================================*/
+
+@media (max-width:1024px){
+
+.gov-app-section{
+
+    padding:80px 20px;
+
+}
+
+.gov-app-container{
+
+    grid-template-columns:
+    1fr
+    .8fr
+    .8fr;
+
+    gap:35px;
+
+    padding:40px;
+
+}
+
+.gov-app-content h2{
+
+    font-size:36px;
+
+    line-height:1.25;
+
+}
+
+.gov-app-content p{
+
+    font-size:15px;
+
+    line-height:1.8;
+
+}
+
+.gov-feature-list{
+
+    grid-template-columns:1fr;
+
+}
+
+.gov-feature-item{
+
+    padding:16px;
+
+}
+
+.phone-frame{
+
+    width:210px;
+
+}
+
+.phone-ring{
+
+    width:245px;
+
+    height:245px;
+
+}
+
+.phone-glow{
+
+    width:270px;
+
+    height:270px;
+
+}
+
+.gov-download-box{
+
+    max-width:290px;
+
+}
+
+.store-buttons img{
+
+    width:170px;
+
+}
+
+.qr-card{
+
+    max-width:200px;
+
+}
+
+}
+
+/*=========================================================
+            ALIGNMENT FIX
+=========================================================*/
+
+@media (min-width:993px){
+
+.gov-app-content{
+
+    align-items:flex-start;
+
+    text-align:left;
+
+}
+
+.gov-feature-list{
+
+    width:100%;
+
+}
+
+.gov-button-group{
+
+    justify-content:flex-start;
+
+}
+
+.gov-mobile-wrapper{
+
+    justify-content:center;
+
+}
+
+.gov-download-box{
+
+    justify-self:center;
+
+}
+
+}
+
+/*=========================================================
+            IMAGE SCALING
+=========================================================*/
+
+@media (min-width:993px){
+
+.phone-frame img,
+
+.store-buttons img,
+
+.qr-card img{
+
+    max-width:100%;
+
+    height:auto;
+
+}
+
+}
+
+/*=========================================================
+        HOVER ONLY FOR DESKTOP
+=========================================================*/
+
+@media (hover:hover) and (min-width:993px){
+
+.gov-app-container:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.phone-frame:hover{
+
+    transform:
+
+    scale(1.06)
+
+    rotate(-4deg);
+
+}
+
+}
+
+/*=========================================================
+        EXTRA WIDE MONITORS
+=========================================================*/
+
+@media (min-width:1600px){
+
+.gov-app-container{
+
+    max-width:1450px;
+
+    gap:70px;
+
+}
+
+.gov-app-content h2{
+
+    font-size:54px;
+
+}
+
+.gov-app-content p{
+
+    font-size:18px;
+
+}
+
+.phone-frame{
+
+    width:300px;
+
+}
+
+.phone-ring{
+
+    width:350px;
+
+    height:350px;
+
+}
+
+.phone-glow{
+
+    width:390px;
+
+    height:390px;
+
+}
+
+}
+
+/*=========================================================
+        DOWNLOAD GOVERNMENT APP SECTION
+                    PART 7
+        Tablet + Mobile Responsive (992px - 320px)
+=========================================================*/
+
+/*=========================================================
+                    TABLET
+=========================================================*/
+
+@media (max-width:992px){
+
+.gov-app-section{
+
+    padding:70px 20px;
+
+}
+
+.gov-app-container{
+
+    width:100%;
+
+    grid-template-columns:1fr;
+
+    gap:45px;
+
+    padding:40px 35px;
+
+    text-align:center;
+
+}
+
+.gov-app-container::before{
+
+    top:12px;
+
+    left:12px;
+
+    right:12px;
+
+    bottom:12px;
+
+}
+
+/*---------------- Content ----------------*/
+
+.gov-app-content{
+
+    order:1;
+
+    align-items:center;
+
+    text-align:center;
+
+}
+
+.gov-app-content h2{
+
+    font-size:38px;
+
+}
+
+.gov-app-content p{
+
+    max-width:700px;
+
+    margin:20px auto 35px;
+
+}
+
+.gov-feature-list{
+
+    grid-template-columns:repeat(2,1fr);
+
+    max-width:700px;
+
+    margin:auto auto 35px;
+
+}
+
+.gov-button-group{
+
+    justify-content:center;
+
+}
+
+/*---------------- Phone ----------------*/
+
+.gov-mobile-wrapper{
+
+    order:2;
+
+    min-height:420px;
+
+}
+
+.phone-frame{
+
+    width:220px;
+
+}
+
+.phone-ring{
+
+    width:260px;
+
+    height:260px;
+
+}
+
+.phone-glow{
+
+    width:280px;
+
+    height:280px;
+
+}
+
+/*---------------- Download Box ----------------*/
+
+.gov-download-box{
+
+    order:3;
+
+    max-width:500px;
+
+}
+
+.store-buttons{
+
+    flex-direction:row;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:18px;
+
+}
+
+}
+
+/*=========================================================
+                MOBILE
+=========================================================*/
+
+@media (max-width:768px){
+
+.gov-app-section{
+
+    padding:60px 15px;
+
+}
+
+.gov-app-container{
+
+    padding:30px 22px;
+
+    gap:35px;
+
+    border-radius:25px;
+
+}
+
+.gov-app-container::before{
+
+    top:10px;
+
+    left:10px;
+
+    right:10px;
+
+    bottom:10px;
+
+    border-radius:18px;
+
+}
+
+.gov-app-content h2{
+
+    font-size:30px;
+
+    line-height:1.3;
+
+}
+
+.gov-app-content p{
+
+    font-size:15px;
+
+}
+
+.gov-feature-list{
+
+    grid-template-columns:1fr;
+
+    gap:16px;
+
+}
+
+.gov-feature-item{
+
+    justify-content:flex-start;
+
+    text-align:left;
+
+}
+
+.gov-button-group{
+
+    flex-direction:column;
+
+    width:100%;
+
+}
+
+.download-btn,
+
+.learn-btn{
+
+    width:100%;
+
+    justify-content:center;
+
+}
+
+.gov-mobile-wrapper{
+
+    min-height:320px;
+
+}
+
+.phone-frame{
+
+    width:180px;
+
+}
+
+.phone-ring{
+
+    width:210px;
+
+    height:210px;
+
+}
+
+.phone-glow{
+
+    width:230px;
+
+    height:230px;
+
+}
+
+.gov-download-box{
+
+    max-width:100%;
+
+    padding:25px 20px;
+
+}
+
+.store-buttons{
+
+    flex-direction:column;
+
+}
+
+.store-buttons img{
+
+    width:180px;
+
+}
+
+}
+
+/*=========================================================
+            SMALL MOBILE
+=========================================================*/
+
+@media (max-width:576px){
+
+.gov-app-section{
+
+    padding:50px 12px;
+
+}
+
+.gov-app-container{
+
+    padding:24px 18px;
+
+    gap:28px;
+
+}
+
+.gov-app-content h2{
+
+    font-size:26px;
+
+}
+
+.gov-app-content p{
+
+    font-size:14px;
+
+}
+
+.gov-app-badge{
+
+    font-size:13px;
+
+    padding:10px 18px;
+
+}
+
+.gov-feature-item{
+
+    padding:14px;
+
+    gap:12px;
+
+}
+
+.feature-icon{
+
+    width:46px;
+
+    height:46px;
+
+    font-size:18px;
+
+}
+
+.gov-feature-item span{
+
+    font-size:14px;
+
+}
+
+.phone-frame{
+
+    width:160px;
+
+}
+
+.phone-ring{
+
+    width:185px;
+
+    height:185px;
+
+}
+
+.phone-glow{
+
+    width:200px;
+
+    height:200px;
+
+}
+
+.store-buttons img{
+
+    width:165px;
+
+}
+
+.qr-card{
+
+    max-width:180px;
+
+}
+
+.qr-card img{
+
+    width:120px;
+
+}
+
+}
+
+/*=========================================================
+        EXTRA SMALL DEVICES
+=========================================================*/
+
+@media (max-width:400px){
+
+.gov-app-container{
+
+    padding:20px 15px;
+
+}
+
+.gov-app-container::before{
+
+    top:8px;
+
+    left:8px;
+
+    right:8px;
+
+    bottom:8px;
+
+}
+
+.gov-app-content h2{
+
+    font-size:22px;
+
+}
+
+.gov-app-content p{
+
+    font-size:13px;
+
+    line-height:1.7;
+
+}
+
+.gov-app-badge{
+
+    width:100%;
+
+    justify-content:center;
+
+    font-size:12px;
+
+}
+
+.feature-icon{
+
+    width:42px;
+
+    height:42px;
+
+    font-size:16px;
+
+}
+
+.gov-feature-item span{
+
+    font-size:13px;
+
+}
+
+.download-btn,
+
+.learn-btn{
+
+    padding:14px;
+
+    font-size:14px;
+
+}
+
+.phone-frame{
+
+    width:140px;
+
+}
+
+.phone-ring{
+
+    width:165px;
+
+    height:165px;
+
+}
+
+.phone-glow{
+
+    width:180px;
+
+    height:180px;
+
+}
+
+.store-buttons img{
+
+    width:150px;
+
+}
+
+.qr-card{
+
+    max-width:160px;
+
+    padding:15px;
+
+}
+
+.qr-card img{
+
+    width:105px;
+
+}
+
+.gov-download-box h3{
+
+    font-size:20px;
+
+}
+
+}
+
+/*=========================================================
+            LANDSCAPE MOBILE
+=========================================================*/
+
+@media (max-height:500px) and (orientation:landscape){
+
+.gov-app-section{
+
+    padding:40px 20px;
+
+}
+
+.gov-mobile-wrapper{
+
+    min-height:250px;
+
+}
+
+}
+
+/*=========================================================
+            OVERFLOW FIX
+=========================================================*/
+
+html,
+body{
+
+overflow-x:hidden;
+
+}
+
+.gov-app-section,
+.gov-app-container{
+
+overflow:hidden;
+
+}
+
+.gov-app-content,
+.gov-mobile-wrapper,
+.gov-download-box{
+
+max-width:100%;
+
+}
+</style>
+<script>
+/*=========================================================
+        DOWNLOAD GOVERNMENT APP SECTION
+                    PART 8
+      Scroll Reveal + Floating + Interactions
+=========================================================*/
+
+document.addEventListener("DOMContentLoaded", () => {
+
+/*=================================================
+            SCROLL REVEAL
+=================================================*/
+
+const revealElements = document.querySelectorAll(".reveal-up");
+
+const observer = new IntersectionObserver((entries) => {
+
+    entries.forEach(entry => {
+
+        if (!entry.isIntersecting) return;
+
+        entry.target.classList.add("show");
+
+        observer.unobserve(entry.target);
+
+    });
+
+},{
+
+    threshold:0.2
+
+});
+
+revealElements.forEach(item=>observer.observe(item));
+
+
+
+/*=================================================
+            STAGGER FEATURE CARDS
+=================================================*/
+
+const featureCards=document.querySelectorAll(".gov-feature-item");
+
+featureCards.forEach((card,index)=>{
+
+    card.style.opacity="0";
+
+    card.style.transform="translateY(40px)";
+
+    card.style.transition=`all .7s ease ${index*0.15}s`;
+
+});
+
+const featureObserver=new IntersectionObserver((entries)=>{
+
+    entries.forEach(entry=>{
+
+        if(!entry.isIntersecting) return;
+
+        featureCards.forEach(card=>{
+
+            card.style.opacity="1";
+
+            card.style.transform="translateY(0)";
+
+        });
+
+        featureObserver.unobserve(entry.target);
+
+    });
+
+},{
+
+    threshold:.25
+
+});
+
+const featureSection=document.querySelector(".gov-feature-list");
+
+if(featureSection){
+
+    featureObserver.observe(featureSection);
+
+}
+
+
+
+/*=================================================
+            FLOATING PHONE
+=================================================*/
+
+const phone=document.querySelector(".phone-frame");
+
+if(phone){
+
+    let floating=true;
+
+    function floatPhone(){
+
+        if(!floating) return;
+
+        phone.animate([
+
+            {
+
+                transform:"translateY(0px)"
+
+            },
+
+            {
+
+                transform:"translateY(-15px)"
+
+            },
+
+            {
+
+                transform:"translateY(0px)"
+
+            }
+
+        ],{
+
+            duration:3500,
+
+            easing:"ease-in-out"
+
+        });
+
+    }
+
+    floatPhone();
+
+    setInterval(floatPhone,3500);
+
+}
+
+
+
+/*=================================================
+            PHONE PARALLAX
+=================================================*/
+
+if(window.innerWidth>992 && phone){
+
+    phone.addEventListener("mousemove",(e)=>{
+
+        const rect=phone.getBoundingClientRect();
+
+        const x=e.clientX-rect.left;
+
+        const y=e.clientY-rect.top;
+
+        const moveX=((x/rect.width)-0.5)*12;
+
+        const moveY=((y/rect.height)-0.5)*12;
+
+        phone.style.transform=
+
+        `translate(${moveX}px,${moveY}px) rotate(-5deg)`;
+
+    });
+
+    phone.addEventListener("mouseleave",()=>{
+
+        phone.style.transform="";
+
+    });
+
+}
+
+
+
+/*=================================================
+            DOWNLOAD BUTTON RIPPLE
+=================================================*/
+
+const btn=document.querySelector(".download-btn");
+
+if(btn){
+
+    btn.addEventListener("click",function(e){
+
+        const ripple=document.createElement("span");
+
+        ripple.className="btn-ripple";
+
+        this.appendChild(ripple);
+
+        const rect=this.getBoundingClientRect();
+
+        ripple.style.left=e.clientX-rect.left+"px";
+
+        ripple.style.top=e.clientY-rect.top+"px";
+
+        setTimeout(()=>{
+
+            ripple.remove();
+
+        },700);
+
+    });
+
+}
+
+
+
+/*=================================================
+            STORE BUTTON BOUNCE
+=================================================*/
+
+document.querySelectorAll(".store-buttons img")
+
+.forEach(img=>{
+
+    img.addEventListener("mouseenter",()=>{
+
+        img.animate([
+
+            {
+
+                transform:"translateY(0)"
+
+            },
+
+            {
+
+                transform:"translateY(-8px)"
+
+            },
+
+            {
+
+                transform:"translateY(0)"
+
+            }
+
+        ],{
+
+            duration:500
+
+        });
+
+    });
+
+});
+
+
+
+/*=================================================
+            QR CARD PULSE
+=================================================*/
+
+const qr=document.querySelector(".qr-card");
+
+if(qr){
+
+    setInterval(()=>{
+
+        qr.animate([
+
+            {
+
+                transform:"scale(1)"
+
+            },
+
+            {
+
+                transform:"scale(1.04)"
+
+            },
+
+            {
+
+                transform:"scale(1)"
+
+            }
+
+        ],{
+
+            duration:1600
+
+        });
+
+    },4500);
+
+}
+
+
+
+/*=================================================
+            BADGE ICON ROTATION
+=================================================*/
+
+const badge=document.querySelector(".gov-app-badge");
+
+if(badge){
+
+    badge.addEventListener("mouseenter",()=>{
+
+        const icon=badge.querySelector("i");
+
+        icon.style.transform="rotate(360deg)";
+
+    });
+
+    badge.addEventListener("mouseleave",()=>{
+
+        const icon=badge.querySelector("i");
+
+        icon.style.transform="rotate(0deg)";
+
+    });
+
+}
+
+
+
+/*=================================================
+            BUTTON HOVER GLOW
+=================================================*/
+
+document.querySelectorAll(".download-btn,.learn-btn")
+
+.forEach(button=>{
+
+    button.addEventListener("mouseenter",()=>{
+
+        button.style.boxShadow=
+
+        "0 18px 45px rgba(13,110,253,.35)";
+
+    });
+
+    button.addEventListener("mouseleave",()=>{
+
+        button.style.boxShadow="";
+
+    });
+
+});
+
+
+
+/*=================================================
+            MOBILE OPTIMIZATION
+=================================================*/
+
+function mobileLayout(){
+
+    if(window.innerWidth<=768){
+
+        if(phone){
+
+            phone.style.transform="none";
+
+        }
+
+    }
+
+}
+
+mobileLayout();
+
+window.addEventListener("resize",mobileLayout);
+
+
+
+console.log("Government App Section Loaded Successfully");
+
+});
+    </script>
+
+
+<!--=========================================================
+                    FOOTER SECTION
+                        PART 1
+==========================================================-->
+
+<footer class="gov-footer reveal-up">
+
+    <!-- Animated Background -->
+    <div class="gov-footer-bg-shape shape-1"></div>
+    <div class="gov-footer-bg-shape shape-2"></div>
+    <div class="gov-footer-bg-shape shape-3"></div>
+
+    <div class="gov-footer-container">
+
+        <!--==================================================
+                    FOOTER TOP
+        ===================================================-->
+
+        <div class="gov-footer-top">
+
+            <!--=========================================
+                    COMPANY DETAILS
+            ==========================================-->
+
+            <div class="footer-column footer-company reveal-up">
+
+                <!-- Logo -->
+                <a href="index.html" class="footer-logo">
+
+                    <img src="images/logo.png"
+                        alt="Stackly Logo">
+
+                </a>
+
+                <p class="footer-description">
+
+                    We help citizens access Government
+                    services quickly, securely and efficiently.
+                    Our mission is to provide a transparent,
+                    digital-first experience for every citizen.
+
+                </p>
+
+                <!--=============================
+                        SOCIAL ICONS
+                ==============================-->
+
+                <div class="footer-social">
+
+                    <a href="404.html"
+                        class="social-icon">
+
+                        <i class="fa-brands fa-facebook-f"></i>
+
+                    </a>
+
+                    <a href="404.html"
+                        class="social-icon">
+
+                        <i class="fa-brands fa-x-twitter"></i>
+
+                    </a>
+
+                    <a href="404.html"
+                        class="social-icon">
+
+                        <i class="fa-brands fa-instagram"></i>
+
+                    </a>
+
+                    <a href="404.html"
+                        class="social-icon">
+
+                        <i class="fa-brands fa-youtube"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!--=========================================
+                    QUICK LINKS
+            ==========================================-->
+
+            <div class="footer-column reveal-up">
+
+                <h3>
+
+                    Quick Links
+
+                </h3>
+
+                <ul>
+
+                    <li>
+
+                        <a href="index.html">
+
+                            <i class="fa-solid fa-angle-right"></i>
+
+                            Home
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="services.html">
+
+                            <i class="fa-solid fa-angle-right"></i>
+
+                            Services
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="departments.html">
+
+                            <i class="fa-solid fa-angle-right"></i>
+
+                            Departments
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="schemes.html">
+
+                            <i class="fa-solid fa-angle-right"></i>
+
+                            Schemes
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="grievances.html">
+
+                            <i class="fa-solid fa-angle-right"></i>
+
+                            Grievances
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="contact.html">
+
+                            <i class="fa-solid fa-angle-right"></i>
+
+                            Contact Us
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <!--=========================================
+                    HELP & SUPPORT
+            ==========================================-->
+
+            <div class="footer-column reveal-up">
+
+                <h3>
+
+                    Help & Support
+
+                </h3>
+
+                <ul>
+
+                    <li>
+
+                        <a href="404.html">
+
+                            <i class="fa-solid fa-angle-right"></i>
+
+                            FAQs
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="404.html">
+
+                            <i class="fa-solid fa-angle-right"></i>
+
+                            Help Manual
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="404.html">
+
+                            <i class="fa-solid fa-angle-right"></i>
+
+                            Terms & Conditions
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="404.html">
+
+                            <i class="fa-solid fa-angle-right"></i>
+
+                            Privacy Policy
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="404.html">
+
+                            <i class="fa-solid fa-angle-right"></i>
+
+                            Website Policies
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="404.html">
+
+                            <i class="fa-solid fa-angle-right"></i>
+
+                            Sitemap
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <!--=========================================
+                    NEWSLETTER
+            ==========================================-->
+
+            <div class="footer-column newsletter-column reveal-up">
+
+                <h3>
+
+                    Stay Connected
+
+                </h3>
+
+                <p>
+
+                    Subscribe to receive the latest
+                    government announcements,
+                    schemes and service updates.
+
+                </p>
+
+                <!--=============================
+                        NEWSLETTER FORM
+                ==============================-->
+
+                <form id="footerSubscribeForm"
+                    class="newsletter-form">
+
+                    <div class="newsletter-input">
+
+                        <input
+                            type="email"
+                            id="footerEmail"
+                            placeholder="Enter your email"
+                            autocomplete="off">
+
+                        <button
+                            type="submit">
+
+                            <i class="fa-solid fa-paper-plane"></i>
+
+                        </button>
+
+                    </div>
+
+                    <!-- Error -->
+
+                    <small
+                        id="footerEmailError"
+                        class="footer-error">
+
+                    </small>
+
+                    <!-- Subscribe -->
+
+                    <button
+                        class="subscribe-btn"
+                        type="submit">
+
+                        Subscribe
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+        <!--==================================================
+                    FOOTER BOTTOM
+        ===================================================-->
+
+        <div class="gov-footer-bottom reveal-up">
+
+            <!-- Left -->
+
+            <div class="footer-bottom-left">
+
+                <img
+                    src="images/emblem.png"
+                    alt="Government">
+
+                <span>
+
+                    Government of India
+
+                </span>
+
+            </div>
+
+            <!-- Center -->
+
+            <div class="footer-bottom-center">
+
+                © 2026 Stackly Advisory Group.
+                All Rights Reserved.
+
+            </div>
+
+            <!-- Right -->
+
+            <div class="footer-bottom-right">
+
+                <a href="404.html">
+
+                    Privacy Policy
+
+                </a>
+
+                <span>|</span>
+
+                <a href="404.html">
+
+                    Terms of Service
+
+                </a>
+
+                <img
+                    src="images/digital-india.png"
+                    alt="Digital India">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<!--=========================================================
+            SUCCESS POPUP
+==========================================================-->
+
+<div
+    class="footer-popup"
+    id="footerPopup">
+
+    <div class="footer-popup-box">
+
+        <i class="fa-solid fa-circle-check"></i>
+
+        <h3>
+
+            Successfully Subscribed!
+
+        </h3>
+
+        <p>
+
+            Thank you for subscribing.
+            Redirecting...
+
+        </p>
+
+    </div>
+
+</div>
+
+<style>
+/*=========================================================
+                    FOOTER SECTION
+                     PART 2A.1
+            Main Layout + Desktop Styling
+=========================================================*/
+
+.gov-footer{
+
+position:relative;
+
+overflow:hidden;
+
+padding:60px 0 0;
+
+background:linear-gradient(135deg,#3da7a3,#4db1b2);
+
+color:#fff;
+
+z-index:1;
+
+}
+
+/*=========================================================
+            ANIMATED BACKGROUND
+=========================================================*/
+
+.gov-footer-bg-shape{
+
+position:absolute;
+
+border-radius:50%;
+
+filter:blur(80px);
+
+opacity:.18;
+
+animation:footerFloat 12s ease-in-out infinite;
+
+}
+
+.shape-1{
+
+width:260px;
+
+height:260px;
+
+background:#ffffff;
+
+top:-80px;
+
+left:-60px;
+
+}
+
+.shape-2{
+
+width:320px;
+
+height:320px;
+
+background:#8cf5ff;
+
+right:-100px;
+
+top:120px;
+
+animation-delay:2s;
+
+}
+
+.shape-3{
+
+width:220px;
+
+height:220px;
+
+background:#00d5ff;
+
+bottom:-70px;
+
+left:40%;
+
+animation-delay:4s;
+
+}
+
+@keyframes footerFloat{
+
+0%{
+
+    transform:translateY(0px);
+
+}
+
+50%{
+
+    transform:translateY(-25px);
+
+}
+
+100%{
+
+    transform:translateY(0px);
+
+}
+
+}
+
+/*=========================================================
+            CONTAINER
+=========================================================*/
+
+/*=========================================================
+                FOOTER CONTAINER
+=========================================================*/
+
+.gov-footer-container{
+
+width:85%;
+
+max-width:1200px;   /* Reduce from 1350px */
+
+margin:0 auto;
+
+position:relative;
+
+z-index:5;
+
+}
+/*=========================================================
+            TOP GRID
+=========================================================*/
+
+.gov-footer-top{
+
+display:grid;
+
+grid-template-columns:
+
+1.35fr
+
+.9fr
+
+.9fr
+
+1.1fr;
+
+gap:60px;
+
+padding-bottom:45px;
+
+}
+
+/*=========================================================
+            COMMON COLUMN
+=========================================================*/
+
+.footer-column{
+
+display:flex;
+
+flex-direction:column;
+
+}
+
+.footer-column h3{
+
+font-size:22px;
+
+font-weight:700;
+
+margin-bottom:24px;
+
+position:relative;
+
+}
+
+.footer-column h3::after{
+
+content:"";
+
+width:38px;
+
+height:3px;
+
+border-radius:30px;
+
+background:#ffffff;
+
+position:absolute;
+
+left:0;
+
+bottom:-10px;
+
+}
+
+/*=========================================================
+            COMPANY
+=========================================================*/
+
+.footer-logo{
+
+display:inline-flex;
+
+margin-bottom:25px;
+
+}
+
+.footer-logo img{
+
+width:210px;
+
+object-fit:contain;
+
+}
+
+.footer-description{
+
+font-size:15px;
+
+line-height:1.9;
+
+color:#eefefe;
+
+margin-bottom:32px;
+
+max-width:330px;
+
+}
+
+/*=========================================================
+            SOCIAL ICONS
+=========================================================*/
+
+.footer-social{
+
+display:flex;
+
+align-items:center;
+
+gap:18px;
+
+}
+
+.social-icon{
+
+width:54px;
+
+height:54px;
+
+border-radius:50%;
+
+border:1px solid rgba(255,255,255,.45);
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+color:#fff;
+
+font-size:20px;
+
+text-decoration:none;
+
+transition:.45s;
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(8px);
+
+}
+
+/*=========================================================
+            LINKS
+=========================================================*/
+
+.footer-column ul{
+
+padding:0;
+
+margin:0;
+
+list-style:none;
+
+}
+
+.footer-column ul li{
+
+margin-bottom:16px;
+
+}
+
+.footer-column ul li a{
+
+color:#eefefe;
+
+text-decoration:none;
+
+display:flex;
+
+align-items:center;
+
+gap:10px;
+
+font-size:15px;
+
+transition:.35s;
+
+}
+
+.footer-column ul li a i{
+
+font-size:12px;
+
+}
+
+/*=========================================================
+            NEWSLETTER
+=========================================================*/
+
+.newsletter-column p{
+
+color:#eefefe;
+
+line-height:1.8;
+
+margin-bottom:28px;
+
+font-size:15px;
+
+}
+
+.newsletter-form{
+
+width:100%;
+
+}
+
+.newsletter-input{
+
+display:flex;
+
+align-items:center;
+
+overflow:hidden;
+
+border-radius:14px;
+
+background:rgba(255,255,255,.10);
+
+border:1px solid rgba(255,255,255,.25);
+
+backdrop-filter:blur(12px);
+
+}
+
+.newsletter-input input{
+
+flex:1;
+
+border:none;
+
+background:transparent;
+
+padding:16px 18px;
+
+color:#fff;
+
+font-size:15px;
+
+outline:none;
+
+}
+
+.newsletter-input input::placeholder{
+
+color:#ecffff;
+
+}
+
+.newsletter-input button{
+
+width:62px;
+
+border:none;
+
+cursor:pointer;
+
+color:#fff;
+
+background:#2b6cf5;
+
+height:56px;
+
+font-size:18px;
+
+}
+
+.subscribe-btn{
+
+margin-top:20px;
+
+padding:15px 34px;
+
+border:none;
+
+border-radius:12px;
+
+background:#2b6cf5;
+
+color:#fff;
+
+cursor:pointer;
+
+font-size:15px;
+
+font-weight:600;
+
+transition:.4s;
+
+}
+
+.footer-error{
+
+display:block;
+
+color:#ffe2e2;
+
+font-size:13px;
+
+margin-top:10px;
+
+min-height:18px;
+
+}
+
+/*=========================================================
+            FOOTER BOTTOM
+=========================================================*/
+
+.gov-footer-bottom{
+
+border-top:1px solid rgba(255,255,255,.18);
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+gap:25px;
+
+padding:26px 0;
+
+font-size:14px;
+
+}
+
+.footer-bottom-left,
+
+.footer-bottom-right{
+
+display:flex;
+
+align-items:center;
+
+gap:14px;
+
+}
+
+.footer-bottom-left img{
+
+width:42px;
+
+}
+
+.footer-bottom-right img{
+
+width:95px;
+
+}
+
+.footer-bottom-right a{
+
+text-decoration:none;
+
+color:#ffffff;
+
+transition:.35s;
+
+}
+
+.footer-bottom-center{
+
+text-align:center;
+
+color:#edfefe;
+
+}
+
+/*=========================================================
+            SUCCESS POPUP
+=========================================================*/
+
+.footer-popup{
+
+position:fixed;
+
+inset:0;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+background:rgba(0,0,0,.45);
+
+opacity:0;
+
+visibility:hidden;
+
+transition:.4s;
+
+z-index:9999;
+
+}
+
+.footer-popup.active{
+
+opacity:1;
+
+visibility:visible;
+
+}
+
+.footer-popup-box{
+
+width:360px;
+
+background:#fff;
+
+border-radius:22px;
+
+padding:35px;
+
+text-align:center;
+
+color:#222;
+
+}
+
+.footer-popup-box i{
+
+font-size:60px;
+
+color:#18b26d;
+
+margin-bottom:18px;
+
+}
+
+.footer-popup-box h3{
+
+font-size:28px;
+
+margin-bottom:10px;
+
+}
+
+.footer-popup-box p{
+
+color:#666;
+
+line-height:1.7;
+
+}
+
+/*=========================================================
+                    FOOTER SECTION
+                      PART 2B.1
+        Desktop + Laptop Responsive (992px - 1400px)
+=========================================================*/
+
+/*=========================================================
+                LARGE DESKTOP
+=========================================================*/
+
+@media (max-width:1400px){
+
+.gov-footer{
+
+    padding:80px 0 0;
+
+}
+
+.gov-footer-container{
+
+    width:94%;
+
+}
+
+.gov-footer-top{
+
+    grid-template-columns:
+    1.25fr
+    .9fr
+    .9fr
+    1fr;
+
+    gap:55px;
+
+}
+
+.footer-logo img{
+
+    width:190px;
+
+}
+
+.footer-description{
+
+    max-width:300px;
+
+    font-size:15px;
+
+}
+
+}
+
+/*=========================================================
+                LAPTOP
+=========================================================*/
+
+@media (max-width:1200px){
+
+.gov-footer{
+
+    padding:75px 0 0;
+
+}
+
+.gov-footer-container{
+
+    width:95%;
+
+}
+
+.gov-footer-top{
+
+    grid-template-columns:
+
+    repeat(2,1fr);
+
+    gap:50px 45px;
+
+    align-items:flex-start;
+
+}
+
+.footer-column{
+
+    width:100%;
+
+}
+
+.footer-logo img{
+
+    width:180px;
+
+}
+
+.footer-description{
+
+    max-width:100%;
+
+}
+
+.footer-column h3{
+
+    font-size:21px;
+
+}
+
+.footer-column ul li{
+
+    margin-bottom:14px;
+
+}
+
+.newsletter-column{
+
+    width:100%;
+
+}
+
+.newsletter-input{
+
+    width:100%;
+
+}
+
+.newsletter-input input{
+
+    padding:15px 18px;
+
+    font-size:15px;
+
+}
+
+.newsletter-input button{
+
+    width:58px;
+
+    height:54px;
+
+}
+
+.subscribe-btn{
+
+    width:180px;
+
+    padding:14px;
+
+}
+
+.footer-social{
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+}
+
+.social-icon{
+
+    width:50px;
+
+    height:50px;
+
+    font-size:18px;
+
+}
+
+.gov-footer-bottom{
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    text-align:center;
+
+    gap:20px;
+
+    padding:24px 0;
+
+}
+
+.footer-bottom-left,
+
+.footer-bottom-center,
+
+.footer-bottom-right{
+
+    width:100%;
+
+    justify-content:center;
+
+}
+
+}
+
+/*=========================================================
+            SMALL LAPTOP
+=========================================================*/
+
+@media (max-width:992px){
+
+.gov-footer{
+
+    padding:70px 0 0;
+
+}
+
+.gov-footer-top{
+
+    grid-template-columns:
+
+    repeat(2,minmax(280px,1fr));
+
+    gap:45px 35px;
+
+}
+
+.footer-column{
+
+    align-self:flex-start;
+
+}
+
+.footer-logo img{
+
+    width:170px;
+
+}
+
+.footer-description{
+
+    font-size:14px;
+
+    line-height:1.8;
+
+}
+
+.footer-column h3{
+
+    font-size:20px;
+
+}
+
+.footer-column ul li a{
+
+    font-size:14px;
+
+}
+
+.newsletter-column p{
+
+    font-size:14px;
+
+}
+
+.newsletter-input{
+
+    border-radius:12px;
+
+}
+
+.newsletter-input input{
+
+    padding:14px 16px;
+
+}
+
+.newsletter-input button{
+
+    width:55px;
+
+}
+
+.subscribe-btn{
+
+    width:170px;
+
+    font-size:14px;
+
+}
+
+.gov-footer-bottom{
+
+    gap:18px;
+
+    font-size:13px;
+
+}
+
+.footer-bottom-left img{
+
+    width:38px;
+
+}
+
+.footer-bottom-right img{
+
+    width:82px;
+
+}
+
+.footer-popup-box{
+
+    width:340px;
+
+    padding:30px;
+
+}
+
+}
+
+/*=========================================================
+        DESKTOP HOVER IMPROVEMENTS
+=========================================================*/
+
+@media (min-width:993px){
+
+.footer-column:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.social-icon:hover{
+
+    transform:
+
+    translateY(-10px)
+
+    rotate(360deg)
+
+    scale(1.12);
+
+}
+
+.subscribe-btn:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.newsletter-input:hover{
+
+    transform:translateY(-3px);
+
+}
+
+}
+
+/*=========================================================
+                    FOOTER SECTION
+                      PART 2B.2
+          Tablet + Mobile Responsive (992px - 320px)
+=========================================================*/
+
+/*=========================================================
+                    TABLET
+=========================================================*/
+
+@media (max-width:991px){
+
+.gov-footer{
+
+    padding:70px 0 0;
+
+}
+
+.gov-footer-container{
+
+    width:92%;
+
+}
+
+.gov-footer-top{
+
+    grid-template-columns:1fr 1fr;
+
+    gap:45px 35px;
+
+}
+
+.footer-column{
+
+    width:100%;
+
+}
+
+.footer-company{
+
+    grid-column:1/-1;
+
+    text-align:center;
+
+    align-items:center;
+
+}
+
+.footer-description{
+
+    max-width:600px;
+
+    margin:20px auto 30px;
+
+}
+
+.footer-column h3{
+
+    font-size:22px;
+
+}
+
+.footer-column h3::after{
+
+    left:0;
+
+}
+
+.newsletter-column{
+
+    grid-column:1/-1;
+
+}
+
+.newsletter-form{
+
+    max-width:520px;
+
+    margin:auto;
+
+}
+
+.gov-footer-bottom{
+
+    flex-direction:column;
+
+    gap:18px;
+
+    text-align:center;
+
+    padding:28px 0;
+
+}
+
+.footer-bottom-left,
+
+.footer-bottom-center,
+
+.footer-bottom-right{
+
+    justify-content:center;
+
+    width:100%;
+
+    flex-wrap:wrap;
+
+}
+
+}
+
+/*=========================================================
+                MOBILE
+=========================================================*/
+
+@media (max-width:768px){
+
+.gov-footer{
+
+    padding:60px 0 0;
+
+}
+
+.gov-footer-container{
+
+    width:94%;
+
+}
+
+.gov-footer-top{
+
+    grid-template-columns:1fr;
+
+    gap:45px;
+
+    text-align:center;
+
+}
+
+.footer-column{
+
+    align-items:center;
+
+}
+
+.footer-column h3{
+
+    font-size:22px;
+
+}
+
+.footer-column h3::after{
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+}
+
+.footer-description{
+
+    max-width:100%;
+
+    margin-bottom:30px;
+
+}
+
+.footer-column ul{
+
+    width:100%;
+
+}
+
+.footer-column ul li{
+
+    text-align:center;
+
+}
+
+.footer-column ul li a{
+
+    justify-content:center;
+
+    font-size:15px;
+
+}
+
+.footer-social{
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+
+}
+
+.social-icon{
+
+    width:50px;
+
+    height:50px;
+
+    font-size:18px;
+
+}
+
+.newsletter-column p{
+
+    text-align:center;
+
+}
+
+.newsletter-form{
+
+    width:100%;
+
+}
+
+.newsletter-input{
+
+    width:100%;
+
+}
+
+.newsletter-input input{
+
+    padding:15px;
+
+    font-size:15px;
+
+}
+
+.newsletter-input button{
+
+    width:58px;
+
+    height:54px;
+
+}
+
+.subscribe-btn{
+
+    width:100%;
+
+    padding:15px;
+
+    margin-top:18px;
+
+}
+
+.gov-footer-bottom{
+
+    font-size:14px;
+
+    gap:15px;
+
+}
+
+.footer-bottom-left img{
+
+    width:40px;
+
+}
+
+.footer-bottom-right img{
+
+    width:90px;
+
+    margin-top:10px;
+
+}
+
+}
+
+/*=========================================================
+            SMALL MOBILE
+=========================================================*/
+
+@media (max-width:576px){
+
+.gov-footer{
+
+    padding:50px 0 0;
+
+}
+
+.gov-footer-container{
+
+    width:95%;
+
+}
+
+.gov-footer-top{
+
+    gap:40px;
+
+}
+
+.footer-logo img{
+
+    width:170px;
+
+}
+
+.footer-description{
+
+    font-size:14px;
+
+    line-height:1.8;
+
+}
+
+.footer-column h3{
+
+    font-size:20px;
+
+}
+
+.footer-column ul li{
+
+    margin-bottom:14px;
+
+}
+
+.footer-column ul li a{
+
+    font-size:14px;
+
+}
+
+.social-icon{
+
+    width:46px;
+
+    height:46px;
+
+    font-size:17px;
+
+}
+
+.newsletter-column p{
+
+    font-size:14px;
+
+}
+
+.newsletter-input{
+
+    border-radius:12px;
+
+}
+
+.newsletter-input input{
+
+    font-size:14px;
+
+    padding:14px;
+
+}
+
+.newsletter-input button{
+
+    width:54px;
+
+    height:52px;
+
+    font-size:16px;
+
+}
+
+.subscribe-btn{
+
+    font-size:14px;
+
+    padding:14px;
+
+}
+
+.gov-footer-bottom{
+
+    padding:22px 0;
+
+    font-size:13px;
+
+}
+
+.footer-bottom-left img{
+
+    width:34px;
+
+}
+
+.footer-bottom-right img{
+
+    width:75px;
+
+}
+
+.footer-popup-box{
+
+    width:92%;
+
+    padding:28px 20px;
+
+}
+
+.footer-popup-box h3{
+
+    font-size:24px;
+
+}
+
+.footer-popup-box p{
+
+    font-size:14px;
+
+}
+
+}
+
+/*=========================================================
+            EXTRA SMALL MOBILE
+=========================================================*/
+
+@media (max-width:400px){
+
+.gov-footer{
+
+    padding:45px 0 0;
+
+}
+
+.footer-logo img{
+
+    width:150px;
+
+}
+
+.footer-description{
+
+    font-size:13px;
+
+}
+
+.footer-column h3{
+
+    font-size:18px;
+
+}
+
+.footer-column ul li a{
+
+    font-size:13px;
+
+}
+
+.social-icon{
+
+    width:42px;
+
+    height:42px;
+
+    font-size:16px;
+
+}
+
+.newsletter-input{
+
+    flex-direction:column;
+
+    border-radius:14px;
+
+    overflow:hidden;
+
+}
+
+.newsletter-input input{
+
+    width:100%;
+
+    text-align:center;
+
+}
+
+.newsletter-input button{
+
+    width:100%;
+
+    height:48px;
+
+    border-radius:0;
+
+}
+
+.subscribe-btn{
+
+    width:100%;
+
+}
+
+.footer-bottom-right{
+
+    flex-direction:column;
+
+    gap:10px;
+
+}
+
+.footer-bottom-right span{
+
+    display:none;
+
+}
+
+}
+
+/*=========================================================
+        LANDSCAPE MOBILE FIX
+=========================================================*/
+
+@media (max-height:500px) and (orientation:landscape){
+
+.gov-footer{
+
+    padding-top:45px;
+
+}
+
+.gov-footer-top{
+
+    gap:30px;
+
+}
+
+}
+
+/*=========================================================
+        OVERFLOW FIX
+=========================================================*/
+
+html,
+body{
+
+overflow-x:hidden;
+
+}
+
+.gov-footer{
+
+overflow:hidden;
+
+}
+
+.gov-footer img{
+
+max-width:100%;
+
+height:auto;
+
+}
+
+.footer-column,
+
+.newsletter-form,
+
+.newsletter-input,
+
+.footer-bottom-left,
+
+.footer-bottom-right{
+
+max-width:100%;
+
+}
+
+    </style>
+
+    <script>
+
+        /*=========================================================
+                    FOOTER SECTION
+                        PART 3
+=========================================================*/
+
+document.addEventListener("DOMContentLoaded", () => {
+
+/*==================================================
+            SCROLL REVEAL ANIMATION
+==================================================*/
+
+const revealElements = document.querySelectorAll(".reveal-up");
+
+const revealObserver = new IntersectionObserver((entries) => {
+
+    entries.forEach((entry) => {
+
+        if (entry.isIntersecting) {
+
+            entry.target.classList.add("show");
+
+            revealObserver.unobserve(entry.target);
+
+        }
+
+    });
+
+}, {
+
+    threshold: 0.15
+
+});
+
+revealElements.forEach((element) => {
+
+    revealObserver.observe(element);
+
+});
+
+/*==================================================
+            STAGGER ANIMATION
+==================================================*/
+
+const footerItems = document.querySelectorAll(
+
+    ".footer-company," +
+
+    ".gov-footer-top .footer-column," +
+
+    ".gov-footer-bottom"
+
+);
+
+footerItems.forEach((item, index) => {
+
+    item.style.transitionDelay = `${index * 0.15}s`;
+
+});
+
+/*==================================================
+            EMAIL VALIDATION
+==================================================*/
+
+const form = document.getElementById("footerSubscribeForm");
+
+const emailInput = document.getElementById("footerEmail");
+
+const emailError = document.getElementById("footerEmailError");
+
+const popup = document.getElementById("footerPopup");
+
+const emailPattern =
+
+    /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+
+if (form) {
+
+    form.addEventListener("submit", function (e) {
+
+        e.preventDefault();
+
+        const email = emailInput.value.trim();
+
+        emailError.textContent = "";
+
+        emailInput.style.border = "";
+
+        if (email === "") {
+
+            emailError.textContent =
+
+                "Please fill details correctly.";
+
+            emailInput.style.border =
+
+                "2px solid #ff4d4d";
+
+            emailInput.focus();
+
+            return;
+
+        }
+
+        if (!emailPattern.test(email)) {
+
+            emailError.textContent =
+
+                "Please fill details correctly.";
+
+            emailInput.style.border =
+
+                "2px solid #ff4d4d";
+
+            emailInput.focus();
+
+            return;
+
+        }
+
+        emailInput.style.border =
+
+            "2px solid #22c55e";
+
+        popup.classList.add("active");
+
+        setTimeout(() => {
+
+            window.location.href = "404.html";
+
+        }, 1800);
+
+    });
+
+}
+
+/*==================================================
+            REMOVE ERROR WHILE TYPING
+==================================================*/
+
+if (emailInput) {
+
+    emailInput.addEventListener("input", () => {
+
+        emailError.textContent = "";
+
+        emailInput.style.border = "";
+
+    });
+
+}
+
+/*==================================================
+            SOCIAL ICON HOVER
+==================================================*/
+
+const socialIcons =
+
+    document.querySelectorAll(".social-icon");
+
+socialIcons.forEach((icon) => {
+
+    icon.addEventListener("mouseenter", () => {
+
+        icon.animate([
+
+            {
+
+                transform: "translateY(0) rotate(0deg)"
+
+            },
+
+            {
+
+                transform: "translateY(-10px) rotate(180deg)"
+
+            },
+
+            {
+
+                transform: "translateY(-6px) rotate(360deg)"
+
+            }
+
+        ], {
+
+            duration: 500,
+
+            easing: "ease"
+
+        });
+
+    });
+
+});
+
+/*==================================================
+            FOOTER LINKS
+==================================================*/
+
+const footerLinks =
+
+    document.querySelectorAll(
+
+        ".footer-column ul li a"
+
+    );
+
+footerLinks.forEach((link) => {
+
+    link.addEventListener("mouseenter", () => {
+
+        link.style.transform =
+
+            "translateX(8px)";
+
+    });
+
+    link.addEventListener("mouseleave", () => {
+
+        link.style.transform =
+
+            "translateX(0px)";
+
+    });
+
+});
+
+/*==================================================
+            SUBSCRIBE BUTTON
+==================================================*/
+
+const subscribeBtn =
+
+    document.querySelector(".subscribe-btn");
+
+if (subscribeBtn) {
+
+    subscribeBtn.addEventListener(
+
+        "mouseenter",
+
+        () => {
+
+            subscribeBtn.animate([
+
+                {
+
+                    transform: "translateY(0)"
+
+                },
+
+                {
+
+                    transform: "translateY(-6px)"
+
+                },
+
+                {
+
+                    transform: "translateY(0)"
+
+                }
+
+            ], {
+
+                duration: 450
+
+            });
+
+        }
+
+    );
+
+}
+
+/*==================================================
+            NEWSLETTER INPUT
+==================================================*/
+
+if (emailInput) {
+
+    emailInput.addEventListener("focus", () => {
+
+        emailInput.parentElement.style.boxShadow =
+
+            "0 0 25px rgba(255,255,255,.35)";
+
+    });
+
+    emailInput.addEventListener("blur", () => {
+
+        emailInput.parentElement.style.boxShadow =
+
+            "";
+
+    });
+
+}
+
+/*==================================================
+            FLOATING BACKGROUND
+==================================================*/
+
+const shapes =
+
+    document.querySelectorAll(
+
+        ".gov-footer-bg-shape"
+
+    );
+
+shapes.forEach((shape, index) => {
+
+    setInterval(() => {
+
+        shape.animate([
+
+            {
+
+                transform:
+
+                    "translateY(0px)"
+
+            },
+
+            {
+
+                transform:
+
+                    "translateY(-20px)"
+
+            },
+
+            {
+
+                transform:
+
+                    "translateY(0px)"
+
+            }
+
+        ], {
+
+            duration: 6000 + (index * 1000),
+
+            easing: "ease-in-out"
+
+        });
+
+    }, 6000);
+
+});
+
+/*==================================================
+            POPUP CLOSE
+==================================================*/
+
+if (popup) {
+
+    popup.addEventListener("click", (e) => {
+
+        if (e.target === popup) {
+
+            popup.classList.remove("active");
+
+        }
+
+    });
+
+}
+
+/*==================================================
+            MOBILE OPTIMIZATION
+==================================================*/
+
+function mobileFix() {
+
+    if (window.innerWidth <= 768) {
+
+        footerLinks.forEach((link) => {
+
+            link.style.transform = "none";
+
+        });
+
+    }
+
+}
+
+mobileFix();
+
+window.addEventListener(
+
+    "resize",
+
+    mobileFix
+
+);
+
+/*==================================================
+            LOADED
+==================================================*/
+
+console.log(
+
+    "Footer Loaded Successfully"
+
+);
+
+});
+        </script>
+
+    
+</body>
+
+</html>

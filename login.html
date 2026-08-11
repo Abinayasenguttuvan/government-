@@ -1,0 +1,3161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Stackly | Sign In</title>
+
+    <!--====================================================
+        GOOGLE FONT
+    ======================================================-->
+
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+
+    <!--====================================================
+        FONT AWESOME
+    ======================================================-->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+
+    <!--====================================================
+        LOGIN CSS
+    ======================================================-->
+
+    <link rel="stylesheet"
+        href="css/gov-login.css">
+
+</head>
+
+
+<body class="gov-login-body">
+
+
+<!--========================================================
+    BACKGROUND
+=========================================================-->
+
+<div class="gov-login-background"></div>
+
+<div class="gov-login-overlay"></div>
+
+
+<!--========================================================
+    BACK TO HOME
+=========================================================-->
+
+<a href="index.html"
+    class="gov-login-back-home">
+
+    <i class="fa-solid fa-arrow-left"></i>
+
+    <span>Back to Home</span>
+
+</a>
+
+
+<!--========================================================
+    MAIN LOGIN WRAPPER
+=========================================================-->
+
+<main class="gov-login-page">
+
+
+    <!--====================================================
+        LOGIN CARD
+    ======================================================-->
+
+    <section class="gov-login-card">
+
+
+        <!--================================================
+            LEFT SIDE
+        =================================================-->
+
+        <div class="gov-login-left">
+
+
+            <!--============================================
+                LOGO
+            =============================================-->
+
+            <a href="index.html"
+                class="gov-login-logo reveal-down">
+
+                <img src="images/logo.png"
+                    alt="Stackly Logo">
+
+            </a>
+
+
+            <!--============================================
+                LOGIN HEADING
+            =============================================-->
+
+            <div class="gov-login-heading reveal-down">
+
+                <span class="gov-login-small-title">
+
+                    Welcome Back
+
+                </span>
+
+                <h1>
+
+                    Sign In Account
+
+                </h1>
+
+                <p>
+
+                    Sign in to access your
+                    government services dashboard.
+
+                </p>
+
+            </div>
+
+
+            <!--============================================
+                SOCIAL LOGIN
+            =============================================-->
+
+            <div class="gov-login-social reveal-down">
+
+                <a href="404.html"
+                    class="gov-login-social-btn gov-login-google"
+                    aria-label="Google">
+
+                    <i class="fa-brands fa-google"></i>
+
+                </a>
+
+
+                <a href="404.html"
+                    class="gov-login-social-btn gov-login-facebook"
+                    aria-label="Facebook">
+
+                    <i class="fa-brands fa-facebook-f"></i>
+
+                </a>
+
+
+                <a href="404.html"
+                    class="gov-login-social-btn gov-login-apple"
+                    aria-label="Apple">
+
+                    <i class="fa-brands fa-apple"></i>
+
+                </a>
+
+            </div>
+
+
+            <div class="gov-login-divider reveal-down">
+
+                <span>or continue with your account</span>
+
+            </div>
+
+
+            <!--============================================
+                LOGIN FORM
+            =============================================-->
+
+            <form id="govLoginForm"
+                class="gov-login-form"
+                novalidate>
+
+
+                <!--========================================
+                    NAME
+                =========================================-->
+
+                <div class="gov-login-field reveal-down">
+
+                    <label for="govLoginName">
+
+                        Full Name
+
+                    </label>
+
+                    <div class="gov-login-input-wrap">
+
+                        <i class="fa-solid fa-user"></i>
+
+                        <input
+                            type="text"
+                            id="govLoginName"
+                            name="name"
+                            placeholder="Enter your full name"
+                            autocomplete="name">
+
+                    </div>
+
+                    <small
+                        id="govLoginNameError"
+                        class="gov-login-error">
+
+                    </small>
+
+                </div>
+
+
+                <!--========================================
+                    EMAIL
+                =========================================-->
+
+                <div class="gov-login-field reveal-down">
+
+                    <label for="govLoginEmail">
+
+                        Email Address
+
+                    </label>
+
+                    <div class="gov-login-input-wrap">
+
+                        <i class="fa-solid fa-envelope"></i>
+
+                        <input
+                            type="email"
+                            id="govLoginEmail"
+                            name="email"
+                            placeholder="Enter your email address"
+                            autocomplete="email">
+
+                    </div>
+
+                    <small
+                        id="govLoginEmailError"
+                        class="gov-login-error">
+
+                    </small>
+
+                </div>
+
+
+                <!--========================================
+                    PASSWORD
+                =========================================-->
+
+                <div class="gov-login-field reveal-down">
+
+                    <label for="govLoginPassword">
+
+                        Password
+
+                    </label>
+
+                    <div class="gov-login-input-wrap">
+
+                        <i class="fa-solid fa-lock"></i>
+
+                        <input
+                            type="password"
+                            id="govLoginPassword"
+                            name="password"
+                            placeholder="Enter your password"
+                            autocomplete="current-password">
+
+                        <button
+                            type="button"
+                            id="govLoginPasswordToggle"
+                            class="gov-login-password-toggle"
+                            aria-label="Show password">
+
+                            <i class="fa-solid fa-eye"></i>
+
+                        </button>
+
+                    </div>
+
+                    <small
+                        id="govLoginPasswordError"
+                        class="gov-login-error">
+
+                    </small>
+
+                </div>
+
+
+                <!--========================================
+                    ROLE
+                =========================================-->
+
+                <div class="gov-login-field reveal-down">
+
+                    <label for="govLoginRole">
+
+                        Select Role
+
+                    </label>
+
+                    <div class="gov-login-input-wrap">
+
+                        <i class="fa-solid fa-id-badge"></i>
+
+                        <select
+                            id="govLoginRole"
+                            name="role">
+
+                            <option value="">
+                                Select your role
+                            </option>
+
+                            <option value="government-officer">
+                                Government Officer
+                            </option>
+
+                            <option value="citizen">
+                                Citizen
+                            </option>
+
+                        </select>
+
+                        <i class="fa-solid fa-chevron-down gov-login-select-arrow"></i>
+
+                    </div>
+
+                    <small
+                        id="govLoginRoleError"
+                        class="gov-login-error">
+
+                    </small>
+
+                </div>
+
+
+                <!--========================================
+                    REMEMBER / FORGOT
+                =========================================-->
+
+                <div class="gov-login-options reveal-down">
+
+                    <label class="gov-login-remember">
+
+                        <input
+                            type="checkbox"
+                            id="govLoginRemember">
+
+                        <span class="gov-login-custom-check"></span>
+
+                        <span>Remember me</span>
+
+                    </label>
+
+
+                    <a href="404.html"
+                        class="gov-login-forgot">
+
+                        Forgot Password?
+
+                    </a>
+
+                </div>
+
+
+                <!--========================================
+                    GENERAL ERROR
+                =========================================-->
+
+                <div
+                    id="govLoginGeneralError"
+                    class="gov-login-general-error">
+
+                    <i class="fa-solid fa-circle-exclamation"></i>
+
+                    <span>
+                        Please fill details correctly.
+                    </span>
+
+                </div>
+
+
+                <!--========================================
+                    LOGIN BUTTON
+                =========================================-->
+
+                <button
+                    type="submit"
+                    class="gov-login-submit reveal-down">
+
+                    <span>Sign In</span>
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+
+                <!--========================================
+                    SECURITY TEXT
+                =========================================-->
+
+                <p class="gov-login-security reveal-down">
+
+                    <i class="fa-solid fa-shield-halved"></i>
+
+                    Your information is secure and protected.
+
+                </p>
+
+            </form>
+
+        </div>
+
+
+        <!--================================================
+            RIGHT SIDE
+        =================================================-->
+
+        <div class="gov-login-right">
+
+
+            <!--============================================
+                IMAGE
+            =============================================-->
+
+            <div class="gov-login-right-image">
+
+                <img
+                    src="images/login-government.jpg"
+                    alt="Government Services">
+
+            </div>
+
+
+            <!--============================================
+                OVERLAY
+            =============================================-->
+
+            <div class="gov-login-right-overlay"></div>
+
+
+            <!--============================================
+                RIGHT CONTENT
+            =============================================-->
+
+            <div class="gov-login-right-content">
+
+
+                <div class="gov-login-right-icon reveal-down">
+
+                    <i class="fa-solid fa-building-columns"></i>
+
+                </div>
+
+
+                <span class="gov-login-right-label reveal-down">
+
+                    DIGITAL GOVERNMENT SERVICES
+
+                </span>
+
+
+                <h2 class="reveal-down">
+
+                    Hello,
+                    <br>
+                    Citizen!
+
+                </h2>
+
+
+                <p class="reveal-down">
+
+                    Access government services,
+                    applications and citizen facilities
+                    securely from one place.
+
+                </p>
+
+
+                <!--========================================
+                    FEATURES
+                =========================================-->
+
+                <div class="gov-login-features">
+
+
+                    <div class="gov-login-feature reveal-down">
+
+                        <div class="gov-login-feature-icon">
+
+                            <i class="fa-solid fa-shield-halved"></i>
+
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Secure Access
+                            </strong>
+
+                            <span>
+                                Your information is protected
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="gov-login-feature reveal-down">
+
+                        <div class="gov-login-feature-icon">
+
+                            <i class="fa-solid fa-bolt"></i>
+
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Fast Services
+                            </strong>
+
+                            <span>
+                                Access services quickly
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="gov-login-feature reveal-down">
+
+                        <div class="gov-login-feature-icon">
+
+                            <i class="fa-solid fa-file-circle-check"></i>
+
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Easy Applications
+                            </strong>
+
+                            <span>
+                                Track your applications easily
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!--========================================
+                    RIGHT BOTTOM BADGE
+                =========================================-->
+
+                <div class="gov-login-government-badge reveal-down">
+
+                    <i class="fa-solid fa-landmark"></i>
+
+                    <div>
+
+                        <strong>
+                            Government of India
+                        </strong>
+
+                        <span>
+                            Digital Citizen Portal
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- =========================================
+     SIGN UP REDIRECT
+========================================= -->
+
+<div class="gov-login-signup-box">
+
+    <span class="gov-login-signup-text">
+        Don't have an account?
+    </span>
+
+    <a href="signup.html" class="gov-login-signup-link">
+        Sign Up
+        <i class="fa-solid fa-arrow-right"></i>
+    </a>
+
+</div>
+
+    </section>
+
+    
+
+</main>
+
+
+<!--========================================================
+    SUCCESS POPUP
+=========================================================-->
+
+<div
+    id="govLoginSuccessPopup"
+    class="gov-login-popup">
+
+    <div class="gov-login-popup-icon">
+
+        <i class="fa-solid fa-circle-check"></i>
+
+    </div>
+
+    <h3>
+        Login Successful
+    </h3>
+
+    <p>
+        Redirecting to your dashboard...
+    </p>
+
+</div>
+
+
+<style>
+
+    /* =========================================================
+   STACKLY GOVERNMENT LOGIN
+   SIGN UP REDIRECT
+   NON-CONFLICTING CSS
+========================================================= */
+
+.gov-login-signup-box {
+    width: 100%;
+    max-width: 420px;
+
+    margin: 22px auto 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+
+    padding: 8px 10px;
+
+    box-sizing: border-box;
+
+    font-family: "Poppins", sans-serif;
+
+    animation: govLoginSignupReveal 0.8s ease forwards;
+
+    opacity: 0;
+    transform: translateY(20px);
+
+    animation-delay: 0.8s;
+}
+
+
+/* TEXT */
+
+.gov-login-signup-text {
+
+    font-size: 13px;
+
+    font-weight: 400;
+
+    color: #777;
+
+    line-height: 1.5;
+
+}
+
+
+/* SIGN UP LINK */
+
+.gov-login-signup-link {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 6px;
+
+    color: #0d4b82;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    transition:
+        color 0.3s ease,
+        transform 0.3s ease;
+
+}
+
+
+/* ARROW */
+
+.gov-login-signup-link i {
+
+    font-size: 11px;
+
+    transition:
+        transform 0.3s ease;
+
+}
+
+
+/* HOVER */
+
+.gov-login-signup-link:hover {
+
+    color: #2fa7a0;
+
+    transform: translateX(2px);
+
+}
+
+
+.gov-login-signup-link:hover i {
+
+    transform: translateX(4px);
+
+}
+
+
+/* =========================================================
+   ANIMATION
+========================================================= */
+
+@keyframes govLoginSignupReveal {
+
+    0% {
+
+        opacity: 0;
+
+        transform: translateY(20px);
+
+    }
+
+    100% {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .gov-login-signup-box {
+
+        margin-top: 18px;
+
+        padding: 8px 5px;
+
+        gap: 5px;
+
+        flex-wrap: wrap;
+
+        text-align: center;
+
+    }
+
+    .gov-login-signup-text {
+
+        font-size: 12px;
+
+    }
+
+    .gov-login-signup-link {
+
+        font-size: 12px;
+
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 380px) {
+
+    .gov-login-signup-box {
+
+        flex-direction: column;
+
+        gap: 4px;
+
+        margin-top: 16px;
+
+    }
+
+    .gov-login-signup-text {
+
+        font-size: 11px;
+
+    }
+
+    .gov-login-signup-link {
+
+        font-size: 12px;
+
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (min-width: 601px) and (max-width: 991px) {
+
+    .gov-login-signup-box {
+
+        max-width: 360px;
+
+        margin-top: 20px;
+
+    }
+
+}
+
+
+/* =========================================================
+   LAPTOP
+========================================================= */
+
+@media (min-width: 992px) and (max-width: 1366px) {
+
+    .gov-login-signup-box {
+
+        max-width: 390px;
+
+        margin-top: 20px;
+
+    }
+
+}
+
+
+/* =========================================================
+   LARGE DESKTOP
+========================================================= */
+
+@media (min-width: 1367px) {
+
+    .gov-login-signup-box {
+
+        max-width: 420px;
+
+        margin-top: 22px;
+
+    }
+
+}
+    /*==========================================================
+    STACKLY GOVERNMENT LOGIN PAGE
+    NON-CONFLICTING CSS
+==========================================================*/
+
+
+/*==========================================================
+    ROOT
+==========================================================*/
+
+.gov-login-body {
+
+margin: 0;
+padding: 0;
+
+min-height: 100vh;
+
+font-family: "Poppins", sans-serif;
+
+background:
+    linear-gradient(
+        135deg,
+        #eef5ff 0%,
+        #f7fbff 45%,
+        #e8f7f5 100%
+    );
+
+color: #172b4d;
+
+overflow-x: hidden;
+
+}
+
+
+/*==========================================================
+BACKGROUND
+==========================================================*/
+
+.gov-login-background {
+
+position: fixed;
+
+inset: 0;
+
+z-index: -3;
+
+background-image:
+    url("./PM-Kisan-2.webp");
+
+background-size: cover;
+
+background-position: center;
+
+opacity: 0.12;
+
+transform: scale(1.05);
+
+}
+
+
+.gov-login-overlay {
+
+position: fixed;
+
+inset: 0;
+
+z-index: -2;
+
+background:
+    radial-gradient(
+        circle at 15% 20%,
+        rgba(37, 117, 252, 0.15),
+        transparent 30%
+    ),
+    radial-gradient(
+        circle at 85% 80%,
+        rgba(0, 188, 212, 0.15),
+        transparent 35%
+    );
+
+pointer-events: none;
+
+}
+
+
+/*==========================================================
+BACK TO HOME
+==========================================================*/
+
+.gov-login-back-home {
+
+position: fixed;
+
+top: 24px;
+
+left: 28px;
+
+z-index: 100;
+
+display: inline-flex;
+
+align-items: center;
+
+gap: 9px;
+
+padding: 10px 17px;
+
+text-decoration: none;
+
+color: #0b3d75;
+
+background: rgba(255,255,255,0.90);
+
+border: 1px solid rgba(19,73,125,0.10);
+
+border-radius: 30px;
+
+box-shadow:
+    0 8px 25px rgba(15,47,87,0.10);
+
+font-size: 13px;
+
+font-weight: 600;
+
+transition:
+    transform .3s ease,
+    box-shadow .3s ease,
+    color .3s ease;
+
+backdrop-filter: blur(12px);
+
+}
+
+
+.gov-login-back-home i {
+
+color: #2478dc;
+
+transition: transform .3s ease;
+
+}
+
+
+.gov-login-back-home:hover {
+
+color: #0757b7;
+
+transform: translateY(-2px);
+
+box-shadow:
+    0 12px 30px rgba(15,47,87,0.16);
+
+}
+
+
+.gov-login-back-home:hover i {
+
+transform: translateX(-4px);
+
+}
+
+
+/*==========================================================
+MAIN PAGE
+==========================================================*/
+
+.gov-login-page {
+
+width: 100%;
+
+min-height: 100vh;
+
+padding:
+    90px
+    40px
+    40px;
+
+box-sizing: border-box;
+
+display: flex;
+
+justify-content: center;
+
+align-items: center;
+
+}
+
+
+/*==========================================================
+LOGIN CARD
+==========================================================*/
+
+.gov-login-card {
+
+width: min(1120px, 100%);
+
+min-height: 650px;
+
+display: grid;
+
+grid-template-columns:
+    minmax(0, 1fr)
+    minmax(0, 0.92fr);
+
+background: #ffffff;
+
+border-radius: 28px;
+
+overflow: hidden;
+
+box-shadow:
+    0 30px 80px rgba(20,55,95,0.18);
+
+position: relative;
+
+}
+
+
+/*==========================================================
+LEFT SIDE
+==========================================================*/
+
+.gov-login-left {
+
+padding:
+    45px
+    clamp(35px, 5vw, 75px);
+
+display: flex;
+
+flex-direction: column;
+
+justify-content: center;
+
+background: rgba(255,255,255,0.98);
+
+position: relative;
+
+z-index: 2;
+
+}
+
+
+/*==========================================================
+LOGO
+==========================================================*/
+
+.gov-login-logo {
+
+display: inline-flex;
+
+width: fit-content;
+
+margin-bottom: 30px;
+
+}
+
+
+.gov-login-logo img {
+
+width: 175px;
+
+height: auto;
+
+display: block;
+
+object-fit: contain;
+
+}
+
+
+/*==========================================================
+HEADING
+==========================================================*/
+
+.gov-login-heading {
+
+margin-bottom: 22px;
+
+}
+
+
+.gov-login-small-title {
+
+display: inline-block;
+
+margin-bottom: 5px;
+
+font-size: 12px;
+
+font-weight: 700;
+
+letter-spacing: 1.7px;
+
+color: #2879d7;
+
+}
+
+
+.gov-login-heading h1 {
+
+margin: 0;
+
+font-size: clamp(27px, 3vw, 38px);
+
+line-height: 1.2;
+
+color: #103e72;
+
+font-weight: 700;
+
+}
+
+
+.gov-login-heading p {
+
+margin: 10px 0 0;
+
+max-width: 440px;
+
+color: #75839a;
+
+font-size: 13px;
+
+line-height: 1.7;
+
+}
+
+
+/*==========================================================
+SOCIAL BUTTONS
+==========================================================*/
+
+.gov-login-social {
+
+display: flex;
+
+align-items: center;
+
+gap: 12px;
+
+margin-bottom: 17px;
+
+}
+
+
+.gov-login-social-btn {
+
+width: 42px;
+
+height: 42px;
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+
+border-radius: 50%;
+
+text-decoration: none;
+
+background: #fff;
+
+border: 1px solid #dce5ef;
+
+font-size: 16px;
+
+transition:
+    transform .3s ease,
+    box-shadow .3s ease,
+    color .3s ease;
+
+}
+
+
+.gov-login-social-btn:hover {
+
+transform: translateY(-4px);
+
+box-shadow:
+    0 10px 22px rgba(20,60,100,.15);
+
+}
+
+
+.gov-login-google {
+
+color: #db4437;
+
+}
+
+
+.gov-login-facebook {
+
+color: #1877f2;
+
+}
+
+
+.gov-login-apple {
+
+color: #111827;
+
+}
+
+
+/*==========================================================
+DIVIDER
+==========================================================*/
+
+.gov-login-divider {
+
+display: flex;
+
+align-items: center;
+
+gap: 12px;
+
+margin-bottom: 22px;
+
+color: #9aa7b8;
+
+font-size: 11px;
+
+}
+
+
+.gov-login-divider::before,
+.gov-login-divider::after {
+
+content: "";
+
+height: 1px;
+
+flex: 1;
+
+background: #e7edf3;
+
+}
+
+
+/*==========================================================
+FORM
+==========================================================*/
+
+.gov-login-form {
+
+width: 100%;
+
+max-width: 490px;
+
+}
+
+
+/*==========================================================
+FIELD
+==========================================================*/
+
+.gov-login-field {
+
+margin-bottom: 15px;
+
+}
+
+
+.gov-login-field label {
+
+display: block;
+
+margin-bottom: 7px;
+
+font-size: 12px;
+
+font-weight: 600;
+
+color: #344861;
+
+}
+
+
+/*==========================================================
+INPUT WRAPPER
+==========================================================*/
+
+.gov-login-input-wrap {
+
+width: 100%;
+
+min-height: 47px;
+
+box-sizing: border-box;
+
+display: flex;
+
+align-items: center;
+
+position: relative;
+
+background: #f5f7fa;
+
+border: 1px solid #e2e8f0;
+
+border-radius: 9px;
+
+transition:
+    border-color .3s ease,
+    box-shadow .3s ease,
+    background .3s ease;
+
+}
+
+
+.gov-login-input-wrap > i:first-child {
+
+width: 45px;
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+
+flex-shrink: 0;
+
+color: #2879d7;
+
+font-size: 14px;
+
+}
+
+
+.gov-login-input-wrap input,
+.gov-login-input-wrap select {
+
+flex: 1;
+
+width: 100%;
+
+height: 45px;
+
+min-width: 0;
+
+border: 0;
+
+outline: 0;
+
+background: transparent;
+
+color: #263b55;
+
+font-family: inherit;
+
+font-size: 12px;
+
+}
+
+
+.gov-login-input-wrap input::placeholder {
+
+color: #a0aab7;
+
+}
+
+
+.gov-login-input-wrap:focus-within {
+
+background: #ffffff;
+
+border-color: #2879d7;
+
+box-shadow:
+    0 0 0 4px rgba(40,121,215,.09);
+
+}
+
+
+/*==========================================================
+SELECT
+==========================================================*/
+
+.gov-login-input-wrap select {
+
+appearance: none;
+
+cursor: pointer;
+
+padding-right: 42px;
+
+}
+
+
+.gov-login-select-arrow {
+
+position: absolute;
+
+right: 17px;
+
+top: 50%;
+
+transform: translateY(-50%);
+
+pointer-events: none;
+
+color: #65758b !important;
+
+font-size: 11px !important;
+
+width: auto !important;
+
+}
+
+
+/*==========================================================
+PASSWORD BUTTON
+==========================================================*/
+
+.gov-login-password-toggle {
+
+width: 42px;
+
+height: 42px;
+
+border: 0;
+
+background: transparent;
+
+cursor: pointer;
+
+color: #7d8da1;
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+
+flex-shrink: 0;
+
+}
+
+
+.gov-login-password-toggle:hover {
+
+color: #2879d7;
+
+}
+
+
+/*==========================================================
+ERROR
+==========================================================*/
+
+.gov-login-error {
+
+display: block;
+
+min-height: 15px;
+
+margin-top: 4px;
+
+font-size: 10px;
+
+color: #e53935;
+
+}
+
+
+/*==========================================================
+OPTIONS
+==========================================================*/
+
+.gov-login-options {
+
+display: flex;
+
+align-items: center;
+
+justify-content: space-between;
+
+margin: 2px 0 17px;
+
+}
+
+
+.gov-login-remember {
+
+display: inline-flex;
+
+align-items: center;
+
+gap: 7px;
+
+cursor: pointer;
+
+font-size: 11px;
+
+color: #68788d;
+
+}
+
+
+.gov-login-remember input {
+
+display: none;
+
+}
+
+
+.gov-login-custom-check {
+
+width: 15px;
+
+height: 15px;
+
+border: 1px solid #c6d2df;
+
+border-radius: 4px;
+
+position: relative;
+
+transition: .25s ease;
+
+}
+
+
+.gov-login-remember input:checked
++ .gov-login-custom-check {
+
+background: #2879d7;
+
+border-color: #2879d7;
+
+}
+
+
+.gov-login-remember input:checked
++ .gov-login-custom-check::after {
+
+content: "\f00c";
+
+font-family: "Font Awesome 6 Free";
+
+font-weight: 900;
+
+color: #fff;
+
+font-size: 9px;
+
+position: absolute;
+
+left: 2px;
+
+top: 1px;
+
+}
+
+
+.gov-login-forgot {
+
+color: #2879d7;
+
+text-decoration: none;
+
+font-size: 11px;
+
+font-weight: 600;
+
+}
+
+
+.gov-login-forgot:hover {
+
+text-decoration: underline;
+
+}
+
+
+/*==========================================================
+GENERAL ERROR
+==========================================================*/
+
+.gov-login-general-error {
+
+display: none;
+
+align-items: center;
+
+gap: 8px;
+
+padding: 10px 12px;
+
+margin-bottom: 13px;
+
+border-radius: 8px;
+
+color: #c62828;
+
+background: #fff1f1;
+
+border: 1px solid #ffd1d1;
+
+font-size: 11px;
+
+}
+
+
+.gov-login-general-error.gov-login-show-error {
+
+display: flex;
+
+animation:
+    govLoginShake .4s ease;
+
+}
+
+
+@keyframes govLoginShake {
+
+0%,100% {
+    transform: translateX(0);
+}
+
+25% {
+    transform: translateX(-5px);
+}
+
+75% {
+    transform: translateX(5px);
+}
+
+}
+
+
+/*==========================================================
+SUBMIT BUTTON
+==========================================================*/
+
+.gov-login-submit {
+
+width: 100%;
+
+min-height: 48px;
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+
+gap: 12px;
+
+border: 0;
+
+border-radius: 9px;
+
+cursor: pointer;
+
+color: #ffffff;
+
+background:
+    linear-gradient(
+        135deg,
+        #0d477f,
+        #1677d2
+    );
+
+font-family: inherit;
+
+font-size: 13px;
+
+font-weight: 600;
+
+box-shadow:
+    0 9px 20px rgba(20,90,160,.20);
+
+transition:
+    transform .3s ease,
+    box-shadow .3s ease;
+
+}
+
+
+.gov-login-submit:hover {
+
+transform: translateY(-2px);
+
+box-shadow:
+    0 13px 27px rgba(20,90,160,.28);
+
+}
+
+
+.gov-login-submit i {
+
+transition: transform .3s ease;
+
+}
+
+
+.gov-login-submit:hover i {
+
+transform: translateX(4px);
+
+}
+
+
+/*==========================================================
+SECURITY
+==========================================================*/
+
+.gov-login-security {
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+
+gap: 7px;
+
+margin: 13px 0 0;
+
+color: #8a98a9;
+
+font-size: 10px;
+
+}
+
+
+.gov-login-security i {
+
+color: #35a66f;
+
+}
+
+
+/*==========================================================
+RIGHT SIDE
+==========================================================*/
+
+.gov-login-right {
+
+position: relative;
+
+min-height: 650px;
+
+overflow: hidden;
+
+background:
+    linear-gradient(
+        145deg,
+        #0a3b73,
+        #0d5a9d
+    );
+
+}
+
+
+.gov-login-right-image {
+
+position: absolute;
+
+inset: 0;
+
+z-index: 0;
+
+}
+
+
+.gov-login-right-image img {
+
+width: 100%;
+
+height: 100%;
+
+object-fit: cover;
+
+object-position: center;
+
+display: block;
+
+}
+
+
+.gov-login-right-overlay {
+
+position: absolute;
+
+inset: 0;
+
+z-index: 1;
+
+background:
+    linear-gradient(
+        145deg,
+        rgba(4,42,82,.93),
+        rgba(8,86,145,.72)
+    );
+
+}
+
+
+/*==========================================================
+RIGHT CONTENT
+==========================================================*/
+
+.gov-login-right-content {
+
+position: relative;
+
+z-index: 2;
+
+height: 100%;
+
+min-height: 650px;
+
+box-sizing: border-box;
+
+padding:
+    65px
+    clamp(35px, 5vw, 65px);
+
+display: flex;
+
+flex-direction: column;
+
+justify-content: center;
+
+color: #ffffff;
+
+}
+
+
+/*==========================================================
+RIGHT ICON
+==========================================================*/
+
+.gov-login-right-icon {
+
+width: 62px;
+
+height: 62px;
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+
+margin-bottom: 23px;
+
+border-radius: 18px;
+
+background:
+    linear-gradient(
+        135deg,
+        #49d3bd,
+        #38a4ec
+    );
+
+box-shadow:
+    0 15px 35px rgba(0,0,0,.20);
+
+}
+
+
+.gov-login-right-icon i {
+
+font-size: 26px;
+
+color: #fff;
+
+}
+
+
+/*==========================================================
+RIGHT LABEL
+==========================================================*/
+
+.gov-login-right-label {
+
+font-size: 10px;
+
+font-weight: 700;
+
+letter-spacing: 2px;
+
+color: #76e2d3;
+
+margin-bottom: 12px;
+
+}
+
+
+/*==========================================================
+RIGHT HEADING
+==========================================================*/
+
+.gov-login-right-content h2 {
+
+margin: 0;
+
+font-size: clamp(34px, 4vw, 53px);
+
+line-height: 1.08;
+
+font-weight: 700;
+
+}
+
+
+.gov-login-right-content > p {
+
+max-width: 400px;
+
+margin: 18px 0 30px;
+
+color: rgba(255,255,255,.80);
+
+font-size: 13px;
+
+line-height: 1.8;
+
+}
+
+
+/*==========================================================
+FEATURES
+==========================================================*/
+
+.gov-login-features {
+
+display: grid;
+
+gap: 12px;
+
+max-width: 420px;
+
+}
+
+
+.gov-login-feature {
+
+display: flex;
+
+align-items: center;
+
+gap: 12px;
+
+padding: 11px 13px;
+
+border-radius: 12px;
+
+background: rgba(255,255,255,.09);
+
+border: 1px solid rgba(255,255,255,.12);
+
+backdrop-filter: blur(8px);
+
+}
+
+
+.gov-login-feature-icon {
+
+width: 39px;
+
+height: 39px;
+
+flex: 0 0 39px;
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+
+border-radius: 10px;
+
+background: rgba(255,255,255,.15);
+
+}
+
+
+.gov-login-feature:nth-child(1)
+.gov-login-feature-icon {
+
+color: #63e6be;
+
+}
+
+
+.gov-login-feature:nth-child(2)
+.gov-login-feature-icon {
+
+color: #ffd166;
+
+}
+
+
+.gov-login-feature:nth-child(3)
+.gov-login-feature-icon {
+
+color: #8ab4ff;
+
+}
+
+
+.gov-login-feature strong {
+
+display: block;
+
+margin-bottom: 2px;
+
+font-size: 11px;
+
+color: #fff;
+
+}
+
+
+.gov-login-feature span {
+
+display: block;
+
+color: rgba(255,255,255,.67);
+
+font-size: 9px;
+
+}
+
+
+/*==========================================================
+GOVERNMENT BADGE
+==========================================================*/
+
+.gov-login-government-badge {
+
+display: flex;
+
+align-items: center;
+
+gap: 12px;
+
+margin-top: 30px;
+
+width: fit-content;
+
+padding: 10px 14px;
+
+border-radius: 12px;
+
+background: rgba(255,255,255,.10);
+
+border: 1px solid rgba(255,255,255,.14);
+
+}
+
+
+.gov-login-government-badge > i {
+
+color: #ffd166;
+
+font-size: 22px;
+
+}
+
+
+.gov-login-government-badge strong {
+
+display: block;
+
+font-size: 10px;
+
+}
+
+
+.gov-login-government-badge span {
+
+display: block;
+
+margin-top: 2px;
+
+font-size: 8px;
+
+color: rgba(255,255,255,.65);
+
+}
+
+
+/*==========================================================
+SUCCESS POPUP
+==========================================================*/
+
+.gov-login-popup {
+
+position: fixed;
+
+left: 50%;
+
+bottom: 30px;
+
+transform:
+    translate(-50%, 140px);
+
+width: min(370px, calc(100% - 30px));
+
+box-sizing: border-box;
+
+padding: 22px;
+
+display: flex;
+
+flex-direction: column;
+
+align-items: center;
+
+text-align: center;
+
+background: #ffffff;
+
+border-radius: 18px;
+
+box-shadow:
+    0 20px 60px rgba(0,0,0,.18);
+
+z-index: 9999;
+
+opacity: 0;
+
+transition:
+    transform .45s ease,
+    opacity .45s ease;
+
+}
+
+
+.gov-login-popup.gov-login-popup-show {
+
+transform:
+    translate(-50%, 0);
+
+opacity: 1;
+
+}
+
+
+.gov-login-popup-icon {
+
+width: 52px;
+
+height: 52px;
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+
+border-radius: 50%;
+
+color: #fff;
+
+background:
+    linear-gradient(
+        135deg,
+        #23b26d,
+        #55d98e
+    );
+
+font-size: 24px;
+
+}
+
+
+.gov-login-popup h3 {
+
+margin: 10px 0 3px;
+
+color: #163e68;
+
+font-size: 17px;
+
+}
+
+
+.gov-login-popup p {
+
+margin: 0;
+
+color: #7c8a9b;
+
+font-size: 11px;
+
+}
+
+
+/*==========================================================
+REVEAL ANIMATION
+==========================================================*/
+
+.reveal-down {
+
+opacity: 0;
+
+transform: translateY(35px);
+
+animation:
+    govLoginReveal .75s cubic-bezier(.22,.61,.36,1)
+    forwards;
+
+}
+
+
+.gov-login-logo {
+animation-delay: .08s;
+}
+
+.gov-login-heading {
+animation-delay: .16s;
+}
+
+.gov-login-social {
+animation-delay: .24s;
+}
+
+.gov-login-divider {
+animation-delay: .30s;
+}
+
+.gov-login-field:nth-child(1) {
+animation-delay: .36s;
+}
+
+.gov-login-field:nth-child(2) {
+animation-delay: .43s;
+}
+
+.gov-login-field:nth-child(3) {
+animation-delay: .50s;
+}
+
+.gov-login-field:nth-child(4) {
+animation-delay: .57s;
+}
+
+.gov-login-options {
+animation-delay: .64s;
+}
+
+.gov-login-submit {
+animation-delay: .71s;
+}
+
+.gov-login-security {
+animation-delay: .78s;
+}
+
+
+.gov-login-right-icon {
+animation-delay: .20s;
+}
+
+.gov-login-right-label {
+animation-delay: .28s;
+}
+
+.gov-login-right-content h2 {
+animation-delay: .36s;
+}
+
+.gov-login-right-content > p {
+animation-delay: .44s;
+}
+
+
+@keyframes govLoginReveal {
+
+from {
+
+    opacity: 0;
+
+    transform: translateY(35px);
+
+}
+
+to {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+}
+
+}
+
+
+/*==========================================================
+LARGE LAPTOP
+==========================================================*/
+
+@media (max-width: 1100px) {
+
+.gov-login-page {
+
+    padding-left: 25px;
+
+    padding-right: 25px;
+
+}
+
+
+.gov-login-card {
+
+    max-width: 1000px;
+
+}
+
+
+.gov-login-left {
+
+    padding:
+        40px;
+
+}
+
+
+.gov-login-right-content {
+
+    padding:
+        45px;
+
+}
+
+}
+
+
+/*==========================================================
+TABLET
+==========================================================*/
+
+@media (max-width: 850px) {
+
+.gov-login-page {
+
+    padding:
+        90px
+        20px
+        25px;
+
+    align-items: flex-start;
+
+}
+
+
+.gov-login-card {
+
+    grid-template-columns: 1fr;
+
+    max-width: 650px;
+
+}
+
+
+.gov-login-right {
+
+    min-height: 450px;
+
+}
+
+
+.gov-login-right-content {
+
+    min-height: 450px;
+
+    padding: 50px;
+
+}
+
+
+.gov-login-right-content h2 {
+
+    font-size: 42px;
+
+}
+
+
+.gov-login-right-image img {
+
+    object-position: center;
+
+}
+
+
+.gov-login-left {
+
+    padding:
+        45px
+        55px;
+
+}
+
+
+.gov-login-form {
+
+    max-width: none;
+
+}
+
+}
+
+
+/*==========================================================
+MOBILE
+==========================================================*/
+
+@media (max-width: 600px) {
+
+.gov-login-body {
+
+    min-height: 100vh;
+
+}
+
+
+.gov-login-back-home {
+
+    top: 15px;
+
+    left: 15px;
+
+    padding:
+        8px
+        12px;
+
+    font-size: 10px;
+
+}
+
+
+.gov-login-page {
+
+    padding:
+        75px
+        13px
+        20px;
+
+}
+
+
+.gov-login-card {
+
+    border-radius: 20px;
+
+}
+
+
+.gov-login-left {
+
+    padding:
+        35px
+        22px;
+
+}
+
+
+.gov-login-logo {
+
+    margin-bottom: 23px;
+
+}
+
+
+.gov-login-logo img {
+
+    width: 145px;
+
+}
+
+
+.gov-login-heading h1 {
+
+    font-size: 28px;
+
+}
+
+
+.gov-login-heading p {
+
+    font-size: 11px;
+
+}
+
+
+.gov-login-social-btn {
+
+    width: 39px;
+
+    height: 39px;
+
+}
+
+
+.gov-login-divider {
+
+    font-size: 9px;
+
+}
+
+
+.gov-login-field {
+
+    margin-bottom: 12px;
+
+}
+
+
+.gov-login-field label {
+
+    font-size: 11px;
+
+}
+
+
+.gov-login-input-wrap {
+
+    min-height: 45px;
+
+}
+
+
+.gov-login-input-wrap input,
+.gov-login-input-wrap select {
+
+    font-size: 11px;
+
+}
+
+
+.gov-login-options {
+
+    align-items: flex-start;
+
+    gap: 10px;
+
+    flex-wrap: wrap;
+
+}
+
+
+.gov-login-submit {
+
+    min-height: 47px;
+
+}
+
+
+.gov-login-right {
+
+    min-height: 480px;
+
+}
+
+
+.gov-login-right-content {
+
+    min-height: 480px;
+
+    padding:
+        42px
+        25px;
+
+}
+
+
+.gov-login-right-icon {
+
+    width: 53px;
+
+    height: 53px;
+
+    border-radius: 15px;
+
+}
+
+
+.gov-login-right-content h2 {
+
+    font-size: 38px;
+
+}
+
+
+.gov-login-right-content > p {
+
+    font-size: 11px;
+
+}
+
+
+.gov-login-feature {
+
+    padding: 9px;
+
+}
+
+
+.gov-login-government-badge {
+
+    margin-top: 22px;
+
+}
+
+}
+
+
+/*==========================================================
+SMALL MOBILE
+==========================================================*/
+
+@media (max-width: 380px) {
+
+.gov-login-page {
+
+    padding-left: 9px;
+
+    padding-right: 9px;
+
+}
+
+
+.gov-login-left {
+
+    padding:
+        30px
+        17px;
+
+}
+
+
+.gov-login-heading h1 {
+
+    font-size: 25px;
+
+}
+
+
+.gov-login-right-content {
+
+    padding:
+        35px
+        20px;
+
+}
+
+
+.gov-login-right-content h2 {
+
+    font-size: 34px;
+
+}
+
+
+.gov-login-right-label {
+
+    font-size: 8px;
+
+}
+
+}
+
+
+/*==========================================================
+REDUCED MOTION
+==========================================================*/
+
+@media (prefers-reduced-motion: reduce) {
+
+.reveal-down {
+
+    animation: none;
+
+    opacity: 1;
+
+    transform: none;
+
+}
+
+}
+</style>
+
+<script>
+    /*==========================================================
+    STACKLY GOVERNMENT LOGIN
+    NON-CONFLICTING JAVASCRIPT
+==========================================================*/
+
+document.addEventListener("DOMContentLoaded", function () {
+
+
+/*======================================================
+    GET ELEMENTS
+======================================================*/
+
+const govLoginForm =
+    document.getElementById("govLoginForm");
+
+const govLoginName =
+    document.getElementById("govLoginName");
+
+const govLoginEmail =
+    document.getElementById("govLoginEmail");
+
+const govLoginPassword =
+    document.getElementById("govLoginPassword");
+
+const govLoginRole =
+    document.getElementById("govLoginRole");
+
+const govLoginPasswordToggle =
+    document.getElementById("govLoginPasswordToggle");
+
+const govLoginGeneralError =
+    document.getElementById("govLoginGeneralError");
+
+const govLoginSuccessPopup =
+    document.getElementById("govLoginSuccessPopup");
+
+
+/*======================================================
+    ERROR ELEMENTS
+======================================================*/
+
+const nameError =
+    document.getElementById("govLoginNameError");
+
+const emailError =
+    document.getElementById("govLoginEmailError");
+
+const passwordError =
+    document.getElementById("govLoginPasswordError");
+
+const roleError =
+    document.getElementById("govLoginRoleError");
+
+
+/*======================================================
+    PASSWORD SHOW / HIDE
+======================================================*/
+
+if (govLoginPasswordToggle) {
+
+    govLoginPasswordToggle.addEventListener(
+        "click",
+        function () {
+
+            const icon =
+                govLoginPasswordToggle.querySelector("i");
+
+            if (
+                govLoginPassword.type === "password"
+            ) {
+
+                govLoginPassword.type = "text";
+
+                icon.classList.remove(
+                    "fa-eye"
+                );
+
+                icon.classList.add(
+                    "fa-eye-slash"
+                );
+
+                govLoginPasswordToggle
+                    .setAttribute(
+                        "aria-label",
+                        "Hide password"
+                    );
+
+            } else {
+
+                govLoginPassword.type = "password";
+
+                icon.classList.remove(
+                    "fa-eye-slash"
+                );
+
+                icon.classList.add(
+                    "fa-eye"
+                );
+
+                govLoginPasswordToggle
+                    .setAttribute(
+                        "aria-label",
+                        "Show password"
+                    );
+
+            }
+
+        }
+    );
+
+}
+
+
+/*======================================================
+    EMAIL VALIDATION
+======================================================*/
+
+function govLoginIsValidEmail(email) {
+
+    const emailPattern =
+        /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    return emailPattern.test(email);
+
+}
+
+
+/*======================================================
+    CLEAR ERRORS
+======================================================*/
+
+function govLoginClearErrors() {
+
+    nameError.textContent = "";
+
+    emailError.textContent = "";
+
+    passwordError.textContent = "";
+
+    roleError.textContent = "";
+
+    govLoginGeneralError
+        .classList
+        .remove(
+            "gov-login-show-error"
+        );
+
+}
+
+
+/*======================================================
+    SHOW GENERAL ERROR
+======================================================*/
+
+function govLoginShowGeneralError() {
+
+    govLoginGeneralError
+        .classList
+        .remove(
+            "gov-login-show-error"
+        );
+
+    void govLoginGeneralError.offsetWidth;
+
+    govLoginGeneralError
+        .classList
+        .add(
+            "gov-login-show-error"
+        );
+
+}
+
+
+/*======================================================
+    FORM SUBMIT
+======================================================*/
+
+govLoginForm.addEventListener(
+    "submit",
+    function (event) {
+
+        event.preventDefault();
+
+
+        govLoginClearErrors();
+
+
+        const name =
+            govLoginName.value.trim();
+
+        const email =
+            govLoginEmail.value.trim();
+
+        const password =
+            govLoginPassword.value.trim();
+
+        const role =
+            govLoginRole.value;
+
+
+        let isValid = true;
+
+
+        /*==============================================
+            NAME
+        ==============================================*/
+
+        if (
+            name === "" ||
+            name.length < 3
+        ) {
+
+            nameError.textContent =
+                "Please enter your full name.";
+
+            isValid = false;
+
+        }
+
+
+        /*==============================================
+            EMAIL
+        ==============================================*/
+
+        if (
+            email === "" ||
+            !govLoginIsValidEmail(email)
+        ) {
+
+            emailError.textContent =
+                "Please enter a valid email address.";
+
+            isValid = false;
+
+        }
+
+
+        /*==============================================
+            PASSWORD
+        ==============================================*/
+
+        if (
+            password === "" ||
+            password.length < 6
+        ) {
+
+            passwordError.textContent =
+                "Password must contain at least 6 characters.";
+
+            isValid = false;
+
+        }
+
+
+        /*==============================================
+            ROLE
+        ==============================================*/
+
+        if (role === "") {
+
+            roleError.textContent =
+                "Please select your role.";
+
+            isValid = false;
+
+        }
+
+
+        /*==============================================
+            INVALID
+        ==============================================*/
+
+        if (!isValid) {
+
+            govLoginShowGeneralError();
+
+            return;
+
+        }
+
+
+        /*==============================================
+            SAVE USER INFORMATION
+        ==============================================*/
+
+        localStorage.setItem(
+            "userName",
+            name
+        );
+
+        localStorage.setItem(
+            "userEmail",
+            email
+        );
+
+        localStorage.setItem(
+            "userRole",
+            role
+        );
+
+
+        localStorage.setItem(
+            "isLoggedIn",
+            "true"
+        );
+
+
+        /*==============================================
+            SHOW SUCCESS POPUP
+        ==============================================*/
+
+        govLoginSuccessPopup
+            .classList
+            .add(
+                "gov-login-popup-show"
+            );
+
+
+        /*==============================================
+            REDIRECT BASED ON ROLE
+        ==============================================*/
+
+        setTimeout(
+            function () {
+
+                if (
+                    role ===
+                    "government-officer"
+                ) {
+
+                    window.location.href =
+                        "government-officer-dashboard.html";
+
+                } else if (
+                    role === "citizen"
+                ) {
+
+                    window.location.href =
+                        "citizen-dashboard.html";
+
+                }
+
+            },
+            1300
+        );
+
+    }
+);
+
+
+/*======================================================
+    REMOVE GENERAL ERROR WHILE TYPING
+======================================================*/
+
+[
+    govLoginName,
+    govLoginEmail,
+    govLoginPassword,
+    govLoginRole
+].forEach(function (element) {
+
+    element.addEventListener(
+        "input",
+        function () {
+
+            govLoginGeneralError
+                .classList
+                .remove(
+                    "gov-login-show-error"
+                );
+
+        }
+    );
+
+});
+
+
+});
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,4033 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Stackly | Create Account</title>
+
+    <!-- Google Font -->
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Signup CSS -->
+    <link
+        rel="stylesheet"
+        href="css/gov-signup.css">
+
+</head>
+
+
+<body>
+
+    <!-- =====================================================
+         SIGNUP PAGE
+    ====================================================== -->
+
+    <main class="gov-signup-page">
+
+
+        <!-- =================================================
+             BACK TO HOME
+        ================================================== -->
+
+        <a
+            href="index.html"
+            class="gov-signup-home-btn">
+
+            <i class="fa-solid fa-arrow-left"></i>
+
+            <span>Back to Home</span>
+
+        </a>
+
+
+        <!-- =================================================
+             MAIN SIGNUP CARD
+        ================================================== -->
+
+        <section class="gov-signup-card">
+
+
+            <!-- =================================================
+                 LEFT SIDE
+            ================================================== -->
+
+            <div class="gov-signup-left">
+
+
+                <!-- Background Overlay -->
+
+                <div class="gov-signup-left-overlay"></div>
+
+
+                <!-- Decorative Shapes -->
+
+                <span class="gov-signup-circle gov-signup-circle-one"></span>
+
+                <span class="gov-signup-circle gov-signup-circle-two"></span>
+
+                <span class="gov-signup-circle gov-signup-circle-three"></span>
+
+
+                <!-- Logo -->
+
+                <a
+                    href="index.html"
+                    class="gov-signup-logo">
+
+                    <img
+                        src="images/logo.png"
+                        alt="Stackly Logo">
+
+                </a>
+
+
+                <!-- Left Content -->
+
+                <div class="gov-signup-welcome">
+
+                    <div class="gov-signup-welcome-icon">
+
+                        <i class="fa-solid fa-user-plus"></i>
+
+                    </div>
+
+                    <h1>
+                        Welcome Back!
+                    </h1>
+
+                    <p>
+                        To keep connected with us,
+                        please login with your personal
+                        information.
+                    </p>
+
+                    <a
+                        href="login.html"
+                        class="gov-signup-signin-btn">
+
+                        <i class="fa-solid fa-right-to-bracket"></i>
+
+                        Sign In
+
+                    </a>
+
+                </div>
+
+
+                <!-- Left Bottom Decoration -->
+
+                <div class="gov-signup-left-bottom">
+
+                    <span>
+                        Secure Government Portal
+                    </span>
+
+                    <span>
+                        <i class="fa-solid fa-shield-halved"></i>
+                        Protected Access
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 RIGHT SIDE
+            ================================================== -->
+
+            <div class="gov-signup-right">
+
+
+                <!-- Heading -->
+
+                <div class="gov-signup-heading">
+
+                    <span class="gov-signup-heading-icon">
+
+                        <i class="fa-solid fa-user-plus"></i>
+
+                    </span>
+
+                    <h2>
+                        Create Account
+                    </h2>
+
+                    <p>
+                        Create your account and access
+                        government services securely.
+                    </p>
+
+                </div>
+
+
+                <!-- =================================================
+                     SOCIAL LOGIN
+                ================================================== -->
+
+                <div class="gov-signup-social">
+
+                    <button
+                        type="button"
+                        class="gov-signup-social-btn gov-signup-google"
+                        data-redirect="404.html"
+                        aria-label="Google">
+
+                        <i class="fa-brands fa-google"></i>
+
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="gov-signup-social-btn gov-signup-facebook"
+                        data-redirect="404.html"
+                        aria-label="Facebook">
+
+                        <i class="fa-brands fa-facebook-f"></i>
+
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="gov-signup-social-btn gov-signup-apple"
+                        data-redirect="404.html"
+                        aria-label="Apple">
+
+                        <i class="fa-brands fa-apple"></i>
+
+                    </button>
+
+                </div>
+
+
+                <div class="gov-signup-divider">
+
+                    <span></span>
+
+                    <p>
+                        Or use your email for registration
+                    </p>
+
+                    <span></span>
+
+                </div>
+
+
+                <!-- =================================================
+                     SIGNUP FORM
+                ================================================== -->
+
+                <form
+                    id="govSignupForm"
+                    class="gov-signup-form"
+                    novalidate>
+
+
+                    <!-- NAME -->
+
+                    <div class="gov-signup-field">
+
+                        <label for="govSignupName">
+                            Full Name
+                        </label>
+
+                        <div class="gov-signup-input-wrap">
+
+                            <i class="fa-regular fa-user"></i>
+
+                            <input
+                                type="text"
+                                id="govSignupName"
+                                name="name"
+                                placeholder="Enter your full name"
+                                autocomplete="name">
+
+                        </div>
+
+                        <small
+                            class="gov-signup-error"
+                            id="govSignupNameError">
+                        </small>
+
+                    </div>
+
+
+                    <!-- EMAIL -->
+
+                    <div class="gov-signup-field">
+
+                        <label for="govSignupEmail">
+                            Email Address
+                        </label>
+
+                        <div class="gov-signup-input-wrap">
+
+                            <i class="fa-regular fa-envelope"></i>
+
+                            <input
+                                type="email"
+                                id="govSignupEmail"
+                                name="email"
+                                placeholder="Enter your email address"
+                                autocomplete="email">
+
+                        </div>
+
+                        <small
+                            class="gov-signup-error"
+                            id="govSignupEmailError">
+                        </small>
+
+                    </div>
+
+
+                    <!-- PASSWORD -->
+
+                    <div class="gov-signup-field">
+
+                        <label for="govSignupPassword">
+                            Password
+                        </label>
+
+                        <div class="gov-signup-input-wrap">
+
+                            <i class="fa-solid fa-lock"></i>
+
+                            <input
+                                type="password"
+                                id="govSignupPassword"
+                                name="password"
+                                placeholder="Create a password"
+                                autocomplete="new-password">
+
+                            <button
+                                type="button"
+                                class="gov-signup-password-toggle"
+                                data-target="govSignupPassword"
+                                aria-label="Show password">
+
+                                <i class="fa-regular fa-eye"></i>
+
+                            </button>
+
+                        </div>
+
+                        <small
+                            class="gov-signup-error"
+                            id="govSignupPasswordError">
+                        </small>
+
+                    </div>
+
+
+                    <!-- CONFIRM PASSWORD -->
+
+                    <div class="gov-signup-field">
+
+                        <label for="govSignupConfirmPassword">
+                            Confirm Password
+                        </label>
+
+                        <div class="gov-signup-input-wrap">
+
+                            <i class="fa-solid fa-shield-halved"></i>
+
+                            <input
+                                type="password"
+                                id="govSignupConfirmPassword"
+                                name="confirmPassword"
+                                placeholder="Confirm your password"
+                                autocomplete="new-password">
+
+                            <button
+                                type="button"
+                                class="gov-signup-password-toggle"
+                                data-target="govSignupConfirmPassword"
+                                aria-label="Show password">
+
+                                <i class="fa-regular fa-eye"></i>
+
+                            </button>
+
+                        </div>
+
+                        <small
+                            class="gov-signup-error"
+                            id="govSignupConfirmPasswordError">
+                        </small>
+
+                    </div>
+
+
+                    <!-- ROLE -->
+
+                    <div class="gov-signup-field">
+
+                        <label for="govSignupRole">
+                            Select Role
+                        </label>
+
+                        <div class="gov-signup-input-wrap gov-signup-select-wrap">
+
+                            <i class="fa-solid fa-user-shield"></i>
+
+                            <select
+                                id="govSignupRole"
+                                name="role">
+
+                                <option value="">
+                                    Select your role
+                                </option>
+
+                                <option value="government-officer">
+                                    Government Officer
+                                </option>
+
+                                <option value="citizen">
+                                    Citizen
+                                </option>
+
+                            </select>
+
+                            <i class="fa-solid fa-chevron-down gov-signup-select-arrow"></i>
+
+                        </div>
+
+                        <small
+                            class="gov-signup-error"
+                            id="govSignupRoleError">
+                        </small>
+
+                    </div>
+
+
+                    <!-- TERMS -->
+
+                    <div class="gov-signup-terms">
+
+                        <label class="gov-signup-checkbox">
+
+                            <input
+                                type="checkbox"
+                                id="govSignupTerms">
+
+                            <span class="gov-signup-checkmark"></span>
+
+                            <span class="gov-signup-terms-text">
+
+                                I agree to the
+                                <a href="404.html">
+                                    Terms & Conditions
+                                </a>
+                                and
+                                <a href="404.html">
+                                    Privacy Policy
+                                </a>
+
+                            </span>
+
+                        </label>
+
+                        <small
+                            class="gov-signup-error"
+                            id="govSignupTermsError">
+                        </small>
+
+                    </div>
+
+
+                    <!-- GENERAL ERROR -->
+
+                    <div
+                        class="gov-signup-general-error"
+                        id="govSignupGeneralError">
+
+                        <i class="fa-solid fa-circle-exclamation"></i>
+
+                        <span>
+                            Please fill details correctly.
+                        </span>
+
+                    </div>
+
+
+                    <!-- SUBMIT -->
+
+                    <button
+                        type="submit"
+                        class="gov-signup-submit">
+
+                        <span>
+                            Create Account
+                        </span>
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </button>
+
+
+                    <!-- LOGIN LINK -->
+
+                    <p class="gov-signup-login-text">
+
+                        Already have an account?
+
+                        <a href="login.html">
+                            Sign In
+                        </a>
+
+                    </p>
+
+                </form>
+
+
+                <!-- Security -->
+
+                <div class="gov-signup-security">
+
+                    <i class="fa-solid fa-shield-halved"></i>
+
+                    <span>
+                        Your information is protected
+                        with secure access.
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =====================================================
+         SUCCESS POPUP
+    ====================================================== -->
+
+    <div
+        class="gov-signup-popup-overlay"
+        id="govSignupPopup">
+
+        <div class="gov-signup-popup">
+
+            <div class="gov-signup-popup-icon">
+
+                <i class="fa-solid fa-check"></i>
+
+            </div>
+
+            <h3>
+                Account Created Successfully!
+            </h3>
+
+            <p>
+                Your account has been created successfully.
+                Redirecting you to the login page...
+            </p>
+
+            <div class="gov-signup-loader">
+
+                <span></span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <style>
+        /* =========================================================
+   STACKLY GOVERNMENT SIGNUP PAGE
+   UNIQUE PREFIX:
+   gov-signup-
+========================================================= */
+
+
+/* =========================================================
+   ROOT
+========================================================= */
+
+:root {
+
+--gov-signup-primary: #3fa6a4;
+--gov-signup-primary-dark: #238987;
+
+--gov-signup-blue: #0d3b72;
+--gov-signup-blue-light: #1d5ca5;
+
+--gov-signup-white: #ffffff;
+--gov-signup-black: #111827;
+
+--gov-signup-text: #333333;
+--gov-signup-muted: #777777;
+
+--gov-signup-border: #e3e6eb;
+
+--gov-signup-error: #e53935;
+
+--gov-signup-shadow:
+    0 25px 70px rgba(0, 0, 0, 0.18);
+
+}
+
+
+/* =========================================================
+RESET - SCOPED SAFELY
+========================================================= */
+
+.gov-signup-page,
+.gov-signup-page *,
+.gov-signup-popup-overlay,
+.gov-signup-popup-overlay * {
+
+box-sizing: border-box;
+
+}
+
+
+/* =========================================================
+PAGE
+========================================================= */
+
+.gov-signup-page {
+
+position: relative;
+
+min-height: 100vh;
+width: 100%;
+
+padding: 70px 30px 30px;
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+background:
+    linear-gradient(
+        135deg,
+        #eef7f7 0%,
+        #f5f8fc 50%,
+        #eaf4fb 100%
+    );
+
+font-family: "Poppins", sans-serif;
+
+overflow: hidden;
+
+}
+
+
+/* =========================================================
+DECORATIVE BACKGROUND
+========================================================= */
+
+.gov-signup-page::before {
+
+content: "";
+
+position: absolute;
+
+width: 500px;
+height: 500px;
+
+top: -250px;
+left: -180px;
+
+border-radius: 50%;
+
+background:
+    radial-gradient(
+        circle,
+        rgba(63, 166, 164, 0.18),
+        transparent 70%
+    );
+
+pointer-events: none;
+
+}
+
+
+.gov-signup-page::after {
+
+content: "";
+
+position: absolute;
+
+width: 600px;
+height: 600px;
+
+right: -300px;
+bottom: -300px;
+
+border-radius: 50%;
+
+background:
+    radial-gradient(
+        circle,
+        rgba(36, 104, 183, 0.14),
+        transparent 70%
+    );
+
+pointer-events: none;
+
+}
+
+
+/* =========================================================
+BACK HOME BUTTON
+========================================================= */
+
+.gov-signup-home-btn {
+
+position: fixed;
+
+top: 22px;
+left: 25px;
+
+z-index: 50;
+
+display: inline-flex;
+align-items: center;
+gap: 9px;
+
+padding: 11px 18px;
+
+border-radius: 30px;
+
+background: rgba(255, 255, 255, 0.92);
+
+color: var(--gov-signup-blue);
+
+text-decoration: none;
+
+font-size: 13px;
+font-weight: 600;
+
+box-shadow:
+    0 8px 25px rgba(0, 0, 0, 0.10);
+
+transition:
+    transform 0.3s ease,
+    background 0.3s ease,
+    color 0.3s ease;
+
+}
+
+
+.gov-signup-home-btn i {
+
+color: var(--gov-signup-primary);
+
+transition:
+    transform 0.3s ease;
+
+}
+
+
+.gov-signup-home-btn:hover {
+
+transform: translateY(-3px);
+
+background: var(--gov-signup-blue);
+
+color: #ffffff;
+
+}
+
+
+.gov-signup-home-btn:hover i {
+
+color: #ffffff;
+
+transform: translateX(-3px);
+
+}
+
+
+/* =========================================================
+MAIN CARD
+========================================================= */
+
+.gov-signup-card {
+
+position: relative;
+
+z-index: 2;
+
+width: min(1050px, 100%);
+
+min-height: 650px;
+
+display: grid;
+
+grid-template-columns:
+    minmax(0, 0.92fr)
+    minmax(0, 1.08fr);
+
+background: #ffffff;
+
+border-radius: 18px;
+
+overflow: hidden;
+
+box-shadow: var(--gov-signup-shadow);
+
+animation:
+    govSignupCardIn 0.8s ease both;
+
+}
+
+
+@keyframes govSignupCardIn {
+
+from {
+
+    opacity: 0;
+
+    transform:
+        translateY(45px)
+        scale(0.98);
+
+}
+
+to {
+
+    opacity: 1;
+
+    transform:
+        translateY(0)
+        scale(1);
+
+}
+
+}
+
+
+/* =========================================================
+LEFT SIDE
+========================================================= */
+
+.gov-signup-left {
+
+position: relative;
+
+min-height: 650px;
+
+display: flex;
+flex-direction: column;
+
+padding: 48px 55px;
+
+color: #ffffff;
+
+background-image:
+    linear-gradient(
+        135deg,
+        rgba(39, 156, 153, 0.91),
+        rgba(14, 91, 132, 0.91)
+    ),
+    url("../images/signup-bg.jpg");
+
+background-size: cover;
+background-position: center;
+
+overflow: hidden;
+
+}
+
+
+/* =========================================================
+LEFT OVERLAY
+========================================================= */
+
+.gov-signup-left-overlay {
+
+position: absolute;
+
+inset: 0;
+
+background:
+    linear-gradient(
+        135deg,
+        rgba(27, 154, 151, 0.30),
+        rgba(7, 53, 102, 0.30)
+    );
+
+pointer-events: none;
+
+}
+
+
+/* =========================================================
+DECORATIVE CIRCLES
+========================================================= */
+
+.gov-signup-circle {
+
+position: absolute;
+
+border-radius: 50%;
+
+border: 1px solid
+    rgba(255, 255, 255, 0.16);
+
+pointer-events: none;
+
+}
+
+
+.gov-signup-circle-one {
+
+width: 380px;
+height: 380px;
+
+right: -190px;
+top: -120px;
+
+}
+
+
+.gov-signup-circle-two {
+
+width: 250px;
+height: 250px;
+
+left: -120px;
+bottom: -70px;
+
+}
+
+
+.gov-signup-circle-three {
+
+width: 130px;
+height: 130px;
+
+right: 50px;
+bottom: 80px;
+
+background:
+    rgba(255, 255, 255, 0.04);
+
+}
+
+
+/* =========================================================
+LOGO
+========================================================= */
+
+.gov-signup-logo {
+
+position: relative;
+
+z-index: 3;
+
+display: inline-flex;
+
+width: fit-content;
+
+animation:
+    govSignupRevealUp 0.7s 0.15s ease both;
+
+}
+
+
+.gov-signup-logo img {
+
+display: block;
+
+width: 190px;
+height: auto;
+
+object-fit: contain;
+
+}
+
+
+/* =========================================================
+WELCOME CONTENT
+========================================================= */
+
+.gov-signup-welcome {
+
+position: relative;
+
+z-index: 3;
+
+margin: auto 0;
+
+max-width: 390px;
+
+animation:
+    govSignupRevealUp 0.7s 0.3s ease both;
+
+}
+
+
+.gov-signup-welcome-icon {
+
+width: 60px;
+height: 60px;
+
+margin-bottom: 22px;
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+border-radius: 16px;
+
+color: #ffffff;
+
+background:
+    rgba(255, 255, 255, 0.14);
+
+border:
+    1px solid rgba(255, 255, 255, 0.22);
+
+backdrop-filter: blur(10px);
+
+}
+
+
+.gov-signup-welcome-icon i {
+
+font-size: 25px;
+
+}
+
+
+.gov-signup-welcome h1 {
+
+margin: 0 0 14px;
+
+font-size: clamp(30px, 3vw, 43px);
+
+line-height: 1.15;
+
+font-weight: 700;
+
+color: #ffffff;
+
+}
+
+
+.gov-signup-welcome p {
+
+max-width: 340px;
+
+margin: 0 0 28px;
+
+color: rgba(255, 255, 255, 0.88);
+
+font-size: 14px;
+
+line-height: 1.8;
+
+}
+
+
+.gov-signup-signin-btn {
+
+display: inline-flex;
+align-items: center;
+justify-content: center;
+
+gap: 9px;
+
+min-width: 135px;
+
+padding: 12px 24px;
+
+border:
+    1px solid rgba(255, 255, 255, 0.75);
+
+border-radius: 30px;
+
+color: #ffffff;
+
+text-decoration: none;
+
+font-size: 13px;
+font-weight: 600;
+
+background:
+    rgba(255, 255, 255, 0.08);
+
+transition:
+    background 0.3s ease,
+    transform 0.3s ease;
+
+}
+
+
+.gov-signup-signin-btn:hover {
+
+background: #ffffff;
+
+color: var(--gov-signup-blue);
+
+transform: translateY(-3px);
+
+}
+
+
+/* =========================================================
+LEFT BOTTOM
+========================================================= */
+
+.gov-signup-left-bottom {
+
+position: relative;
+
+z-index: 3;
+
+display: flex;
+
+justify-content: space-between;
+
+gap: 15px;
+
+color: rgba(255, 255, 255, 0.75);
+
+font-size: 11px;
+
+animation:
+    govSignupRevealUp 0.7s 0.45s ease both;
+
+}
+
+
+.gov-signup-left-bottom span {
+
+display: flex;
+align-items: center;
+gap: 6px;
+
+}
+
+
+.gov-signup-left-bottom i {
+
+color: #9ff5df;
+
+}
+
+
+/* =========================================================
+RIGHT SIDE
+========================================================= */
+
+.gov-signup-right {
+
+position: relative;
+
+padding: 48px 65px 40px;
+
+background: #ffffff;
+
+display: flex;
+flex-direction: column;
+
+justify-content: center;
+
+}
+
+
+/* =========================================================
+HEADING
+========================================================= */
+
+.gov-signup-heading {
+
+text-align: center;
+
+margin-bottom: 19px;
+
+animation:
+    govSignupRevealUp 0.65s 0.2s ease both;
+
+}
+
+
+.gov-signup-heading-icon {
+
+width: 47px;
+height: 47px;
+
+margin: 0 auto 12px;
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+border-radius: 13px;
+
+color: #ffffff;
+
+background:
+    linear-gradient(
+        135deg,
+        var(--gov-signup-primary),
+        var(--gov-signup-blue-light)
+    );
+
+box-shadow:
+    0 9px 20px rgba(63, 166, 164, 0.22);
+
+}
+
+
+.gov-signup-heading h2 {
+
+margin: 0;
+
+color: var(--gov-signup-blue);
+
+font-size: 28px;
+
+line-height: 1.25;
+
+font-weight: 700;
+
+}
+
+
+.gov-signup-heading p {
+
+margin: 7px auto 0;
+
+max-width: 390px;
+
+color: var(--gov-signup-muted);
+
+font-size: 11px;
+
+line-height: 1.6;
+
+}
+
+
+/* =========================================================
+SOCIAL BUTTONS
+========================================================= */
+
+.gov-signup-social {
+
+display: flex;
+
+justify-content: center;
+
+gap: 13px;
+
+margin-bottom: 14px;
+
+animation:
+    govSignupRevealUp 0.65s 0.3s ease both;
+
+}
+
+
+.gov-signup-social-btn {
+
+width: 39px;
+height: 39px;
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+border-radius: 50%;
+
+border: 1px solid #dfe4ea;
+
+background: #ffffff;
+
+cursor: pointer;
+
+transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease;
+
+}
+
+
+.gov-signup-social-btn:hover {
+
+transform: translateY(-4px);
+
+box-shadow:
+    0 8px 18px rgba(0, 0, 0, 0.12);
+
+}
+
+
+.gov-signup-google {
+
+color: #db4437;
+
+}
+
+
+.gov-signup-facebook {
+
+color: #1877f2;
+
+}
+
+
+.gov-signup-apple {
+
+color: #111111;
+
+}
+
+
+/* =========================================================
+DIVIDER
+========================================================= */
+
+.gov-signup-divider {
+
+display: flex;
+
+align-items: center;
+
+gap: 9px;
+
+margin: 0 auto 17px;
+
+width: 100%;
+
+animation:
+    govSignupRevealUp 0.65s 0.4s ease both;
+
+}
+
+
+.gov-signup-divider span {
+
+flex: 1;
+
+height: 1px;
+
+background: #eceff3;
+
+}
+
+
+.gov-signup-divider p {
+
+flex-shrink: 0;
+
+margin: 0;
+
+color: #999999;
+
+font-size: 9px;
+
+}
+
+
+/* =========================================================
+FORM
+========================================================= */
+
+.gov-signup-form {
+
+width: 100%;
+
+}
+
+
+/* =========================================================
+FIELD
+========================================================= */
+
+.gov-signup-field {
+
+margin-bottom: 13px;
+
+animation:
+    govSignupRevealUp 0.65s ease both;
+
+}
+
+
+.gov-signup-field:nth-child(1) {
+animation-delay: 0.45s;
+}
+
+.gov-signup-field:nth-child(2) {
+animation-delay: 0.52s;
+}
+
+.gov-signup-field:nth-child(3) {
+animation-delay: 0.59s;
+}
+
+.gov-signup-field:nth-child(4) {
+animation-delay: 0.66s;
+}
+
+.gov-signup-field:nth-child(5) {
+animation-delay: 0.73s;
+}
+
+
+.gov-signup-field label {
+
+display: block;
+
+margin-bottom: 6px;
+
+color: #444444;
+
+font-size: 11px;
+
+font-weight: 500;
+
+}
+
+
+.gov-signup-input-wrap {
+
+position: relative;
+
+width: 100%;
+
+}
+
+
+.gov-signup-input-wrap > i:first-child {
+
+position: absolute;
+
+left: 14px;
+top: 50%;
+
+transform: translateY(-50%);
+
+z-index: 2;
+
+color: var(--gov-signup-primary);
+
+font-size: 13px;
+
+pointer-events: none;
+
+}
+
+
+.gov-signup-input-wrap input,
+.gov-signup-input-wrap select {
+
+width: 100%;
+
+height: 43px;
+
+padding:
+    0 42px 0 39px;
+
+border:
+    1px solid #dfe3e8;
+
+border-radius: 9px;
+
+outline: none;
+
+background: #fafbfc;
+
+color: #333333;
+
+font-family: "Poppins", sans-serif;
+
+font-size: 11px;
+
+transition:
+    border-color 0.25s ease,
+    box-shadow 0.25s ease,
+    background 0.25s ease;
+
+}
+
+
+.gov-signup-input-wrap input::placeholder {
+
+color: #a5a9af;
+
+}
+
+
+.gov-signup-input-wrap input:focus,
+.gov-signup-input-wrap select:focus {
+
+border-color: var(--gov-signup-primary);
+
+background: #ffffff;
+
+box-shadow:
+    0 0 0 3px rgba(63, 166, 164, 0.10);
+
+}
+
+
+/* =========================================================
+PASSWORD TOGGLE
+========================================================= */
+
+.gov-signup-password-toggle {
+
+position: absolute;
+
+right: 11px;
+top: 50%;
+
+transform: translateY(-50%);
+
+width: 30px;
+height: 30px;
+
+border: 0;
+
+background: transparent;
+
+color: #8c939b;
+
+cursor: pointer;
+
+}
+
+
+.gov-signup-password-toggle:hover {
+
+color: var(--gov-signup-primary);
+
+}
+
+
+/* =========================================================
+SELECT
+========================================================= */
+
+.gov-signup-select-wrap select {
+
+appearance: none;
+-webkit-appearance: none;
+
+cursor: pointer;
+
+}
+
+
+.gov-signup-select-arrow {
+
+position: absolute !important;
+
+left: auto !important;
+right: 15px;
+
+top: 50%;
+
+transform: translateY(-50%);
+
+color: #777777 !important;
+
+font-size: 10px !important;
+
+}
+
+
+/* =========================================================
+ERROR
+========================================================= */
+
+.gov-signup-error {
+
+display: block;
+
+min-height: 0;
+
+margin-top: 4px;
+
+color: var(--gov-signup-error);
+
+font-size: 9px;
+
+line-height: 1.3;
+
+}
+
+
+.gov-signup-input-wrap.gov-signup-invalid input,
+.gov-signup-input-wrap.gov-signup-invalid select {
+
+border-color:
+    var(--gov-signup-error);
+
+background:
+    #fff8f8;
+
+}
+
+
+.gov-signup-input-wrap.gov-signup-valid input,
+.gov-signup-input-wrap.gov-signup-valid select {
+
+border-color:
+    #35a66f;
+
+}
+
+
+/* =========================================================
+TERMS
+========================================================= */
+
+.gov-signup-terms {
+
+margin-top: 2px;
+
+margin-bottom: 13px;
+
+animation:
+    govSignupRevealUp 0.65s 0.8s ease both;
+
+}
+
+
+.gov-signup-checkbox {
+
+display: flex;
+
+align-items: flex-start;
+
+gap: 9px;
+
+cursor: pointer;
+
+}
+
+
+.gov-signup-checkbox input {
+
+position: absolute;
+
+opacity: 0;
+
+pointer-events: none;
+
+}
+
+
+.gov-signup-checkmark {
+
+position: relative;
+
+flex: 0 0 16px;
+
+width: 16px;
+height: 16px;
+
+margin-top: 1px;
+
+border: 1px solid #cbd2da;
+
+border-radius: 4px;
+
+background: #ffffff;
+
+transition:
+    background 0.25s ease,
+    border-color 0.25s ease;
+
+}
+
+
+.gov-signup-checkbox input:checked
++ .gov-signup-checkmark {
+
+border-color: var(--gov-signup-primary);
+
+background:
+    var(--gov-signup-primary);
+
+}
+
+
+.gov-signup-checkbox input:checked
++ .gov-signup-checkmark::after {
+
+content: "";
+
+position: absolute;
+
+left: 5px;
+top: 2px;
+
+width: 4px;
+height: 8px;
+
+border:
+    solid #ffffff;
+
+border-width:
+    0 2px 2px 0;
+
+transform:
+    rotate(45deg);
+
+}
+
+
+.gov-signup-terms-text {
+
+color: #777777;
+
+font-size: 9px;
+
+line-height: 1.6;
+
+}
+
+
+.gov-signup-terms-text a {
+
+color: var(--gov-signup-primary-dark);
+
+text-decoration: none;
+
+font-weight: 500;
+
+}
+
+
+.gov-signup-terms-text a:hover {
+
+text-decoration: underline;
+
+}
+
+
+/* =========================================================
+GENERAL ERROR
+========================================================= */
+
+.gov-signup-general-error {
+
+display: none;
+
+align-items: center;
+
+gap: 8px;
+
+margin-bottom: 12px;
+
+padding: 9px 11px;
+
+border-radius: 7px;
+
+color: #b42318;
+
+background: #fff1f0;
+
+border: 1px solid #ffd5d2;
+
+font-size: 10px;
+
+}
+
+
+.gov-signup-general-error.gov-signup-show-error {
+
+display: flex;
+
+animation:
+    govSignupShake 0.35s ease;
+
+}
+
+
+@keyframes govSignupShake {
+
+0%,
+100% {
+    transform: translateX(0);
+}
+
+25% {
+    transform: translateX(-5px);
+}
+
+75% {
+    transform: translateX(5px);
+}
+
+}
+
+
+/* =========================================================
+SUBMIT BUTTON
+========================================================= */
+
+.gov-signup-submit {
+
+width: 100%;
+
+min-height: 45px;
+
+display: flex;
+
+align-items: center;
+justify-content: center;
+
+gap: 12px;
+
+border: 0;
+
+border-radius: 9px;
+
+background:
+    linear-gradient(
+        135deg,
+        var(--gov-signup-primary),
+        #268f9d
+    );
+
+color: #ffffff;
+
+font-family: "Poppins", sans-serif;
+
+font-size: 12px;
+
+font-weight: 600;
+
+cursor: pointer;
+
+box-shadow:
+    0 9px 20px rgba(63, 166, 164, 0.20);
+
+transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+
+animation:
+    govSignupRevealUp 0.65s 0.85s ease both;
+
+}
+
+
+.gov-signup-submit:hover {
+
+transform: translateY(-3px);
+
+box-shadow:
+    0 13px 28px rgba(63, 166, 164, 0.28);
+
+}
+
+
+.gov-signup-submit:active {
+
+transform: translateY(-1px);
+
+}
+
+
+.gov-signup-submit i {
+
+transition:
+    transform 0.3s ease;
+
+}
+
+
+.gov-signup-submit:hover i {
+
+transform:
+    translateX(4px);
+
+}
+
+
+/* =========================================================
+LOGIN TEXT
+========================================================= */
+
+.gov-signup-login-text {
+
+margin: 12px 0 0;
+
+text-align: center;
+
+color: #858585;
+
+font-size: 10px;
+
+animation:
+    govSignupRevealUp 0.65s 0.9s ease both;
+
+}
+
+
+.gov-signup-login-text a {
+
+color: var(--gov-signup-blue-light);
+
+font-weight: 600;
+
+text-decoration: none;
+
+}
+
+
+.gov-signup-login-text a:hover {
+
+text-decoration: underline;
+
+}
+
+
+/* =========================================================
+SECURITY
+========================================================= */
+
+.gov-signup-security {
+
+display: flex;
+
+align-items: center;
+justify-content: center;
+
+gap: 7px;
+
+margin-top: 15px;
+
+color: #92979e;
+
+font-size: 9px;
+
+animation:
+    govSignupRevealUp 0.65s 0.95s ease both;
+
+}
+
+
+.gov-signup-security i {
+
+color: #42a67c;
+
+}
+
+
+/* =========================================================
+GENERAL REVEAL
+========================================================= */
+
+@keyframes govSignupRevealUp {
+
+from {
+
+    opacity: 0;
+
+    transform:
+        translateY(28px);
+
+}
+
+to {
+
+    opacity: 1;
+
+    transform:
+        translateY(0);
+
+}
+
+}
+
+
+/* =========================================================
+SUCCESS POPUP
+========================================================= */
+
+.gov-signup-popup-overlay {
+
+position: fixed;
+
+inset: 0;
+
+z-index: 9999;
+
+display: flex;
+
+align-items: center;
+justify-content: center;
+
+padding: 20px;
+
+background:
+    rgba(8, 22, 38, 0.62);
+
+backdrop-filter: blur(7px);
+
+opacity: 0;
+
+visibility: hidden;
+
+transition:
+    opacity 0.35s ease,
+    visibility 0.35s ease;
+
+}
+
+
+.gov-signup-popup-overlay.gov-signup-popup-active {
+
+opacity: 1;
+
+visibility: visible;
+
+}
+
+
+.gov-signup-popup {
+
+width: min(410px, 100%);
+
+padding: 35px 30px;
+
+border-radius: 20px;
+
+background: #ffffff;
+
+text-align: center;
+
+box-shadow:
+    0 25px 80px rgba(0, 0, 0, 0.25);
+
+transform:
+    translateY(30px)
+    scale(0.95);
+
+transition:
+    transform 0.4s ease;
+
+}
+
+
+.gov-signup-popup-active .gov-signup-popup {
+
+transform:
+    translateY(0)
+    scale(1);
+
+}
+
+
+.gov-signup-popup-icon {
+
+width: 65px;
+height: 65px;
+
+margin: 0 auto 18px;
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+border-radius: 50%;
+
+color: #ffffff;
+
+background:
+    linear-gradient(
+        135deg,
+        #37b778,
+        #199d68
+    );
+
+box-shadow:
+    0 12px 30px rgba(55, 183, 120, 0.28);
+
+}
+
+
+.gov-signup-popup-icon i {
+
+font-size: 28px;
+
+}
+
+
+.gov-signup-popup h3 {
+
+margin: 0 0 10px;
+
+color: var(--gov-signup-blue);
+
+font-size: 20px;
+
+}
+
+
+.gov-signup-popup p {
+
+margin: 0 auto;
+
+max-width: 320px;
+
+color: #777777;
+
+font-size: 11px;
+
+line-height: 1.7;
+
+}
+
+
+.gov-signup-loader {
+
+width: 100%;
+
+height: 4px;
+
+margin-top: 22px;
+
+overflow: hidden;
+
+border-radius: 10px;
+
+background: #e9eeee;
+
+}
+
+
+.gov-signup-loader span {
+
+display: block;
+
+width: 0;
+
+height: 100%;
+
+background:
+    linear-gradient(
+        90deg,
+        var(--gov-signup-primary),
+        #2c78c8
+    );
+
+}
+
+
+.gov-signup-popup-active
+.gov-signup-loader span {
+
+animation:
+    govSignupLoader 2.2s linear forwards;
+
+}
+
+
+@keyframes govSignupLoader {
+
+from {
+    width: 0;
+}
+
+to {
+    width: 100%;
+}
+
+}
+
+
+/* =========================================================
+TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+.gov-signup-page {
+
+    padding:
+        80px 22px 30px;
+
+}
+
+
+.gov-signup-card {
+
+    grid-template-columns:
+        minmax(0, 0.85fr)
+        minmax(0, 1.15fr);
+
+    min-height: 620px;
+
+}
+
+
+.gov-signup-left {
+
+    padding:
+        40px 35px;
+
+    min-height: 620px;
+
+}
+
+
+.gov-signup-right {
+
+    padding:
+        40px 38px;
+
+}
+
+
+.gov-signup-logo img {
+
+    width: 165px;
+
+}
+
+
+.gov-signup-welcome h1 {
+
+    font-size: 31px;
+
+}
+
+
+.gov-signup-welcome p {
+
+    font-size: 12px;
+
+}
+
+}
+
+
+/* =========================================================
+SMALL TABLET / LARGE MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+.gov-signup-page {
+
+    padding:
+        80px 15px 25px;
+
+    align-items: flex-start;
+
+}
+
+
+.gov-signup-card {
+
+    display: flex;
+
+    flex-direction: column;
+
+    width: 100%;
+
+    min-height: auto;
+
+    border-radius: 16px;
+
+}
+
+
+.gov-signup-left {
+
+    min-height: 370px;
+
+    padding:
+        32px 28px;
+
+    order: 1;
+
+}
+
+
+.gov-signup-right {
+
+    padding:
+        35px 28px;
+
+    order: 2;
+
+}
+
+
+.gov-signup-welcome {
+
+    margin:
+        40px 0 30px;
+
+}
+
+
+.gov-signup-welcome h1 {
+
+    font-size: 30px;
+
+}
+
+
+.gov-signup-left-bottom {
+
+    margin-top: auto;
+
+}
+
+
+.gov-signup-circle-one {
+
+    width: 260px;
+    height: 260px;
+
+}
+
+
+.gov-signup-home-btn {
+
+    top: 15px;
+    left: 15px;
+
+    padding:
+        9px 13px;
+
+}
+
+}
+
+
+/* =========================================================
+MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+.gov-signup-page {
+
+    padding:
+        70px 10px 20px;
+
+}
+
+
+.gov-signup-home-btn {
+
+    font-size: 11px;
+
+}
+
+
+.gov-signup-card {
+
+    border-radius: 13px;
+
+}
+
+
+.gov-signup-left {
+
+    min-height: 330px;
+
+    padding:
+        27px 22px;
+
+}
+
+
+.gov-signup-logo img {
+
+    width: 145px;
+
+}
+
+
+.gov-signup-welcome {
+
+    margin-top: 35px;
+
+}
+
+
+.gov-signup-welcome-icon {
+
+    width: 48px;
+    height: 48px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.gov-signup-welcome-icon i {
+
+    font-size: 20px;
+
+}
+
+
+.gov-signup-welcome h1 {
+
+    font-size: 25px;
+
+}
+
+
+.gov-signup-welcome p {
+
+    font-size: 11px;
+
+    line-height: 1.65;
+
+}
+
+
+.gov-signup-signin-btn {
+
+    min-width: 115px;
+
+    padding:
+        10px 18px;
+
+    font-size: 11px;
+
+}
+
+
+.gov-signup-left-bottom {
+
+    font-size: 8px;
+
+}
+
+
+.gov-signup-right {
+
+    padding:
+        30px 20px;
+
+}
+
+
+.gov-signup-heading h2 {
+
+    font-size: 23px;
+
+}
+
+
+.gov-signup-heading p {
+
+    font-size: 9px;
+
+}
+
+
+.gov-signup-divider p {
+
+    font-size: 8px;
+
+}
+
+
+.gov-signup-field label {
+
+    font-size: 10px;
+
+}
+
+
+.gov-signup-input-wrap input,
+.gov-signup-input-wrap select {
+
+    height: 42px;
+
+    font-size: 10px;
+
+}
+
+
+.gov-signup-submit {
+
+    min-height: 43px;
+
+}
+
+
+.gov-signup-security {
+
+    font-size: 8px;
+
+}
+
+
+.gov-signup-popup {
+
+    padding:
+        30px 22px;
+
+}
+
+
+.gov-signup-popup h3 {
+
+    font-size: 18px;
+
+}
+
+}
+
+
+/* =========================================================
+VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 350px) {
+
+.gov-signup-left-bottom {
+
+    flex-direction: column;
+
+    gap: 5px;
+
+}
+
+
+.gov-signup-right {
+
+    padding:
+        27px 16px;
+
+}
+
+
+.gov-signup-home-btn span {
+
+    display: none;
+
+}
+
+
+.gov-signup-home-btn {
+
+    width: 38px;
+    height: 38px;
+
+    padding: 0;
+
+    justify-content: center;
+
+}
+
+}
+
+
+/* =========================================================
+REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+.gov-signup-page *,
+.gov-signup-page *::before,
+.gov-signup-page *::after {
+
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+
+    transition-duration: 0.01ms !important;
+
+}
+
+}
+    </style>
+
+    <script>
+        /* =========================================================
+   STACKLY GOVERNMENT SIGNUP
+   UNIQUE PREFIX:
+   gov-signup-
+========================================================= */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+
+/* =====================================================
+   ELEMENTS
+====================================================== */
+
+const govSignupForm =
+    document.getElementById("govSignupForm");
+
+const govSignupName =
+    document.getElementById("govSignupName");
+
+const govSignupEmail =
+    document.getElementById("govSignupEmail");
+
+const govSignupPassword =
+    document.getElementById("govSignupPassword");
+
+const govSignupConfirmPassword =
+    document.getElementById("govSignupConfirmPassword");
+
+const govSignupRole =
+    document.getElementById("govSignupRole");
+
+const govSignupTerms =
+    document.getElementById("govSignupTerms");
+
+const govSignupPopup =
+    document.getElementById("govSignupPopup");
+
+const govSignupGeneralError =
+    document.getElementById("govSignupGeneralError");
+
+
+/* =====================================================
+   ERROR ELEMENTS
+====================================================== */
+
+const govSignupNameError =
+    document.getElementById("govSignupNameError");
+
+const govSignupEmailError =
+    document.getElementById("govSignupEmailError");
+
+const govSignupPasswordError =
+    document.getElementById("govSignupPasswordError");
+
+const govSignupConfirmPasswordError =
+    document.getElementById("govSignupConfirmPasswordError");
+
+const govSignupRoleError =
+    document.getElementById("govSignupRoleError");
+
+const govSignupTermsError =
+    document.getElementById("govSignupTermsError");
+
+
+/* =====================================================
+   HELPER - SHOW ERROR
+====================================================== */
+
+function govSignupSetError(
+    input,
+    errorElement,
+    message
+) {
+
+    errorElement.textContent = message;
+
+    const wrapper =
+        input.closest(".gov-signup-input-wrap");
+
+    if (wrapper) {
+
+        wrapper.classList.remove(
+            "gov-signup-valid"
+        );
+
+        wrapper.classList.add(
+            "gov-signup-invalid"
+        );
+
+    }
+
+}
+
+
+/* =====================================================
+   HELPER - CLEAR ERROR
+====================================================== */
+
+function govSignupSetValid(
+    input,
+    errorElement
+) {
+
+    errorElement.textContent = "";
+
+    const wrapper =
+        input.closest(".gov-signup-input-wrap");
+
+    if (wrapper) {
+
+        wrapper.classList.remove(
+            "gov-signup-invalid"
+        );
+
+        wrapper.classList.add(
+            "gov-signup-valid"
+        );
+
+    }
+
+}
+
+
+/* =====================================================
+   EMAIL VALIDATION
+====================================================== */
+
+function govSignupIsEmail(email) {
+
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+        .test(email);
+
+}
+
+
+/* =====================================================
+   NAME VALIDATION
+====================================================== */
+
+function govSignupIsName(name) {
+
+    return /^[A-Za-zÀ-ÿ\s.'-]{2,60}$/
+        .test(name.trim());
+
+}
+
+
+/* =====================================================
+   PASSWORD VALIDATION
+====================================================== */
+
+function govSignupIsPassword(password) {
+
+    /*
+        Minimum 8 characters
+        At least one letter
+        At least one number
+    */
+
+    return /^(?=.*[A-Za-z])(?=.*\d).{8,}$/
+        .test(password);
+
+}
+
+
+/* =====================================================
+   PASSWORD SHOW / HIDE
+====================================================== */
+
+const govSignupPasswordButtons =
+    document.querySelectorAll(
+        ".gov-signup-password-toggle"
+    );
+
+
+govSignupPasswordButtons.forEach(function (button) {
+
+    button.addEventListener(
+        "click",
+        function () {
+
+            const targetId =
+                button.getAttribute(
+                    "data-target"
+                );
+
+            const target =
+                document.getElementById(
+                    targetId
+                );
+
+            const icon =
+                button.querySelector("i");
+
+
+            if (
+                target.type === "password"
+            ) {
+
+                target.type = "text";
+
+                icon.classList.remove(
+                    "fa-eye"
+                );
+
+                icon.classList.add(
+                    "fa-eye-slash"
+                );
+
+                button.setAttribute(
+                    "aria-label",
+                    "Hide password"
+                );
+
+            } else {
+
+                target.type = "password";
+
+                icon.classList.remove(
+                    "fa-eye-slash"
+                );
+
+                icon.classList.add(
+                    "fa-eye"
+                );
+
+                button.setAttribute(
+                    "aria-label",
+                    "Show password"
+                );
+
+            }
+
+        }
+    );
+
+});
+
+
+/* =====================================================
+   SOCIAL BUTTONS
+====================================================== */
+
+const govSignupSocialButtons =
+    document.querySelectorAll(
+        ".gov-signup-social-btn"
+    );
+
+
+govSignupSocialButtons.forEach(function (button) {
+
+    button.addEventListener(
+        "click",
+        function () {
+
+            const destination =
+                button.getAttribute(
+                    "data-redirect"
+                ) || "404.html";
+
+            window.location.href =
+                destination;
+
+        }
+    );
+
+});
+
+
+/* =====================================================
+   LIVE VALIDATION
+====================================================== */
+
+govSignupName.addEventListener(
+    "input",
+    function () {
+
+        const value =
+            govSignupName.value.trim();
+
+        if (!value) {
+
+            govSignupNameError.textContent = "";
+
+            return;
+
+        }
+
+        if (!govSignupIsName(value)) {
+
+            govSignupSetError(
+                govSignupName,
+                govSignupNameError,
+                "Please enter a valid name."
+            );
+
+        } else {
+
+            govSignupSetValid(
+                govSignupName,
+                govSignupNameError
+            );
+
+        }
+
+    }
+);
+
+
+govSignupEmail.addEventListener(
+    "input",
+    function () {
+
+        const value =
+            govSignupEmail.value.trim();
+
+        if (!value) {
+
+            govSignupEmailError.textContent = "";
+
+            return;
+
+        }
+
+        if (!govSignupIsEmail(value)) {
+
+            govSignupSetError(
+                govSignupEmail,
+                govSignupEmailError,
+                "Please enter a valid email address."
+            );
+
+        } else {
+
+            govSignupSetValid(
+                govSignupEmail,
+                govSignupEmailError
+            );
+
+        }
+
+    }
+);
+
+
+govSignupPassword.addEventListener(
+    "input",
+    function () {
+
+        const value =
+            govSignupPassword.value;
+
+        if (!value) {
+
+            govSignupPasswordError.textContent = "";
+
+            return;
+
+        }
+
+        if (!govSignupIsPassword(value)) {
+
+            govSignupSetError(
+                govSignupPassword,
+                govSignupPasswordError,
+                "Use at least 8 characters with a letter and number."
+            );
+
+        } else {
+
+            govSignupSetValid(
+                govSignupPassword,
+                govSignupPasswordError
+            );
+
+        }
+
+    }
+);
+
+
+govSignupConfirmPassword.addEventListener(
+    "input",
+    function () {
+
+        const value =
+            govSignupConfirmPassword.value;
+
+        if (!value) {
+
+            govSignupConfirmPasswordError.textContent = "";
+
+            return;
+
+        }
+
+        if (
+            value !==
+            govSignupPassword.value
+        ) {
+
+            govSignupSetError(
+                govSignupConfirmPassword,
+                govSignupConfirmPasswordError,
+                "Passwords do not match."
+            );
+
+        } else {
+
+            govSignupSetValid(
+                govSignupConfirmPassword,
+                govSignupConfirmPasswordError
+            );
+
+        }
+
+    }
+);
+
+
+govSignupRole.addEventListener(
+    "change",
+    function () {
+
+        if (!govSignupRole.value) {
+
+            govSignupSetError(
+                govSignupRole,
+                govSignupRoleError,
+                "Please select your role."
+            );
+
+        } else {
+
+            govSignupSetValid(
+                govSignupRole,
+                govSignupRoleError
+            );
+
+        }
+
+    }
+);
+
+
+govSignupTerms.addEventListener(
+    "change",
+    function () {
+
+        if (govSignupTerms.checked) {
+
+            govSignupTermsError.textContent = "";
+
+        }
+
+    }
+);
+
+
+/* =====================================================
+   FORM SUBMIT
+====================================================== */
+
+govSignupForm.addEventListener(
+    "submit",
+    function (event) {
+
+        event.preventDefault();
+
+
+        let isValid = true;
+
+
+        /* ---------------------------------------------
+           NAME
+        --------------------------------------------- */
+
+        const name =
+            govSignupName.value.trim();
+
+        if (
+            !name ||
+            !govSignupIsName(name)
+        ) {
+
+            govSignupSetError(
+                govSignupName,
+                govSignupNameError,
+                "Please enter your full name."
+            );
+
+            isValid = false;
+
+        } else {
+
+            govSignupSetValid(
+                govSignupName,
+                govSignupNameError
+            );
+
+        }
+
+
+        /* ---------------------------------------------
+           EMAIL
+        --------------------------------------------- */
+
+        const email =
+            govSignupEmail.value.trim();
+
+        if (
+            !email ||
+            !govSignupIsEmail(email)
+        ) {
+
+            govSignupSetError(
+                govSignupEmail,
+                govSignupEmailError,
+                "Please enter a valid email address."
+            );
+
+            isValid = false;
+
+        } else {
+
+            govSignupSetValid(
+                govSignupEmail,
+                govSignupEmailError
+            );
+
+        }
+
+
+        /* ---------------------------------------------
+           PASSWORD
+        --------------------------------------------- */
+
+        const password =
+            govSignupPassword.value;
+
+        if (
+            !password ||
+            !govSignupIsPassword(password)
+        ) {
+
+            govSignupSetError(
+                govSignupPassword,
+                govSignupPasswordError,
+                "Password must be 8+ characters with a letter and number."
+            );
+
+            isValid = false;
+
+        } else {
+
+            govSignupSetValid(
+                govSignupPassword,
+                govSignupPasswordError
+            );
+
+        }
+
+
+        /* ---------------------------------------------
+           CONFIRM PASSWORD
+        --------------------------------------------- */
+
+        const confirmPassword =
+            govSignupConfirmPassword.value;
+
+        if (
+            !confirmPassword ||
+            confirmPassword !== password
+        ) {
+
+            govSignupSetError(
+                govSignupConfirmPassword,
+                govSignupConfirmPasswordError,
+                "Passwords do not match."
+            );
+
+            isValid = false;
+
+        } else {
+
+            govSignupSetValid(
+                govSignupConfirmPassword,
+                govSignupConfirmPasswordError
+            );
+
+        }
+
+
+        /* ---------------------------------------------
+           ROLE
+        --------------------------------------------- */
+
+        const role =
+            govSignupRole.value;
+
+        if (!role) {
+
+            govSignupSetError(
+                govSignupRole,
+                govSignupRoleError,
+                "Please select your role."
+            );
+
+            isValid = false;
+
+        } else {
+
+            govSignupSetValid(
+                govSignupRole,
+                govSignupRoleError
+            );
+
+        }
+
+
+        /* ---------------------------------------------
+           TERMS
+        --------------------------------------------- */
+
+        if (!govSignupTerms.checked) {
+
+            govSignupTermsError.textContent =
+                "Please accept the Terms & Conditions.";
+
+            isValid = false;
+
+        } else {
+
+            govSignupTermsError.textContent = "";
+
+        }
+
+
+        /* =================================================
+           INVALID
+        ================================================== */
+
+        if (!isValid) {
+
+            govSignupGeneralError.classList.add(
+                "gov-signup-show-error"
+            );
+
+            govSignupGeneralError.scrollIntoView({
+                behavior: "smooth",
+                block: "nearest"
+            });
+
+            return;
+
+        }
+
+
+        /* =================================================
+           VALID
+        ================================================== */
+
+        govSignupGeneralError.classList.remove(
+            "gov-signup-show-error"
+        );
+
+
+        /* =================================================
+           STORE USER DETAILS
+        ================================================== */
+
+        localStorage.setItem(
+            "userName",
+            name
+        );
+
+        localStorage.setItem(
+            "userEmail",
+            email
+        );
+
+        localStorage.setItem(
+            "userRole",
+            role
+        );
+
+
+        /*
+            Store password only for this front-end demo.
+
+            For a real production application,
+            passwords must NEVER be stored in localStorage.
+        */
+
+        localStorage.setItem(
+            "signupCompleted",
+            "true"
+        );
+
+
+        /* =================================================
+           SUCCESS POPUP
+        ================================================== */
+
+        govSignupPopup.classList.add(
+            "gov-signup-popup-active"
+        );
+/* =========================================================
+   STACKLY GOVERNMENT SIGNUP
+   UNIQUE PREFIX:
+   gov-signup-
+========================================================= */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+
+/* =====================================================
+   ELEMENTS
+====================================================== */
+
+const govSignupForm =
+    document.getElementById("govSignupForm");
+
+const govSignupName =
+    document.getElementById("govSignupName");
+
+const govSignupEmail =
+    document.getElementById("govSignupEmail");
+
+const govSignupPassword =
+    document.getElementById("govSignupPassword");
+
+const govSignupConfirmPassword =
+    document.getElementById("govSignupConfirmPassword");
+
+const govSignupRole =
+    document.getElementById("govSignupRole");
+
+const govSignupTerms =
+    document.getElementById("govSignupTerms");
+
+const govSignupPopup =
+    document.getElementById("govSignupPopup");
+
+const govSignupGeneralError =
+    document.getElementById("govSignupGeneralError");
+
+
+/* =====================================================
+   ERROR ELEMENTS
+====================================================== */
+
+const govSignupNameError =
+    document.getElementById("govSignupNameError");
+
+const govSignupEmailError =
+    document.getElementById("govSignupEmailError");
+
+const govSignupPasswordError =
+    document.getElementById("govSignupPasswordError");
+
+const govSignupConfirmPasswordError =
+    document.getElementById("govSignupConfirmPasswordError");
+
+const govSignupRoleError =
+    document.getElementById("govSignupRoleError");
+
+const govSignupTermsError =
+    document.getElementById("govSignupTermsError");
+
+
+/* =====================================================
+   HELPER - SHOW ERROR
+====================================================== */
+
+function govSignupSetError(
+    input,
+    errorElement,
+    message
+) {
+
+    errorElement.textContent = message;
+
+    const wrapper =
+        input.closest(".gov-signup-input-wrap");
+
+    if (wrapper) {
+
+        wrapper.classList.remove(
+            "gov-signup-valid"
+        );
+
+        wrapper.classList.add(
+            "gov-signup-invalid"
+        );
+
+    }
+
+}
+
+
+/* =====================================================
+   HELPER - CLEAR ERROR
+====================================================== */
+
+function govSignupSetValid(
+    input,
+    errorElement
+) {
+
+    errorElement.textContent = "";
+
+    const wrapper =
+        input.closest(".gov-signup-input-wrap");
+
+    if (wrapper) {
+
+        wrapper.classList.remove(
+            "gov-signup-invalid"
+        );
+
+        wrapper.classList.add(
+            "gov-signup-valid"
+        );
+
+    }
+
+}
+
+
+/* =====================================================
+   EMAIL VALIDATION
+====================================================== */
+
+function govSignupIsEmail(email) {
+
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+        .test(email);
+
+}
+
+
+/* =====================================================
+   NAME VALIDATION
+====================================================== */
+
+function govSignupIsName(name) {
+
+    return /^[A-Za-zÀ-ÿ\s.'-]{2,60}$/
+        .test(name.trim());
+
+}
+
+
+/* =====================================================
+   PASSWORD VALIDATION
+====================================================== */
+
+function govSignupIsPassword(password) {
+
+    /*
+        Minimum 8 characters
+        At least one letter
+        At least one number
+    */
+
+    return /^(?=.*[A-Za-z])(?=.*\d).{8,}$/
+        .test(password);
+
+}
+
+
+/* =====================================================
+   PASSWORD SHOW / HIDE
+====================================================== */
+
+const govSignupPasswordButtons =
+    document.querySelectorAll(
+        ".gov-signup-password-toggle"
+    );
+
+
+govSignupPasswordButtons.forEach(function (button) {
+
+    button.addEventListener(
+        "click",
+        function () {
+
+            const targetId =
+                button.getAttribute(
+                    "data-target"
+                );
+
+            const target =
+                document.getElementById(
+                    targetId
+                );
+
+            const icon =
+                button.querySelector("i");
+
+
+            if (
+                target.type === "password"
+            ) {
+
+                target.type = "text";
+
+                icon.classList.remove(
+                    "fa-eye"
+                );
+
+                icon.classList.add(
+                    "fa-eye-slash"
+                );
+
+                button.setAttribute(
+                    "aria-label",
+                    "Hide password"
+                );
+
+            } else {
+
+                target.type = "password";
+
+                icon.classList.remove(
+                    "fa-eye-slash"
+                );
+
+                icon.classList.add(
+                    "fa-eye"
+                );
+
+                button.setAttribute(
+                    "aria-label",
+                    "Show password"
+                );
+
+            }
+
+        }
+    );
+
+});
+
+
+/* =====================================================
+   SOCIAL BUTTONS
+====================================================== */
+
+const govSignupSocialButtons =
+    document.querySelectorAll(
+        ".gov-signup-social-btn"
+    );
+
+
+govSignupSocialButtons.forEach(function (button) {
+
+    button.addEventListener(
+        "click",
+        function () {
+
+            const destination =
+                button.getAttribute(
+                    "data-redirect"
+                ) || "404.html";
+
+            window.location.href =
+                destination;
+
+        }
+    );
+
+});
+
+
+/* =====================================================
+   LIVE VALIDATION
+====================================================== */
+
+govSignupName.addEventListener(
+    "input",
+    function () {
+
+        const value =
+            govSignupName.value.trim();
+
+        if (!value) {
+
+            govSignupNameError.textContent = "";
+
+            return;
+
+        }
+
+        if (!govSignupIsName(value)) {
+
+            govSignupSetError(
+                govSignupName,
+                govSignupNameError,
+                "Please enter a valid name."
+            );
+
+        } else {
+
+            govSignupSetValid(
+                govSignupName,
+                govSignupNameError
+            );
+
+        }
+
+    }
+);
+
+
+govSignupEmail.addEventListener(
+    "input",
+    function () {
+
+        const value =
+            govSignupEmail.value.trim();
+
+        if (!value) {
+
+            govSignupEmailError.textContent = "";
+
+            return;
+
+        }
+
+        if (!govSignupIsEmail(value)) {
+
+            govSignupSetError(
+                govSignupEmail,
+                govSignupEmailError,
+                "Please enter a valid email address."
+            );
+
+        } else {
+
+            govSignupSetValid(
+                govSignupEmail,
+                govSignupEmailError
+            );
+
+        }
+
+    }
+);
+
+
+govSignupPassword.addEventListener(
+    "input",
+    function () {
+
+        const value =
+            govSignupPassword.value;
+
+        if (!value) {
+
+            govSignupPasswordError.textContent = "";
+
+            return;
+
+        }
+
+        if (!govSignupIsPassword(value)) {
+
+            govSignupSetError(
+                govSignupPassword,
+                govSignupPasswordError,
+                "Use at least 8 characters with a letter and number."
+            );
+
+        } else {
+
+            govSignupSetValid(
+                govSignupPassword,
+                govSignupPasswordError
+            );
+
+        }
+
+    }
+);
+
+
+govSignupConfirmPassword.addEventListener(
+    "input",
+    function () {
+
+        const value =
+            govSignupConfirmPassword.value;
+
+        if (!value) {
+
+            govSignupConfirmPasswordError.textContent = "";
+
+            return;
+
+        }
+
+        if (
+            value !==
+            govSignupPassword.value
+        ) {
+
+            govSignupSetError(
+                govSignupConfirmPassword,
+                govSignupConfirmPasswordError,
+                "Passwords do not match."
+            );
+
+        } else {
+
+            govSignupSetValid(
+                govSignupConfirmPassword,
+                govSignupConfirmPasswordError
+            );
+
+        }
+
+    }
+);
+
+
+govSignupRole.addEventListener(
+    "change",
+    function () {
+
+        if (!govSignupRole.value) {
+
+            govSignupSetError(
+                govSignupRole,
+                govSignupRoleError,
+                "Please select your role."
+            );
+
+        } else {
+
+            govSignupSetValid(
+                govSignupRole,
+                govSignupRoleError
+            );
+
+        }
+
+    }
+);
+
+
+govSignupTerms.addEventListener(
+    "change",
+    function () {
+
+        if (govSignupTerms.checked) {
+
+            govSignupTermsError.textContent = "";
+
+        }
+
+    }
+);
+
+
+/* =====================================================
+   FORM SUBMIT
+====================================================== */
+
+govSignupForm.addEventListener(
+    "submit",
+    function (event) {
+
+        event.preventDefault();
+
+
+        let isValid = true;
+
+
+        /* ---------------------------------------------
+           NAME
+        --------------------------------------------- */
+
+        const name =
+            govSignupName.value.trim();
+
+        if (
+            !name ||
+            !govSignupIsName(name)
+        ) {
+
+            govSignupSetError(
+                govSignupName,
+                govSignupNameError,
+                "Please enter your full name."
+            );
+
+            isValid = false;
+
+        } else {
+
+            govSignupSetValid(
+                govSignupName,
+                govSignupNameError
+            );
+
+        }
+
+
+        /* ---------------------------------------------
+           EMAIL
+        --------------------------------------------- */
+
+        const email =
+            govSignupEmail.value.trim();
+
+        if (
+            !email ||
+            !govSignupIsEmail(email)
+        ) {
+
+            govSignupSetError(
+                govSignupEmail,
+                govSignupEmailError,
+                "Please enter a valid email address."
+            );
+
+            isValid = false;
+
+        } else {
+
+            govSignupSetValid(
+                govSignupEmail,
+                govSignupEmailError
+            );
+
+        }
+
+
+        /* ---------------------------------------------
+           PASSWORD
+        --------------------------------------------- */
+
+        const password =
+            govSignupPassword.value;
+
+        if (
+            !password ||
+            !govSignupIsPassword(password)
+        ) {
+
+            govSignupSetError(
+                govSignupPassword,
+                govSignupPasswordError,
+                "Password must be 8+ characters with a letter and number."
+            );
+
+            isValid = false;
+
+        } else {
+
+            govSignupSetValid(
+                govSignupPassword,
+                govSignupPasswordError
+            );
+
+        }
+
+
+        /* ---------------------------------------------
+           CONFIRM PASSWORD
+        --------------------------------------------- */
+
+        const confirmPassword =
+            govSignupConfirmPassword.value;
+
+        if (
+            !confirmPassword ||
+            confirmPassword !== password
+        ) {
+
+            govSignupSetError(
+                govSignupConfirmPassword,
+                govSignupConfirmPasswordError,
+                "Passwords do not match."
+            );
+
+            isValid = false;
+
+        } else {
+
+            govSignupSetValid(
+                govSignupConfirmPassword,
+                govSignupConfirmPasswordError
+            );
+
+        }
+
+
+        /* ---------------------------------------------
+           ROLE
+        --------------------------------------------- */
+
+        const role =
+            govSignupRole.value;
+
+        if (!role) {
+
+            govSignupSetError(
+                govSignupRole,
+                govSignupRoleError,
+                "Please select your role."
+            );
+
+            isValid = false;
+
+        } else {
+
+            govSignupSetValid(
+                govSignupRole,
+                govSignupRoleError
+            );
+
+        }
+
+
+        /* ---------------------------------------------
+           TERMS
+        --------------------------------------------- */
+
+        if (!govSignupTerms.checked) {
+
+            govSignupTermsError.textContent =
+                "Please accept the Terms & Conditions.";
+
+            isValid = false;
+
+        } else {
+
+            govSignupTermsError.textContent = "";
+
+        }
+
+
+        /* =================================================
+           INVALID
+        ================================================== */
+
+        if (!isValid) {
+
+            govSignupGeneralError.classList.add(
+                "gov-signup-show-error"
+            );
+
+            govSignupGeneralError.scrollIntoView({
+                behavior: "smooth",
+                block: "nearest"
+            });
+
+            return;
+
+        }
+
+
+        /* =================================================
+           VALID
+        ================================================== */
+
+        govSignupGeneralError.classList.remove(
+            "gov-signup-show-error"
+        );
+
+
+        /* =================================================
+           STORE USER DETAILS
+        ================================================== */
+
+        localStorage.setItem(
+            "userName",
+            name
+        );
+
+        localStorage.setItem(
+            "userEmail",
+            email
+        );
+
+        localStorage.setItem(
+            "userRole",
+            role
+        );
+
+
+        /*
+            Store password only for this front-end demo.
+
+            For a real production application,
+            passwords must NEVER be stored in localStorage.
+        */
+
+        localStorage.setItem(
+            "signupCompleted",
+            "true"
+        );
+
+
+        /* =================================================
+           SUCCESS POPUP
+        ================================================== */
+
+        govSignupPopup.classList.add(
+            "gov-signup-popup-active"
+        );
+
+
+        /* =================================================
+           REDIRECT TO LOGIN
+        ================================================= */
+
+        setTimeout(function () {
+
+            window.location.href =
+                "login.html";
+
+        }, 2300);
+
+    }
+);
+
+});
+
+        /* =================================================
+           REDIRECT TO LOGIN
+        ================================================= */
+
+        setTimeout(function () {
+
+            window.location.href =
+                "login.html";
+
+        }, 2300);
+
+    }
+);
+
+});
+    </script>
+
+</body>
+
+</html>
