@@ -69,6 +69,7 @@
 
         
 
+
         <!-- User Information -->
         <div class="gov-officer-user-box">
 
@@ -94,7 +95,7 @@
 
             </div>
 
-            <!-- <i class="fa-solid fa-chevron-down gov-officer-user-arrow"></i> -->
+            
 
         </div>
 
@@ -166,7 +167,7 @@
 
         <!-- Dashboard -->
         <a
-            href="government-officer-dashboard.html"
+            href="./citizen-dashboard.html"
             class="gov-officer-nav-link gov-officer-nav-active"
         >
             <span class="gov-officer-nav-icon">
@@ -185,7 +186,7 @@
 
         <!-- Departments -->
         <a
-            href="./departments-dash.html"
+            href="./my application.html"
             class="gov-officer-nav-link"
         >
             <span class="gov-officer-nav-icon">
@@ -193,13 +194,13 @@
             </span>
 
             <span class="gov-officer-nav-text">
-                Departments
+                My applications
             </span>
         </a>
 
 
         <!-- Citizens -->
-        <a
+        <!-- <a
             href="./citizens.html"
             class="gov-officer-nav-link"
         >
@@ -208,14 +209,14 @@
             </span>
 
             <span class="gov-officer-nav-text">
-                Citizens
+            Documents 
             </span>
-        </a>
+        </a> -->
 
 
         <!-- Services -->
         <a
-            href="./government.html"
+            href="./appointments.html"
             class="gov-officer-nav-link"
         >
             <span class="gov-officer-nav-icon">
@@ -223,12 +224,12 @@
             </span>
 
             <span class="gov-officer-nav-text">
-                Government Services
+               Appointments
             </span>
         </a>
 
 
-        
+
 
         <!-- =================================================
              MANAGEMENT
@@ -240,7 +241,7 @@
 
         <!-- Tasks -->
         <a
-            href="./tasks.html"
+            href="./payments.html"
             class="gov-officer-nav-link"
         >
             <span class="gov-officer-nav-icon">
@@ -248,7 +249,7 @@
             </span>
 
             <span class="gov-officer-nav-text">
-                Tasks
+              payments
             </span>
         </a>
 
@@ -258,7 +259,7 @@
 
         <!-- Settings -->
         <a
-            href="./settings.html"
+            href="./settings1.html"
             class="gov-officer-nav-link"
         >
             <span class="gov-officer-nav-icon">
@@ -276,9 +277,7 @@
     <!-- SIDEBAR BOTTOM -->
     <div class="gov-officer-sidebar-bottom">
 
-        <!-- Help -->
-        
-        
+
 
         <!-- Logout -->
         <button
@@ -307,416 +306,337 @@
 <main class="gov-officer-main-content" id="govOfficerMainContent">
 
 
-<!-- =========================
-     CITIZEN DASHBOARD CONTENT
-     ========================= -->
+<!-- =========================================================
+     GOVERNMENT CITIZEN - APPOINTMENTS DASHBOARD
+========================================================= -->
 
-<main class="citizen-dashboard-content">
+<section class="appt-dashboard">
 
-    <!-- Background Decorative Elements -->
-    <div class="citizen-bg-shape citizen-bg-shape-one"></div>
-    <div class="citizen-bg-shape citizen-bg-shape-two"></div>
+    <!-- Background Decorations -->
+    <div class="appt-bg-circle appt-circle-one"></div>
+    <div class="appt-bg-circle appt-circle-two"></div>
 
-    <!-- =========================
-         WELCOME SECTION
-         ========================= -->
-    <section class="citizen-welcome-section">
+    <!-- =====================================================
+         PAGE HEADER
+    ====================================================== -->
 
-        <div class="citizen-welcome-overlay"></div>
+    <div class="appt-page-header">
 
-        <div class="citizen-welcome-content">
+        <div class="appt-header-content">
 
-            <div class="citizen-welcome-text">
-                <span class="citizen-welcome-tag">
-                    <i class="fa-solid fa-landmark"></i>
-                    Citizen Portal
-                </span>
-
-                <h1>
-                    Welcome back,
-                    <span id="citizenUserName">Citizen</span>
-                </h1>
-
-                <p>
-                    Access government services, track applications,
-                    view important updates and manage your requests
-                    from one secure digital dashboard.
-                </p>
-
-                <div class="citizen-welcome-actions">
-                    <a href="404.html" class="citizen-primary-btn">
-                        <i class="fa-solid fa-file-circle-plus"></i>
-                        Apply for a Service
-                    </a>
-
-                    <a href="404.html" class="citizen-secondary-btn">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        Track Application
-                    </a>
-                </div>
-            </div>
-
-            <div class="citizen-welcome-visual">
-                <div class="citizen-government-icon">
-                    <i class="fa-solid fa-building-columns"></i>
-                </div>
-
-                <span>Digital Government Services</span>
-            </div>
-
-        </div>
-    </section>
-
-
-    <!-- =========================
-         DASHBOARD TITLE
-         ========================= -->
-    <section class="citizen-section-heading">
-
-        <div>
-            <span class="citizen-small-label">
-                <i class="fa-solid fa-chart-pie"></i>
-                Dashboard Overview
+            <span class="appt-eyebrow">
+                <i class="fa-solid fa-calendar-check"></i>
+                CITIZEN APPOINTMENTS
             </span>
 
-            <h2>My Service Overview</h2>
+            <h1>My Appointments</h1>
 
             <p>
-                Monitor your applications and government service requests
-                at a glance.
+                Schedule, manage and track your appointments
+                with government departments and service centers.
             </p>
+
         </div>
 
-        <a href="404.html" class="citizen-view-all-btn">
-            View All
-            <i class="fa-solid fa-arrow-right"></i>
+        <a href="404.html" class="appt-new-btn">
+            <i class="fa-solid fa-calendar-plus"></i>
+            Book Appointment
         </a>
 
-    </section>
+    </div>
 
 
-    <!-- =========================
-         STATISTICS CARDS
-         ========================= -->
-    <section class="citizen-stat-grid">
+    <!-- =====================================================
+         STATISTICS
+    ====================================================== -->
 
-        <article class="citizen-stat-card citizen-stat-blue">
+    <div class="appt-stat-grid">
 
-            <div class="citizen-stat-icon">
-                <i class="fa-solid fa-file-lines"></i>
+        <div class="appt-stat-card">
+
+            <div class="appt-stat-icon blue">
+                <i class="fa-solid fa-calendar-days"></i>
             </div>
 
-            <div class="citizen-stat-info">
-                <span>Total Applications</span>
-                <strong>24</strong>
+            <div class="appt-stat-info">
+
+                <span>Total Appointments</span>
+
+                <h2>12</h2>
+
                 <small>
-                    <i class="fa-solid fa-arrow-up"></i>
-                    12% this month
+                    All scheduled appointments
                 </small>
+
             </div>
 
-        </article>
+        </div>
 
 
-        <article class="citizen-stat-card citizen-stat-orange">
+        <div class="appt-stat-card">
 
-            <div class="citizen-stat-icon">
+            <div class="appt-stat-icon cyan">
                 <i class="fa-solid fa-clock"></i>
             </div>
 
-            <div class="citizen-stat-info">
-                <span>Pending Applications</span>
-                <strong>06</strong>
+            <div class="appt-stat-info">
+
+                <span>Upcoming</span>
+
+                <h2>04</h2>
+
                 <small>
-                    <i class="fa-solid fa-hourglass-half"></i>
-                    Under review
+                    Appointments awaiting attendance
                 </small>
+
             </div>
 
-        </article>
+        </div>
 
 
-        <article class="citizen-stat-card citizen-stat-green">
+        <div class="appt-stat-card">
 
-            <div class="citizen-stat-icon">
+            <div class="appt-stat-icon green">
                 <i class="fa-solid fa-circle-check"></i>
             </div>
 
-            <div class="citizen-stat-info">
-                <span>Approved Services</span>
-                <strong>15</strong>
+            <div class="appt-stat-info">
+
+                <span>Completed</span>
+
+                <h2>07</h2>
+
                 <small>
-                    <i class="fa-solid fa-check"></i>
-                    Successfully completed
+                    Successfully attended
                 </small>
-            </div>
-
-        </article>
-
-
-        <article class="citizen-stat-card citizen-stat-purple">
-
-            <div class="citizen-stat-icon">
-                <i class="fa-solid fa-bell"></i>
-            </div>
-
-            <div class="citizen-stat-info">
-                <span>Notifications</span>
-                <strong>08</strong>
-                <small>
-                    <i class="fa-solid fa-envelope"></i>
-                    New updates available
-                </small>
-            </div>
-
-        </article>
-
-    </section>
-
-
-    <!-- =========================
-         MAIN DASHBOARD GRID
-         ========================= -->
-    <section class="citizen-main-grid">
-
-
-        <!-- APPLICATION STATUS -->
-        <div class="citizen-glass-card citizen-status-card">
-
-            <div class="citizen-card-header">
-
-                <div>
-                    <span>Application Monitoring</span>
-                    <h3>Application Status</h3>
-                </div>
-
-                <a href="404.html" class="citizen-card-link">
-                    View All
-                    <i class="fa-solid fa-arrow-right"></i>
-                </a>
-
-            </div>
-
-
-            <div class="citizen-status-list">
-
-                <div class="citizen-status-item">
-
-                    <div class="citizen-status-icon status-completed">
-                        <i class="fa-solid fa-check"></i>
-                    </div>
-
-                    <div class="citizen-status-content">
-                        <h4>Community Certificate</h4>
-                        <p>Application ID: GOV-2026-00124</p>
-                    </div>
-
-                    <span class="citizen-status-badge completed">
-                        Approved
-                    </span>
-
-                </div>
-
-
-                <div class="citizen-status-item">
-
-                    <div class="citizen-status-icon status-pending">
-                        <i class="fa-solid fa-clock"></i>
-                    </div>
-
-                    <div class="citizen-status-content">
-                        <h4>Income Certificate</h4>
-                        <p>Application ID: GOV-2026-00139</p>
-                    </div>
-
-                    <span class="citizen-status-badge pending">
-                        Pending
-                    </span>
-
-                </div>
-
-
-                <div class="citizen-status-item">
-
-                    <div class="citizen-status-icon status-review">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </div>
-
-                    <div class="citizen-status-content">
-                        <h4>Residence Certificate</h4>
-                        <p>Application ID: GOV-2026-00147</p>
-                    </div>
-
-                    <span class="citizen-status-badge review">
-                        Under Review
-                    </span>
-
-                </div>
-
-
-                <div class="citizen-status-item">
-
-                    <div class="citizen-status-icon status-completed">
-                        <i class="fa-solid fa-check"></i>
-                    </div>
-
-                    <div class="citizen-status-content">
-                        <h4>Birth Certificate</h4>
-                        <p>Application ID: GOV-2026-00098</p>
-                    </div>
-
-                    <span class="citizen-status-badge completed">
-                        Approved
-                    </span>
-
-                </div>
 
             </div>
 
         </div>
 
 
-        <!-- QUICK ACTIONS -->
-        <div class="citizen-glass-card citizen-actions-card">
+        <div class="appt-stat-card">
 
-            <div class="citizen-card-header">
+            <div class="appt-stat-icon orange">
+                <i class="fa-solid fa-calendar-xmark"></i>
+            </div>
+
+            <div class="appt-stat-info">
+
+                <span>Cancelled</span>
+
+                <h2>01</h2>
+
+                <small>
+                    Cancelled appointments
+                </small>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         MAIN APPOINTMENT AREA
+    ====================================================== -->
+
+    <div class="appt-main-grid">
+
+
+        <!-- =================================================
+             NEXT APPOINTMENT
+        ================================================== -->
+
+        <div class="appt-next-card">
+
+            <div class="appt-card-heading">
 
                 <div>
-                    <span>Government Services</span>
-                    <h3>Quick Actions</h3>
+
+                    <span>
+                        NEXT APPOINTMENT
+                    </span>
+
+                    <h2>Upcoming Appointment</h2>
+
                 </div>
+
+                <i class="fa-solid fa-calendar-check"></i>
 
             </div>
 
 
-            <div class="citizen-action-grid">
+            <div class="appt-highlight">
 
-                <a href="404.html" class="citizen-action-item">
-                    <div class="action-icon blue">
-                        <i class="fa-solid fa-file-circle-plus"></i>
-                    </div>
-                    <strong>New Application</strong>
-                    <span>Apply online</span>
-                </a>
+                <div class="appt-date-box">
+
+                    <span>18</span>
+
+                    <strong>AUG</strong>
+
+                </div>
 
 
-                <a href="404.html" class="citizen-action-item">
-                    <div class="action-icon cyan">
+                <div class="appt-highlight-info">
+
+                    <h3>
+                        Citizen Service Center
+                    </h3>
+
+                    <p>
+                        <i class="fa-solid fa-building"></i>
+                        Government Service Department
+                    </p>
+
+                    <p>
                         <i class="fa-solid fa-location-dot"></i>
-                    </div>
-                    <strong>Track Request</strong>
-                    <span>Check status</span>
+                        District Administration Office
+                    </p>
+
+                    <p>
+                        <i class="fa-solid fa-clock"></i>
+                        10:30 AM - 11:00 AM
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="appt-reference">
+
+                <div>
+
+                    <span>Appointment ID</span>
+
+                    <strong>
+                        APT-GOV-2026-0148
+                    </strong>
+
+                </div>
+
+                <div>
+
+                    <span>Service</span>
+
+                    <strong>
+                        Document Verification
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="appt-actions">
+
+                <a href="404.html" class="appt-primary-btn">
+                    <i class="fa-solid fa-eye"></i>
+                    View Details
                 </a>
 
-
-                <a href="404.html" class="citizen-action-item">
-                    <div class="action-icon green">
-                        <i class="fa-solid fa-download"></i>
-                    </div>
-                    <strong>Downloads</strong>
-                    <span>Get documents</span>
-                </a>
-
-
-                <a href="404.html" class="citizen-action-item">
-                    <div class="action-icon purple">
-                        <i class="fa-solid fa-headset"></i>
-                    </div>
-                    <strong>Help Center</strong>
-                    <span>Get assistance</span>
+                <a href="404.html" class="appt-secondary-btn">
+                    <i class="fa-solid fa-pen"></i>
+                    Reschedule
                 </a>
 
             </div>
 
         </div>
 
-    </section>
 
+        <!-- =================================================
+             QUICK BOOKING
+        ================================================== -->
 
-    <!-- =========================
-         LOWER DASHBOARD GRID
-         ========================= -->
-    <section class="citizen-lower-grid">
+        <div class="appt-book-card">
 
-
-        <!-- IMPORTANT SERVICES -->
-        <div class="citizen-glass-card citizen-services-card">
-
-            <div class="citizen-card-header">
+            <div class="appt-card-heading">
 
                 <div>
-                    <span>Citizen Services</span>
-                    <h3>Popular Government Services</h3>
+
+                    <span>
+                        QUICK ACTION
+                    </span>
+
+                    <h2>Book a New Appointment</h2>
+
                 </div>
 
-                <a href="404.html" class="citizen-card-link">
-                    Explore
-                    <i class="fa-solid fa-arrow-right"></i>
-                </a>
+                <i class="fa-solid fa-calendar-plus"></i>
 
             </div>
 
 
-            <div class="citizen-services-list">
+            <p class="appt-book-description">
 
-                <a href="404.html" class="citizen-service-row">
+                Select a government service and schedule
+                an appointment at your preferred service center.
 
-                    <div class="service-row-icon">
+            </p>
+
+
+            <div class="appt-service-list">
+
+                <a href="404.html" class="appt-service-item">
+
+                    <span class="appt-service-icon blue">
+                        <i class="fa-solid fa-file-circle-check"></i>
+                    </span>
+
+                    <span>
+                        <strong>
+                            Document Verification
+                        </strong>
+
+                        <small>
+                            Verify government documents
+                        </small>
+                    </span>
+
+                    <i class="fa-solid fa-chevron-right"></i>
+
+                </a>
+
+
+                <a href="404.html" class="appt-service-item">
+
+                    <span class="appt-service-icon cyan">
                         <i class="fa-solid fa-id-card"></i>
-                    </div>
+                    </span>
 
-                    <div>
-                        <strong>Identity Services</strong>
-                        <span>Access citizen identity related services</span>
-                    </div>
+                    <span>
+                        <strong>
+                            Certificate Services
+                        </strong>
 
-                    <i class="fa-solid fa-chevron-right"></i>
-
-                </a>
-
-
-                <a href="404.html" class="citizen-service-row">
-
-                    <div class="service-row-icon">
-                        <i class="fa-solid fa-house"></i>
-                    </div>
-
-                    <div>
-                        <strong>Property Services</strong>
-                        <span>Manage property and land applications</span>
-                    </div>
+                        <small>
+                            Certificate related services
+                        </small>
+                    </span>
 
                     <i class="fa-solid fa-chevron-right"></i>
 
                 </a>
 
 
-                <a href="404.html" class="citizen-service-row">
+                <a href="404.html" class="appt-service-item">
 
-                    <div class="service-row-icon">
-                        <i class="fa-solid fa-file-shield"></i>
-                    </div>
+                    <span class="appt-service-icon purple">
+                        <i class="fa-solid fa-landmark"></i>
+                    </span>
 
-                    <div>
-                        <strong>Certificates</strong>
-                        <span>Apply for official government certificates</span>
-                    </div>
+                    <span>
+                        <strong>
+                            Government Office
+                        </strong>
 
-                    <i class="fa-solid fa-chevron-right"></i>
-
-                </a>
-
-
-                <a href="404.html" class="citizen-service-row">
-
-                    <div class="service-row-icon">
-                        <i class="fa-solid fa-building-columns"></i>
-                    </div>
-
-                    <div>
-                        <strong>Public Services</strong>
-                        <span>Explore available public services</span>
-                    </div>
+                        <small>
+                            Visit a department office
+                        </small>
+                    </span>
 
                     <i class="fa-solid fa-chevron-right"></i>
 
@@ -726,112 +646,252 @@
 
         </div>
 
-
-        <!-- NOTIFICATIONS -->
-        <div class="citizen-glass-card citizen-notification-card">
-
-            <div class="citizen-card-header">
-
-                <div>
-                    <span>Latest Updates</span>
-                    <h3>Notifications</h3>
-                </div>
-
-                <span class="citizen-notification-count">08</span>
-
-            </div>
+    </div>
 
 
-            <div class="citizen-notification-list">
+    <!-- =====================================================
+         APPOINTMENT LIST
+    ====================================================== -->
 
-                <a href="404.html" class="citizen-notification">
+    <div class="appt-list-section">
 
-                    <div class="notification-icon blue">
-                        <i class="fa-solid fa-bell"></i>
-                    </div>
+        <div class="appt-section-header">
 
-                    <div>
-                        <strong>Application Update</strong>
-                        <p>Your income certificate is under review.</p>
-                        <small>10 minutes ago</small>
-                    </div>
+            <div>
 
-                </a>
+                <span>
+                    APPOINTMENT HISTORY
+                </span>
 
-
-                <a href="404.html" class="citizen-notification">
-
-                    <div class="notification-icon green">
-                        <i class="fa-solid fa-circle-check"></i>
-                    </div>
-
-                    <div>
-                        <strong>Application Approved</strong>
-                        <p>Your community certificate has been approved.</p>
-                        <small>2 hours ago</small>
-                    </div>
-
-                </a>
-
-
-                <a href="404.html" class="citizen-notification">
-
-                    <div class="notification-icon orange">
-                        <i class="fa-solid fa-bullhorn"></i>
-                    </div>
-
-                    <div>
-                        <strong>Government Announcement</strong>
-                        <p>New citizen services are now available online.</p>
-                        <small>Yesterday</small>
-                    </div>
-
-                </a>
+                <h2>Recent Appointments</h2>
 
             </div>
 
-            <a href="404.html" class="citizen-notification-footer">
-                View All Notifications
+            <a href="404.html" class="appt-view-all">
+                View All
                 <i class="fa-solid fa-arrow-right"></i>
             </a>
 
         </div>
 
-    </section>
+
+        <div class="appt-list">
 
 
-    <!-- =========================
-         CITIZEN SUPPORT BANNER
-         ========================= -->
-    <section class="citizen-support-banner">
+            <!-- Appointment 1 -->
 
-        <div class="citizen-support-icon">
-            <i class="fa-solid fa-headset"></i>
+            <div class="appt-list-card">
+
+                <div class="appt-list-date">
+
+                    <span>22</span>
+                    <strong>AUG</strong>
+
+                </div>
+
+
+                <div class="appt-list-details">
+
+                    <h3>
+                        Income Certificate Verification
+                    </h3>
+
+                    <p>
+                        <i class="fa-solid fa-building"></i>
+                        Revenue Department
+                    </p>
+
+                    <p>
+                        <i class="fa-solid fa-clock"></i>
+                        11:00 AM
+                    </p>
+
+                </div>
+
+
+                <span class="appt-status upcoming">
+                    <i class="fa-solid fa-clock"></i>
+                    Upcoming
+                </span>
+
+
+                <a href="404.html" class="appt-list-btn">
+                    View
+                </a>
+
+            </div>
+
+
+            <!-- Appointment 2 -->
+
+            <div class="appt-list-card">
+
+                <div class="appt-list-date">
+
+                    <span>16</span>
+                    <strong>AUG</strong>
+
+                </div>
+
+
+                <div class="appt-list-details">
+
+                    <h3>
+                        Residence Certificate
+                    </h3>
+
+                    <p>
+                        <i class="fa-solid fa-building"></i>
+                        Revenue Department
+                    </p>
+
+                    <p>
+                        <i class="fa-solid fa-clock"></i>
+                        02:30 PM
+                    </p>
+
+                </div>
+
+
+                <span class="appt-status completed">
+                    <i class="fa-solid fa-circle-check"></i>
+                    Completed
+                </span>
+
+
+                <a href="404.html" class="appt-list-btn">
+                    View
+                </a>
+
+            </div>
+
+
+            <!-- Appointment 3 -->
+
+            <div class="appt-list-card">
+
+                <div class="appt-list-date">
+
+                    <span>12</span>
+                    <strong>AUG</strong>
+
+                </div>
+
+
+                <div class="appt-list-details">
+
+                    <h3>
+                        Birth Certificate Verification
+                    </h3>
+
+                    <p>
+                        <i class="fa-solid fa-building"></i>
+                        Municipal Administration
+                    </p>
+
+                    <p>
+                        <i class="fa-solid fa-clock"></i>
+                        09:30 AM
+                    </p>
+
+                </div>
+
+
+                <span class="appt-status completed">
+                    <i class="fa-solid fa-circle-check"></i>
+                    Completed
+                </span>
+
+
+                <a href="404.html" class="appt-list-btn">
+                    View
+                </a>
+
+            </div>
+
+
+            <!-- Appointment 4 -->
+
+            <div class="appt-list-card">
+
+                <div class="appt-list-date">
+
+                    <span>08</span>
+                    <strong>AUG</strong>
+
+                </div>
+
+
+                <div class="appt-list-details">
+
+                    <h3>
+                        Community Certificate
+                    </h3>
+
+                    <p>
+                        <i class="fa-solid fa-building"></i>
+                        Social Welfare Department
+                    </p>
+
+                    <p>
+                        <i class="fa-solid fa-clock"></i>
+                        03:00 PM
+                    </p>
+
+                </div>
+
+
+                <span class="appt-status cancelled">
+                    <i class="fa-solid fa-circle-xmark"></i>
+                    Cancelled
+                </span>
+
+
+                <a href="404.html" class="appt-list-btn">
+                    View
+                </a>
+
+            </div>
+
         </div>
 
-        <div class="citizen-support-content">
-            <span>Need Assistance?</span>
-            <h3>We're here to help you access government services.</h3>
+    </div>
+
+
+    <!-- =====================================================
+         INFORMATION BANNER
+    ====================================================== -->
+
+    <div class="appt-info-banner">
+
+        <div class="appt-info-icon">
+            <i class="fa-solid fa-bell"></i>
+        </div>
+
+        <div class="appt-info-content">
+
+            <span>APPOINTMENT REMINDER</span>
+
+            <h2>
+                Don't miss your upcoming appointment
+            </h2>
+
             <p>
-                Get guidance, track your requests and find answers
-                to frequently asked questions.
+                Please arrive at least 15 minutes before
+                your scheduled appointment time and carry
+                all required documents.
             </p>
+
         </div>
 
-        <a href="404.html" class="citizen-support-btn">
-            Visit Help Center
+        <a href="404.html" class="appt-info-btn">
+            View Guidelines
             <i class="fa-solid fa-arrow-right"></i>
         </a>
 
-    </section>
+    </div>
 
-</main>
-
-
-<!-- Font Awesome -->
-<link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</section>
 
 
 
@@ -840,1173 +900,1362 @@
 <style>
     
 /* =========================================================
-   CITIZEN DASHBOARD CONTENT
-   Does NOT style top bar or sidebar
-   ========================================================= */
+   APPOINTMENTS DASHBOARD
+   GOVERNMENT / CITIZEN THEME
 
-.citizen-dashboard-content {
-    --citizen-primary: #0757b8;
-    --citizen-primary-dark: #043b82;
-    --citizen-blue: #087ee8;
-    --citizen-cyan: #00a9e8;
-    --citizen-light-blue: #eaf5ff;
-    --citizen-white: #ffffff;
-    --citizen-text: #15365c;
-    --citizen-muted: #6d8199;
-    --citizen-border: rgba(255, 255, 255, 0.45);
+   Responsive:
+   Mobile
+   Tablet
+   Laptop
+   Desktop
+========================================================= */
+
+
+/* =========================================================
+   MAIN
+========================================================= */
+
+.appt-dashboard {
 
     position: relative;
+
+    width: 100%;
+
     min-height: 100vh;
+
     padding: 32px;
+
     overflow: hidden;
+
+    font-family: "Poppins", Arial, sans-serif;
+
+    color: #174b70;
 
     background:
     linear-gradient(
-        135deg,
-        rgba(6, 26, 64, .95),
-        rgba(11, 94, 215, .78)
-    ),
-        url("./g2.webp");
-
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-
-    font-family: "Poppins", sans-serif;
-    color: var(--citizen-text);
-    font-size: 20px;
-}
-
-
-/* =========================================================
-   BACKGROUND SHAPES
-   ========================================================= */
-
-.citizen-bg-shape {
-    position: absolute;
-    border-radius: 50%;
-    filter: blur(3px);
-    pointer-events: none;
-    z-index: 0;
-}
-
-.citizen-bg-shape-one {
-    width: 350px;
-    height: 350px;
-    top: 100px;
-    right: -150px;
-    background: rgba(0, 139, 255, 0.16);
-}
-
-.citizen-bg-shape-two {
-    width: 300px;
-    height: 300px;
-    bottom: 150px;
-    left: -160px;
-    background: rgba(0, 195, 255, 0.14);
-}
-
-
-/* =========================================================
-   WELCOME SECTION
-   ========================================================= */
-
-.citizen-welcome-section {
-    position: relative;
-    z-index: 1;
-
-    min-height: 300px;
-
-    margin-bottom: 35px;
-    border-radius: 30px;
-    overflow: hidden;
-
-    background:
-    linear-gradient(
-        135deg,
-        rgba(6, 26, 64, .95),
-        rgba(11, 94, 215, .78)
-    ),
+            135deg,
+            rgba(45, 80, 107, 0.97),
+            rgba(7, 80, 135, 0.93)
+        ),
         url("./g4.webp");
 
     background-size: cover;
+
     background-position: center;
 
-    box-shadow: 0 25px 60px rgba(0, 70, 140, 0.20);
+    background-attachment: fixed;
 }
 
 
-.citizen-welcome-overlay {
+/* =========================================================
+   BACKGROUND CIRCLES
+========================================================= */
+
+.appt-bg-circle {
+
     position: absolute;
-    inset: 0;
-
-    background:
-        radial-gradient(
-            circle at 85% 20%,
-            rgba(255,255,255,0.22),
-            transparent 30%
-        );
-}
-
-
-.citizen-welcome-content {
-    position: relative;
-    z-index: 2;
-
-    min-height: 300px;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    gap: 40px;
-    padding: 45px 55px;
-}
-
-
-.citizen-welcome-text {
-    max-width: 760px;
-}
-
-
-.citizen-welcome-tag {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-
-    padding: 9px 17px;
-    margin-bottom: 16px;
-
-    border-radius: 50px;
-
-    background: rgba(255,255,255,0.16);
-    border: 1px solid rgba(255,255,255,0.28);
-
-    color: #ffffff;
-    font-size: 16px;
-    font-weight: 600;
-
-    backdrop-filter: blur(12px);
-}
-
-
-.citizen-welcome-text h1 {
-    margin: 0 0 12px;
-
-    color: #ffffff;
-
-    font-size: clamp(32px, 4vw, 52px);
-    line-height: 1.15;
-    font-weight: 700;
-}
-
-
-.citizen-welcome-text h1 span {
-    color: #bcecff;
-}
-
-
-.citizen-welcome-text p {
-    max-width: 720px;
-
-    margin: 0 0 25px;
-
-    color: rgba(255,255,255,0.90);
-
-    font-size: 20px;
-    line-height: 1.7;
-}
-
-
-.citizen-welcome-actions {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 14px;
-}
-
-
-.citizen-primary-btn,
-.citizen-secondary-btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-
-    min-height: 52px;
-    padding: 12px 23px;
-
-    border-radius: 12px;
-
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 600;
-
-    transition: 0.3s ease;
-}
-
-
-.citizen-primary-btn {
-    color: #0757b8;
-    background: #ffffff;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
-}
-
-
-.citizen-primary-btn:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.18);
-}
-
-
-.citizen-secondary-btn {
-    color: #ffffff;
-    background: rgba(255,255,255,0.12);
-    border: 1px solid rgba(255,255,255,0.35);
-    backdrop-filter: blur(10px);
-}
-
-
-.citizen-secondary-btn:hover {
-    transform: translateY(-4px);
-    background: rgba(255,255,255,0.20);
-}
-
-
-.citizen-welcome-visual {
-    width: 250px;
-    min-width: 250px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    gap: 15px;
-
-    color: #ffffff;
-    text-align: center;
-}
-
-
-.citizen-government-icon {
-    width: 145px;
-    height: 145px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
     border-radius: 50%;
 
-    background: rgba(255,255,255,0.14);
-    border: 1px solid rgba(255,255,255,0.30);
+    pointer-events: none;
 
-    box-shadow:
-        inset 0 0 35px rgba(255,255,255,0.10),
-        0 20px 40px rgba(0,0,0,0.12);
+    z-index: 0;
 
-    backdrop-filter: blur(15px);
+    filter: blur(2px);
 }
 
 
-.citizen-government-icon i {
-    font-size: 65px;
+.appt-circle-one {
+
+    width: 420px;
+
+    height: 420px;
+
+    top: -180px;
+
+    right: -150px;
+
+    background:
+        rgba(0, 112, 204, .12);
 }
 
 
-.citizen-welcome-visual span {
-    font-size: 17px;
-    font-weight: 600;
+.appt-circle-two {
+
+    width: 340px;
+
+    height: 340px;
+
+    bottom: -170px;
+
+    left: -160px;
+
+    background:
+        rgba(0, 174, 224, .12);
 }
 
 
 /* =========================================================
-   SECTION HEADING
-   ========================================================= */
+   PAGE HEADER
+========================================================= */
 
-.citizen-section-heading {
+.appt-page-header {
+
     position: relative;
-    z-index: 1;
+
+    z-index: 2;
 
     display: flex;
+
+    align-items: center;
+
     justify-content: space-between;
-    align-items: flex-end;
 
     gap: 25px;
-    margin-bottom: 22px;
-}
 
+    margin-bottom: 25px;
 
-.citizen-small-label {
-    display: block;
-
-    margin-bottom: 5px;
-
-    color: var(--citizen-blue);
-
-    font-size: 15px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-
-.citizen-section-heading h2 {
-    margin: 0;
-
-    color: var(--citizen-primary-dark);
-
-    font-size: 32px;
-    font-weight: 700;
-}
-
-
-.citizen-section-heading p {
-    margin: 7px 0 0;
-
-    color: var(--citizen-muted);
-
-    font-size: 18px;
-}
-
-
-.citizen-view-all-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-
-    color: var(--citizen-primary);
-
-    text-decoration: none;
-
-    font-size: 17px;
-    font-weight: 600;
-
-    transition: 0.3s ease;
-}
-
-
-.citizen-view-all-btn:hover {
-    gap: 13px;
-}
-
-
-/* =========================================================
-   STATISTICS GRID
-   ========================================================= */
-
-.citizen-stat-grid {
-    position: relative;
-    z-index: 1;
-
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-
-    gap: 20px;
-    margin-bottom: 28px;
-}
-
-
-.citizen-stat-card {
-    position: relative;
-
-    display: flex;
-    align-items: center;
-
-    gap: 18px;
-
-    min-height: 145px;
-    padding: 25px;
+    padding: 30px;
 
     overflow: hidden;
 
     border-radius: 22px;
 
-    background: rgba(255,255,255,0.78);
-    border: 1px solid rgba(255,255,255,0.72);
+    background:
+        linear-gradient(
+            110deg,
+            #043d78,
+            #0874c4,
+            #00a6dc
+        );
 
-    box-shadow: 0 18px 45px rgba(20,80,130,0.12);
-
-    backdrop-filter: blur(18px);
-
-    transition: 0.35s ease;
+    box-shadow:
+        0 18px 45px rgba(10,75,125,.20);
 }
 
 
-.citizen-stat-card::after {
+.appt-page-header::after {
+
     content: "";
 
     position: absolute;
 
-    width: 100px;
-    height: 100px;
+    width: 330px;
 
-    right: -30px;
-    bottom: -40px;
+    height: 330px;
+
+    top: -180px;
+
+    right: -110px;
+
+    border:
+        55px solid rgba(255,255,255,.08);
 
     border-radius: 50%;
-
-    background: rgba(255,255,255,0.35);
 }
 
 
-.citizen-stat-card:hover {
-    transform: translateY(-7px);
-    box-shadow: 0 25px 55px rgba(20,80,130,0.18);
-}
+.appt-header-content {
 
-
-.citizen-stat-icon {
-    width: 62px;
-    height: 62px;
-    min-width: 62px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    border-radius: 17px;
-
-    color: #ffffff;
-
-    font-size: 26px;
-
-    box-shadow: 0 10px 22px rgba(0,0,0,0.10);
-}
-
-
-.citizen-stat-blue .citizen-stat-icon {
-    background: linear-gradient(135deg,#0757b8,#0b91e8);
-}
-
-
-.citizen-stat-orange .citizen-stat-icon {
-    background: linear-gradient(135deg,#f57c00,#ffb300);
-}
-
-
-.citizen-stat-green .citizen-stat-icon {
-    background: linear-gradient(135deg,#008f62,#20c997);
-}
-
-
-.citizen-stat-purple .citizen-stat-icon {
-    background: linear-gradient(135deg,#6937c9,#a05cff);
-}
-
-
-.citizen-stat-info {
     position: relative;
+
     z-index: 2;
 }
 
 
-.citizen-stat-info span {
-    display: block;
+.appt-eyebrow {
 
-    color: var(--citizen-muted);
+    display: flex;
 
-    font-size: 16px;
-    font-weight: 600;
+    align-items: center;
+
+    gap: 8px;
+
+    margin-bottom: 8px;
+
+    color: #a9eaff;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
 }
 
 
-.citizen-stat-info strong {
-    display: block;
+.appt-header-content h1 {
 
-    margin: 3px 0;
+    margin: 0 0 8px;
 
-    color: var(--citizen-primary-dark);
+    color: #ffffff;
 
-    font-size: 34px;
-    line-height: 1.1;
+    font-size: 22px;
+
+    font-weight: 750;
 }
 
 
-.citizen-stat-info small {
-    display: block;
+.appt-header-content p {
 
-    color: #17835e;
+    max-width: 850px;
 
-    font-size: 14px;
-    font-weight: 600;
+    margin: 0;
+
+    color: rgba(255,255,255,.87);
+
+    font-size: 17px;
+
+    line-height: 1.65;
 }
 
 
 /* =========================================================
-   GLASS CARDS
-   ========================================================= */
+   BOOK BUTTON
+========================================================= */
 
-.citizen-main-grid,
-.citizen-lower-grid {
+.appt-new-btn {
+
     position: relative;
-    z-index: 1;
+
+    z-index: 3;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 9px;
+
+    min-height: 50px;
+
+    padding: 0 21px;
+
+    border-radius: 10px;
+
+    color: #07549b;
+
+    background: #ffffff;
+
+    font-size: 17px;
+
+    font-weight: 700;
+
+    text-decoration: none;
+
+    white-space: nowrap;
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,.13);
+
+    transition: .25s ease;
+}
+
+
+.appt-new-btn:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 15px 30px rgba(0,0,0,.18);
+}
+
+
+/* =========================================================
+   STATISTICS
+========================================================= */
+
+.appt-stat-grid {
+
+    position: relative;
+
+    z-index: 2;
 
     display: grid;
 
-    gap: 25px;
+    grid-template-columns:
+        repeat(4, minmax(0,1fr));
+
+    gap: 18px;
+
+    margin-bottom: 26px;
+}
+
+
+.appt-stat-card {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 22px;
+
+    border:
+        1px solid rgba(255,255,255,.9);
+
+    border-radius: 18px;
+
+    background:
+        rgba(255,255,255,.88);
+
+    box-shadow:
+        0 12px 35px rgba(20,78,120,.10);
+
+    backdrop-filter: blur(14px);
+
+    transition: .25s ease;
+}
+
+
+.appt-stat-card:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 20px 40px rgba(20,78,120,.15);
+}
+
+
+.appt-stat-icon {
+
+    width: 58px;
+
+    height: 58px;
+
+    min-width: 58px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 14px;
+
+    font-size: 21px;
+}
+
+
+.appt-stat-icon.blue {
+
+    color: #086bc1;
+
+    background: #e4f2ff;
+}
+
+
+.appt-stat-icon.cyan {
+
+    color: #0086aa;
+
+    background: #e2faff;
+}
+
+
+.appt-stat-icon.green {
+
+    color: #07815d;
+
+    background: #e3f8ef;
+}
+
+
+.appt-stat-icon.orange {
+
+    color: #bd7107;
+
+    background: #fff1da;
+}
+
+
+.appt-stat-info span {
+
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: #7790a2;
+
+    font-size: 17px;
+}
+
+
+.appt-stat-info h2 {
+
+    margin: 0 0 5px;
+
+    color: #174d72;
+
+    font-size: 22px;
+
+    line-height: 1;
+
+    font-weight: 750;
+}
+
+
+.appt-stat-info small {
+
+    color: #8da0ae;
+
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   MAIN GRID
+========================================================= */
+
+.appt-main-grid {
+
+    position: relative;
+
+    z-index: 2;
+
+    display: grid;
+
+    grid-template-columns:
+        1.35fr 1fr;
+
+    gap: 20px;
 
     margin-bottom: 28px;
 }
 
 
-.citizen-main-grid {
-    grid-template-columns: 1.45fr 1fr;
+.appt-next-card,
+.appt-book-card {
+
+    min-width: 0;
+
+    padding: 25px;
+
+    border:
+        1px solid rgba(255,255,255,.9);
+
+    border-radius: 20px;
+
+    background:
+        rgba(255,255,255,.89);
+
+    box-shadow:
+        0 12px 35px rgba(20,78,120,.09);
+
+    backdrop-filter: blur(15px);
 }
 
 
-.citizen-lower-grid {
-    grid-template-columns: 1.45fr 1fr;
-}
+/* =========================================================
+   CARD HEADING
+========================================================= */
 
+.appt-card-heading {
 
-.citizen-glass-card {
-    border-radius: 25px;
-
-    padding: 28px;
-
-    background: rgba(255,255,255,0.78);
-    border: 1px solid rgba(255,255,255,0.72);
-
-    box-shadow: 0 18px 50px rgba(20,80,130,0.12);
-
-    backdrop-filter: blur(18px);
-}
-
-
-.citizen-card-header {
     display: flex;
-    justify-content: space-between;
+
     align-items: flex-start;
 
-    gap: 20px;
+    justify-content: space-between;
 
-    margin-bottom: 23px;
+    gap: 15px;
+
+    margin-bottom: 20px;
 }
 
 
-.citizen-card-header span {
-    color: var(--citizen-blue);
+.appt-card-heading span {
 
-    font-size: 14px;
-    font-weight: 700;
+    display: block;
 
-    text-transform: uppercase;
-    letter-spacing: 0.7px;
+    margin-bottom: 5px;
+
+    color: #0873c5;
+
+    font-size: 10px;
+
+    font-weight: 750;
+
+    letter-spacing: 1px;
 }
 
 
-.citizen-card-header h3 {
-    margin: 4px 0 0;
+.appt-card-heading h2 {
 
-    color: var(--citizen-primary-dark);
+    margin: 0;
+
+    color: #194d70;
+
+    font-size: 22px;
+
+    font-weight: 750;
+}
+
+
+.appt-card-heading > i {
+
+    color: #0874c5;
 
     font-size: 25px;
 }
 
 
-.citizen-card-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 7px;
-
-    color: var(--citizen-primary);
-
-    text-decoration: none;
-
-    font-size: 16px;
-    font-weight: 600;
-
-    white-space: nowrap;
-}
-
-
 /* =========================================================
-   APPLICATION STATUS
-   ========================================================= */
+   UPCOMING HIGHLIGHT
+========================================================= */
 
-.citizen-status-list {
+.appt-highlight {
+
     display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    padding: 18px;
+
+    border-radius: 15px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #edf8ff,
+            #e1f3ff
+        );
+
+    border:
+        1px solid #d8edf9;
+}
+
+
+.appt-date-box {
+
+    width: 75px;
+
+    min-width: 75px;
+
+    height: 82px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
     flex-direction: column;
-}
-
-
-.citizen-status-item {
-    display: flex;
-    align-items: center;
-
-    gap: 15px;
-
-    padding: 15px 0;
-
-    border-bottom: 1px solid rgba(40,100,150,0.10);
-}
-
-
-.citizen-status-item:last-child {
-    border-bottom: none;
-}
-
-
-.citizen-status-icon {
-    width: 48px;
-    height: 48px;
-    min-width: 48px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    border-radius: 14px;
-
-    font-size: 18px;
-}
-
-
-.status-completed {
-    color: #00865d;
-    background: #dff8ed;
-}
-
-
-.status-pending {
-    color: #d57a00;
-    background: #fff0d5;
-}
-
-
-.status-review {
-    color: #0757b8;
-    background: #dceeff;
-}
-
-
-.citizen-status-content {
-    flex: 1;
-    min-width: 0;
-}
-
-
-.citizen-status-content h4 {
-    margin: 0 0 3px;
-
-    color: var(--citizen-text);
-
-    font-size: 18px;
-}
-
-
-.citizen-status-content p {
-    margin: 0;
-
-    color: var(--citizen-muted);
-
-    font-size: 14px;
-}
-
-
-.citizen-status-badge {
-    padding: 7px 12px;
-
-    border-radius: 50px;
-
-    font-size: 13px;
-    font-weight: 700;
-
-    white-space: nowrap;
-}
-
-
-.citizen-status-badge.completed {
-    color: #007b57;
-    background: #dcf7eb;
-}
-
-
-.citizen-status-badge.pending {
-    color: #bd6b00;
-    background: #fff0d2;
-}
-
-
-.citizen-status-badge.review {
-    color: #0757b8;
-    background: #dceeff;
-}
-
-
-/* =========================================================
-   QUICK ACTIONS
-   ========================================================= */
-
-.citizen-action-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-
-    gap: 15px;
-}
-
-
-.citizen-action-item {
-    min-height: 150px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    padding: 20px;
-
-    border-radius: 18px;
-
-    text-decoration: none;
-
-    background: rgba(235,246,255,0.72);
-    border: 1px solid rgba(90,160,220,0.15);
-
-    transition: 0.3s ease;
-}
-
-
-.citizen-action-item:hover {
-    transform: translateY(-5px);
-
-    background: #ffffff;
-
-    box-shadow: 0 15px 35px rgba(0,80,150,0.12);
-}
-
-
-.action-icon {
-    width: 48px;
-    height: 48px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    margin-bottom: 12px;
 
     border-radius: 13px;
 
-    font-size: 20px;
+    color: #ffffff;
+
+    background:
+        linear-gradient(
+            145deg,
+            #07559e,
+            #079fd4
+        );
+
+    box-shadow:
+        0 8px 20px rgba(7,101,170,.18);
 }
 
 
-.action-icon.blue {
-    color: #0757b8;
-    background: #dceeff;
+.appt-date-box span {
+
+    font-size: 29px;
+
+    font-weight: 750;
+
+    line-height: 1;
 }
 
 
-.action-icon.cyan {
-    color: #0086b8;
-    background: #d8f6ff;
-}
+.appt-date-box strong {
 
-
-.action-icon.green {
-    color: #00805a;
-    background: #dff8ed;
-}
-
-
-.action-icon.purple {
-    color: #7039c7;
-    background: #eee2ff;
-}
-
-
-.citizen-action-item strong {
-    color: var(--citizen-text);
-
-    font-size: 17px;
-}
-
-
-.citizen-action-item span {
     margin-top: 4px;
 
-    color: var(--citizen-muted);
+    font-size: 11px;
+
+    letter-spacing: 1px;
+}
+
+
+.appt-highlight-info h3 {
+
+    margin: 0 0 8px;
+
+    color: #1d5174;
+
+    font-size: 22px;
+
+    line-height: 1.3;
+}
+
+
+.appt-highlight-info p {
+
+    margin: 5px 0;
+
+    color: #6f8798;
 
     font-size: 14px;
 }
 
 
-/* =========================================================
-   POPULAR SERVICES
-   ========================================================= */
+.appt-highlight-info p i {
 
-.citizen-services-list {
-    display: flex;
-    flex-direction: column;
+    width: 17px;
+
+    margin-right: 4px;
+
+    color: #0877c7;
 }
 
 
-.citizen-service-row {
-    display: flex;
-    align-items: center;
+/* =========================================================
+   REFERENCE
+========================================================= */
+
+.appt-reference {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
 
     gap: 15px;
 
-    padding: 15px 5px;
+    margin-top: 18px;
 
-    text-decoration: none;
+    padding-top: 16px;
 
-    border-bottom: 1px solid rgba(40,100,150,0.10);
-
-    transition: 0.25s ease;
+    border-top:
+        1px solid #e5eef4;
 }
 
 
-.citizen-service-row:last-child {
-    border-bottom: none;
-}
+.appt-reference span {
 
-
-.citizen-service-row:hover {
-    transform: translateX(5px);
-}
-
-
-.service-row-icon {
-    width: 48px;
-    height: 48px;
-    min-width: 48px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    border-radius: 13px;
-
-    color: var(--citizen-primary);
-
-    background: #e1f0ff;
-
-    font-size: 20px;
-}
-
-
-.citizen-service-row div:nth-child(2) {
-    flex: 1;
-}
-
-
-.citizen-service-row strong {
     display: block;
 
-    color: var(--citizen-text);
+    margin-bottom: 5px;
 
-    font-size: 17px;
+    color: #8ca0ae;
+
+    font-size: 10px;
 }
 
 
-.citizen-service-row span {
-    display: block;
+.appt-reference strong {
 
-    margin-top: 3px;
+    color: #42667d;
 
-    color: var(--citizen-muted);
+    font-size: 13px;
 
-    font-size: 14px;
-}
-
-
-.citizen-service-row > i {
-    color: #7c91a8;
-
-    font-size: 14px;
-}
-
-
-/* =========================================================
-   NOTIFICATIONS
-   ========================================================= */
-
-.citizen-notification-count {
-    display: flex !important;
-    align-items: center;
-    justify-content: center;
-
-    width: 35px;
-    height: 35px;
-
-    border-radius: 50%;
-
-    color: #ffffff !important;
-
-    background: var(--citizen-primary);
-
-    font-size: 14px !important;
-}
-
-
-.citizen-notification-list {
-    display: flex;
-    flex-direction: column;
-
-    gap: 5px;
-}
-
-
-.citizen-notification {
-    display: flex;
-
-    gap: 13px;
-
-    padding: 13px 0;
-
-    text-decoration: none;
-
-    border-bottom: 1px solid rgba(40,100,150,0.10);
-}
-
-
-.notification-icon {
-    width: 42px;
-    height: 42px;
-    min-width: 42px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    border-radius: 12px;
-}
-
-
-.notification-icon.blue {
-    color: #0757b8;
-    background: #dceeff;
-}
-
-
-.notification-icon.green {
-    color: #00805a;
-    background: #dcf7eb;
-}
-
-
-.notification-icon.orange {
-    color: #cc7200;
-    background: #fff0d5;
-}
-
-
-.citizen-notification > div:last-child {
-    min-width: 0;
-}
-
-
-.citizen-notification strong {
-    display: block;
-
-    color: var(--citizen-text);
-
-    font-size: 16px;
-}
-
-
-.citizen-notification p {
-    margin: 3px 0;
-
-    color: var(--citizen-muted);
-
-    font-size: 14px;
     line-height: 1.5;
 }
 
 
-.citizen-notification small {
-    color: #91a2b4;
+/* =========================================================
+   ACTIONS
+========================================================= */
 
-    font-size: 12px;
+.appt-actions {
+
+    display: flex;
+
+    gap: 10px;
+
+    margin-top: 20px;
 }
 
 
-.citizen-notification-footer {
-    display: flex;
+.appt-primary-btn,
+.appt-secondary-btn {
+
+    display: inline-flex;
+
     align-items: center;
-    justify-content: space-between;
 
-    margin-top: 17px;
+    justify-content: center;
 
-    color: var(--citizen-primary);
+    gap: 8px;
+
+    min-height: 46px;
+
+    padding: 0 17px;
+
+    border-radius: 9px;
+
+    font-size: 17px;
+
+    font-weight: 700;
 
     text-decoration: none;
 
-    font-size: 15px;
-    font-weight: 700;
+    transition: .25s ease;
 }
 
 
-/* =========================================================
-   SUPPORT BANNER
-   ========================================================= */
+.appt-primary-btn {
 
-.citizen-support-banner {
-    position: relative;
-    z-index: 1;
-
-    display: flex;
-    align-items: center;
-
-    gap: 22px;
-
-    padding: 28px 35px;
-    margin-bottom: 15px;
-
-    overflow: hidden;
-
-    border-radius: 25px;
+    color: #ffffff;
 
     background:
         linear-gradient(
-            115deg,
-            rgba(4,55,120,0.96),
-            rgba(0,139,220,0.90)
-        ),
-        url("https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1800&q=85");
-
-    background-size: cover;
-    background-position: center;
-
-    box-shadow: 0 20px 45px rgba(0,70,140,0.18);
+            135deg,
+            #07579f,
+            #078fcf
+        );
 }
 
 
-.citizen-support-icon {
-    width: 70px;
-    height: 70px;
-    min-width: 70px;
+.appt-secondary-btn {
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    color: #086ab6;
 
-    border-radius: 18px;
+    background: #eaf6ff;
 
-    color: #ffffff;
-
-    background: rgba(255,255,255,0.14);
-    border: 1px solid rgba(255,255,255,0.25);
-
-    font-size: 30px;
+    border:
+        1px solid #d8ebf8;
 }
 
 
-.citizen-support-content {
-    flex: 1;
-}
+.appt-primary-btn:hover,
+.appt-secondary-btn:hover {
 
-
-.citizen-support-content span {
-    color: #b9eaff;
-
-    font-size: 14px;
-    font-weight: 700;
-
-    text-transform: uppercase;
-}
-
-
-.citizen-support-content h3 {
-    margin: 4px 0;
-
-    color: #ffffff;
-
-    font-size: 24px;
-}
-
-
-.citizen-support-content p {
-    margin: 0;
-
-    color: rgba(255,255,255,0.82);
-
-    font-size: 15px;
-}
-
-
-.citizen-support-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 9px;
-
-    padding: 13px 20px;
-
-    border-radius: 12px;
-
-    color: var(--citizen-primary);
-
-    background: #ffffff;
-
-    text-decoration: none;
-
-    font-size: 16px;
-    font-weight: 700;
-
-    white-space: nowrap;
-
-    transition: 0.3s ease;
-}
-
-
-.citizen-support-btn:hover {
     transform: translateY(-3px);
 }
 
 
 /* =========================================================
+   BOOK DESCRIPTION
+========================================================= */
+
+.appt-book-description {
+
+    margin: 0 0 17px;
+
+    color: #718a9b;
+
+    font-size: 17px;
+
+    line-height: 1.65;
+}
+
+
+/* =========================================================
+   SERVICE LIST
+========================================================= */
+
+.appt-service-list {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 9px;
+}
+
+
+.appt-service-item {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+
+    padding: 12px;
+
+    border-radius: 11px;
+
+    text-decoration: none;
+
+    background: #f7fbfe;
+
+    border:
+        1px solid #e6f0f5;
+
+    transition: .25s ease;
+}
+
+
+.appt-service-item:hover {
+
+    transform: translateX(4px);
+
+    border-color: #b8dff4;
+
+    background: #edf8ff;
+}
+
+
+.appt-service-icon {
+
+    width: 42px;
+
+    height: 42px;
+
+    min-width: 42px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+}
+
+
+.appt-service-icon.blue {
+
+    color: #086cc0;
+
+    background: #e4f2ff;
+}
+
+
+.appt-service-icon.cyan {
+
+    color: #0084a8;
+
+    background: #e3faff;
+}
+
+
+.appt-service-icon.purple {
+
+    color: #7153bc;
+
+    background: #eeeaff;
+}
+
+
+.appt-service-item > span:nth-child(2) {
+
+    flex: 1;
+
+    min-width: 0;
+}
+
+
+.appt-service-item strong {
+
+    display: block;
+
+    color: #355f79;
+
+    font-size: 14px;
+}
+
+
+.appt-service-item small {
+
+    display: block;
+
+    margin-top: 2px;
+
+    color: #8a9daa;
+
+    font-size: 11px;
+}
+
+
+.appt-service-item > i {
+
+    color: #8ba5b5;
+
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   APPOINTMENT HISTORY
+========================================================= */
+
+.appt-list-section {
+
+    position: relative;
+
+    z-index: 2;
+
+    margin-bottom: 28px;
+}
+
+
+.appt-section-header {
+
+    display: flex;
+
+    align-items: flex-end;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    margin-bottom: 15px;
+}
+
+
+.appt-section-header span {
+
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: white;
+
+    font-size: 10px;
+
+    font-weight: 750;
+
+    letter-spacing: 1px;
+}
+
+
+.appt-section-header h2 {
+
+    margin: 0;
+
+    color: white;
+
+    font-size: 22px;
+
+    font-weight: 750;
+}
+
+
+.appt-view-all {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    color: white;
+
+    font-size: 17px;
+
+    font-weight: 700;
+
+    text-decoration: none;
+}
+
+
+.appt-view-all:hover {
+
+    color: #034579;
+}
+
+
+/* =========================================================
+   LIST
+========================================================= */
+
+.appt-list {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+
+.appt-list-card {
+
+    display: grid;
+
+    grid-template-columns:
+        65px 1fr auto auto;
+
+    align-items: center;
+
+    gap: 17px;
+
+    padding: 17px;
+
+    border:
+        1px solid rgba(255,255,255,.9);
+
+    border-radius: 16px;
+
+    background:
+        rgba(255,255,255,.88);
+
+    box-shadow:
+        0 8px 25px rgba(20,78,120,.07);
+
+    backdrop-filter: blur(12px);
+
+    transition: .25s ease;
+}
+
+
+.appt-list-card:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 14px 30px rgba(20,78,120,.12);
+}
+
+
+.appt-list-date {
+
+    width: 62px;
+
+    height: 62px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-direction: column;
+
+    border-radius: 12px;
+
+    background: #e8f5ff;
+
+    color: #0870c2;
+}
+
+
+.appt-list-date span {
+
+    font-size: 21px;
+
+    line-height: 1;
+
+    font-weight: 750;
+}
+
+
+.appt-list-date strong {
+
+    margin-top: 4px;
+
+    font-size: 10px;
+
+    letter-spacing: 1px;
+}
+
+
+.appt-list-details {
+
+    min-width: 0;
+}
+
+
+.appt-list-details h3 {
+
+    margin: 0 0 6px;
+
+    color: #315d77;
+
+    font-size: 17px;
+
+    font-weight: 700;
+}
+
+
+.appt-list-details p {
+
+    display: inline-block;
+
+    margin: 2px 15px 0 0;
+
+    color: #8397a5;
+
+    font-size: 12px;
+}
+
+
+.appt-list-details p i {
+
+    margin-right: 4px;
+
+    color: #0876c8;
+}
+
+
+/* =========================================================
+   STATUS
+========================================================= */
+
+.appt-status {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    padding: 8px 11px;
+
+    border-radius: 25px;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+
+.appt-status.upcoming {
+
+    color: #096cb6;
+
+    background: #e6f4ff;
+}
+
+
+.appt-status.completed {
+
+    color: #087b59;
+
+    background: #e2f8ee;
+}
+
+
+.appt-status.cancelled {
+
+    color: #c53e44;
+
+    background: #ffeaeb;
+}
+
+
+/* =========================================================
+   VIEW BUTTON
+========================================================= */
+
+.appt-list-btn {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-width: 58px;
+
+    min-height: 36px;
+
+    padding: 0 13px;
+
+    border-radius: 8px;
+
+    color: #086abd;
+
+    background: #edf7ff;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    text-decoration: none;
+
+    transition: .2s ease;
+}
+
+
+.appt-list-btn:hover {
+
+    color: #ffffff;
+
+    background: #0875c8;
+}
+
+
+/* =========================================================
+   INFO BANNER
+========================================================= */
+
+.appt-info-banner {
+
+    position: relative;
+
+    z-index: 2;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    padding: 24px 27px;
+
+    overflow: hidden;
+
+    border-radius: 20px;
+
+    color: #ffffff;
+
+    background:
+        linear-gradient(
+            110deg,
+            #063e78,
+            #0876c5,
+            #00a5db
+        );
+
+    box-shadow:
+        0 17px 40px rgba(8,90,155,.20);
+}
+
+
+.appt-info-icon {
+
+    width: 57px;
+
+    height: 57px;
+
+    min-width: 57px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background:
+        rgba(255,255,255,.13);
+
+    font-size: 21px;
+}
+
+
+.appt-info-content {
+
+    flex: 1;
+}
+
+
+.appt-info-content span {
+
+    color:
+        rgba(255,255,255,.72);
+
+    font-size: 10px;
+
+    letter-spacing: 1px;
+}
+
+
+.appt-info-content h2 {
+
+    margin: 5px 0;
+
+    color: #ffffff;
+
+    font-size: 22px;
+
+    font-weight: 750;
+}
+
+
+.appt-info-content p {
+
+    margin: 0;
+
+    color:
+        rgba(255,255,255,.83);
+
+    font-size: 17px;
+
+    line-height: 1.55;
+}
+
+
+.appt-info-btn {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    min-height: 47px;
+
+    padding: 0 18px;
+
+    border-radius: 9px;
+
+    color: #07549b;
+
+    background: #ffffff;
+
+    font-size: 17px;
+
+    font-weight: 700;
+
+    text-decoration: none;
+
+    white-space: nowrap;
+
+    transition: .25s ease;
+}
+
+
+.appt-info-btn:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,.15);
+}
+
+
+/* =========================================================
    LARGE DESKTOP
-   ========================================================= */
+========================================================= */
 
-@media (min-width: 1600px) {
+@media (min-width: 1400px) {
 
-    .citizen-dashboard-content {
-        padding: 40px 50px;
+    .appt-dashboard {
+
+        padding: 40px;
     }
 
-    .citizen-welcome-content {
-        padding: 55px 70px;
-    }
-
-    .citizen-stat-card {
-        min-height: 165px;
-    }
-
-    .citizen-stat-info strong {
-        font-size: 38px;
-    }
 }
 
 
 /* =========================================================
    LAPTOP
-   ========================================================= */
+========================================================= */
 
-@media (max-width: 1300px) {
+@media (min-width: 769px)
+       and (max-width: 1200px) {
 
-    .citizen-dashboard-content {
-        padding: 25px;
+    .appt-dashboard {
+
+        padding: 24px;
     }
 
-    .citizen-stat-grid {
-        grid-template-columns: repeat(2, 1fr);
+
+    .appt-stat-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
     }
 
-    .citizen-main-grid,
-    .citizen-lower-grid {
+
+    .appt-main-grid {
+
         grid-template-columns: 1fr;
-    }
-
-    .citizen-welcome-content {
-        padding: 40px;
-    }
-
-    .citizen-welcome-visual {
-        width: 190px;
-        min-width: 190px;
     }
 
 }
@@ -2014,55 +2263,74 @@
 
 /* =========================================================
    TABLET
-   ========================================================= */
+========================================================= */
 
-@media (max-width: 900px) {
+@media (min-width: 601px)
+       and (max-width: 768px) {
 
-    .citizen-dashboard-content {
-        padding: 20px;
-        font-size: 18px;
+    .appt-dashboard {
+
+        padding: 18px;
     }
 
-    .citizen-welcome-section {
-        min-height: auto;
-    }
 
-    .citizen-welcome-content {
-        min-height: auto;
+    .appt-page-header {
+
+        align-items: flex-start;
 
         flex-direction: column;
+
+        padding: 25px;
+    }
+
+
+    .appt-new-btn {
+
+        width: 100%;
+    }
+
+
+    .appt-stat-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    .appt-main-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .appt-list-card {
+
+        grid-template-columns:
+            62px 1fr auto;
+
+        gap: 13px;
+    }
+
+
+    .appt-list-btn {
+
+        grid-column: 2 / -1;
+
+        justify-self: start;
+    }
+
+
+    .appt-info-banner {
+
         align-items: flex-start;
 
-        padding: 35px;
-    }
-
-    .citizen-welcome-visual {
-        display: none;
-    }
-
-    .citizen-welcome-text {
-        max-width: 100%;
-    }
-
-    .citizen-welcome-text h1 {
-        font-size: 38px;
-    }
-
-    .citizen-welcome-text p {
-        font-size: 18px;
-    }
-
-    .citizen-section-heading h2 {
-        font-size: 28px;
-    }
-
-    .citizen-support-banner {
-        align-items: flex-start;
         flex-wrap: wrap;
     }
 
-    .citizen-support-content {
-        min-width: calc(100% - 100px);
+
+    .appt-info-btn {
+
+        margin-left: 75px;
     }
 
 }
@@ -2070,294 +2338,417 @@
 
 /* =========================================================
    MOBILE
-   ========================================================= */
+========================================================= */
 
 @media (max-width: 600px) {
 
-    .citizen-dashboard-content {
-        padding: 14px;
-        font-size: 17px;
+    .appt-dashboard {
+
+        padding: 12px;
 
         background-attachment: scroll;
     }
 
 
-    .citizen-bg-shape-one {
-        width: 200px;
-        height: 200px;
+    /* HEADER */
+
+    .appt-page-header {
+
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 17px;
+
+        padding: 21px 17px;
+
+        margin-bottom: 17px;
+
+        border-radius: 17px;
     }
 
 
-    .citizen-bg-shape-two {
-        width: 180px;
-        height: 180px;
+    .appt-eyebrow {
+
+        font-size: 9px;
     }
 
 
-    /* Welcome */
+    .appt-header-content h1 {
 
-    .citizen-welcome-section {
-        margin-bottom: 25px;
-        border-radius: 22px;
+        font-size: 22px;
+
+        line-height: 1.35;
     }
 
 
-    .citizen-welcome-content {
-        padding: 28px 22px;
-        gap: 20px;
-    }
+    .appt-header-content p {
 
+        font-size: 17px;
 
-    .citizen-welcome-tag {
-        font-size: 13px;
-        padding: 8px 13px;
-    }
-
-
-    .citizen-welcome-text h1 {
-        font-size: 30px;
-    }
-
-
-    .citizen-welcome-text p {
-        font-size: 16px;
         line-height: 1.6;
     }
 
 
-    .citizen-welcome-actions {
-        flex-direction: column;
+    .appt-new-btn {
+
         width: 100%;
-    }
 
-
-    .citizen-primary-btn,
-    .citizen-secondary-btn {
-        width: 100%;
-        min-height: 50px;
-
-        font-size: 16px;
-    }
-
-
-    /* Heading */
-
-    .citizen-section-heading {
-        align-items: flex-start;
-        flex-direction: column;
-        gap: 10px;
-    }
-
-
-    .citizen-section-heading h2 {
-        font-size: 25px;
-    }
-
-
-    .citizen-section-heading p {
-        font-size: 15px;
-    }
-
-
-    /* Stats */
-
-    .citizen-stat-grid {
-        grid-template-columns: 1fr;
-
-        gap: 14px;
-    }
-
-
-    .citizen-stat-card {
-        min-height: 125px;
-
-        padding: 20px;
-
-        border-radius: 19px;
-    }
-
-
-    .citizen-stat-icon {
-        width: 54px;
-        height: 54px;
-        min-width: 54px;
-
-        font-size: 22px;
-    }
-
-
-    .citizen-stat-info span {
-        font-size: 14px;
-    }
-
-
-    .citizen-stat-info strong {
-        font-size: 30px;
-    }
-
-
-    .citizen-stat-info small {
-        font-size: 12px;
-    }
-
-
-    /* Cards */
-
-    .citizen-glass-card {
-        padding: 20px 17px;
-
-        border-radius: 20px;
-    }
-
-
-    .citizen-card-header {
-        align-items: flex-start;
-    }
-
-
-    .citizen-card-header h3 {
-        font-size: 21px;
-    }
-
-
-    .citizen-card-header span {
-        font-size: 11px;
-    }
-
-
-    .citizen-card-link {
-        font-size: 13px;
-    }
-
-
-    /* Application */
-
-    .citizen-status-item {
-        align-items: flex-start;
-        flex-wrap: wrap;
-
-        padding: 14px 0;
-    }
-
-
-    .citizen-status-content {
-        width: calc(100% - 63px);
-    }
-
-
-    .citizen-status-content h4 {
-        font-size: 16px;
-    }
-
-
-    .citizen-status-content p {
-        font-size: 12px;
-    }
-
-
-    .citizen-status-badge {
-        margin-left: 63px;
-
-        font-size: 11px;
-        padding: 6px 10px;
-    }
-
-
-    /* Actions */
-
-    .citizen-action-grid {
-        grid-template-columns: 1fr;
-    }
-
-
-    .citizen-action-item {
-        min-height: 115px;
-    }
-
-
-    /* Services */
-
-    .citizen-service-row {
-        gap: 10px;
-    }
-
-
-    .service-row-icon {
-        width: 42px;
-        height: 42px;
-        min-width: 42px;
+        min-height: 46px;
 
         font-size: 17px;
     }
 
 
-    .citizen-service-row strong {
-        font-size: 15px;
+    /* STATS */
+
+    .appt-stat-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        gap: 9px;
+
+        margin-bottom: 18px;
     }
 
 
-    .citizen-service-row span {
-        font-size: 12px;
+    .appt-stat-card {
+
+        gap: 8px;
+
+        padding: 12px 10px;
+
+        border-radius: 13px;
     }
 
 
-    /* Notifications */
+    .appt-stat-icon {
 
-    .citizen-notification strong {
+        width: 39px;
+
+        height: 39px;
+
+        min-width: 39px;
+
+        border-radius: 9px;
+
         font-size: 14px;
     }
 
 
-    .citizen-notification p {
-        font-size: 12px;
+    .appt-stat-info span {
+
+        margin-bottom: 4px;
+
+        font-size: 10px;
     }
 
 
-    /* Support */
+    .appt-stat-info h2 {
 
-    .citizen-support-banner {
-        flex-direction: column;
+        font-size: 22px;
+    }
+
+
+    .appt-stat-info small {
+
+        display: none;
+    }
+
+
+    /* MAIN */
+
+    .appt-main-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 12px;
+
+        margin-bottom: 20px;
+    }
+
+
+    .appt-next-card,
+    .appt-book-card {
+
+        padding: 17px;
+
+        border-radius: 16px;
+    }
+
+
+    .appt-card-heading {
+
+        margin-bottom: 15px;
+    }
+
+
+    .appt-card-heading h2 {
+
+        font-size: 22px;
+
+        line-height: 1.35;
+    }
+
+
+    .appt-card-heading > i {
+
+        font-size: 20px;
+    }
+
+
+    /* HIGHLIGHT */
+
+    .appt-highlight {
 
         align-items: flex-start;
 
-        padding: 24px 20px;
+        gap: 12px;
 
-        border-radius: 20px;
+        padding: 13px;
     }
 
 
-    .citizen-support-icon {
-        width: 58px;
-        height: 58px;
-        min-width: 58px;
+    .appt-date-box {
+
+        width: 59px;
+
+        min-width: 59px;
+
+        height: 68px;
+    }
+
+
+    .appt-date-box span {
 
         font-size: 24px;
     }
 
 
-    .citizen-support-content {
-        min-width: 100%;
+    .appt-date-box strong {
+
+        font-size: 9px;
     }
 
 
-    .citizen-support-content h3 {
-        font-size: 20px;
+    .appt-highlight-info h3 {
+
+        font-size: 17px;
+
         line-height: 1.4;
     }
 
 
-    .citizen-support-content p {
+    .appt-highlight-info p {
+
+        font-size: 12px;
+
+        line-height: 1.5;
+    }
+
+
+    /* REFERENCE */
+
+    .appt-reference {
+
+        grid-template-columns: 1fr;
+
+        gap: 9px;
+    }
+
+
+    /* BUTTONS */
+
+    .appt-actions {
+
+        flex-direction: column;
+    }
+
+
+    .appt-primary-btn,
+    .appt-secondary-btn {
+
+        width: 100%;
+
+        font-size: 17px;
+    }
+
+
+    /* SERVICES */
+
+    .appt-book-description {
+
+        font-size: 17px;
+    }
+
+
+    .appt-service-item {
+
+        padding: 10px;
+    }
+
+
+    .appt-service-item strong {
+
         font-size: 13px;
+    }
+
+
+    /* HISTORY */
+
+    .appt-section-header {
+
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 7px;
+    }
+
+
+    .appt-section-header h2 {
+
+        font-size: 22px;
+    }
+
+
+    .appt-view-all {
+
+        font-size: 15px;
+    }
+
+
+    .appt-list {
+
+        gap: 10px;
+    }
+
+
+    .appt-list-card {
+
+        grid-template-columns:
+            52px 1fr;
+
+        align-items: start;
+
+        gap: 11px;
+
+        padding: 13px;
+    }
+
+
+    .appt-list-date {
+
+        width: 52px;
+
+        height: 55px;
+    }
+
+
+    .appt-list-date span {
+
+        font-size: 18px;
+    }
+
+
+    .appt-list-date strong {
+
+        font-size: 8px;
+    }
+
+
+    .appt-list-details h3 {
+
+        font-size: 15px;
+
+        line-height: 1.45;
+    }
+
+
+    .appt-list-details p {
+
+        display: block;
+
+        margin: 3px 0;
+
+        font-size: 11px;
+    }
+
+
+    .appt-status {
+
+        grid-column: 2;
+
+        justify-self: start;
+
+        font-size: 10px;
+    }
+
+
+    .appt-list-btn {
+
+        grid-column: 2;
+
+        justify-self: start;
+
+        min-height: 35px;
+
+        font-size: 12px;
+    }
+
+
+    /* INFO */
+
+    .appt-info-banner {
+
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 12px;
+
+        padding: 19px;
+
+        border-radius: 16px;
+    }
+
+
+    .appt-info-icon {
+
+        width: 47px;
+
+        height: 47px;
+
+        min-width: 47px;
+
+        font-size: 18px;
+    }
+
+
+    .appt-info-content h2 {
+
+        font-size: 22px;
+
+        line-height: 1.4;
+    }
+
+
+    .appt-info-content p {
+
+        font-size: 17px;
+
         line-height: 1.6;
     }
 
 
-    .citizen-support-btn {
+    .appt-info-btn {
+
         width: 100%;
 
-        justify-content: center;
+        min-height: 45px;
 
-        font-size: 14px;
+        font-size: 17px;
     }
 
 }
@@ -2365,42 +2756,95 @@
 
 /* =========================================================
    SMALL MOBILE
-   ========================================================= */
+========================================================= */
 
 @media (max-width: 380px) {
 
-    .citizen-dashboard-content {
-        padding: 10px;
+    .appt-dashboard {
+
+        padding: 8px;
     }
 
 
-    .citizen-welcome-content {
-        padding: 23px 17px;
+    .appt-stat-card {
+
+        padding: 9px 7px;
     }
 
 
-    .citizen-welcome-text h1 {
-        font-size: 26px;
+    .appt-stat-icon {
+
+        width: 34px;
+
+        height: 34px;
+
+        min-width: 34px;
+
+        font-size: 12px;
     }
 
 
-    .citizen-welcome-text p {
-        font-size: 14px;
+    .appt-stat-info span {
+
+        font-size: 9px;
     }
 
 
-    .citizen-stat-card {
-        padding: 16px;
+    .appt-stat-info h2 {
+
+        font-size: 20px;
     }
 
 
-    .citizen-stat-info strong {
-        font-size: 27px;
+    .appt-highlight {
+
+        gap: 8px;
     }
 
 
-    .citizen-glass-card {
-        padding: 17px 14px;
+    .appt-date-box {
+
+        width: 52px;
+
+        min-width: 52px;
+
+        height: 62px;
+    }
+
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+========================================================= */
+
+.appt-new-btn:focus-visible,
+.appt-primary-btn:focus-visible,
+.appt-secondary-btn:focus-visible,
+.appt-list-btn:focus-visible,
+.appt-info-btn:focus-visible {
+
+    outline: 3px solid rgba(0,125,215,.30);
+
+    outline-offset: 3px;
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .appt-stat-card,
+    .appt-new-btn,
+    .appt-primary-btn,
+    .appt-secondary-btn,
+    .appt-service-item,
+    .appt-list-card,
+    .appt-info-btn {
+
+        transition: none;
     }
 
 }
@@ -3870,19 +4314,6 @@
     }
     
     </style>
-
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-    
-        const userName = localStorage.getItem("userName");
-        const nameElement = document.getElementById("citizenUserName");
-    
-        if (nameElement && userName) {
-            nameElement.textContent = userName;
-        }
-    
-    });
-    </script>
 
 <script>
     
