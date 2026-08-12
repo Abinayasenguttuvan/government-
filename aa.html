@@ -1,2241 +1,4440 @@
-<!-- =========================================================
-     GOVERNMENT OFFICER DASHBOARD
-     TOP BAR + SIDEBAR
-     ========================================================= -->
+<!DOCTYPE html>
+<html lang="en">
 
-<!-- Font Awesome -->
-<link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
->
+<head>
 
-<!-- Google Font -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet"
->
+    <meta charset="UTF-8">
 
-<!-- =========================================================
-     MOBILE SIDEBAR OVERLAY
-     ========================================================= -->
-<div
-    class="gov-officer-sidebar-overlay"
-    id="govOfficerSidebarOverlay"
-></div>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Stackly Government Dashboard">
+
+    <title>Stackly Government Dashboard</title>
 
 
-<!-- =========================================================
-     TOP BAR
-     ========================================================= -->
-<header class="gov-officer-topbar" id="govOfficerTopbar">
+    <!-- ======================================================
+         GOOGLE FONT
+    ======================================================= -->
 
-    <!-- LEFT SIDE -->
-    <div class="gov-officer-topbar-left">
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com">
 
-        <!-- Mobile Menu Button -->
-        <button
-            type="button"
-            class="gov-officer-menu-btn"
-            id="govOfficerMenuBtn"
-            aria-label="Open sidebar"
-        >
-            <i class="fa-solid fa-bars"></i>
-        </button>
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
 
 
-        <!-- Government Logo -->
-        <a
-            href="index.html"
-            class="gov-officer-logo"
-            aria-label="Government Officer Dashboard Home"
-        >
-            <div class="gov-officer-logo-icon">
-                <i class="fa-solid fa-building-columns"></i>
-            </div>
+    <!-- ======================================================
+         FONT AWESOME
+    ======================================================= -->
 
-            <div class="gov-officer-logo-text">
-                <strong>GOVERNMENT</strong>
-                <span>OFFICER PORTAL</span>
-            </div>
-        </a>
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
+
+    <!-- ======================================================
+         GOVERNMENT DASHBOARD CSS
+    ======================================================= -->
+
+    
+
+</head>
+
+
+<body>
+
+
+<!-- ==========================================================
+     MAIN GOVERNMENT DASHBOARD
+=========================================================== -->
+
+<div class="gov-dashboard">
+
+
+    <!-- ======================================================
+         MOBILE SIDEBAR OVERLAY
+    ======================================================= -->
+
+    <div
+        class="gov-sidebar-overlay"
+        id="govSidebarOverlay">
     </div>
 
 
-    <!-- RIGHT SIDE -->
-    <div class="gov-officer-topbar-right">
 
-        
+    <!-- ======================================================
+         SIDEBAR
+    ======================================================= -->
+
+    <aside
+        class="gov-sidebar"
+        id="govSidebar">
 
 
-        <!-- User Information -->
-        <div class="gov-officer-user-box">
+        <!-- ==================================================
+             SIDEBAR TOP / STACKLY LOGO
+        =================================================== -->
 
-            <div class="gov-officer-user-avatar" id="govOfficerAvatar">
-                GO
+        <div class="gov-sidebar-header">
+
+
+            <!-- Stackly Logo -->
+
+            <a
+                href="404.html"
+                class="gov-sidebar-logo"
+                aria-label="Stackly Home"
+                title="Stackly">
+
+
+                <img
+                    src="./white.webp"
+                    alt="Stackly Logo"
+                    class="gov-sidebar-logo-image">
+
+
+            </a>
+
+
+
+            <!-- Mobile Close Button -->
+
+            <button
+                type="button"
+                class="gov-sidebar-close"
+                id="govSidebarClose"
+                aria-label="Close Sidebar">
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </button>
+
+
+        </div>
+
+
+
+        <!-- ==================================================
+             SIDEBAR USER PROFILE
+        =================================================== -->
+
+        <div class="gov-sidebar-profile">
+
+
+            <div class="gov-profile-avatar">
+
+                <i class="fa-solid fa-user-tie"></i>
+
             </div>
 
-            <div class="gov-officer-user-details">
 
-                <strong
-                    id="govOfficerName"
-                    class="gov-officer-user-name"
-                >
-                    Government Officer
+            <div class="gov-profile-details">
+
+                <strong id="govSidebarName">
+                    Government User
                 </strong>
 
-                <span
-                    id="govOfficerEmail"
-                    class="gov-officer-user-email"
-                >
-                    officer@gov.in
+                <span id="govSidebarEmail">
+                    user@example.com
                 </span>
 
             </div>
 
+
+        </div>
+
+
+
+        <!-- ==================================================
+             SIDEBAR NAVIGATION
+        =================================================== -->
+
+        <nav
+            class="gov-sidebar-nav"
+            aria-label="Government Dashboard Navigation">
+
+
+            <!-- Main Menu -->
+
+            <p class="gov-menu-title">
+                MAIN MENU
+            </p>
+
+
+
+            <!-- Dashboard -->
+
+            <a
+                href="dashboard.html"
+                class="gov-nav-item gov-active">
+
+                <span class="gov-nav-icon">
+
+                    <i class="fa-solid fa-chart-pie"></i>
+
+                </span>
+
+                <span class="gov-nav-text">
+                    Dashboard
+                </span>
+
+            </a>
+
+
+
+            <!-- Departments -->
+
+            <a
+                href="404.html"
+                class="gov-nav-item">
+
+                <span class="gov-nav-icon">
+
+                    <i class="fa-solid fa-building"></i>
+
+                </span>
+
+                <span class="gov-nav-text">
+                    Departments
+                </span>
+
+            </a>
+
             
 
+
+
+            <!-- Applications -->
+
+            <a
+                href="404.html"
+                class="gov-nav-item">
+
+                <span class="gov-nav-icon">
+
+                    <i class="fa-solid fa-file-circle-check"></i>
+
+                </span>
+
+                <span class="gov-nav-text">
+                    Applications
+                </span>
+
+            </a>
+
+
+
+            <!-- Documents -->
+
+            <a
+                href="404.html"
+                class="gov-nav-item">
+
+                <span class="gov-nav-icon">
+
+                    <i class="fa-solid fa-folder-open"></i>
+
+                </span>
+
+                <span class="gov-nav-text">
+                    Documents
+                </span>
+
+            </a>
+
+            <!-- System -->
+
+            <p class="gov-menu-title gov-menu-title-bottom">
+                SYSTEM
+            </p>
+
+
+
+            <!-- Settings -->
+
+            <!-- Notifications -->
+
+            <a
+                href="404.html"
+                class="gov-nav-item">
+
+                <span class="gov-nav-icon">
+
+                    <i class="fa-solid fa-bell"></i>
+
+                </span>
+
+                <span class="gov-nav-text">
+                    Notifications
+                </span>
+
+
+                <span class="gov-notification-count">
+                    4
+                </span>
+
+            </a>
+
+        </nav>
+
+
+
+        <!-- ==================================================
+             SIDEBAR LOGOUT
+        =================================================== -->
+
+        <div class="gov-sidebar-footer">
+
+
+            <button
+                type="button"
+                class="gov-logout-sidebar"
+                id="govSidebarLogout">
+
+
+                <span class="gov-nav-icon">
+
+                    <i class="fa-solid fa-right-from-bracket"></i>
+
+                </span>
+
+
+                <span>
+                    Logout
+                </span>
+
+
+            </button>
+
+
         </div>
 
-    </div>
 
-</header>
-
-
-<!-- =========================================================
-     SIDEBAR
-     ========================================================= -->
-<aside
-    class="gov-officer-sidebar"
-    id="govOfficerSidebar"
->
-
-    <!-- SIDEBAR HEADER -->
-    <div class="gov-officer-sidebar-header">
-
-        <a href="index.html" class="gov-officer-sidebar-brand gov-officer-stackly-brand" > 
-            <img src="./white.webp" alt="Stackly Logo" class="gov-officer-stackly-logo"  
-            style="height:60px; filter:brightness(0);"> </a>
-        </div>
+    </aside>
 
 
-        <!-- MOBILE CLOSE BUTTON -->
-        <button
-            type="button"
-            class="gov-officer-close-btn"
-            id="govOfficerCloseBtn"
-            aria-label="Close sidebar"
-        >
-            <i class="fa-solid fa-xmark"></i>
-        </button>
 
-    </div>
+    <!-- ======================================================
+         MAIN CONTENT AREA
+    ======================================================= -->
+
+    <main class="gov-main">
 
 
-    <!-- SIDEBAR PROFILE -->
-    <div class="gov-officer-sidebar-profile">
 
-        <div class="gov-officer-sidebar-avatar" id="govOfficerSideAvatar">
-            GO
-        </div>
+        <!-- ==================================================
+             TOP BAR
+        =================================================== -->
 
-        <div class="gov-officer-sidebar-profile-info">
-
-            <strong id="govOfficerSideName">
-                Government Officer
-            </strong>
-
-            <span>
-                <i class="fa-solid fa-circle"></i>
-                Officer
-            </span>
-
-        </div>
-
-    </div>
+        <header class="gov-topbar">
 
 
-    <!-- SIDEBAR NAVIGATION -->
-    <nav class="gov-officer-navigation">
+            <!-- TOP LEFT -->
 
-        <p class="gov-officer-nav-title">
-            MAIN MENU
-        </p>
+            <div class="gov-topbar-left">
 
 
-        <!-- Dashboard -->
-        <a
-            href="./citizen-dashboard.html"
-            class="gov-officer-nav-link gov-officer-nav-active"
-        >
-            <span class="gov-officer-nav-icon">
-                <i class="fa-solid fa-chart-pie"></i>
-            </span>
+                <!-- Mobile Menu -->
 
-            <span class="gov-officer-nav-text">
-                Dashboard
-            </span>
-        </a>
+                <button
+                    type="button"
+                    class="gov-menu-toggle"
+                    id="govMenuToggle"
+                    aria-label="Open Sidebar">
+
+                    <i class="fa-solid fa-bars"></i>
+
+                </button>
+
+
+
+                <!-- Top Logo -->
+
+                <a
+                    href="404.html"
+                    class="gov-top-logo"
+                    aria-label="Stackly Home"
+                    title="Stackly">
+
+
+                    <div class="gov-top-logo-icon">
+
+                        <i class="fa-solid fa-building-columns"></i>
+
+                    </div>
+
+
+                    <div class="gov-top-logo-text">
+
+                        <strong>
+                            STACKLY
+                        </strong>
+
+                        <span>
+                            GOVERNMENT PORTAL
+                        </span>
+
+                    </div>
+
+
+                </a>
+
+
+            </div>
+
+
+
+            <!-- TOP RIGHT -->
+
+            <div class="gov-topbar-right">
+
+
+                <!-- Notification -->
+<a href="./404.html">
+                <button
+                    type="button"
+                    class="gov-top-icon"
+                    title="Notifications"
+                    aria-label="Notifications">
+
+
+                    <i class="fa-regular fa-bell"></i>
+
+
+                    <span class="gov-top-notification">
+                        4
+                    </span>
+
+
+                </button></a>
+
+
+
+                <!-- User -->
+
+                <div class="gov-top-user">
+
+
+                    <div class="gov-top-avatar">
+
+                        <i class="fa-solid fa-user-tie"></i>
+
+                    </div>
+
+
+                    <div class="gov-top-user-info">
+
+
+                        <strong id="govTopName">
+                            Government User
+                        </strong>
+
+
+                        <span id="govTopEmail">
+                            user@example.com
+                        </span>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- Top Logout -->
+
+                
+
+            </div>
+
+
+        </header>
+
 
 
         
-        
 
 
-        <!-- Departments -->
-        <a
-            href="./my application.html"
-            class="gov-officer-nav-link"
-        >
-            <span class="gov-officer-nav-icon">
-                <i class="fa-solid fa-building"></i>
-            </span>
+<!-- ==========================================================
+     LOGOUT MODAL
+=========================================================== -->
 
-            <span class="gov-officer-nav-text">
-                My applications
-            </span>
-        </a>
+<div
+    class="gov-logout-modal"
+    id="govLogoutModal"
+    aria-hidden="true">
 
 
-        <!-- Citizens -->
-        <!-- <a
-            href="./citizens.html"
-            class="gov-officer-nav-link"
-        >
-            <span class="gov-officer-nav-icon">
-                <i class="fa-solid fa-users"></i>
-            </span>
+    <!-- Backdrop -->
 
-            <span class="gov-officer-nav-text">
-            Documents 
-            </span>
-        </a> -->
-
-
-        <!-- Services -->
-        <a
-            href="./appointments.html"
-            class="gov-officer-nav-link"
-        >
-            <span class="gov-officer-nav-icon">
-                <i class="fa-solid fa-hand-holding-heart"></i>
-            </span>
-
-            <span class="gov-officer-nav-text">
-               Appointments
-            </span>
-        </a>
+    <div class="gov-modal-backdrop"></div>
 
 
 
+    <!-- Modal Card -->
 
-        <!-- =================================================
-             MANAGEMENT
-             ================================================= -->
-        <p class="gov-officer-nav-title gov-officer-management-title">
-            MANAGEMENT
-        </p>
-
-
-        <!-- Tasks -->
-        <a
-            href="./payments.html"
-            class="gov-officer-nav-link"
-        >
-            <span class="gov-officer-nav-icon">
-                <i class="fa-solid fa-list-check"></i>
-            </span>
-
-            <span class="gov-officer-nav-text">
-              payments
-            </span>
-        </a>
+    <div
+        class="gov-logout-card"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="govLogoutTitle">
 
 
-        
+        <!-- Colorful top decoration -->
 
+        <div class="gov-modal-decoration">
 
-        <!-- Settings -->
-        <a
-            href="./settings1.html"
-            class="gov-officer-nav-link"
-        >
-            <span class="gov-officer-nav-icon">
-                <i class="fa-solid fa-gear"></i>
-            </span>
+            <span></span>
 
-            <span class="gov-officer-nav-text">
-                Settings
-            </span>
-        </a>
+            <span></span>
 
-    </nav>
+            <span></span>
 
-
-    <!-- SIDEBAR BOTTOM -->
-    <div class="gov-officer-sidebar-bottom">
+        </div>
 
 
 
-        <!-- Logout -->
-        <button
-            type="button"
-            class="gov-officer-logout-btn"
-            id="govOfficerLogoutBtn"
-        >
-            <span class="gov-officer-nav-icon">
+        <!-- Logout Icon -->
+
+        <div class="gov-modal-icon">
+
+
+            <div class="gov-modal-icon-inner">
+
                 <i class="fa-solid fa-right-from-bracket"></i>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- Modal Content -->
+
+        <div class="gov-modal-content">
+
+
+            <span class="gov-modal-small">
+                SECURE SESSION
             </span>
 
-            <span>
+
+            <h2 id="govLogoutTitle">
+                Ready to Logout?
+            </h2>
+
+
+            <p>
+                Are you sure you want to sign out from
+                your Stackly Government dashboard?
+            </p>
+
+
+        </div>
+
+
+
+        <!-- Buttons -->
+
+        <div class="gov-modal-actions">
+
+
+            <button
+                type="button"
+                class="gov-modal-cancel"
+                id="govCancelLogout">
+
+
+                <i class="fa-solid fa-arrow-left"></i>
+
+
+                Stay Logged In
+
+
+            </button>
+
+
+
+            <button
+                type="button"
+                class="gov-modal-confirm"
+                id="govConfirmLogout">
+
+
                 Logout
-            </span>
-        </button>
+
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+
+            </button>
+
+
+        </div>
+
+
+
+        <!-- Security Message -->
+
+        <div class="gov-modal-security">
+
+
+            <i class="fa-solid fa-shield-halved"></i>
+
+
+            Your session will be securely closed.
+
+
+        </div>
+
 
     </div>
 
-</aside>
+
+</div>
 
 
-<!-- =========================================================
-     DASHBOARD CONTENT WRAPPER
-     Put your dashboard content inside this area.
-     ========================================================= -->
-<main class="gov-officer-main-content" id="govOfficerMainContent">
-
-    <!-- Your dashboard content goes here -->
-
-</main>
 
 <style>
+    /* ==========================================================
+   MOBILE TOP BAR - FULL CONTENT VERSION
+========================================================== */
 
-    /* =====================================================
-       STACKLY LOGO - SIDEBAR
-       ===================================================== */
-    
-    .gov-officer-stackly-brand {
-        display: flex;
-        align-items: center;
-        width: auto;
-        height: 50px;
-        text-decoration: none;
-    }
-    
-    .gov-officer-stackly-logo {
-        display: block;
-        width: 155px;
-        max-width: 100%;
-        height: auto;
-        object-fit: contain;
-    
-        transition:
-            transform 0.3s ease,
-            opacity 0.3s ease;
-    }
-    
-    .gov-officer-stackly-brand:hover .gov-officer-stackly-logo {
-        transform: scale(1.03);
-        opacity: 0.92;
-    }
-    
-    
-    /* =========================================================
-       ROOT VARIABLES
-       ========================================================= */
-    
-    :root {
-    
-        --gov-officer-primary: #0756a8;
-        --gov-officer-primary-dark: #043b78;
-        --gov-officer-primary-light: #eaf4ff;
-    
-        --gov-officer-blue: #0b63c7;
-        --gov-officer-navy: #063b73;
-    
-        --gov-officer-white: #ffffff;
-        --gov-officer-bg: #f4f8fc;
-    
-        --gov-officer-text: #172b4d;
-        --gov-officer-text-light: #6b7c93;
-    
-        --gov-officer-border: #dce7f2;
-    
-        --gov-officer-danger: #dc3545;
-    
-        --gov-officer-sidebar-width: 270px;
-        --gov-officer-topbar-height: 76px;
-    
-        --gov-officer-shadow:
-            0 4px 20px rgba(10, 61, 110, 0.08);
-    
-        --gov-officer-transition: 0.3s ease;
-    }
-    
-    
-    /* =========================================================
-       RESET
-       ========================================================= */
-    
-    .gov-officer-topbar *,
-    .gov-officer-sidebar *,
-    .gov-officer-main-content *,
-    .gov-officer-sidebar-overlay * {
-        box-sizing: border-box;
-    }
-    
-    .gov-officer-topbar button,
-    .gov-officer-sidebar button {
-        font-family: inherit;
-    }
-    
-    .gov-officer-topbar a,
-    .gov-officer-sidebar a {
-        text-decoration: none;
-    }
-    
-    
-    /* =========================================================
-       BODY SUPPORT
-       ========================================================= */
-    
-    body {
-        margin: 0;
-        font-family: "Inter", sans-serif;
-        background: var(--gov-officer-bg);
-        color: var(--gov-officer-text);
-    }
-    
-    
-    /* =========================================================
-       TOP BAR
-       ========================================================= */
-    
-    .gov-officer-topbar {
-        position: fixed;
-        top: 0;
-        left: var(--gov-officer-sidebar-width);
-        right: 0;
-    
-        height: var(--gov-officer-topbar-height);
-    
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    
-        padding: 0 28px;
-    
-        background: var(--gov-officer-white);
-    
-        border-bottom: 1px solid var(--gov-officer-border);
-    
-        box-shadow: var(--gov-officer-shadow);
-    
-        z-index: 1000;
-    
-        transition:
-            left var(--gov-officer-transition);
-    }
-    
-    
-    /* =========================================================
-       TOP BAR LEFT
-       ========================================================= */
-    
-    .gov-officer-topbar-left {
-        display: flex;
-        align-items: center;
-        gap: 18px;
-    }
-    
-    
-    /* =========================================================
-       MOBILE MENU BUTTON
-       ========================================================= */
-    
-    .gov-officer-menu-btn {
-        display: none;
-    
-        width: 44px;
-        height: 44px;
-    
-        border: 1px solid var(--gov-officer-border);
-        border-radius: 10px;
-    
-        background: var(--gov-officer-primary-light);
-        color: var(--gov-officer-primary);
-    
-        font-size: 23px;
-    
-        cursor: pointer;
-    
-        transition: var(--gov-officer-transition);
-    }
-    
-    .gov-officer-menu-btn:hover {
-        background: var(--gov-officer-primary);
-        color: var(--gov-officer-white);
-    }
-    
-    
-    /* =========================================================
-       LOGO
-       ========================================================= */
-    
-    .gov-officer-logo {
-        display: flex;
-        align-items: center;
-        gap: 12px;
-    
-        color: var(--gov-officer-navy);
-    }
-    
-    .gov-officer-logo-icon {
-        width: 46px;
-        height: 46px;
-    
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    
-        border-radius: 10px;
-    
-        background:
-            linear-gradient(
-                135deg,
-                var(--gov-officer-primary),
-                var(--gov-officer-navy)
-            );
-    
-        color: var(--gov-officer-white);
-    
-        font-size: 22px;
-    
-        box-shadow:
-            0 5px 15px rgba(7, 86, 168, 0.20);
-    }
-    
-    .gov-officer-logo-text {
-        display: flex;
-        flex-direction: column;
-        line-height: 1.2;
-    }
-    
-    .gov-officer-logo-text strong {
-        font-size: 26px;
-        font-weight: 800;
-        letter-spacing: 0.5px;
-    }
-    
-    .gov-officer-logo-text span {
-        margin-top: 4px;
-    
-        font-size: 13px;
-        font-weight: 600;
-    
-        color: var(--gov-officer-text-light);
-    
-        letter-spacing: 1px;
-    }
-    
-    
-    /* =========================================================
-       TOP BAR RIGHT
-       ========================================================= */
-    
-    .gov-officer-topbar-right {
-        display: flex;
-        align-items: center;
-        gap: 22px;
-    }
-    
-    
-    /* =========================================================
-       NOTIFICATION
-       ========================================================= */
-    
-    .gov-officer-notification-btn {
-        position: relative;
-    
-        width: 44px;
-        height: 44px;
-    
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    
-        border: 1px solid var(--gov-officer-border);
-        border-radius: 50%;
-    
-        background: var(--gov-officer-white);
-    
-        color: var(--gov-officer-primary);
-    
-        font-size: 20px;
-    
-        cursor: pointer;
-    
-        transition: var(--gov-officer-transition);
-    }
-    
-    .gov-officer-notification-btn:hover {
-        background: var(--gov-officer-primary-light);
-        transform: translateY(-2px);
-    }
-    
-    .gov-officer-notification-dot {
-        position: absolute;
-    
-        top: 6px;
-        right: 7px;
-    
-        width: 8px;
-        height: 8px;
-    
-        border-radius: 50%;
-    
-        background: #e63946;
-    
-        border: 2px solid var(--gov-officer-white);
-    }
-    
-    
-    /* =========================================================
-       USER BOX
-       ========================================================= */
-    
-    .gov-officer-user-box {
-        display: flex;
-        align-items: center;
-        gap: 12px;
-    
-        cursor: pointer;
-    }
-    
-    .gov-officer-user-avatar {
-        width: 44px;
-        height: 44px;
-    
-        flex-shrink: 0;
-    
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    
-        border-radius: 50%;
-    
-        background:
-            linear-gradient(
-                135deg,
-                #0b63c7,
-                #063b73
-            );
-    
-        color: var(--gov-officer-white);
-    
-        font-size: 19px;
-        font-weight: 800;
-    
-        box-shadow:
-            0 4px 12px rgba(7, 86, 168, 0.20);
-    }
-    
-    .gov-officer-user-details {
-        display: flex;
-        flex-direction: column;
-    
-        min-width: 0;
-    }
-    
-    .gov-officer-user-name {
-        max-width: 200px;
-    
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-    
-        font-size: 15px;
-        font-weight: 700;
-    
-        color: var(--gov-officer-text);
-    }
-    
-    .gov-officer-user-email {
-        max-width: 220px;
-    
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-    
-        margin-top: 4px;
-    
-        font-size: 13px;
-    
-        color: var(--gov-officer-text-light);
-    }
-    
-    .gov-officer-user-arrow {
-        margin-left: 3px;
-    
-        font-size: 12px;
-    
-        color: var(--gov-officer-text-light);
-    }
-    
-    
-    /* =========================================================
-       SIDEBAR
-       ========================================================= */
-    
-    .gov-officer-sidebar {
-        position: fixed;
-    
-        top: 0;
-        left: 0;
-        bottom: 0;
-    
-        width: var(--gov-officer-sidebar-width);
-    
-        display: flex;
-        flex-direction: column;
-    
-        background: var(--gov-officer-white);
-    
-        border-right: 1px solid var(--gov-officer-border);
-    
-        box-shadow:
-            5px 0 25px rgba(6, 59, 115, 0.07);
-    
-        z-index: 1200;
-    
-        overflow-y: auto;
-    
-        scrollbar-width: thin;
-    
-        scrollbar-color:
-            var(--gov-officer-primary)
-            transparent;
-    }
-    
-    
-    /* =========================================================
-       SIDEBAR HEADER
-       ========================================================= */
-    
-    .gov-officer-sidebar-header {
-        min-height: 76px;
-    
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    
-        padding: 0 19px;
-    
-        border-bottom: 1px solid var(--gov-officer-border);
-    
-        background:
-            linear-gradient(
-                180deg,
-                #ffffff,
-                #f9fcff
-            );
-    }
-    
-    .gov-officer-sidebar-brand {
-        display: flex;
-        align-items: center;
-        gap: 11px;
-    }
-    
-    .gov-officer-sidebar-brand-icon {
-        width: 41px;
-        height: 41px;
-    
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    
-        border-radius: 9px;
-    
-        background: var(--gov-officer-primary-light);
-    
-        color: var(--gov-officer-primary);
-    
-        font-size: 18px;
-    }
-    
-    .gov-officer-sidebar-brand div:last-child {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .gov-officer-sidebar-brand strong {
-        font-size: 15px;
-        font-weight: 800;
-    
-        color: var(--gov-officer-navy);
-    }
-    
-    .gov-officer-sidebar-brand span {
-        margin-top: 3px;
-    
-        font-size: 11px;
-    
-        color: var(--gov-officer-text-light);
-    }
-    
-    
-    /* =========================================================
-       CLOSE BUTTON
-       ========================================================= */
-    
-    .gov-officer-close-btn {
-        display: none;
-    
-        width: 37px;
-        height: 37px;
-    
-        align-items: center;
-        justify-content: center;
-    
-        border: none;
-        border-radius: 8px;
-    
-        background: #eef5fc;
-    
-        color: var(--gov-officer-primary);
-    
-        font-size: 20px;
-    
-        cursor: pointer;
-    
-        transition: var(--gov-officer-transition);
-    }
-    
-    .gov-officer-close-btn:hover {
-        background: var(--gov-officer-primary);
-        color: var(--gov-officer-white);
-        transform: rotate(90deg);
-    }
-    
-    
-    /* =========================================================
-       SIDEBAR PROFILE
-       ========================================================= */
-    
-    .gov-officer-sidebar-profile {
-        margin: 17px 15px 12px;
-    
-        padding: 14px;
-    
-        display: flex;
-        align-items: center;
-    
-        gap: 11px;
-    
-        border-radius: 12px;
-    
-        background:
-            linear-gradient(
-                135deg,
-                #edf6ff,
-                #f8fbff
-            );
-    
-        border: 1px solid #dcecfb;
-    }
-    
-    .gov-officer-sidebar-avatar {
-        width: 41px;
-        height: 41px;
-    
-        flex-shrink: 0;
-    
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    
-        border-radius: 50%;
-    
-        background: var(--gov-officer-primary);
-    
-        color: var(--gov-officer-white);
-    
-        font-size: 14px;
-        font-weight: 800;
-    }
-    
-    .gov-officer-sidebar-profile-info {
-        display: flex;
-        flex-direction: column;
-    
-        min-width: 0;
-    }
-    
-    .gov-officer-sidebar-profile-info strong {
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-    
-        font-size: 14px;
-        font-weight: 700;
-    
-        color: var(--gov-officer-text);
-    }
-    
-    .gov-officer-sidebar-profile-info span {
-        display: flex;
-        align-items: center;
-    
-        gap: 5px;
-    
-        margin-top: 4px;
-    
-        font-size: 12px;
-    
-        color: var(--gov-officer-text-light);
-    }
-    
-    .gov-officer-sidebar-profile-info span i {
-        font-size: 7px;
-        color: #20a464;
-    }
-    
-    
-    /* =========================================================
-       NAVIGATION
-       ========================================================= */
-    
-    .gov-officer-navigation {
-        padding: 3px 12px 12px;
-    }
-    
-    .gov-officer-nav-title {
-        margin: 14px 8px 9px;
-    
-        font-size: 11px;
-        font-weight: 800;
-    
-        color: #91a2b7;
-    
-        letter-spacing: 1px;
-    }
-    
-    .gov-officer-management-title {
-        margin-top: 21px;
-    }
-    
-    
-    /* =========================================================
-       NAV LINK
-       ========================================================= */
-    
-    .gov-officer-nav-link {
-        position: relative;
-    
-        min-height: 48px;
-    
-        margin: 3px 0;
-    
-        padding: 0 11px;
-    
-        display: flex;
-        align-items: center;
-    
-        gap: 12px;
-    
-        border-radius: 9px;
-    
-        color: #536b86;
-    
-        font-size: 14px;
-        font-weight: 600;
-    
-        transition:
-            background var(--gov-officer-transition),
-            color var(--gov-officer-transition),
-            transform var(--gov-officer-transition);
-    }
-    
-    .gov-officer-nav-link:hover {
-        background: var(--gov-officer-primary-light);
-        color: var(--gov-officer-primary);
-    
-        transform: translateX(3px);
-    }
-    
-    .gov-officer-nav-active {
-        background:
-            linear-gradient(
-                90deg,
-                #e7f2ff,
-                #f2f8ff
-            );
-    
-        color: var(--gov-officer-primary);
-    
-        font-weight: 700;
-    }
-    
-    .gov-officer-nav-active::before {
-        content: "";
-    
-        position: absolute;
-    
-        left: 0;
-        top: 8px;
-        bottom: 8px;
-    
-        width: 3px;
-    
-        border-radius: 0 4px 4px 0;
-    
-        background: var(--gov-officer-primary);
-    }
-    
-    
-    /* =========================================================
-       NAV ICON
-       ========================================================= */
-    
-    .gov-officer-nav-icon {
-        width: 28px;
-        height: 28px;
-    
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    
-        flex-shrink: 0;
-    
-        border-radius: 7px;
-    
-        background: transparent;
-    
-        color: inherit;
-    
-        font-size: 16px;
-    }
-    
-    .gov-officer-nav-active .gov-officer-nav-icon {
-        background: #d7eaff;
-    }
-    
-    
-    /* =========================================================
-       NAV TEXT
-       ========================================================= */
-    
-    .gov-officer-nav-text {
-        flex: 1;
-    }
-    
-    
-    /* =========================================================
-       NAV BADGE
-       ========================================================= */
-    
-    .gov-officer-nav-badge {
-        min-width: 22px;
-        height: 22px;
-    
-        padding: 0 6px;
-    
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-    
-        border-radius: 20px;
-    
-        background: var(--gov-officer-primary);
-    
-        color: white;
-    
-        font-size: 10px;
-        font-weight: 700;
-    }
-    
-    .gov-officer-badge-red {
-        background: #e74c5a;
-    }
-    
-    
-    /* =========================================================
-       SIDEBAR BOTTOM
-       ========================================================= */
-    
-    .gov-officer-sidebar-bottom {
-        margin-top: auto;
-    
-        padding: 10px 12px 18px;
-    
-        border-top: 1px solid var(--gov-officer-border);
-    }
-    
-    
-    /* =========================================================
-       HELP LINK
-       ========================================================= */
-    
-    .gov-officer-help-link {
-        margin-bottom: 5px;
-    }
-    
-    
-    /* =========================================================
-       LOGOUT
-       ========================================================= */
-    
-    .gov-officer-logout-btn {
-        width: 100%;
-        min-height: 48px;
-    
-        display: flex;
-        align-items: center;
-    
-        gap: 12px;
-    
-        padding: 0 11px;
-    
-        border: none;
-        border-radius: 9px;
-    
-        background: #fff3f4;
-    
-        color: var(--gov-officer-danger);
-    
-        font-family: inherit;
-    
-        font-size: 14px;
-        font-weight: 700;
-    
-        cursor: pointer;
-    
-        transition: var(--gov-officer-transition);
-    }
-    
-    .gov-officer-logout-btn:hover {
-        background: var(--gov-officer-danger);
-        color: white;
-    
-        transform: translateY(-2px);
-    }
-    
-    .gov-officer-logout-btn .gov-officer-nav-icon {
-        color: inherit;
-    }
-    
-    
-    /* =========================================================
-       SIDEBAR OVERLAY
-       ========================================================= */
-    
-    .gov-officer-sidebar-overlay {
-        position: fixed;
-    
-        inset: 0;
-    
-        background: rgba(3, 30, 60, 0.55);
-    
-        backdrop-filter: blur(2px);
-    
-        opacity: 0;
-        visibility: hidden;
-    
-        z-index: 1100;
-    
-        transition:
-            opacity var(--gov-officer-transition),
-            visibility var(--gov-officer-transition);
-    }
-    
-    .gov-officer-sidebar-overlay.gov-officer-overlay-active {
-        opacity: 1;
-        visibility: visible;
-    }
-    
-    
-    /* =========================================================
-       MAIN CONTENT
-       ========================================================= */
-    
-    .gov-officer-main-content {
-        min-height: 100vh;
-    
-        margin-left: var(--gov-officer-sidebar-width);
-    
-        padding-top: var(--gov-officer-topbar-height);
-    
-        background: var(--gov-officer-bg);
-    
-        transition:
-            margin-left var(--gov-officer-transition);
-    }
-    
-    
-    /* =========================================================
-       LARGE DESKTOP
-       1400px+
-       ========================================================= */
-    
-    @media (min-width: 1400px) {
-    
-        .gov-officer-topbar {
-            padding-left: 34px;
-            padding-right: 34px;
-        }
-    
-        .gov-officer-sidebar {
-            width: 285px;
-        }
-    
-        .gov-officer-topbar {
-            left: 285px;
-        }
-    
-        .gov-officer-main-content {
-            margin-left: 285px;
-        }
-    
-        .gov-officer-nav-link {
-            font-size: 15px;
-            min-height: 49px;
-        }
-    
-        .gov-officer-nav-title {
-            font-size: 12px;
-        }
-    
-        .gov-officer-user-name {
-            font-size: 16px;
-        }
-    
-        .gov-officer-user-email {
-            font-size: 14px;
-        }
-    
-    }
-    
-    
-    /* =========================================================
-       LAPTOP
-       1200px - 1399px
-       ========================================================= */
-    
-    @media (min-width: 1200px) and (max-width: 1399px) {
-    
-        .gov-officer-sidebar {
-            width: 260px;
-        }
-    
-        .gov-officer-topbar {
-            left: 260px;
-        }
-    
-        .gov-officer-main-content {
-            margin-left: 260px;
-        }
-    
-        .gov-officer-nav-link {
-            font-size: 14px;
-            min-height: 48px;
-        }
-    
-        .gov-officer-nav-title {
-            font-size: 11px;
-        }
-    
-        .gov-officer-user-name {
-            font-size: 15px;
-        }
-    
-        .gov-officer-user-email {
-            font-size: 13px;
-        }
-    
-    }
-    
-    
-    /* =========================================================
-       TABLET LANDSCAPE
-       992px - 1199px
-       ========================================================= */
-    
-    @media (min-width: 992px) and (max-width: 1199px) {
-    
-        :root {
-            --gov-officer-sidebar-width: 245px;
-        }
-    
-        .gov-officer-topbar {
-            padding: 0 20px;
-        }
-    
-        .gov-officer-logo-text strong {
-            font-size: 16px;
-        }
-    
-        .gov-officer-logo-text span {
-            font-size: 11px;
-        }
-    
-        .gov-officer-user-name {
-            font-size: 14px;
-        }
-    
-        .gov-officer-user-email {
-            font-size: 12px;
-            max-width: 160px;
-        }
-    
-        .gov-officer-nav-link {
-            font-size: 13px;
-            min-height: 47px;
-        }
-    
-        .gov-officer-nav-title {
-            font-size: 10px;
-        }
-    
-    }
-    
-    
-    /* =========================================================
-       TABLET
-       768px - 991px
-       ========================================================= */
-    
-    @media (min-width: 768px) and (max-width: 991px) {
-    
-        .gov-officer-topbar {
-            left: 0;
-    
-            padding: 0 20px;
-        }
-    
-        .gov-officer-sidebar {
-            width: 275px;
-    
-            transform: translateX(-100%);
-    
-            transition:
-                transform var(--gov-officer-transition);
-        }
-    
-        .gov-officer-sidebar.gov-officer-sidebar-open {
-            transform: translateX(0);
-        }
-    
-        .gov-officer-main-content {
-            margin-left: 0;
-        }
-    
-        .gov-officer-menu-btn {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-    
-            font-size: 23px;
-        }
-    
-        .gov-officer-close-btn {
-            display: flex;
-    
-            font-size: 20px;
-        }
-    
-        .gov-officer-user-details {
-            display: none;
-        }
-    
-        .gov-officer-user-arrow {
-            display: none;
-        }
-    
-        .gov-officer-nav-link {
-            min-height: 50px;
-            font-size: 15px;
-        }
-    
-        .gov-officer-nav-title {
-            font-size: 12px;
-        }
-    
-        .gov-officer-sidebar-profile-info strong {
-            font-size: 15px;
-        }
-    
-        .gov-officer-sidebar-profile-info span {
-            font-size: 12px;
-        }
-    
-    }
-    
-    
-    /* =========================================================
-       MOBILE
-       576px - 767px
-       ========================================================= */
-    
-    @media (min-width: 576px) and (max-width: 767px) {
-    
-        .gov-officer-topbar {
-            left: 0;
-    
-            height: 68px;
-    
-            padding: 0 16px;
-        }
-    
-        .gov-officer-sidebar {
-            width: min(300px, 88vw);
-    
-            transform: translateX(-100%);
-    
-            transition:
-                transform var(--gov-officer-transition);
-        }
-    
-        .gov-officer-sidebar.gov-officer-sidebar-open {
-            transform: translateX(0);
-        }
-    
-        .gov-officer-main-content {
-            margin-left: 0;
-    
-            padding-top: 68px;
-        }
-    
-        .gov-officer-menu-btn {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-    
-            width: 42px;
-            height: 42px;
-    
-            font-size: 22px;
-        }
-    
-        .gov-officer-close-btn {
-            display: flex;
-    
-            font-size: 20px;
-        }
-    
-        .gov-officer-logo-icon {
-            width: 41px;
-            height: 41px;
-    
-            font-size: 19px;
-        }
-    
-        .gov-officer-logo-text strong {
-            font-size: 15px;
-        }
-    
-        .gov-officer-logo-text span {
-            font-size: 9px;
-        }
-    
-        .gov-officer-topbar-right {
-            gap: 10px;
-        }
-    
-        .gov-officer-notification-btn {
-            width: 41px;
-            height: 41px;
-    
-            font-size: 18px;
-        }
-    
-        .gov-officer-user-avatar {
-            width: 41px;
-            height: 41px;
-    
-            font-size: 17px;
-        }
-    
-        .gov-officer-user-details,
-        .gov-officer-user-arrow {
-            display: none;
-        }
-    
-        .gov-officer-nav-link {
-            min-height: 49px;
-    
-            font-size: 14px;
-    
-            gap: 13px;
-        }
-    
-        .gov-officer-nav-icon {
-            font-size: 16px;
-        }
-    
-        .gov-officer-nav-title {
-            font-size: 11px;
-        }
-    
-        .gov-officer-sidebar-profile-info strong {
-            font-size: 14px;
-        }
-    
-        .gov-officer-sidebar-profile-info span {
-            font-size: 12px;
-        }
-    
-        .gov-officer-logout-btn {
-            min-height: 49px;
-            font-size: 14px;
-        }
-    
-    }
-    
-    
-    /* =========================================================
-       SMALL MOBILE
-       MAX 575px
-       ========================================================= */
-    
-    @media (max-width: 575px) {
-    
-        .gov-officer-topbar {
-            left: 0;
-    
-            height: 66px;
-    
-            padding: 0 12px;
-        }
-    
-        .gov-officer-sidebar {
-            width: min(300px, 90vw);
-    
-            transform: translateX(-100%);
-    
-            transition:
-                transform var(--gov-officer-transition);
-        }
-    
-        .gov-officer-sidebar.gov-officer-sidebar-open {
-            transform: translateX(0);
-        }
-    
-        .gov-officer-main-content {
-            margin-left: 0;
-    
-            padding-top: 66px;
-        }
-    
-        .gov-officer-menu-btn {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-    
-            width: 40px;
-            height: 40px;
-    
-            border-radius: 8px;
-    
-            font-size: 19px;
-        }
-    
-        .gov-officer-close-btn {
-            display: flex;
-    
-            width: 38px;
-            height: 38px;
-    
-            font-size: 19px;
-        }
-    
-        .gov-officer-logo {
-            gap: 8px;
-        }
-    
-        .gov-officer-logo-icon {
-            width: 39px;
-            height: 39px;
-    
-            border-radius: 8px;
-    
-            font-size: 17px;
-        }
-    
-        .gov-officer-logo-text strong {
-            font-size: 13px;
-        }
-    
-        .gov-officer-logo-text span {
-            font-size: 8px;
-    
-            letter-spacing: 0.6px;
-        }
-    
-        .gov-officer-topbar-left {
-            gap: 8px;
-    
-            min-width: 0;
-        }
-    
-        .gov-officer-topbar-right {
-            gap: 7px;
-        }
-    
-        .gov-officer-notification-btn {
-            width: 37px;
-            height: 37px;
-    
-            font-size: 16px;
-        }
-    
-        .gov-officer-notification-dot {
-            top: 5px;
-            right: 6px;
-        }
-    
-        .gov-officer-user-avatar {
-            width: 37px;
-            height: 37px;
-    
-            font-size: 12px;
-        }
-    
-        .gov-officer-user-details,
-        .gov-officer-user-arrow {
-            display: none;
-        }
-    
-        .gov-officer-sidebar-header {
-            min-height: 68px;
-    
-            padding: 0 15px;
-        }
-    
-        .gov-officer-sidebar-profile {
-            margin-left: 12px;
-            margin-right: 12px;
-    
-            padding: 14px;
-        }
-    
-        .gov-officer-sidebar-profile-info strong {
-            font-size: 14px;
-        }
-    
-        .gov-officer-sidebar-profile-info span {
-            font-size: 12px;
-        }
-    
-        .gov-officer-nav-title {
-            margin-top: 14px;
-            margin-bottom: 9px;
-    
-            font-size: 11px;
-        }
-    
-        .gov-officer-nav-link {
-            min-height: 50px;
-    
-            padding: 0 12px;
-    
-            font-size: 14px;
-    
-            gap: 13px;
-        }
-    
-        .gov-officer-nav-icon {
-            width: 29px;
-            height: 29px;
-    
-            font-size: 16px;
-        }
-    
-        .gov-officer-nav-badge {
-            min-width: 22px;
-            height: 22px;
-    
-            font-size: 10px;
-        }
-    
-        .gov-officer-logout-btn {
-            min-height: 50px;
-    
-            font-size: 14px;
-        }
-    
-    }
-    
-    
-    /* =========================================================
-       EXTRA SMALL MOBILE
-       MAX 380px
-       ========================================================= */
-    
-    @media (max-width: 380px) {
-    
-        .gov-officer-topbar {
-            padding: 0 9px;
-        }
-    
-        .gov-officer-logo-text {
-            display: none;
-        }
-    
-        .gov-officer-menu-btn {
-            width: 37px;
-            height: 37px;
-    
-            font-size: 18px;
-        }
-    
-        .gov-officer-logo-icon {
-            width: 38px;
-            height: 38px;
-        }
-    
-        .gov-officer-notification-btn {
-            width: 35px;
-            height: 35px;
-    
-            font-size: 15px;
-        }
-    
-        .gov-officer-user-avatar {
-            width: 35px;
-            height: 35px;
-    
-            font-size: 11px;
-        }
-    
-        .gov-officer-nav-link {
-            min-height: 48px;
-    
-            font-size: 13px;
-        }
-    
-        .gov-officer-nav-icon {
-            font-size: 15px;
-        }
-    
-        .gov-officer-nav-title {
-            font-size: 10px;
-        }
-    
-        .gov-officer-sidebar-profile-info strong {
-            font-size: 13px;
-        }
-    
-        .gov-officer-sidebar-profile-info span {
-            font-size: 11px;
-        }
-    
-        .gov-officer-logout-btn {
-            font-size: 13px;
-        }
-    
-    }
-    
-    
-    /* =========================================================
-       ACCESSIBILITY
-       ========================================================= */
-    
-    .gov-officer-menu-btn:focus-visible,
-    .gov-officer-close-btn:focus-visible,
-    .gov-officer-nav-link:focus-visible,
-    .gov-officer-logout-btn:focus-visible,
-    .gov-officer-notification-btn:focus-visible {
-        outline: 3px solid rgba(7, 86, 168, 0.25);
-        outline-offset: 2px;
-    }
-    
-    
-    /* =========================================================
-       REDUCED MOTION
-       ========================================================= */
-    
-    @media (prefers-reduced-motion: reduce) {
-    
-        .gov-officer-topbar,
-        .gov-officer-sidebar,
-        .gov-officer-main-content,
-        .gov-officer-nav-link,
-        .gov-officer-close-btn,
-        .gov-officer-menu-btn,
-        .gov-officer-logout-btn {
-            transition: none;
-        }
-    
-    }
-    
-    </style>
+@media (max-width: 600px) {
 
-<script>
-    
-/* =========================================================
-   GOVERNMENT OFFICER DASHBOARD
-   TOP BAR + SIDEBAR JAVASCRIPT
-   ========================================================= */
+.gov-topbar {
 
-document.addEventListener("DOMContentLoaded", function () {
+    width: 100%;
 
-    /* =====================================================
-       ELEMENTS
-       ===================================================== */
+    min-height: 150px;
 
-    const menuBtn = document.getElementById("govOfficerMenuBtn");
-    const closeBtn = document.getElementById("govOfficerCloseBtn");
+    height: auto;
 
-    const sidebar = document.getElementById("govOfficerSidebar");
-    const overlay = document.getElementById("govOfficerSidebarOverlay");
+    padding: 12px 14px;
 
-    const logoutBtn = document.getElementById("govOfficerLogoutBtn");
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: stretch;
+
+    justify-content: center;
+
+    gap: 12px;
+
+}
 
 
-    /* =====================================================
-       LOCAL STORAGE
-       ===================================================== */
+/* ======================================================
+   FIRST ROW
+   MENU + STACKLY GOVERNMENT PORTAL
+======================================================= */
 
-    const storedName =
-        localStorage.getItem("userName") ||
-        localStorage.getItem("name") ||
-        "Government Officer";
+.gov-topbar-left {
 
-    const storedEmail =
-        localStorage.getItem("userEmail") ||
-        localStorage.getItem("email") ||
-        "officer@gov.in";
+    width: 100%;
 
-    const storedRole =
-        localStorage.getItem("userRole") ||
-        localStorage.getItem("role") ||
-        "Government Officer";
+    min-width: 0;
 
+    display: flex;
 
-    /* =====================================================
-       GET USER ELEMENTS
-       ===================================================== */
+    align-items: center;
 
-    const topName =
-        document.getElementById("govOfficerName");
+    gap: 10px;
 
-    const topEmail =
-        document.getElementById("govOfficerEmail");
-
-    const topAvatar =
-        document.getElementById("govOfficerAvatar");
-
-    const sideName =
-        document.getElementById("govOfficerSideName");
-
-    const sideAvatar =
-        document.getElementById("govOfficerSideAvatar");
+}
 
 
-    /* =====================================================
-       DISPLAY USER NAME
-       ===================================================== */
+/* MENU */
 
-    if (topName) {
-        topName.textContent = storedName;
-    }
+.gov-menu-toggle {
 
-    if (topEmail) {
-        topEmail.textContent = storedEmail;
-    }
+    display: flex;
 
-    if (sideName) {
-        sideName.textContent = storedName;
-    }
+    flex-shrink: 0;
 
+    width: 44px;
 
-    /* =====================================================
-       GENERATE USER INITIALS
-       ===================================================== */
+    height: 44px;
 
-    function getInitials(name) {
+    align-items: center;
 
-        if (!name || name.trim() === "") {
-            return "GO";
-        }
+    justify-content: center;
 
-        const words = name
-            .trim()
-            .split(/\s+/)
-            .filter(Boolean);
+    border: none;
 
-        if (words.length === 1) {
-            return words[0]
-                .substring(0, 2)
-                .toUpperCase();
-        }
+    border-radius: 11px;
 
-        return (
-            words[0].charAt(0) +
-            words[words.length - 1].charAt(0)
-        ).toUpperCase();
-    }
+    background: #eaf4ff;
+
+    color: #0757a6;
+
+    font-size: 21px;
+
+    cursor: pointer;
+
+}
 
 
-    const initials = getInitials(storedName);
+/* ======================================================
+   STACKLY GOVERNMENT PORTAL
+======================================================= */
+
+.gov-top-logo {
+
+    display: flex !important;
+
+    flex: 1;
+
+    min-width: 0;
+
+    width: auto;
+
+    align-items: center;
+
+    gap: 10px;
+
+    overflow: visible;
+
+    text-decoration: none;
+
+}
 
 
-    if (topAvatar) {
-        topAvatar.textContent = initials;
-    }
+/* BUILT-IN GOVERNMENT ICON */
 
-    if (sideAvatar) {
-        sideAvatar.textContent = initials;
-    }
+.gov-top-logo-icon {
 
+    display: flex !important;
 
-    /* =====================================================
-       UPDATE ROLE
-       ===================================================== */
+    flex-shrink: 0;
 
-    const roleElements =
-        document.querySelectorAll(
-            ".gov-officer-sidebar-profile-info span"
+    width: 45px;
+
+    height: 45px;
+
+    min-width: 45px;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 12px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #0757a6,
+            #0b76dc
         );
 
-    roleElements.forEach(function (element) {
+    color: #ffffff;
 
-        const roleText =
-            storedRole && storedRole.trim() !== ""
-                ? storedRole
-                : "Government Officer";
+    font-size: 21px;
 
-        element.innerHTML =
-            '<i class="fa-solid fa-circle"></i> ' +
-            roleText;
+    box-shadow:
+        0 5px 15px
+        rgba(7, 87, 166, 0.25);
 
-    });
+}
 
 
-    /* =====================================================
-       OPEN SIDEBAR
-       ===================================================== */
+/* STACKLY + GOVERNMENT PORTAL TEXT */
 
-    function openSidebar() {
+.gov-top-logo-text {
 
-        if (!sidebar) return;
+    display: flex !important;
 
-        sidebar.classList.add(
-            "gov-officer-sidebar-open"
-        );
+    flex: 1;
 
-        if (overlay) {
-            overlay.classList.add(
-                "gov-officer-overlay-active"
+    min-width: 0;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    overflow: visible;
+
+}
+
+
+.gov-top-logo-text strong {
+
+    display: block !important;
+
+    margin: 0;
+
+    padding: 0;
+
+    color: #0757a6;
+
+    font-size: 20px;
+
+    line-height: 1.2;
+
+    font-weight: 800;
+
+    letter-spacing: 0.5px;
+
+    white-space: nowrap;
+
+    visibility: visible;
+
+    opacity: 1;
+
+}
+
+
+.gov-top-logo-text span {
+
+    display: block !important;
+
+    margin-top: 3px;
+
+    padding: 0;
+
+    color: #61708a;
+
+    font-size: 10px;
+
+    line-height: 1.2;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    white-space: nowrap;
+
+    visibility: visible;
+
+    opacity: 1;
+
+}
+
+
+/* ======================================================
+   SECOND ROW
+   NOTIFICATION + USER + LOGOUT
+======================================================= */
+
+.gov-topbar-right {
+
+    width: 100%;
+
+    min-width: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+}
+
+
+/* NOTIFICATION */
+
+.gov-top-icon {
+
+    display: flex;
+
+    flex-shrink: 0;
+
+    width: 43px;
+
+    height: 43px;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 11px;
+
+    font-size: 19px;
+
+}
+
+
+/* USER */
+
+.gov-top-user {
+
+    flex: 1;
+
+    min-width: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    padding: 0;
+
+    border: none;
+
+    overflow: hidden;
+
+}
+
+
+/* USER AVATAR */
+
+.gov-top-avatar {
+
+    display: flex;
+
+    flex-shrink: 0;
+
+    width: 43px;
+
+    height: 43px;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    font-size: 19px;
+
+}
+
+
+/* USER NAME + EMAIL */
+
+.gov-top-user-info {
+
+    display: flex !important;
+
+    flex: 1;
+
+    min-width: 0;
+
+    flex-direction: column;
+
+    overflow: hidden;
+
+}
+
+
+.gov-top-user-info strong {
+
+    display: block !important;
+
+    width: 100%;
+
+    margin: 0;
+
+    font-size: 16px;
+
+    line-height: 1.25;
+
+    font-weight: 800;
+
+    color: #14213d;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+    visibility: visible;
+
+    opacity: 1;
+
+}
+
+
+.gov-top-user-info span {
+
+    display: block !important;
+
+    width: 100%;
+
+    margin-top: 3px;
+
+    font-size: 13px;
+
+    line-height: 1.2;
+
+    color: #61708a;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+    visibility: visible;
+
+    opacity: 1;
+
+}
+
+
+/* LOGOUT */
+
+.gov-top-logout {
+
+    display: flex;
+
+    flex-shrink: 0;
+
+    width: 43px;
+
+    height: 43px;
+
+    min-height: 43px;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 0;
+
+    border-radius: 11px;
+
+    font-size: 18px;
+
+}
+
+
+.gov-top-logout span {
+
+    display: none;
+
+}
+
+}
+    /* ==========================================================
+   STACKLY GOVERNMENT DASHBOARD
+   BLUE + WHITE GOVERNMENT THEME
+
+   ALL CLASSES USE gov- PREFIX
+   TO REDUCE CSS CONFLICTS
+========================================================== */
+
+
+/* ==========================================================
+   ROOT VARIABLES
+========================================================== */
+
+:root {
+
+--gov-primary: #0757a6;
+
+--gov-primary-dark: #043b78;
+
+--gov-primary-light: #eaf4ff;
+
+--gov-blue: #0b6bcf;
+
+--gov-blue-light: #e9f4ff;
+
+--gov-white: #ffffff;
+
+--gov-bg: #f3f7fc;
+
+--gov-text: #14213d;
+
+--gov-text-light: #61708a;
+
+--gov-border: #dce7f3;
+
+--gov-danger: #dc2626;
+
+--gov-success: #16a34a;
+
+--gov-sidebar-width: 290px;
+
+--gov-topbar-height: 88px;
+
+--gov-radius: 18px;
+
+--gov-shadow:
+    0 10px 30px rgba(4, 59, 120, 0.10);
+
+}
+
+
+
+/* ==========================================================
+RESET
+========================================================== */
+
+.gov-dashboard,
+.gov-dashboard *,
+.gov-logout-modal,
+.gov-logout-modal * {
+
+box-sizing: border-box;
+
+}
+
+
+.gov-dashboard {
+
+margin: 0;
+
+padding: 0;
+
+width: 100%;
+
+min-height: 100vh;
+
+font-family:
+    "Inter",
+    Arial,
+    sans-serif;
+
+background:
+    var(--gov-bg);
+
+color:
+    var(--gov-text);
+
+}
+
+
+.gov-dashboard button,
+.gov-dashboard a,
+.gov-logout-modal button {
+
+font-family: inherit;
+
+}
+
+
+.gov-dashboard a {
+
+text-decoration: none;
+
+}
+
+
+
+/* ==========================================================
+DASHBOARD
+========================================================== */
+
+.gov-dashboard {
+
+display: flex;
+
+min-height: 100vh;
+
+}
+
+
+
+/* ==========================================================
+SIDEBAR
+========================================================== */
+
+.gov-sidebar {
+
+position: fixed;
+
+left: 0;
+
+top: 0;
+
+width:
+    var(--gov-sidebar-width);
+
+height: 100vh;
+
+background:
+    linear-gradient(
+        180deg,
+        #064f99 0%,
+        #043b78 100%
+    );
+
+color: #ffffff;
+
+z-index: 1000;
+
+display: flex;
+
+flex-direction: column;
+
+box-shadow:
+    8px 0 30px
+    rgba(3, 47, 94, 0.14);
+
+}
+
+
+
+/* ==========================================================
+SIDEBAR HEADER
+========================================================== */
+
+.gov-sidebar-header {
+
+height: 100px;
+
+display: flex;
+
+align-items: center;
+
+padding:
+    0 22px;
+
+border-bottom:
+    1px solid
+    rgba(255,255,255,0.16);
+
+}
+
+
+/* ==========================================================
+STACKLY SIDEBAR LOGO
+========================================================== */
+
+.gov-sidebar-logo {
+
+display: flex;
+
+align-items: center;
+
+justify-content: flex-start;
+
+width: 100%;
+
+height: 100%;
+
+text-decoration: none;
+
+}
+
+
+/* Actual image */
+
+.gov-sidebar-logo-image {
+
+display: block;
+
+width: 175px;
+
+max-width: 100%;
+
+height: auto;
+
+max-height: 65px;
+
+object-fit: contain;
+
+object-position: left center;
+
+transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
+
+}
+
+
+/* Hover */
+
+.gov-sidebar-logo:hover
+.gov-sidebar-logo-image {
+
+transform:
+    scale(1.03);
+
+opacity: 0.92;
+
+}
+
+
+
+/* ==========================================================
+SIDEBAR CLOSE
+========================================================== */
+
+.gov-sidebar-close {
+
+display: none;
+
+flex-shrink: 0;
+
+width: 44px;
+
+height: 44px;
+
+margin-left: 10px;
+
+border: 0;
+
+border-radius: 12px;
+
+background:
+    rgba(255,255,255,0.12);
+
+color: #ffffff;
+
+font-size: 22px;
+
+cursor: pointer;
+
+}
+
+
+
+/* ==========================================================
+SIDEBAR PROFILE
+========================================================== */
+
+.gov-sidebar-profile {
+
+margin:
+    22px 18px;
+
+padding:
+    16px;
+
+border-radius: 16px;
+
+display: flex;
+
+align-items: center;
+
+gap: 13px;
+
+background:
+    rgba(255,255,255,0.10);
+
+border:
+    1px solid
+    rgba(255,255,255,0.13);
+
+}
+
+
+.gov-profile-avatar {
+
+flex-shrink: 0;
+
+width: 52px;
+
+height: 52px;
+
+border-radius: 50%;
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+
+background:
+    #ffffff;
+
+color:
+    var(--gov-primary);
+
+font-size: 23px;
+
+}
+
+
+.gov-profile-details {
+
+min-width: 0;
+
+display: flex;
+
+flex-direction: column;
+
+}
+
+
+.gov-profile-details strong {
+
+font-size: 17px;
+
+font-weight: 700;
+
+color: #ffffff;
+
+white-space: nowrap;
+
+overflow: hidden;
+
+text-overflow: ellipsis;
+
+}
+
+
+.gov-profile-details span {
+
+margin-top: 5px;
+
+font-size: 13px;
+
+color:
+    rgba(255,255,255,0.75);
+
+white-space: nowrap;
+
+overflow: hidden;
+
+text-overflow: ellipsis;
+
+}
+
+
+
+/* ==========================================================
+SIDEBAR NAV
+========================================================== */
+
+.gov-sidebar-nav {
+
+flex: 1;
+
+padding:
+    0 15px;
+
+overflow-y: auto;
+
+}
+
+
+.gov-sidebar-nav::-webkit-scrollbar {
+
+width: 5px;
+
+}
+
+
+.gov-sidebar-nav::-webkit-scrollbar-thumb {
+
+background:
+    rgba(255,255,255,0.20);
+
+border-radius: 20px;
+
+}
+
+
+.gov-menu-title {
+
+margin:
+    12px 10px;
+
+font-size: 12px;
+
+font-weight: 800;
+
+letter-spacing: 1.7px;
+
+color:
+    rgba(255,255,255,0.55);
+
+}
+
+
+.gov-menu-title-bottom {
+
+margin-top: 25px;
+
+}
+
+
+
+/* ==========================================================
+NAV ITEM
+========================================================== */
+
+.gov-nav-item {
+
+position: relative;
+
+display: flex;
+
+align-items: center;
+
+gap: 14px;
+
+width: 100%;
+
+min-height: 58px;
+
+margin:
+    5px 0;
+
+padding:
+    10px 14px;
+
+border-radius: 13px;
+
+color:
+    rgba(255,255,255,0.83);
+
+font-size: 18px;
+
+font-weight: 600;
+
+transition:
+    all 0.25s ease;
+
+}
+
+
+.gov-nav-item:hover {
+
+color:
+    #ffffff;
+
+background:
+    rgba(255,255,255,0.12);
+
+transform:
+    translateX(3px);
+
+}
+
+
+.gov-nav-item.gov-active {
+
+color:
+    var(--gov-primary);
+
+background:
+    #ffffff;
+
+box-shadow:
+    0 7px 18px
+    rgba(0,0,0,0.12);
+
+}
+
+
+
+/* ==========================================================
+NAV ICON
+========================================================== */
+
+.gov-nav-icon {
+
+width: 30px;
+
+min-width: 30px;
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+
+font-size: 20px;
+
+}
+
+
+.gov-nav-text {
+
+white-space: nowrap;
+
+}
+
+
+
+/* ==========================================================
+NOTIFICATION BADGE
+========================================================== */
+
+.gov-notification-count {
+
+margin-left: auto;
+
+min-width: 27px;
+
+height: 27px;
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+
+border-radius: 50%;
+
+background:
+    #ffca28;
+
+color:
+    #263238;
+
+font-size: 13px;
+
+font-weight: 800;
+
+}
+
+
+
+/* ==========================================================
+SIDEBAR FOOTER
+========================================================== */
+
+.gov-sidebar-footer {
+
+padding:
+    18px;
+
+border-top:
+    1px solid
+    rgba(255,255,255,0.13);
+
+}
+
+
+.gov-logout-sidebar {
+
+width: 100%;
+
+min-height: 58px;
+
+border: 0;
+
+border-radius: 14px;
+
+display: flex;
+
+align-items: center;
+
+gap: 14px;
+
+padding:
+    10px 14px;
+
+color:
+    #ffffff;
+
+background:
+    rgba(255,82,82,0.16);
+
+font-size: 18px;
+
+font-weight: 700;
+
+cursor: pointer;
+
+transition:
+    all 0.25s ease;
+
+}
+
+
+.gov-logout-sidebar:hover {
+
+background:
+    rgba(255,82,82,0.30);
+
+transform:
+    translateY(-2px);
+
+}
+
+
+
+/* ==========================================================
+MAIN
+========================================================== */
+
+.gov-main {
+
+width:
+    calc(100% - var(--gov-sidebar-width));
+
+min-height: 100vh;
+
+margin-left:
+    var(--gov-sidebar-width);
+
+}
+
+
+
+/* ==========================================================
+TOP BAR
+========================================================== */
+
+.gov-topbar {
+
+position: sticky;
+
+top: 0;
+
+z-index: 900;
+
+height:
+    var(--gov-topbar-height);
+
+padding:
+    0 30px;
+
+background:
+    #ffffff;
+
+border-bottom:
+    1px solid
+    var(--gov-border);
+
+box-shadow:
+    0 5px 22px
+    rgba(3,59,120,0.07);
+
+display: flex;
+
+align-items: center;
+
+justify-content: space-between;
+
+}
+
+
+.gov-topbar-left,
+.gov-topbar-right {
+
+display: flex;
+
+align-items: center;
+
+}
+
+
+.gov-topbar-left {
+
+gap: 18px;
+
+}
+
+
+
+/* ==========================================================
+MOBILE MENU BUTTON
+========================================================== */
+
+.gov-menu-toggle {
+
+display: none;
+
+width: 48px;
+
+height: 48px;
+
+border: 0;
+
+border-radius: 13px;
+
+background:
+    var(--gov-primary-light);
+
+color:
+    var(--gov-primary);
+
+font-size: 23px;
+
+cursor: pointer;
+
+}
+
+
+
+/* ==========================================================
+TOP LOGO
+========================================================== */
+
+.gov-top-logo {
+
+display: flex;
+
+align-items: center;
+
+gap: 12px;
+
+color:
+    var(--gov-primary);
+
+}
+
+
+.gov-top-logo-icon {
+
+width: 48px;
+
+height: 48px;
+
+border-radius: 13px;
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+
+background:
+    linear-gradient(
+        135deg,
+        #0757a6,
+        #0b76dc
+    );
+
+color:
+    #ffffff;
+
+font-size: 23px;
+
+box-shadow:
+    0 6px 15px
+    rgba(7,87,166,0.22);
+
+}
+
+
+.gov-top-logo-text {
+
+display: flex;
+
+flex-direction: column;
+
+}
+
+
+.gov-top-logo-text strong {
+
+font-size: 22px;
+
+font-weight: 800;
+
+letter-spacing: 0.8px;
+
+}
+
+
+.gov-top-logo-text span {
+
+margin-top: 2px;
+
+font-size: 10px;
+
+font-weight: 700;
+
+letter-spacing: 1.8px;
+
+color:
+    #718096;
+
+}
+
+
+
+/* ==========================================================
+TOP RIGHT
+========================================================== */
+
+.gov-topbar-right {
+
+gap: 20px;
+
+}
+
+
+
+/* ==========================================================
+TOP NOTIFICATION
+========================================================== */
+
+.gov-top-icon {
+
+position: relative;
+
+width: 48px;
+
+height: 48px;
+
+border:
+    1px solid
+    var(--gov-border);
+
+border-radius: 13px;
+
+background:
+    #ffffff;
+
+color:
+    var(--gov-primary);
+
+font-size: 22px;
+
+cursor: pointer;
+
+}
+
+
+.gov-top-notification {
+
+position: absolute;
+
+top: -4px;
+
+right: -4px;
+
+width: 20px;
+
+height: 20px;
+
+border-radius: 50%;
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+
+background:
+    #ef4444;
+
+color:
+    #ffffff;
+
+border:
+    2px solid
+    #ffffff;
+
+font-size: 10px;
+
+font-weight: 800;
+
+}
+
+
+
+/* ==========================================================
+TOP USER
+========================================================== */
+
+.gov-top-user {
+
+display: flex;
+
+align-items: center;
+
+gap: 12px;
+
+padding-right: 20px;
+
+border-right:
+    1px solid
+    var(--gov-border);
+
+}
+
+
+.gov-top-avatar {
+
+width: 52px;
+
+height: 52px;
+
+border-radius: 50%;
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+
+background:
+    linear-gradient(
+        135deg,
+        #0757a6,
+        #0b76dc
+    );
+
+color:
+    #ffffff;
+
+font-size: 23px;
+
+}
+
+
+.gov-top-user-info {
+
+display: flex;
+
+flex-direction: column;
+
+min-width: 170px;
+
+}
+
+
+.gov-top-user-info strong {
+
+font-size: 19px;
+
+font-weight: 800;
+
+color:
+    var(--gov-text);
+
+}
+
+
+.gov-top-user-info span {
+
+margin-top: 4px;
+
+font-size: 15px;
+
+color:
+    var(--gov-text-light);
+
+white-space: nowrap;
+
+}
+
+
+
+/* ==========================================================
+TOP LOGOUT
+========================================================== */
+
+.gov-top-logout {
+
+min-height: 48px;
+
+padding:
+    0 17px;
+
+border: 0;
+
+border-radius: 12px;
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+
+gap: 9px;
+
+background:
+    #fff1f2;
+
+color:
+    #dc2626;
+
+font-size: 17px;
+
+font-weight: 700;
+
+cursor: pointer;
+
+transition:
+    all 0.25s ease;
+
+}
+
+
+.gov-top-logout:hover {
+
+background:
+    #fee2e2;
+
+transform:
+    translateY(-2px);
+
+}
+
+
+
+/* ==========================================================
+CONTENT
+========================================================== */
+
+.gov-content {
+
+padding:
+    38px;
+
+}
+
+
+.gov-content-header {
+
+display: flex;
+
+align-items: flex-end;
+
+justify-content: space-between;
+
+gap: 25px;
+
+margin-bottom: 30px;
+
+}
+
+
+.gov-page-label {
+
+display: inline-block;
+
+padding:
+    7px 12px;
+
+border-radius: 8px;
+
+background:
+    var(--gov-primary-light);
+
+color:
+    var(--gov-primary);
+
+font-size: 12px;
+
+font-weight: 800;
+
+letter-spacing: 1.3px;
+
+}
+
+
+.gov-content-header h1 {
+
+margin:
+    12px 0 8px;
+
+font-size: 32px;
+
+line-height: 1.2;
+
+color:
+    var(--gov-text);
+
+}
+
+
+.gov-content-header p {
+
+margin: 0;
+
+font-size: 17px;
+
+color:
+    var(--gov-text-light);
+
+line-height: 1.7;
+
+}
+
+
+.gov-date-box {
+
+flex-shrink: 0;
+
+padding:
+    13px 18px;
+
+border-radius: 13px;
+
+display: flex;
+
+align-items: center;
+
+gap: 9px;
+
+background:
+    #ffffff;
+
+border:
+    1px solid
+    var(--gov-border);
+
+color:
+    var(--gov-primary);
+
+font-size: 15px;
+
+font-weight: 600;
+
+}
+
+
+
+/* ==========================================================
+STAT GRID
+========================================================== */
+
+.gov-stat-grid {
+
+display: grid;
+
+grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+
+gap: 22px;
+
+}
+
+
+.gov-stat-card {
+
+min-height: 150px;
+
+padding:
+    25px;
+
+border-radius:
+    var(--gov-radius);
+
+background:
+    #ffffff;
+
+border:
+    1px solid
+    var(--gov-border);
+
+box-shadow:
+    var(--gov-shadow);
+
+display: flex;
+
+align-items: center;
+
+gap: 18px;
+
+transition:
+    all 0.3s ease;
+
+}
+
+
+.gov-stat-card:hover {
+
+transform:
+    translateY(-5px);
+
+box-shadow:
+    0 15px 35px
+    rgba(4,59,120,0.14);
+
+}
+
+
+.gov-stat-icon {
+
+width: 62px;
+
+height: 62px;
+
+flex-shrink: 0;
+
+border-radius: 17px;
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+
+background:
+    var(--gov-primary-light);
+
+color:
+    var(--gov-primary);
+
+font-size: 27px;
+
+}
+
+
+.gov-stat-info {
+
+display: flex;
+
+flex-direction: column;
+
+}
+
+
+.gov-stat-info span {
+
+font-size: 15px;
+
+color:
+    var(--gov-text-light);
+
+}
+
+
+.gov-stat-info strong {
+
+margin-top: 7px;
+
+font-size: 28px;
+
+color:
+    var(--gov-text);
+
+}
+
+
+
+/* ==========================================================
+LOGOUT MODAL
+========================================================== */
+
+.gov-logout-modal {
+
+position: fixed;
+
+inset: 0;
+
+z-index: 5000;
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+
+padding:
+    25px;
+
+visibility: hidden;
+
+opacity: 0;
+
+transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease;
+
+}
+
+
+.gov-logout-modal.gov-modal-show {
+
+visibility: visible;
+
+opacity: 1;
+
+}
+
+
+
+/* ==========================================================
+MODAL BACKDROP
+========================================================== */
+
+.gov-modal-backdrop {
+
+position: absolute;
+
+inset: 0;
+
+background:
+    rgba(2,30,62,0.72);
+
+backdrop-filter:
+    blur(9px);
+
+}
+
+
+
+/* ==========================================================
+MODAL CARD
+========================================================== */
+
+.gov-logout-card {
+
+position: relative;
+
+width:
+    min(520px, 100%);
+
+padding:
+    42px 38px 30px;
+
+border-radius:
+    28px;
+
+background:
+    linear-gradient(
+        145deg,
+        #ffffff,
+        #f5faff
+    );
+
+box-shadow:
+    0 35px 80px
+    rgba(0,0,0,0.30);
+
+border:
+    1px solid
+    rgba(255,255,255,0.9);
+
+text-align:
+    center;
+
+transform:
+    translateY(30px)
+    scale(0.95);
+
+transition:
+    all 0.35s ease;
+
+overflow:
+    hidden;
+
+}
+
+
+.gov-modal-show
+.gov-logout-card {
+
+transform:
+    translateY(0)
+    scale(1);
+
+}
+
+
+
+/* ==========================================================
+COLORFUL MODAL TOP
+========================================================== */
+
+.gov-modal-decoration {
+
+position: absolute;
+
+top: 0;
+
+left: 0;
+
+width: 100%;
+
+height: 7px;
+
+display: flex;
+
+}
+
+
+.gov-modal-decoration span:nth-child(1) {
+
+flex: 1;
+
+background:
+    #0757a6;
+
+}
+
+
+.gov-modal-decoration span:nth-child(2) {
+
+flex: 1;
+
+background:
+    #00a6fb;
+
+}
+
+
+.gov-modal-decoration span:nth-child(3) {
+
+flex: 1;
+
+background:
+    #fbbf24;
+
+}
+
+
+
+/* ==========================================================
+MODAL ICON
+========================================================== */
+
+.gov-modal-icon {
+
+width: 100px;
+
+height: 100px;
+
+margin:
+    5px auto 22px;
+
+padding: 8px;
+
+border-radius: 50%;
+
+background:
+    linear-gradient(
+        135deg,
+        #dbeafe,
+        #e0f2fe,
+        #fef3c7
+    );
+
+}
+
+
+.gov-modal-icon-inner {
+
+width: 100%;
+
+height: 100%;
+
+border-radius: 50%;
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+
+background:
+    #ffffff;
+
+color:
+    #0757a6;
+
+font-size: 37px;
+
+}
+
+
+
+/* ==========================================================
+MODAL CONTENT
+========================================================== */
+
+.gov-modal-small {
+
+font-size: 11px;
+
+font-weight: 800;
+
+letter-spacing: 2px;
+
+color:
+    #0b6bcf;
+
+}
+
+
+.gov-modal-content h2 {
+
+margin:
+    10px 0 9px;
+
+font-size: 30px;
+
+color:
+    #14213d;
+
+}
+
+
+.gov-modal-content p {
+
+max-width: 400px;
+
+margin:
+    0 auto;
+
+font-size: 16px;
+
+line-height: 1.7;
+
+color:
+    #61708a;
+
+}
+
+
+
+/* ==========================================================
+MODAL BUTTONS
+========================================================== */
+
+.gov-modal-actions {
+
+display: grid;
+
+grid-template-columns:
+    1fr 1fr;
+
+gap: 13px;
+
+margin-top: 28px;
+
+}
+
+
+.gov-modal-cancel,
+.gov-modal-confirm {
+
+min-height: 55px;
+
+border: 0;
+
+border-radius: 13px;
+
+font-size: 16px;
+
+font-weight: 700;
+
+cursor: pointer;
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+
+gap: 9px;
+
+transition:
+    all 0.25s ease;
+
+}
+
+
+.gov-modal-cancel {
+
+background:
+    #eaf2fb;
+
+color:
+    #315273;
+
+}
+
+
+.gov-modal-cancel:hover {
+
+background:
+    #dce9f6;
+
+transform:
+    translateY(-2px);
+
+}
+
+
+.gov-modal-confirm {
+
+background:
+    linear-gradient(
+        135deg,
+        #0757a6,
+        #0b76dc
+    );
+
+color:
+    #ffffff;
+
+box-shadow:
+    0 8px 20px
+    rgba(7,87,166,0.25);
+
+}
+
+
+.gov-modal-confirm:hover {
+
+transform:
+    translateY(-2px);
+
+box-shadow:
+    0 12px 25px
+    rgba(7,87,166,0.32);
+
+}
+
+
+
+/* ==========================================================
+SECURITY MESSAGE
+========================================================== */
+
+.gov-modal-security {
+
+margin-top: 20px;
+
+font-size: 12px;
+
+color:
+    #7a8799;
+
+}
+
+
+.gov-modal-security i {
+
+margin-right: 5px;
+
+color:
+    #16a34a;
+
+}
+
+
+
+/* ==========================================================
+LARGE LAPTOP
+========================================================== */
+
+@media (max-width: 1250px) {
+
+:root {
+
+    --gov-sidebar-width: 270px;
+
+}
+
+
+.gov-main {
+
+    width:
+        calc(100% - var(--gov-sidebar-width));
+
+    margin-left:
+        var(--gov-sidebar-width);
+
+}
+
+
+.gov-topbar {
+
+    padding:
+        0 22px;
+
+}
+
+
+.gov-content {
+
+    padding:
+        30px;
+
+}
+
+
+.gov-stat-grid {
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+}
+
+
+.gov-top-user-info {
+
+    min-width:
+        145px;
+
+}
+
+
+.gov-top-logout span {
+
+    display: none;
+
+}
+
+
+.gov-top-logout {
+
+    width: 48px;
+
+    padding: 0;
+
+}
+
+}
+
+
+
+/* ==========================================================
+TABLET
+========================================================== */
+
+@media (max-width: 900px) {
+
+:root {
+
+    --gov-sidebar-width: 285px;
+
+}
+
+
+/* Sidebar */
+
+.gov-sidebar {
+
+    transform:
+        translateX(-100%);
+
+    transition:
+        transform 0.3s ease;
+
+}
+
+
+.gov-sidebar.gov-sidebar-open {
+
+    transform:
+        translateX(0);
+
+}
+
+
+.gov-sidebar-close {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+
+/* Main */
+
+.gov-main {
+
+    width: 100%;
+
+    margin-left: 0;
+
+}
+
+
+/* Menu */
+
+.gov-menu-toggle {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+
+/* Overlay */
+
+.gov-sidebar-overlay {
+
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 950;
+
+    background:
+        rgba(0,0,0,0.45);
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transition:
+        all 0.3s ease;
+
+}
+
+
+.gov-sidebar-overlay.gov-overlay-show {
+
+    opacity: 1;
+
+    visibility: visible;
+
+}
+
+
+/* Topbar */
+
+.gov-topbar {
+
+    height:
+        82px;
+
+}
+
+
+.gov-top-user {
+
+    padding-right: 0;
+
+    border-right: 0;
+
+}
+
+
+.gov-top-user-info {
+
+    display: none;
+
+}
+
+
+/* Sidebar logo */
+
+.gov-sidebar-logo-image {
+
+    width:
+        165px;
+
+}
+
+}
+
+
+
+/* ==========================================================
+MOBILE
+========================================================== */
+
+@media (max-width: 600px) {
+
+
+/* Topbar */
+
+.gov-topbar {
+
+    height:
+        78px;
+
+    padding:
+        0 14px;
+
+}
+
+
+.gov-topbar-left {
+
+    gap:
+        9px;
+
+}
+
+
+.gov-menu-toggle {
+
+    width:
+        46px;
+
+    height:
+        46px;
+
+    font-size:
+        22px;
+
+}
+
+
+.gov-top-logo-icon {
+
+    width:
+        43px;
+
+    height:
+        43px;
+
+    font-size:
+        20px;
+
+}
+
+
+.gov-top-logo-text strong {
+
+    font-size:
+        20px;
+
+}
+
+
+.gov-top-logo-text span {
+
+    font-size:
+        8px;
+
+}
+
+
+.gov-topbar-right {
+
+    gap:
+        7px;
+
+}
+
+
+.gov-top-icon {
+
+    width:
+        44px;
+
+    height:
+        44px;
+
+    font-size:
+        20px;
+
+}
+
+
+.gov-top-avatar {
+
+    width:
+        44px;
+
+    height:
+        44px;
+
+    font-size:
+        20px;
+
+}
+
+
+.gov-top-logout {
+
+    width:
+        44px;
+
+    height:
+        44px;
+
+    min-height:
+        44px;
+
+    padding:
+        0;
+
+    font-size:
+        19px;
+
+}
+
+
+
+/* Content */
+
+.gov-content {
+
+    padding:
+        23px 15px 35px;
+
+}
+
+
+.gov-content-header {
+
+    display:
+        block;
+
+    margin-bottom:
+        23px;
+
+}
+
+
+.gov-content-header h1 {
+
+    font-size:
+        28px;
+
+}
+
+
+.gov-content-header p {
+
+    font-size:
+        17px;
+
+    line-height:
+        1.65;
+
+}
+
+
+.gov-date-box {
+
+    margin-top:
+        18px;
+
+    width:
+        fit-content;
+
+    font-size:
+        14px;
+
+}
+
+
+
+/* Stats */
+
+.gov-stat-grid {
+
+    grid-template-columns:
+        1fr;
+
+    gap:
+        15px;
+
+}
+
+
+.gov-stat-card {
+
+    min-height:
+        130px;
+
+    padding:
+        20px;
+
+}
+
+
+.gov-stat-info span {
+
+    font-size:
+        16px;
+
+}
+
+
+.gov-stat-info strong {
+
+    font-size:
+        27px;
+
+}
+
+
+
+/* Sidebar */
+
+.gov-nav-item {
+
+    min-height:
+        62px;
+
+    font-size:
+        20px;
+
+}
+
+
+.gov-nav-icon {
+
+    font-size:
+        21px;
+
+}
+
+
+.gov-logout-sidebar {
+
+    font-size:
+        20px;
+
+    min-height:
+        62px;
+
+}
+
+
+.gov-sidebar-header {
+
+    height:
+        90px;
+
+    padding:
+        0 18px;
+
+}
+
+
+.gov-sidebar-logo-image {
+
+    width:
+        155px;
+
+    max-height:
+        60px;
+
+}
+
+
+
+/* Logout modal */
+
+.gov-logout-modal {
+
+    padding:
+        15px;
+
+}
+
+
+.gov-logout-card {
+
+    padding:
+        38px 20px 24px;
+
+    border-radius:
+        23px;
+
+}
+
+
+.gov-modal-icon {
+
+    width:
+        82px;
+
+    height:
+        82px;
+
+}
+
+
+.gov-modal-icon-inner {
+
+    font-size:
+        30px;
+
+}
+
+
+.gov-modal-content h2 {
+
+    font-size:
+        26px;
+
+}
+
+
+.gov-modal-content p {
+
+    font-size:
+        15px;
+
+}
+
+
+.gov-modal-actions {
+
+    grid-template-columns:
+        1fr;
+
+}
+
+
+.gov-modal-cancel,
+.gov-modal-confirm {
+
+    min-height:
+        56px;
+
+    font-size:
+        17px;
+
+}
+
+}
+/* ==========================================================
+   MOBILE TOP BAR - CONTENT MUST REMAIN VISIBLE
+========================================================== */
+
+@media (max-width: 600px) {
+
+/* ------------------------------------------------------
+   TOP BAR
+------------------------------------------------------ */
+
+.gov-topbar {
+
+    min-height: 105px;
+
+    height: auto;
+
+    padding: 12px 14px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: stretch;
+
+    justify-content: center;
+
+    gap: 10px;
+
+}
+
+
+/* ------------------------------------------------------
+   TOP LEFT
+------------------------------------------------------ */
+
+.gov-topbar-left {
+
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+}
+
+
+/* Menu button */
+
+.gov-menu-toggle {
+
+    display: flex;
+
+    flex-shrink: 0;
+
+    width: 44px;
+
+    height: 44px;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: #eaf4ff;
+
+    color: #0757a6;
+
+    font-size: 21px;
+
+}
+
+
+/* ------------------------------------------------------
+   TOP LOGO
+------------------------------------------------------ */
+
+.gov-top-logo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    min-width: 0;
+
+}
+
+
+.gov-top-logo-icon {
+
+    flex-shrink: 0;
+
+    width: 42px;
+
+    height: 42px;
+
+    border-radius: 11px;
+
+    font-size: 19px;
+
+}
+
+
+.gov-top-logo-text {
+
+    display: flex;
+
+    flex-direction: column;
+
+    min-width: 0;
+
+}
+
+
+.gov-top-logo-text strong {
+
+    font-size: 20px;
+
+    line-height: 1.1;
+
+    white-space: nowrap;
+
+}
+
+
+.gov-top-logo-text span {
+
+    display: block;
+
+    margin-top: 3px;
+
+    font-size: 9px;
+
+    letter-spacing: 1px;
+
+    white-space: nowrap;
+
+}
+
+
+/* ------------------------------------------------------
+   TOP RIGHT
+------------------------------------------------------ */
+
+.gov-topbar-right {
+
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 8px;
+
+}
+
+
+/* ------------------------------------------------------
+   NOTIFICATION
+------------------------------------------------------ */
+
+.gov-top-icon {
+
+    flex-shrink: 0;
+
+    width: 43px;
+
+    height: 43px;
+
+    border-radius: 11px;
+
+    font-size: 19px;
+
+}
+
+
+/* ------------------------------------------------------
+   USER SECTION
+------------------------------------------------------ */
+
+.gov-top-user {
+
+    flex: 1;
+
+    min-width: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    padding: 0;
+
+    border: none;
+
+}
+
+
+/* Avatar */
+
+.gov-top-avatar {
+
+    flex-shrink: 0;
+
+    width: 43px;
+
+    height: 43px;
+
+    font-size: 19px;
+
+}
+
+
+/* IMPORTANT:
+   Name and email are visible on mobile
+*/
+
+.gov-top-user-info {
+
+    display: flex;
+
+    flex: 1;
+
+    min-width: 0;
+
+    flex-direction: column;
+
+    overflow: hidden;
+
+}
+
+
+.gov-top-user-info strong {
+
+    display: block;
+
+    font-size: 16px;
+
+    line-height: 1.2;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+    color: #14213d;
+
+}
+
+
+.gov-top-user-info span {
+
+    display: block;
+
+    margin-top: 3px;
+
+    font-size: 13px;
+
+    line-height: 1.2;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+    color: #61708a;
+
+}
+
+
+/* ------------------------------------------------------
+   LOGOUT BUTTON
+------------------------------------------------------ */
+
+.gov-top-logout {
+
+    flex-shrink: 0;
+
+    width: 43px;
+
+    height: 43px;
+
+    min-height: 43px;
+
+    padding: 0;
+
+    border-radius: 11px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 18px;
+
+}
+
+
+.gov-top-logout span {
+
+    display: none;
+
+}
+
+}
+
+/* ==========================================================
+   VERY SMALL MOBILE
+========================================================== */
+
+@media (max-width: 390px) {
+
+.gov-topbar {
+
+    min-height: 105px;
+
+    padding: 10px 11px;
+
+}
+
+
+.gov-topbar-left {
+
+    gap: 8px;
+
+}
+
+
+.gov-menu-toggle {
+
+    width: 42px;
+
+    height: 42px;
+
+    font-size: 20px;
+
+}
+
+
+.gov-top-logo-icon {
+
+    width: 40px;
+
+    height: 40px;
+
+    font-size: 18px;
+
+}
+
+
+.gov-top-logo-text {
+
+    display: flex;
+
+}
+
+
+.gov-top-logo-text strong {
+
+    font-size: 18px;
+
+}
+
+
+.gov-top-logo-text span {
+
+    font-size: 8px;
+
+}
+
+
+.gov-topbar-right {
+
+    gap: 6px;
+
+}
+
+
+.gov-top-icon {
+
+    width: 40px;
+
+    height: 40px;
+
+    font-size: 18px;
+
+}
+
+
+.gov-top-avatar {
+
+    width: 40px;
+
+    height: 40px;
+
+    font-size: 18px;
+
+}
+
+
+.gov-top-user {
+
+    gap: 7px;
+
+}
+
+
+.gov-top-user-info strong {
+
+    font-size: 15px;
+
+}
+
+
+.gov-top-user-info span {
+
+    font-size: 12px;
+
+}
+
+
+.gov-top-logout {
+
+    width: 40px;
+
+    height: 40px;
+
+    min-height: 40px;
+
+    font-size: 17px;
+
+}
+
+}
+
+
+/* ==========================================================
+VERY SMALL MOBILE
+========================================================== */
+
+@media (max-width: 390px) {
+
+
+.gov-top-logo-text {
+
+    display:
+        none;
+
+}
+
+
+.gov-topbar-right {
+
+    gap:
+        5px;
+
+}
+
+
+.gov-top-icon,
+.gov-top-avatar,
+.gov-top-logout {
+
+    width:
+        41px;
+
+    height:
+        41px;
+
+}
+
+
+.gov-content-header h1 {
+
+    font-size:
+        26px;
+
+}
+
+
+.gov-stat-card {
+
+    padding:
+        17px;
+
+}
+
+
+.gov-stat-icon {
+
+    width:
+        55px;
+
+    height:
+        55px;
+
+    font-size:
+        23px;
+
+}
+
+}
+
+
+
+/* ==========================================================
+ACCESSIBILITY / REDUCED MOTION
+========================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+.gov-dashboard *,
+.gov-logout-modal * {
+
+    transition:
+        none !important;
+
+    animation:
+        none !important;
+
+}
+
+}
+</style>
+
+<Script>
+    /* ==========================================================
+   STACKLY GOVERNMENT DASHBOARD JAVASCRIPT
+
+   Handles:
+   1. LocalStorage user information
+   2. Mobile sidebar
+   3. Logout popup
+   4. Logout session
+   5. Current date
+========================================================== */
+
+
+document.addEventListener(
+    "DOMContentLoaded",
+    function () {
+
+
+        /* ==================================================
+           LOCAL STORAGE
+        =================================================== */
+
+
+        /*
+         * First try userName.
+         * If it doesn't exist, try loggedUser.
+         */
+
+        const userName =
+            localStorage.getItem("userName") ||
+            localStorage.getItem("loggedUser") ||
+            "Government User";
+
+
+        /*
+         * First try userEmail.
+         * If it doesn't exist, try loggedInUserEmail.
+         */
+
+        const userEmail =
+            localStorage.getItem("userEmail") ||
+            localStorage.getItem("loggedInUserEmail") ||
+            "user@example.com";
+
+
+
+        /* ==================================================
+           TOP BAR USER
+        =================================================== */
+
+        const govTopName =
+            document.getElementById(
+                "govTopName"
             );
+
+
+        const govTopEmail =
+            document.getElementById(
+                "govTopEmail"
+            );
+
+
+        if (govTopName) {
+
+            govTopName.textContent =
+                userName;
+
         }
 
-        document.body.style.overflow = "hidden";
 
-    }
+        if (govTopEmail) {
 
+            govTopEmail.textContent =
+                userEmail;
 
-    /* =====================================================
-       CLOSE SIDEBAR
-       ===================================================== */
-
-    function closeSidebar() {
-
-        if (!sidebar) return;
-
-        sidebar.classList.remove(
-            "gov-officer-sidebar-open"
-        );
-
-        if (overlay) {
-            overlay.classList.remove(
-                "gov-officer-overlay-active"
-            );
         }
 
-        document.body.style.overflow = "";
-
-    }
 
 
-    /* =====================================================
-       MENU BUTTON
-       ===================================================== */
+        /* ==================================================
+           SIDEBAR USER
+        =================================================== */
 
-    if (menuBtn) {
+        const govSidebarName =
+            document.getElementById(
+                "govSidebarName"
+            );
 
-        menuBtn.addEventListener(
-            "click",
-            function () {
-                openSidebar();
+
+        const govSidebarEmail =
+            document.getElementById(
+                "govSidebarEmail"
+            );
+
+
+        if (govSidebarName) {
+
+            govSidebarName.textContent =
+                userName;
+
+        }
+
+
+        if (govSidebarEmail) {
+
+            govSidebarEmail.textContent =
+                userEmail;
+
+        }
+
+
+
+        /* ==================================================
+           CURRENT DATE
+        =================================================== */
+
+        const currentDate =
+            document.getElementById(
+                "govCurrentDate"
+            );
+
+
+        if (currentDate) {
+
+
+            const today =
+                new Date();
+
+
+            currentDate.textContent =
+                today.toLocaleDateString(
+                    "en-IN",
+                    {
+                        weekday: "short",
+                        day: "2-digit",
+                        month: "short",
+                        year: "numeric"
+                    }
+                );
+
+        }
+
+
+
+        /* ==================================================
+           SIDEBAR ELEMENTS
+        =================================================== */
+
+        const sidebar =
+            document.getElementById(
+                "govSidebar"
+            );
+
+
+        const menuToggle =
+            document.getElementById(
+                "govMenuToggle"
+            );
+
+
+        const sidebarClose =
+            document.getElementById(
+                "govSidebarClose"
+            );
+
+
+        const sidebarOverlay =
+            document.getElementById(
+                "govSidebarOverlay"
+            );
+
+
+
+        /* ==================================================
+           OPEN SIDEBAR
+        =================================================== */
+
+        function openSidebar() {
+
+
+            if (!sidebar) {
+
+                return;
+
+            }
+
+
+            sidebar.classList.add(
+                "gov-sidebar-open"
+            );
+
+
+            if (sidebarOverlay) {
+
+                sidebarOverlay.classList.add(
+                    "gov-overlay-show"
+                );
+
+            }
+
+
+            document.body.style.overflow =
+                "hidden";
+
+        }
+
+
+
+        /* ==================================================
+           CLOSE SIDEBAR
+        =================================================== */
+
+        function closeSidebar() {
+
+
+            if (!sidebar) {
+
+                return;
+
+            }
+
+
+            sidebar.classList.remove(
+                "gov-sidebar-open"
+            );
+
+
+            if (sidebarOverlay) {
+
+                sidebarOverlay.classList.remove(
+                    "gov-overlay-show"
+                );
+
+            }
+
+
+            document.body.style.overflow =
+                "";
+
+        }
+
+
+
+        /* ==================================================
+           MOBILE MENU BUTTON
+        =================================================== */
+
+        if (menuToggle) {
+
+            menuToggle.addEventListener(
+                "click",
+                openSidebar
+            );
+
+        }
+
+
+
+        /* ==================================================
+           SIDEBAR CLOSE BUTTON
+        =================================================== */
+
+        if (sidebarClose) {
+
+            sidebarClose.addEventListener(
+                "click",
+                closeSidebar
+            );
+
+        }
+
+
+
+        /* ==================================================
+           SIDEBAR OVERLAY
+        =================================================== */
+
+        if (sidebarOverlay) {
+
+            sidebarOverlay.addEventListener(
+                "click",
+                closeSidebar
+            );
+
+        }
+
+
+
+        /* ==================================================
+           SIDEBAR NAVIGATION
+        =================================================== */
+
+        const sidebarLinks =
+            document.querySelectorAll(
+                ".gov-nav-item"
+            );
+
+
+        sidebarLinks.forEach(
+            function (link) {
+
+
+                link.addEventListener(
+                    "click",
+                    function () {
+
+
+                        if (
+                            window.innerWidth <= 900
+                        ) {
+
+                            closeSidebar();
+
+                        }
+
+                    }
+                );
+
             }
         );
 
-    }
 
 
-    /* =====================================================
-       CLOSE BUTTON
-       ===================================================== */
+        /* ==================================================
+           LOGOUT ELEMENTS
+        =================================================== */
 
-    if (closeBtn) {
+        const logoutModal =
+            document.getElementById(
+                "govLogoutModal"
+            );
 
-        closeBtn.addEventListener(
-            "click",
-            function () {
-                closeSidebar();
+
+        const sidebarLogout =
+            document.getElementById(
+                "govSidebarLogout"
+            );
+
+
+        const topLogout =
+            document.getElementById(
+                "govTopLogout"
+            );
+
+
+        const cancelLogout =
+            document.getElementById(
+                "govCancelLogout"
+            );
+
+
+        const confirmLogout =
+            document.getElementById(
+                "govConfirmLogout"
+            );
+
+
+
+        /* ==================================================
+           OPEN LOGOUT MODAL
+        =================================================== */
+
+        function openLogoutModal() {
+
+
+            if (!logoutModal) {
+
+                return;
+
             }
-        );
-
-    }
 
 
-    /* =====================================================
-       OVERLAY CLICK
-       ===================================================== */
+            logoutModal.classList.add(
+                "gov-modal-show"
+            );
 
-    if (overlay) {
 
-        overlay.addEventListener(
-            "click",
-            function () {
-                closeSidebar();
+            logoutModal.setAttribute(
+                "aria-hidden",
+                "false"
+            );
+
+
+            document.body.style.overflow =
+                "hidden";
+
+        }
+
+
+
+        /* ==================================================
+           CLOSE LOGOUT MODAL
+        =================================================== */
+
+        function closeLogoutModal() {
+
+
+            if (!logoutModal) {
+
+                return;
+
             }
-        );
-
-    }
 
 
-    /* =====================================================
-       CLOSE SIDEBAR WHEN NAVIGATION ITEM IS CLICKED
-       MOBILE ONLY
-       ===================================================== */
+            logoutModal.classList.remove(
+                "gov-modal-show"
+            );
 
-    const navigationLinks =
-        document.querySelectorAll(
-            ".gov-officer-nav-link"
-        );
 
-    navigationLinks.forEach(function (link) {
+            logoutModal.setAttribute(
+                "aria-hidden",
+                "true"
+            );
 
-        link.addEventListener(
-            "click",
-            function () {
 
-                if (window.innerWidth <= 991) {
+            document.body.style.overflow =
+                "";
+
+        }
+
+
+
+        /* ==================================================
+           SIDEBAR LOGOUT
+        =================================================== */
+
+        if (sidebarLogout) {
+
+
+            sidebarLogout.addEventListener(
+                "click",
+                function () {
+
+
                     closeSidebar();
+
+                    openLogoutModal();
+
+
                 }
-
-            }
-        );
-
-    });
-
-
-    /* =====================================================
-       ESCAPE KEY CLOSE
-       ===================================================== */
-
-    document.addEventListener(
-        "keydown",
-        function (event) {
-
-            if (event.key === "Escape") {
-                closeSidebar();
-            }
+            );
 
         }
-    );
 
 
-    /* =====================================================
-       CLOSE SIDEBAR WHEN RESIZING TO DESKTOP
-       ===================================================== */
 
-    window.addEventListener(
-        "resize",
-        function () {
+        /* ==================================================
+           TOP LOGOUT
+        =================================================== */
 
-            if (window.innerWidth >= 992) {
-                closeSidebar();
-            }
+        if (topLogout) {
+
+
+            topLogout.addEventListener(
+                "click",
+                function () {
+
+                    openLogoutModal();
+
+                }
+            );
 
         }
-    );
 
 
-    /* =====================================================
-       LOGOUT
-       ===================================================== */
 
-    if (logoutBtn) {
+        /* ==================================================
+           CANCEL LOGOUT
+        =================================================== */
 
-        logoutBtn.addEventListener(
-            "click",
-            function () {
+        if (cancelLogout) {
 
-                const logoutConfirmed =
-                    confirm(
-                        "Are you sure you want to logout?"
+
+            cancelLogout.addEventListener(
+                "click",
+                function () {
+
+                    closeLogoutModal();
+
+                }
+            );
+
+        }
+
+
+
+        /* ==================================================
+           BACKDROP CLICK
+        =================================================== */
+
+        if (logoutModal) {
+
+
+            logoutModal.addEventListener(
+                "click",
+                function (event) {
+
+
+                    if (
+                        event.target.classList.contains(
+                            "gov-modal-backdrop"
+                        )
+                    ) {
+
+                        closeLogoutModal();
+
+                    }
+
+                }
+            );
+
+        }
+
+
+
+        /* ==================================================
+           CONFIRM LOGOUT
+        =================================================== */
+
+        if (confirmLogout) {
+
+
+            confirmLogout.addEventListener(
+                "click",
+                function () {
+
+
+                    /*
+                     * Remove login/session information.
+                     */
+
+                    localStorage.removeItem(
+                        "stackly_session"
                     );
 
-                if (!logoutConfirmed) {
-                    return;
+
+                    localStorage.removeItem(
+                        "loggedInUserEmail"
+                    );
+
+
+                    localStorage.removeItem(
+                        "loggedUser"
+                    );
+
+
+                    localStorage.removeItem(
+                        "userName"
+                    );
+
+
+                    localStorage.removeItem(
+                        "userEmail"
+                    );
+
+
+                    /*
+                     * Redirect to login page.
+                     */
+
+                    window.location.href =
+                        "login.html";
+
                 }
-
-
-                /* -----------------------------------------
-                   REMOVE LOGIN SESSION
-                   ----------------------------------------- */
-
-                localStorage.removeItem(
-                    "isLoggedIn"
-                );
-
-                localStorage.removeItem(
-                    "userName"
-                );
-
-                localStorage.removeItem(
-                    "userEmail"
-                );
-
-                localStorage.removeItem(
-                    "userRole"
-                );
-
-
-                /* -----------------------------------------
-                   OPTIONAL ALTERNATIVE STORAGE KEYS
-                   ----------------------------------------- */
-
-                localStorage.removeItem(
-                    "name"
-                );
-
-                localStorage.removeItem(
-                    "email"
-                );
-
-                localStorage.removeItem(
-                    "role"
-                );
-
-
-                /* -----------------------------------------
-                   REDIRECT TO LOGIN
-                   ----------------------------------------- */
-
-                window.location.href =
-                    "login.html";
-
-            }
-        );
-
-    }
-
-
-    /* =====================================================
-       ACTIVE SIDEBAR ITEM
-       ===================================================== */
-
-    const currentPage =
-        window.location.pathname
-            .split("/")
-            .pop()
-            .toLowerCase();
-
-
-    navigationLinks.forEach(function (link) {
-
-        const linkPage =
-            link.getAttribute("href");
-
-        if (!linkPage) return;
-
-        const cleanLinkPage =
-            linkPage
-                .split("/")
-                .pop()
-                .toLowerCase();
-
-        if (
-            cleanLinkPage === currentPage &&
-            currentPage !== ""
-        ) {
-
-            navigationLinks.forEach(function (item) {
-                item.classList.remove(
-                    "gov-officer-nav-active"
-                );
-            });
-
-            link.classList.add(
-                "gov-officer-nav-active"
             );
 
         }
 
-    });
 
 
-    /* =====================================================
-       PREVENT SIDEBAR SCROLL FROM AFFECTING PAGE
-       ===================================================== */
+        /* ==================================================
+           ESCAPE KEY
+        =================================================== */
 
-    if (sidebar) {
-
-        sidebar.addEventListener(
-            "wheel",
+        document.addEventListener(
+            "keydown",
             function (event) {
 
-                const canScroll =
-                    sidebar.scrollHeight >
-                    sidebar.clientHeight;
 
-                if (canScroll) {
-                    event.stopPropagation();
+                if (
+                    event.key === "Escape"
+                ) {
+
+
+                    closeLogoutModal();
+
+                    closeSidebar();
+
+
                 }
 
             }
         );
 
-    }
 
 
-    /* =====================================================
-       NOTIFICATION BUTTON
-       ===================================================== */
+        /* ==================================================
+           WINDOW RESIZE
+        =================================================== */
 
-    const notificationBtn =
-        document.querySelector(
-            ".gov-officer-notification-btn"
-        );
-
-    if (notificationBtn) {
-
-        notificationBtn.addEventListener(
-            "click",
+        window.addEventListener(
+            "resize",
             function () {
 
-                window.location.href =
-                    "notifications.html";
+
+                if (
+                    window.innerWidth > 900
+                ) {
+
+                    closeSidebar();
+
+                }
 
             }
         );
 
+
     }
+);
+</Script>
 
+</body>
 
-    /* =====================================================
-       INITIAL STATE
-       ===================================================== */
-
-    closeSidebar();
-
-});
-
-
-</script>
+</html>
