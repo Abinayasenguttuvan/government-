@@ -4935,6 +4935,825 @@ Z - A
 
 <style>
     /* =========================================================
+   STACKLY GOVERNMENT GRIEVANCE
+   FINAL MOBILE RESPONSIVE FIX
+========================================================= */
+
+
+/* =========================================================
+   GLOBAL MOBILE OVERFLOW FIX
+========================================================= */
+
+@media (max-width: 767px) {
+
+.govgrievance-content,
+.govgrievance-left,
+.govgrievance-right,
+.govgrievance-help,
+.govgrievance-bottom {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+}
+
+.govgrievance-content {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 18px !important;
+    overflow: visible !important;
+}
+
+
+/* Prevent page-wide horizontal scrolling */
+
+.govgrievance-content * {
+    box-sizing: border-box;
+}
+
+}
+
+
+/* =========================================================
+LEFT + RIGHT PANELS
+========================================================= */
+
+@media (max-width: 767px) {
+
+.govgrievance-left,
+.govgrievance-right {
+    display: block !important;
+
+    width: 100% !important;
+    max-width: 100% !important;
+
+    flex: none !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+
+/* LEFT PANEL FIRST */
+
+.govgrievance-left {
+    order: 1 !important;
+}
+
+
+/* CHART SECOND */
+
+.govgrievance-right {
+    order: 2 !important;
+}
+
+}
+
+
+/* =========================================================
+RECENT GRIEVANCE TABLE CARD
+========================================================= */
+
+@media (max-width: 767px) {
+
+.govgrievance-table-card {
+
+    width: 100% !important;
+    max-width: 100% !important;
+
+    margin: 0 !important;
+
+    border-radius: 12px !important;
+
+    overflow: hidden !important;
+
+    box-sizing: border-box;
+}
+
+
+/* TABLE HEADER */
+
+.govgrievance-table-header {
+
+    width: 100% !important;
+
+    display: flex !important;
+
+    align-items: center !important;
+
+    justify-content: space-between !important;
+
+    gap: 10px !important;
+
+    padding: 16px !important;
+
+    box-sizing: border-box;
+}
+
+
+.govgrievance-table-header h3 {
+
+    margin: 0 !important;
+
+    font-size: 17px !important;
+
+    line-height: 1.3 !important;
+
+    white-space: nowrap;
+}
+
+
+.govgrievance-table-header a {
+
+    flex-shrink: 0 !important;
+
+    font-size: 12px !important;
+
+    white-space: nowrap;
+}
+
+}
+
+
+/* =========================================================
+TABLE MOBILE SCROLL
+========================================================= */
+
+@media (max-width: 767px) {
+
+.govgrievance-table-wrapper {
+
+    display: block !important;
+
+    width: 100% !important;
+
+    max-width: 100% !important;
+
+    overflow-x: auto !important;
+
+    overflow-y: hidden !important;
+
+    -webkit-overflow-scrolling: touch;
+
+    scrollbar-width: thin;
+
+    padding: 0 !important;
+}
+
+
+.govgrievance-table {
+
+    width: max-content !important;
+
+    min-width: 760px !important;
+
+    border-collapse: collapse !important;
+
+    table-layout: auto !important;
+}
+
+
+.govgrievance-table th,
+.govgrievance-table td {
+
+    white-space: nowrap !important;
+
+    padding: 11px 12px !important;
+
+    font-size: 11px !important;
+
+    line-height: 1.4 !important;
+}
+
+
+/* Subject column */
+
+.govgrievance-table th:nth-child(2),
+.govgrievance-table td:nth-child(2) {
+
+    min-width: 180px !important;
+
+    max-width: 220px !important;
+
+    white-space: normal !important;
+}
+
+
+/* Department */
+
+.govgrievance-table th:nth-child(3),
+.govgrievance-table td:nth-child(3) {
+
+    min-width: 100px !important;
+}
+
+
+/* State */
+
+.govgrievance-table th:nth-child(4),
+.govgrievance-table td:nth-child(4) {
+
+    min-width: 105px !important;
+}
+
+
+/* Priority */
+
+.govgrievance-table th:nth-child(5),
+.govgrievance-table td:nth-child(5) {
+
+    min-width: 80px !important;
+}
+
+
+/* Status */
+
+.govgrievance-table th:nth-child(6),
+.govgrievance-table td:nth-child(6) {
+
+    min-width: 105px !important;
+}
+
+
+/* Action */
+
+.govgrievance-table th:nth-child(7),
+.govgrievance-table td:nth-child(7) {
+
+    min-width: 60px !important;
+
+    text-align: center !important;
+}
+
+}
+
+
+/* =========================================================
+TABLE FOOTER
+========================================================= */
+
+@media (max-width: 767px) {
+
+.govgrievance-table-footer {
+
+    display: flex !important;
+
+    width: 100% !important;
+
+    padding: 14px 16px !important;
+
+    justify-content: flex-start !important;
+
+    box-sizing: border-box;
+}
+
+
+.govgrievance-apply-btn {
+
+    width: 100% !important;
+
+    max-width: 100% !important;
+
+    min-height: 44px !important;
+
+    display: flex !important;
+
+    align-items: center !important;
+
+    justify-content: center !important;
+
+    gap: 8px !important;
+
+    padding: 11px 15px !important;
+
+    font-size: 12px !important;
+
+    text-align: center !important;
+
+    box-sizing: border-box;
+}
+
+}
+
+
+/* =========================================================
+RESOLUTION CHART CARD
+========================================================= */
+
+@media (max-width: 767px) {
+
+.govgrievance-chart-card {
+
+    display: block !important;
+
+    position: relative !important;
+
+    width: 100% !important;
+
+    max-width: 100% !important;
+
+    min-width: 0 !important;
+
+    height: auto !important;
+
+    min-height: 400px !important;
+
+    margin: 0 !important;
+
+    padding: 0 !important;
+
+    overflow: visible !important;
+
+    border-radius: 12px !important;
+
+    box-sizing: border-box;
+}
+
+
+/* CHART HEADER */
+
+.govgrievance-chart-header {
+
+    display: flex !important;
+
+    align-items: center !important;
+
+    justify-content: space-between !important;
+
+    gap: 10px !important;
+
+    width: 100% !important;
+
+    padding: 16px !important;
+
+    box-sizing: border-box;
+}
+
+
+.govgrievance-chart-header h3 {
+
+    margin: 0 !important;
+
+    font-size: 17px !important;
+
+    line-height: 1.3 !important;
+}
+
+
+.govgrievance-chart-header p {
+
+    margin: 0 !important;
+
+    font-size: 11px !important;
+
+    white-space: nowrap !important;
+}
+
+}
+
+
+/* =========================================================
+CHART WRAPPER
+IMPORTANT FOR CHART.JS
+========================================================= */
+
+@media (max-width: 767px) {
+
+.govgrievance-chart-wrapper {
+
+    position: relative !important;
+
+    width: 100% !important;
+
+    height: 250px !important;
+
+    min-height: 250px !important;
+
+    max-height: 250px !important;
+
+    padding: 10px 15px !important;
+
+    overflow: visible !important;
+
+    box-sizing: border-box;
+}
+
+
+#resolutionChart {
+
+    display: block !important;
+
+    width: 100% !important;
+
+    height: 100% !important;
+
+    max-width: 100% !important;
+}
+
+}
+
+
+/* =========================================================
+CHART STATS
+========================================================= */
+
+@media (max-width: 767px) {
+
+.govgrievance-chart-stats {
+
+    display: grid !important;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr)) !important;
+
+    gap: 8px !important;
+
+    width: 100% !important;
+
+    padding: 10px 14px 18px !important;
+
+    box-sizing: border-box;
+}
+
+
+.govgrievance-chart-stats > div {
+
+    min-width: 0 !important;
+
+    text-align: center !important;
+
+    padding: 8px 4px !important;
+}
+
+
+.govgrievance-chart-stats h4 {
+
+    margin: 0 0 4px !important;
+
+    font-size: 18px !important;
+
+    line-height: 1.2 !important;
+}
+
+
+.govgrievance-chart-stats p {
+
+    margin: 0 !important;
+
+    font-size: 10px !important;
+
+    line-height: 1.3 !important;
+
+    white-space: normal !important;
+}
+
+}
+
+
+/* =========================================================
+HELP / CTA SECTION
+========================================================= */
+
+@media (max-width: 767px) {
+
+.govgrievance-help {
+
+    display: flex !important;
+
+    flex-direction: column !important;
+
+    width: 100% !important;
+
+    max-width: 100% !important;
+
+    gap: 20px !important;
+
+    margin: 0 !important;
+
+    padding: 20px !important;
+
+    border-radius: 12px !important;
+
+    box-sizing: border-box;
+}
+
+
+.govgrievance-help-left,
+.govgrievance-help-right {
+
+    width: 100% !important;
+
+    max-width: 100% !important;
+
+    min-width: 0 !important;
+
+    margin: 0 !important;
+
+    padding: 0 !important;
+}
+
+
+.govgrievance-help-left h2 {
+
+    margin: 0 0 10px !important;
+
+    font-size: 20px !important;
+
+    line-height: 1.35 !important;
+}
+
+
+.govgrievance-help-left p {
+
+    margin: 0 0 16px !important;
+
+    font-size: 12px !important;
+
+    line-height: 1.65 !important;
+}
+
+
+.govgrievance-help-btn {
+
+    display: inline-flex !important;
+
+    align-items: center !important;
+
+    justify-content: center !important;
+
+    gap: 8px !important;
+
+    min-height: 44px !important;
+
+    padding: 11px 16px !important;
+
+    font-size: 12px !important;
+
+    max-width: 100% !important;
+
+    box-sizing: border-box;
+}
+
+}
+
+
+/* =========================================================
+FEATURES
+========================================================= */
+
+@media (max-width: 767px) {
+
+.govgrievance-help-right {
+
+    display: grid !important;
+
+    grid-template-columns: 1fr !important;
+
+    gap: 12px !important;
+}
+
+
+.govgrievance-feature {
+
+    display: flex !important;
+
+    align-items: flex-start !important;
+
+    gap: 12px !important;
+
+    width: 100% !important;
+
+    min-width: 0 !important;
+
+    padding: 12px !important;
+
+    box-sizing: border-box;
+}
+
+
+.govgrievance-feature-icon {
+
+    flex: 0 0 38px !important;
+
+    width: 38px !important;
+
+    height: 38px !important;
+
+    display: flex !important;
+
+    align-items: center !important;
+
+    justify-content: center !important;
+
+    border-radius: 9px !important;
+}
+
+
+.govgrievance-feature-icon i {
+
+    font-size: 15px !important;
+}
+
+
+.govgrievance-feature h4 {
+
+    margin: 0 0 4px !important;
+
+    font-size: 13px !important;
+
+    line-height: 1.35 !important;
+}
+
+
+.govgrievance-feature p {
+
+    margin: 0 !important;
+
+    font-size: 11px !important;
+
+    line-height: 1.55 !important;
+}
+
+}
+
+
+/* =========================================================
+FOOT NOTE
+========================================================= */
+
+@media (max-width: 767px) {
+
+.govgrievance-bottom {
+
+    width: 100% !important;
+
+    margin: 0 !important;
+
+    padding: 0 !important;
+}
+
+
+.govgrievance-bottom-box {
+
+    display: flex !important;
+
+    align-items: flex-start !important;
+
+    gap: 10px !important;
+
+    width: 100% !important;
+
+    padding: 13px !important;
+
+    border-radius: 10px !important;
+
+    box-sizing: border-box;
+}
+
+
+.govgrievance-bottom-box > i {
+
+    flex: 0 0 auto !important;
+
+    margin-top: 2px !important;
+
+    font-size: 14px !important;
+}
+
+
+.govgrievance-bottom-box p {
+
+    margin: 0 !important;
+
+    font-size: 10px !important;
+
+    line-height: 1.6 !important;
+}
+
+}
+
+
+/* =========================================================
+SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+.govgrievance-table-header {
+
+    padding: 14px !important;
+}
+
+
+.govgrievance-table-header h3 {
+
+    font-size: 16px !important;
+}
+
+
+.govgrievance-table-header a {
+
+    font-size: 11px !important;
+}
+
+
+.govgrievance-chart-card {
+
+    min-height: 380px !important;
+}
+
+
+.govgrievance-chart-wrapper {
+
+    height: 225px !important;
+
+    min-height: 225px !important;
+
+    max-height: 225px !important;
+
+    padding: 8px 12px !important;
+}
+
+
+.govgrievance-chart-stats {
+
+    padding: 8px 10px 15px !important;
+
+    gap: 4px !important;
+}
+
+
+.govgrievance-chart-stats h4 {
+
+    font-size: 17px !important;
+}
+
+
+.govgrievance-chart-stats p {
+
+    font-size: 9px !important;
+}
+
+
+.govgrievance-help {
+
+    padding: 16px !important;
+}
+
+
+.govgrievance-help-left h2 {
+
+    font-size: 18px !important;
+}
+
+}
+
+
+/* =========================================================
+VERY SMALL PHONES
+========================================================= */
+
+@media (max-width: 360px) {
+
+.govgrievance-table-header {
+
+    align-items: flex-start !important;
+
+    flex-direction: column !important;
+
+    gap: 8px !important;
+}
+
+
+.govgrievance-chart-wrapper {
+
+    height: 205px !important;
+
+    min-height: 205px !important;
+
+    max-height: 205px !important;
+}
+
+
+.govgrievance-chart-stats h4 {
+
+    font-size: 15px !important;
+}
+
+
+.govgrievance-chart-stats p {
+
+    font-size: 8px !important;
+}
+
+
+.govgrievance-help-left h2 {
+
+    font-size: 17px !important;
+}
+
+}
+    /* =========================================================
    GOV GRIEVANCE FILTER - RESPONSIVE DROPDOWN FIX
 ========================================================= */
 

@@ -3425,6 +3425,8 @@ if (stkServicesHero && stkServicesBackground) {
     </script>
 
 
+
+
 <!-- =========================================================
      STACKLY GOVERNMENT CONTACT PAGE
 ========================================================= -->
@@ -3432,33 +3434,33 @@ if (stkServicesHero && stkServicesBackground) {
 <main class="gov-contact-page">
 
     <!-- =====================================================
-         CONTACT HERO / TOP SEARCH
+         CONTACT MAIN
     ====================================================== -->
 
     <section class="gov-contact-main">
 
         <div class="gov-contact-container">
 
-            <!-- Breadcrumb + Search -->
+            <!-- =================================================
+                 BREADCRUMB + SEARCH
+            ================================================== -->
+
             <div class="gov-contact-toolbar gov-contact-reveal">
 
                 <div class="gov-contact-breadcrumb">
 
-                    <a href="index.html">
-                        Home
-                    </a>
+                    <a href="index.html">Home</a>
 
-                    <span>›</span>
+                    <span class="gov-contact-breadcrumb-arrow">›</span>
 
                     <span>Contact Us</span>
 
                 </div>
 
-
-                <!-- Search -->
                 <form
                     class="gov-contact-search"
                     id="govContactSearchForm"
+                    novalidate
                 >
 
                     <i class="fa-solid fa-magnifying-glass"></i>
@@ -3486,7 +3488,6 @@ if (stkServicesHero && stkServicesBackground) {
             <section class="gov-contact-info-section">
 
                 <div class="gov-contact-info-grid">
-
 
                     <!-- CARD 1 -->
 
@@ -3604,7 +3605,6 @@ if (stkServicesHero && stkServicesBackground) {
 
                     </article>
 
-
                 </div>
 
             </section>
@@ -3617,6 +3617,10 @@ if (stkServicesHero && stkServicesBackground) {
             <section class="gov-contact-form-section">
 
                 <div class="gov-contact-section-heading gov-contact-reveal">
+
+                    <span class="gov-contact-section-label">
+                        GET IN TOUCH
+                    </span>
 
                     <h2>
                         Send Us a Message
@@ -3635,8 +3639,6 @@ if (stkServicesHero && stkServicesBackground) {
                     novalidate
                 >
 
-                    <!-- FORM ERROR -->
-
                     <div
                         id="govContactFormMessage"
                         class="gov-contact-form-message"
@@ -3654,13 +3656,19 @@ if (stkServicesHero && stkServicesBackground) {
                                 Full Name <span>*</span>
                             </label>
 
-                            <input
-                                type="text"
-                                id="govContactName"
-                                name="name"
-                                placeholder="Enter your full name"
-                                autocomplete="name"
-                            >
+                            <div class="gov-contact-input-wrap">
+
+                                <i class="fa-regular fa-user"></i>
+
+                                <input
+                                    type="text"
+                                    id="govContactName"
+                                    name="name"
+                                    placeholder="Enter your full name"
+                                    autocomplete="name"
+                                >
+
+                            </div>
 
                             <small
                                 class="gov-contact-error"
@@ -3673,16 +3681,22 @@ if (stkServicesHero && stkServicesBackground) {
                         <div class="gov-contact-field gov-contact-reveal">
 
                             <label for="govContactEmail">
-                                Enter Address <span>*</span>
+                                Email Address <span>*</span>
                             </label>
 
-                            <input
-                                type="email"
-                                id="govContactEmail"
-                                name="email"
-                                placeholder="Enter your email address"
-                                autocomplete="email"
-                            >
+                            <div class="gov-contact-input-wrap">
+
+                                <i class="fa-regular fa-envelope"></i>
+
+                                <input
+                                    type="email"
+                                    id="govContactEmail"
+                                    name="email"
+                                    placeholder="Enter your email address"
+                                    autocomplete="email"
+                                >
+
+                            </div>
 
                             <small
                                 class="gov-contact-error"
@@ -3704,14 +3718,21 @@ if (stkServicesHero && stkServicesBackground) {
                                 Mobile Number <span>*</span>
                             </label>
 
-                            <input
-                                type="tel"
-                                id="govContactPhone"
-                                name="phone"
-                                placeholder="Enter your mobile number"
-                                maxlength="10"
-                                autocomplete="tel"
-                            >
+                            <div class="gov-contact-input-wrap">
+
+                                <i class="fa-solid fa-phone"></i>
+
+                                <input
+                                    type="tel"
+                                    id="govContactPhone"
+                                    name="phone"
+                                    placeholder="Enter your 10 digit mobile number"
+                                    maxlength="10"
+                                    autocomplete="tel"
+                                    inputmode="numeric"
+                                >
+
+                            </div>
 
                             <small
                                 class="gov-contact-error"
@@ -3720,98 +3741,196 @@ if (stkServicesHero && stkServicesBackground) {
 
                         </div>
 
+<!-- =====================================================
+     SUBJECT CUSTOM DROPDOWN
+====================================================== -->
 
-                        <div class="gov-contact-field gov-contact-reveal">
+<div class="gov-contact-field gov-contact-reveal">
 
-                            <label for="govContactSubject">
-                                Subject <span>*</span>
-                            </label>
+    <label for="govContactSubject">
+        Subject <span>*</span>
+    </label>
+    
 
-                            <select
-                                id="govContactSubject"
-                                name="subject"
-                            >
+    <div
+        class="gov-contact-custom-dropdown"
+        data-dropdown="subject"
+    >
 
-                                <option value="">
-                                    Select a subject
-                                </option>
+        <button
+            type="button"
+            class="gov-contact-dropdown-trigger"
+            aria-expanded="false"
+        >
 
-                                <option value="service">
-                                    Government Service
-                                </option>
+            <span class="gov-contact-dropdown-selected">
+                Select Subject
+            </span>
 
-                                <option value="scheme">
-                                    Government Scheme
-                                </option>
+            <i class="fa-solid fa-chevron-down"></i>
 
-                                <option value="department">
-                                    Department Information
-                                </option>
-
-                                <option value="grievance">
-                                    Grievance
-                                </option>
-
-                                <option value="other">
-                                    Other
-                                </option>
-
-                            </select>
-
-                            <small
-                                class="gov-contact-error"
-                                id="govContactSubjectError"
-                            ></small>
-
-                        </div>
-
-                    </div>
+        </button>
 
 
-                    <!-- DEPARTMENT -->
+        <div class="gov-contact-dropdown-menu">
 
-                    <div class="gov-contact-field gov-contact-full gov-contact-reveal">
+            <button
+                type="button"
+                class="gov-contact-dropdown-option"
+                data-value="service"
+            >
+                Government Service
+            </button>
 
-                        <label for="govContactDepartment">
-                            Department
-                        </label>
+            <button
+                type="button"
+                class="gov-contact-dropdown-option"
+                data-value="scheme"
+            >
+                Government Scheme
+            </button>
 
-                        <select
-                            id="govContactDepartment"
-                            name="department"
-                        >
+            <button
+                type="button"
+                class="gov-contact-dropdown-option"
+                data-value="department"
+            >
+                Department Information
+            </button>
 
-                            <option value="">
-                                Select Department
-                            </option>
+            <button
+                type="button"
+                class="gov-contact-dropdown-option"
+                data-value="grievance"
+            >
+                Grievance
+            </button>
 
-                            <option value="home">
-                                Ministry of Home Affairs
-                            </option>
+            <button
+                type="button"
+                class="gov-contact-dropdown-option"
+                data-value="other"
+            >
+                Other
+            </button>
 
-                            <option value="finance">
-                                Ministry of Finance
-                            </option>
+        </div>
 
-                            <option value="education">
-                                Ministry of Education
-                            </option>
+    </div>
 
-                            <option value="health">
-                                Ministry of Health
-                            </option>
 
-                            <option value="rural">
-                                Ministry of Rural Development
-                            </option>
+    <!-- Hidden value used by JS -->
 
-                            <option value="transport">
-                                Ministry of Road Transport
-                            </option>
+    <input
+        type="hidden"
+        id="govContactSubject"
+        name="subject"
+        value=""
+    >
 
-                        </select>
+    <small
+        class="gov-contact-error"
+        id="govContactSubjectError"
+    ></small>
 
-                    </div>
+</div>
+
+
+<!-- =====================================================
+     DEPARTMENT CUSTOM DROPDOWN
+====================================================== -->
+
+<div class="gov-contact-field gov-contact-full gov-contact-reveal">
+
+    <label for="govContactDepartment">
+        Department
+    </label>
+
+    <div
+        class="gov-contact-custom-dropdown"
+        data-dropdown="department"
+    >
+
+        <button
+            type="button"
+            class="gov-contact-dropdown-trigger"
+            aria-expanded="false"
+        >
+
+            <span class="gov-contact-dropdown-selected">
+                Select Department
+            </span>
+
+            <i class="fa-solid fa-chevron-down"></i>
+
+        </button>
+
+
+        <div class="gov-contact-dropdown-menu">
+
+            <button
+                type="button"
+                class="gov-contact-dropdown-option"
+                data-value="home"
+            >
+                Ministry of Home Affairs
+            </button>
+
+            <button
+                type="button"
+                class="gov-contact-dropdown-option"
+                data-value="finance"
+            >
+                Ministry of Finance
+            </button>
+
+            <button
+                type="button"
+                class="gov-contact-dropdown-option"
+                data-value="education"
+            >
+                Ministry of Education
+            </button>
+
+            <button
+                type="button"
+                class="gov-contact-dropdown-option"
+                data-value="health"
+            >
+                Ministry of Health
+            </button>
+
+            <button
+                type="button"
+                class="gov-contact-dropdown-option"
+                data-value="rural"
+            >
+                Ministry of Rural Development
+            </button>
+
+            <button
+                type="button"
+                class="gov-contact-dropdown-option"
+                data-value="transport"
+            >
+                Ministry of Road Transport
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- Hidden value -->
+
+    <input
+        type="hidden"
+        id="govContactDepartment"
+        name="department"
+        value=""
+    >
+
+</div>
 
 
                     <!-- MESSAGE -->
@@ -3822,12 +3941,18 @@ if (stkServicesHero && stkServicesBackground) {
                             Message <span>*</span>
                         </label>
 
-                        <textarea
-                            id="govContactMessage"
-                            name="message"
-                            rows="5"
-                            placeholder="Type your message here..."
-                        ></textarea>
+                        <div class="gov-contact-textarea-wrap">
+
+                            <i class="fa-regular fa-message"></i>
+
+                            <textarea
+                                id="govContactMessage"
+                                name="message"
+                                rows="6"
+                                placeholder="Type your message here..."
+                            ></textarea>
+
+                        </div>
 
                         <small
                             class="gov-contact-error"
@@ -3848,17 +3973,24 @@ if (stkServicesHero && stkServicesBackground) {
                                 id="govContactTerms"
                             >
 
-                            <span class="gov-contact-checkmark"></span>
+                            <span class="gov-contact-checkmark">
+                                <i class="fa-solid fa-check"></i>
+                            </span>
 
-                            <span>
+                            <span class="gov-contact-terms-text">
+
                                 I agree to the
+
                                 <a href="404.html">
                                     Terms & Conditions
                                 </a>
+
                                 and
+
                                 <a href="404.html">
                                     Privacy Policy
                                 </a>
+
                             </span>
 
                         </label>
@@ -3886,7 +4018,6 @@ if (stkServicesHero && stkServicesBackground) {
 
                     </button>
 
-
                 </form>
 
             </section>
@@ -3898,64 +4029,126 @@ if (stkServicesHero && stkServicesBackground) {
 
             <section class="gov-contact-help-section">
 
+                <!-- FAQ -->
+
                 <div class="gov-contact-faq-box gov-contact-reveal">
 
-                    <h3>
-                        Frequently Asked Questions
-                    </h3>
+                    <div class="gov-contact-faq-heading">
+
+                        <span class="gov-contact-section-label">
+                            HELP CENTER
+                        </span>
+
+                        <h3>
+                            Frequently Asked Questions
+                        </h3>
+
+                        <p>
+                            Find quick answers to common questions.
+                        </p>
+
+                    </div>
 
 
                     <div class="gov-contact-faq-list">
 
-                        <details>
+                        <details class="gov-contact-faq-item">
+
                             <summary>
-                                How can I track my application?
-                                <i class="fa-solid fa-chevron-down"></i>
+
+                                <span>
+                                    <i class="fa-regular fa-circle-question"></i>
+                                    How can I track my application?
+                                </span>
+
+                                <i class="fa-solid fa-chevron-down gov-contact-faq-arrow"></i>
+
                             </summary>
 
-                            <p>
-                                You can track your application using
-                                your application reference number.
-                            </p>
+                            <div class="gov-contact-faq-answer">
+
+                                <p>
+                                    You can track your application using
+                                    your application reference number.
+                                </p>
+
+                            </div>
+
                         </details>
 
 
-                        <details>
+                        <details class="gov-contact-faq-item">
+
                             <summary>
-                                How can I register a grievance?
-                                <i class="fa-solid fa-chevron-down"></i>
+
+                                <span>
+                                    <i class="fa-regular fa-circle-question"></i>
+                                    How can I register a grievance?
+                                </span>
+
+                                <i class="fa-solid fa-chevron-down gov-contact-faq-arrow"></i>
+
                             </summary>
 
-                            <p>
-                                Visit the grievance section and submit
-                                your complaint using the online form.
-                            </p>
+                            <div class="gov-contact-faq-answer">
+
+                                <p>
+                                    Visit the grievance section and submit
+                                    your complaint using the online form.
+                                </p>
+
+                            </div>
+
                         </details>
 
 
-                        <details>
+                        <details class="gov-contact-faq-item">
+
                             <summary>
-                                What are the working hours of the support team?
-                                <i class="fa-solid fa-chevron-down"></i>
+
+                                <span>
+                                    <i class="fa-regular fa-circle-question"></i>
+                                    What are the working hours of the support team?
+                                </span>
+
+                                <i class="fa-solid fa-chevron-down gov-contact-faq-arrow"></i>
+
                             </summary>
 
-                            <p>
-                                Our support team is available during
-                                regular government working hours.
-                            </p>
+                            <div class="gov-contact-faq-answer">
+
+                                <p>
+                                    Our support team is available during
+                                    regular government working hours.
+                                </p>
+
+                            </div>
+
                         </details>
 
 
-                        <details>
+                        <details class="gov-contact-faq-item">
+
                             <summary>
-                                How will I get updates on my service request?
-                                <i class="fa-solid fa-chevron-down"></i>
+
+                                <span>
+                                    <i class="fa-regular fa-circle-question"></i>
+                                    How will I get updates on my service request?
+                                </span>
+
+                                <i class="fa-solid fa-chevron-down gov-contact-faq-arrow"></i>
+
                             </summary>
 
-                            <p>
-                                Updates will be sent to your registered
-                                mobile number and email address.
-                            </p>
+                            <div class="gov-contact-faq-answer">
+
+                                <p>
+                                    Updates will be sent to your registered
+                                    mobile number and email address.
+                                </p>
+
+                            </div>
+
                         </details>
 
                     </div>
@@ -3972,6 +4165,10 @@ if (stkServicesHero && stkServicesBackground) {
                         <i class="fa-solid fa-headset"></i>
 
                     </div>
+
+                    <span class="gov-contact-help-label">
+                        SUPPORT
+                    </span>
 
                     <h3>
                         Need Immediate Help?
@@ -3997,7 +4194,6 @@ if (stkServicesHero && stkServicesBackground) {
 
             </section>
 
-
         </div>
 
     </section>
@@ -4010,10 +4206,11 @@ if (stkServicesHero && stkServicesBackground) {
     <section class="gov-contact-map-section gov-contact-reveal">
 
         <iframe
-        src="https://www.google.com/maps?q=Salem,Tamilnadu&output=embed"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
+            class="gov-contact-map"
+            src="https://www.google.com/maps?q=Salem,Tamilnadu&output=embed"
+            allowfullscreen
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
             title="Government of India location map">
         </iframe>
 
@@ -4023,19 +4220,33 @@ if (stkServicesHero && stkServicesBackground) {
 
         </div>
 
+        <div class="gov-contact-map-label">
+
+            <i class="fa-solid fa-location-dot"></i>
+
+            <div>
+                <strong>Citizen Services</strong>
+                <span>Salem, Tamil Nadu</span>
+            </div>
+
+        </div>
+
     </section>
 
 
     <!-- =====================================================
-         CAN'T FIND SERVICE
+         SERVICE CTA
     ====================================================== -->
 
     <section class="gov-contact-service-section">
 
         <div class="gov-contact-service-inner">
 
-
             <div class="gov-contact-service-text gov-contact-reveal">
+
+                <span class="gov-contact-section-label">
+                    CITIZEN SERVICES
+                </span>
 
                 <h2>
                     Can't find the service you are looking for?
@@ -4050,13 +4261,15 @@ if (stkServicesHero && stkServicesBackground) {
                     class="gov-contact-service-btn"
                 >
                     Browse All Services
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
                 </a>
 
             </div>
 
 
             <div class="gov-contact-service-features">
-
 
                 <div class="gov-contact-feature gov-contact-reveal">
 
@@ -4137,87 +4350,114 @@ if (stkServicesHero && stkServicesBackground) {
 
                 </div>
 
-
             </div>
 
         </div>
 
     </section>
 
-</main>
 
+    <!-- =====================================================
+         SUCCESS POPUP
+    ====================================================== -->
 
-<!-- =========================================================
-     SUCCESS POPUP
-========================================================= -->
+    <div
+        class="gov-contact-success-overlay"
+        id="govContactSuccessOverlay"
+        aria-hidden="true"
+    >
 
-<div
-    class="gov-contact-success-overlay"
-    id="govContactSuccessPopup"
->
+        <div
+            class="gov-contact-success-popup"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="govContactSuccessTitle"
+        >
 
-    <div class="gov-contact-success-box">
+            <div class="gov-contact-success-icon">
 
-        <div class="gov-contact-success-icon">
+                <i class="fa-solid fa-check"></i>
 
-            <i class="fa-solid fa-check"></i>
+            </div>
+
+            <span class="gov-contact-success-small">
+                MESSAGE SENT
+            </span>
+
+            <h3 id="govContactSuccessTitle">
+                Thank You!
+            </h3>
+
+            <p>
+                Your message has been submitted successfully.
+                Our support team will get back to you soon.
+            </p>
+
+            <div class="gov-contact-success-progress">
+
+                <span></span>
+
+            </div>
+
+            <small>
+                Redirecting you to the next page...
+            </small>
 
         </div>
 
-        <h3>
-            Message Sent Successfully!
-        </h3>
-
-        <p>
-            Thank you for contacting us.
-            Redirecting...
-        </p>
-
-        <div class="gov-contact-success-loader"></div>
-
     </div>
 
-</div>
+</main>
 
 
 <style>
-
     /* =========================================================
    STACKLY GOVERNMENT CONTACT PAGE
-   NAMESPACE: gov-contact-
-   This CSS intentionally avoids generic selectors.
+   NON-CONFLICTING RESPONSIVE CSS
 ========================================================= */
 
 
 /* =========================================================
-   ROOT
+   PAGE ROOT
 ========================================================= */
 
 .gov-contact-page {
-    --gov-contact-primary: #246bff;
-    --gov-contact-primary-dark: #1553d1;
-    --gov-contact-teal: #43aaa8;
-    --gov-contact-text: #171717;
-    --gov-contact-muted: #707070;
-    --gov-contact-border: #d8d8d8;
-    --gov-contact-bg: #f6f9fc;
-    --gov-contact-white: #ffffff;
+    --gov-contact-primary: #1558a6;
+    --gov-contact-primary-dark: #0d3f7a;
+    --gov-contact-secondary: #168447;
+    --gov-contact-blue: #2276d2;
+    --gov-contact-purple: #7357c7;
+    --gov-contact-orange: #d98218;
+
+    --gov-contact-bg: #f4f7fb;
+    --gov-contact-card: #ffffff;
+    --gov-contact-border: #dce5ef;
+
+    --gov-contact-text: #1d2b3a;
+    --gov-contact-muted: #66788a;
+
+    --gov-contact-danger: #d43c3c;
 
     width: 100%;
-    min-height: 100%;
-    background: #ffffff;
-    color: var(--gov-contact-text);
-    font-family: "Poppins", sans-serif;
+    min-width: 0;
     overflow: hidden;
+    background: var(--gov-contact-bg);
+    color: var(--gov-contact-text);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
 /* =========================================================
-   CONTAINER
+   MAIN CONTAINER
 ========================================================= */
 
+.gov-contact-page .gov-contact-main {
+    width: 100%;
+    padding: 32px 20px 70px;
+}
+
 .gov-contact-container {
-    width: min(1180px, calc(100% - 40px));
+    width: min(1380px, 100%);
     margin: 0 auto;
 }
 
@@ -4227,45 +4467,35 @@ if (stkServicesHero && stkServicesBackground) {
 ========================================================= */
 
 .gov-contact-toolbar {
-    width: 100%;
-    min-height: 72px;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     gap: 25px;
+    margin-bottom: 32px;
 }
-
-
-/* =========================================================
-   BREADCRUMB
-========================================================= */
 
 .gov-contact-breadcrumb {
     display: flex;
     align-items: center;
-    gap: 11px;
-
-    font-size: 12px;
-    white-space: nowrap;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 14px;
+    color: var(--gov-contact-muted);
 }
 
 .gov-contact-breadcrumb a {
-    color: #222;
+    color: var(--gov-contact-primary);
     text-decoration: none;
+    font-weight: 700;
 }
 
 .gov-contact-breadcrumb a:hover {
-    color: var(--gov-contact-primary);
+    text-decoration: underline;
 }
 
-.gov-contact-breadcrumb span:last-child {
-    color: var(--gov-contact-primary);
-}
-
-.gov-contact-breadcrumb span:nth-child(2) {
-    color: #999;
+.gov-contact-breadcrumb-arrow {
+    color: #9aa9b7;
+    font-size: 20px;
 }
 
 
@@ -4274,73 +4504,68 @@ if (stkServicesHero && stkServicesBackground) {
 ========================================================= */
 
 .gov-contact-search {
-    width: 330px;
-    height: 42px;
+    width: min(520px, 100%);
+    min-height: 48px;
 
     display: flex;
     align-items: center;
 
-    border: 1px solid #d7d7d7;
-    border-radius: 7px;
-
-    background: #fff;
+    background: #ffffff;
+    border: 1px solid var(--gov-contact-border);
+    border-radius: 8px;
 
     overflow: hidden;
+
+    box-shadow: 0 5px 18px rgba(22, 61, 98, 0.07);
 }
 
 .gov-contact-search > i {
-    margin-left: 13px;
-    color: #858585;
-    font-size: 24px;
+    margin-left: 15px;
+    color: #718294;
+    font-size: 15px;
 }
 
 .gov-contact-search input {
-    min-width: 0;
     flex: 1;
-
-    height: 100%;
+    min-width: 0;
 
     border: 0;
     outline: 0;
 
-    padding: 0 10px;
-
-    font-family: inherit;
-    font-size: 17px;
-    color: #333;
+    padding: 13px 12px;
 
     background: transparent;
+
+    color: var(--gov-contact-text);
+    font-size: 14px;
 }
 
 .gov-contact-search input::placeholder {
-    color: #888;
+    color: #8998a7;
 }
 
 .gov-contact-search button {
-    height: 30px;
-    min-width: 72px;
+    min-height: 48px;
 
-    margin-right: 5px;
+    padding: 0 22px;
 
     border: 0;
-    border-radius: 6px;
 
-    background: #2475a8;
-    color: #fff;
+    background: var(--gov-contact-primary);
+    color: #ffffff;
 
-    font-family: inherit;
-    font-size: 17px;
+    font-size: 14px;
+    font-weight: 700;
 
     cursor: pointer;
 
     transition:
-        background .25s ease,
-        transform .25s ease;
+        background 0.25s ease,
+        transform 0.25s ease;
 }
 
 .gov-contact-search button:hover {
-    background: #155c8a;
-    transform: translateY(-1px);
+    background: var(--gov-contact-primary-dark);
 }
 
 
@@ -4350,131 +4575,128 @@ if (stkServicesHero && stkServicesBackground) {
 
 .gov-contact-info-section {
     width: 100%;
-    margin-top: 10px;
+    margin-bottom: 60px;
 }
 
 .gov-contact-info-grid {
-    width: 100%;
-
     display: grid;
-    grid-template-columns:
-        repeat(4, minmax(0, 1fr));
-
-    border: 1px solid #8d8d8d;
-    border-radius: 7px;
-
-    background: #fff;
-
-    overflow: hidden;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 18px;
 }
-
-
-/* =========================================================
-   INFO CARD
-========================================================= */
 
 .gov-contact-info-card {
-    min-height: 105px;
-
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    gap: 15px;
 
-    gap: 14px;
+    min-width: 0;
 
-    padding: 18px;
+    padding: 21px 18px;
 
-    border-right: 1px solid #dedede;
+    background: var(--gov-contact-card);
 
-    background: #fff;
+    border: 1px solid var(--gov-contact-border);
+    border-radius: 10px;
+
+    box-shadow: 0 8px 25px rgba(22, 61, 98, 0.06);
 
     transition:
-        transform .3s ease,
-        background .3s ease;
-}
-
-.gov-contact-info-card:last-child {
-    border-right: 0;
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
 }
 
 .gov-contact-info-card:hover {
-    background: #fbfdff;
-    transform: translateY(-3px);
+    transform: translateY(-4px);
+
+    border-color: #c4d6e8;
+
+    box-shadow: 0 15px 35px rgba(22, 61, 98, 0.11);
 }
 
-
-/* =========================================================
-   INFO ICON
-========================================================= */
-
 .gov-contact-info-icon {
-    width: 42px;
-    height: 42px;
+    width: 48px;
+    height: 48px;
 
-    min-width: 42px;
+    flex: 0 0 48px;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    place-items: center;
 
-    border-radius: 50%;
+    border-radius: 10px;
 
-    font-size: 17px;
+    font-size: 19px;
 }
 
 .gov-contact-green {
-    color: #31bd7b;
-    background: #dff8eb;
+    background: #e7f7ee;
+    color: var(--gov-contact-secondary);
 }
 
 .gov-contact-blue {
-    color: #416df3;
-    background: #dce5ff;
+    background: #e8f1fc;
+    color: var(--gov-contact-blue);
 }
 
 .gov-contact-purple {
-    color: #9a42dc;
-    background: #eddcff;
+    background: #f0ebfb;
+    color: var(--gov-contact-purple);
 }
 
 .gov-contact-orange {
-    color: #f39b2f;
-    background: #ffebce;
+    background: #fff2df;
+    color: var(--gov-contact-orange);
 }
-
-
-/* =========================================================
-   INFO CONTENT
-========================================================= */
 
 .gov-contact-info-content {
     min-width: 0;
-
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
 }
 
 .gov-contact-info-title {
-    font-size: 17px;
-    font-weight: 500;
-    color: #222;
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: #66788a;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 .gov-contact-info-content a {
-    color: #1687c5;
+    display: block;
+
+    color: var(--gov-contact-primary);
+
+    font-size: 17px;
+    font-weight: 800;
+
     text-decoration: none;
-    font-size: 15px;
-    font-weight: 500;
+
+    overflow-wrap: anywhere;
 }
 
-.gov-contact-info-content p,
-.gov-contact-info-content small {
+.gov-contact-info-content p {
     margin: 0;
 
-    color: #555;
+    color: var(--gov-contact-text);
+
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.gov-contact-info-content small {
+    display: block;
+
+    margin-top: 4px;
+
+    color: var(--gov-contact-muted);
 
     font-size: 12px;
-    line-height: 1.45;
+    line-height: 1.4;
 }
 
 
@@ -4484,30 +4706,55 @@ if (stkServicesHero && stkServicesBackground) {
 
 .gov-contact-form-section {
     width: 100%;
-    padding: 18px 0 0;
+
+    padding: 38px;
+
+    background: #ffffff;
+
+    border: 1px solid var(--gov-contact-border);
+    border-radius: 14px;
+
+    box-shadow: 0 10px 35px rgba(22, 61, 98, 0.07);
+
+    margin-bottom: 55px;
 }
 
 .gov-contact-section-heading {
-    margin-bottom: 22px;
+    margin-bottom: 28px;
+}
+
+.gov-contact-section-label {
+    display: inline-block;
+
+    margin-bottom: 7px;
+
+    color: var(--gov-contact-secondary);
+
+    font-size: 11px;
+    font-weight: 800;
+
+    letter-spacing: 1.4px;
 }
 
 .gov-contact-section-heading h2 {
-    margin: 0 0 6px;
+    margin: 0 0 8px;
 
-    font-size: 17px;
-    line-height: 1.3;
-    font-weight: 700;
+    color: var(--gov-contact-text);
+
+    font-size: 29px;
+    line-height: 1.2;
 }
 
 .gov-contact-section-heading p {
     margin: 0;
 
-    font-size: 15px;
-    color: #444;
+    color: var(--gov-contact-muted);
+
+    font-size: 14px;
 }
 
 .gov-contact-section-heading p span {
-    color: #e33;
+    color: var(--gov-contact-danger);
 }
 
 
@@ -4520,92 +4767,114 @@ if (stkServicesHero && stkServicesBackground) {
 }
 
 .gov-contact-form-row {
-    width: 100%;
-
     display: grid;
-    grid-template-columns:
-        repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
 
-    gap: 16px;
-
-    margin-bottom: 17px;
+    margin-bottom: 20px;
 }
-
-
-/* =========================================================
-   FIELD
-========================================================= */
 
 .gov-contact-field {
-    width: 100%;
     min-width: 0;
-
-    display: flex;
-    flex-direction: column;
+    margin-bottom: 20px;
 }
 
-.gov-contact-field.gov-contact-full {
-    margin-bottom: 17px;
+.gov-contact-full {
+    width: 100%;
 }
 
 .gov-contact-field label {
-    margin-bottom: 7px;
+    display: block;
 
-    font-size: 17px;
-    font-weight: 500;
+    margin-bottom: 8px;
 
-    color: #272727;
+    color: #33495e;
+
+    font-size: 13px;
+    font-weight: 700;
 }
 
 .gov-contact-field label span {
-    color: #e53935;
+    color: var(--gov-contact-danger);
 }
 
 
 /* =========================================================
-   INPUTS
+   INPUT WRAPPERS
 ========================================================= */
+
+.gov-contact-input-wrap,
+.gov-contact-select-wrap,
+.gov-contact-textarea-wrap {
+    position: relative;
+    width: 100%;
+}
+
+.gov-contact-input-wrap > i,
+.gov-contact-select-wrap > i:first-child,
+.gov-contact-textarea-wrap > i {
+    position: absolute;
+
+    left: 15px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    color: #7d8e9f;
+
+    font-size: 14px;
+
+    pointer-events: none;
+    z-index: 2;
+}
+
+.gov-contact-textarea-wrap > i {
+    top: 18px;
+    transform: none;
+}
 
 .gov-contact-field input,
 .gov-contact-field select,
 .gov-contact-field textarea {
     width: 100%;
 
-    border: 1px solid #858585;
-    border-radius: 6px;
+    border: 1px solid #d5e0eb;
+    border-radius: 7px;
 
     outline: none;
 
-    background: #fff;
+    background: #fbfdff;
 
-    color: #333;
+    color: #26384a;
 
     font-family: inherit;
-    font-size: 15px;
+    font-size: 14px;
 
     transition:
-        border-color .25s ease,
-        box-shadow .25s ease,
-        background .25s ease;
+        border-color 0.25s ease,
+        box-shadow 0.25s ease,
+        background 0.25s ease;
 }
 
 .gov-contact-field input,
 .gov-contact-field select {
-    height: 38px;
-    padding: 0 13px;
+    height: 50px;
+
+    padding: 0 15px 0 43px;
 }
 
 .gov-contact-field textarea {
-    min-height: 90px;
-
-    padding: 12px 13px;
+    min-height: 145px;
 
     resize: vertical;
+
+    padding: 15px 15px 15px 43px;
+    line-height: 1.6;
 }
 
 .gov-contact-field input::placeholder,
 .gov-contact-field textarea::placeholder {
-    color: #999;
+    color: #9aa8b6;
 }
 
 .gov-contact-field input:focus,
@@ -4613,15 +4882,44 @@ if (stkServicesHero && stkServicesBackground) {
 .gov-contact-field textarea:focus {
     border-color: var(--gov-contact-primary);
 
-    box-shadow:
-        0 0 0 3px rgba(36, 107, 255, .08);
+    background: #ffffff;
 
-    background: #fcfdff;
+    box-shadow:
+        0 0 0 3px rgba(21, 88, 166, 0.10);
 }
 
 
 /* =========================================================
-   ERROR
+   SELECT
+========================================================= */
+
+.gov-contact-select-wrap select {
+    appearance: none;
+    -webkit-appearance: none;
+
+    cursor: pointer;
+
+    padding-right: 45px;
+}
+
+.gov-contact-select-arrow {
+    position: absolute;
+
+    right: 15px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    color: #788999;
+
+    font-size: 11px;
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   VALIDATION
 ========================================================= */
 
 .gov-contact-error {
@@ -4629,31 +4927,36 @@ if (stkServicesHero && stkServicesBackground) {
 
     min-height: 0;
 
-    margin-top: 4px;
+    margin-top: 6px;
 
-    color: #e53935;
+    color: var(--gov-contact-danger);
 
     font-size: 12px;
-    line-height: 1.3;
+    font-weight: 600;
+
+    line-height: 1.4;
 }
 
 .gov-contact-field.gov-contact-invalid input,
 .gov-contact-field.gov-contact-invalid select,
 .gov-contact-field.gov-contact-invalid textarea {
-    border-color: #e53935;
+    border-color: var(--gov-contact-danger);
 
     background: #fffafa;
+
+    box-shadow:
+        0 0 0 3px rgba(212, 60, 60, 0.08);
 }
 
 .gov-contact-field.gov-contact-valid input,
 .gov-contact-field.gov-contact-valid select,
 .gov-contact-field.gov-contact-valid textarea {
-    border-color: #35b978;
+    border-color: #36a269;
 }
 
 
 /* =========================================================
-   GENERAL FORM MESSAGE
+   FORM MESSAGE
 ========================================================= */
 
 .gov-contact-form-message {
@@ -4661,22 +4964,24 @@ if (stkServicesHero && stkServicesBackground) {
 
     width: 100%;
 
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 
-    padding: 11px 14px;
+    padding: 12px 15px;
 
-    border-radius: 6px;
+    border-radius: 7px;
 
-    font-size: 17px;
-    font-weight: 500;
+    font-size: 13px;
+    font-weight: 600;
 }
 
-.gov-contact-form-message.gov-contact-show-error {
+.gov-contact-form-message.gov-contact-message-error {
     display: block;
 
-    color: #a72525;
+    color: #a52f2f;
+
     background: #fff0f0;
-    border: 1px solid #ffcaca;
+
+    border: 1px solid #f0c5c5;
 }
 
 
@@ -4685,70 +4990,84 @@ if (stkServicesHero && stkServicesBackground) {
 ========================================================= */
 
 .gov-contact-terms {
-    margin: 2px 0 16px;
+    margin-top: 5px;
+    margin-bottom: 25px;
 }
 
 .gov-contact-checkbox {
     display: flex;
     align-items: flex-start;
-
-    gap: 8px;
+    gap: 10px;
 
     cursor: pointer;
 
-    font-size: 15px;
-    color: #444;
+    color: #586b7e;
+
+    font-size: 13px;
+    line-height: 1.6;
 }
 
 .gov-contact-checkbox input {
     position: absolute;
 
-    opacity: 0;
+    width: 1px;
+    height: 1px;
 
-    pointer-events: none;
+    opacity: 0;
 }
 
 .gov-contact-checkmark {
-    width: 15px;
-    height: 15px;
+    width: 19px;
+    height: 19px;
 
-    min-width: 15px;
+    flex: 0 0 19px;
 
-    display: inline-flex;
+    display: grid;
+    place-items: center;
 
-    align-items: center;
-    justify-content: center;
+    margin-top: 1px;
 
-    border: 1px solid #777;
-    border-radius: 3px;
+    border: 1px solid #b9c8d7;
+    border-radius: 4px;
 
-    background: #fff;
+    background: #ffffff;
+
+    color: #ffffff;
 
     transition:
-        background .2s ease,
-        border-color .2s ease;
+        background 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.gov-contact-checkmark i {
+    font-size: 10px;
+
+    opacity: 0;
 }
 
 .gov-contact-checkbox input:checked + .gov-contact-checkmark {
     background: var(--gov-contact-primary);
+
     border-color: var(--gov-contact-primary);
 }
 
-.gov-contact-checkbox input:checked + .gov-contact-checkmark::after {
-    content: "✓";
-
-    color: #fff;
-
-    font-size: 17px;
-    font-weight: 700;
+.gov-contact-checkbox input:checked + .gov-contact-checkmark i {
+    opacity: 1;
 }
 
-.gov-contact-checkbox a {
+.gov-contact-checkbox input:focus-visible + .gov-contact-checkmark {
+    box-shadow: 0 0 0 3px rgba(21, 88, 166, 0.12);
+}
+
+.gov-contact-terms-text a {
     color: var(--gov-contact-primary);
+
+    font-weight: 700;
+
     text-decoration: none;
 }
 
-.gov-contact-checkbox a:hover {
+.gov-contact-terms-text a:hover {
     text-decoration: underline;
 }
 
@@ -4758,44 +5077,52 @@ if (stkServicesHero && stkServicesBackground) {
 ========================================================= */
 
 .gov-contact-submit {
-    width: 100%;
-    height: 40px;
-
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
+    gap: 12px;
 
-    gap: 10px;
+    min-width: 175px;
+    min-height: 49px;
+
+    padding: 0 24px;
 
     border: 0;
-    border-radius: 0;
+    border-radius: 7px;
 
-    background: #2679ae;
-    color: #fff;
+    background: var(--gov-contact-primary);
+
+    color: #ffffff;
 
     font-family: inherit;
-    font-size: 17px;
-    font-weight: 500;
+    font-size: 14px;
+    font-weight: 700;
 
     cursor: pointer;
 
+    box-shadow: 0 7px 18px rgba(21, 88, 166, 0.20);
+
     transition:
-        background .25s ease,
-        transform .25s ease,
-        box-shadow .25s ease;
+        transform 0.25s ease,
+        background 0.25s ease,
+        box-shadow 0.25s ease;
 }
 
 .gov-contact-submit:hover {
-    background: #175e8b;
+    background: var(--gov-contact-primary-dark);
 
     transform: translateY(-2px);
 
-    box-shadow:
-        0 8px 20px rgba(38, 121, 174, .2);
+    box-shadow: 0 10px 24px rgba(21, 88, 166, 0.27);
 }
 
-.gov-contact-submit i {
-    font-size: 17px;
+.gov-contact-submit:active {
+    transform: translateY(0);
+}
+
+.gov-contact-submit.gov-contact-loading {
+    pointer-events: none;
+    opacity: 0.8;
 }
 
 
@@ -4804,92 +5131,172 @@ if (stkServicesHero && stkServicesBackground) {
 ========================================================= */
 
 .gov-contact-help-section {
-    width: 100%;
-
     display: grid;
 
-    grid-template-columns:
-        minmax(0, 1.65fr)
-        minmax(260px, .65fr);
+    grid-template-columns: minmax(0, 1fr) 340px;
 
-    gap: 16px;
+    gap: 25px;
 
-    margin-top: 17px;
+    align-items: stretch;
+
+    margin-bottom: 60px;
 }
 
 
 /* =========================================================
-   FAQ
+   FAQ BOX
 ========================================================= */
 
 .gov-contact-faq-box {
-    border: 1px solid #cfcfcf;
-    border-radius: 7px;
+    min-width: 0;
+
+    padding: 30px;
+
+    background: #ffffff;
+
+    border: 1px solid var(--gov-contact-border);
+    border-radius: 13px;
+
+    box-shadow: 0 9px 28px rgba(22, 61, 98, 0.06);
+}
+
+.gov-contact-faq-heading {
+    margin-bottom: 20px;
+}
+
+.gov-contact-faq-heading h3 {
+    margin: 0 0 6px;
+
+    color: var(--gov-contact-text);
+
+    font-size: 23px;
+}
+
+.gov-contact-faq-heading p {
+    margin: 0;
+
+    color: var(--gov-contact-muted);
+
+    font-size: 13px;
+}
+
+.gov-contact-faq-list {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+
+/* =========================================================
+   FAQ DROPDOWN
+========================================================= */
+
+.gov-contact-faq-item {
+    width: 100%;
 
     overflow: hidden;
 
-    background: #fff;
+    background: #f8fafc;
+
+    border: 1px solid #dce5ee;
+    border-radius: 8px;
+
+    transition:
+        border-color 0.25s ease,
+        background 0.25s ease;
 }
 
-.gov-contact-faq-box h3 {
-    margin: 0;
+.gov-contact-faq-item[open] {
+    background: #ffffff;
 
-    padding: 12px 14px;
+    border-color: #b9cee3;
 
-    font-size: 11px;
-    font-weight: 600;
-
-    border-bottom: 1px solid #dedede;
+    box-shadow: 0 7px 18px rgba(22, 61, 98, 0.06);
 }
 
-.gov-contact-faq-list details {
-    border-bottom: 1px solid #dedede;
-}
-
-.gov-contact-faq-list details:last-child {
-    border-bottom: 0;
-}
-
-.gov-contact-faq-list summary {
-    min-height: 35px;
-
+.gov-contact-faq-item summary {
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    padding: 0 14px;
+    gap: 15px;
 
-    cursor: pointer;
+    width: 100%;
+
+    padding: 17px 18px;
 
     list-style: none;
 
-    font-size: 15px;
-    color: #333;
+    cursor: pointer;
+
+    color: #263d52;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    user-select: none;
 }
 
-.gov-contact-faq-list summary::-webkit-details-marker {
+.gov-contact-faq-item summary::-webkit-details-marker {
     display: none;
 }
 
-.gov-contact-faq-list summary i {
-    font-size: 15px;
+.gov-contact-faq-item summary > span {
+    display: flex;
+    align-items: center;
+    gap: 11px;
 
-    transition: transform .25s ease;
+    min-width: 0;
 }
 
-.gov-contact-faq-list details[open] summary i {
+.gov-contact-faq-item summary > span > i {
+    color: var(--gov-contact-primary);
+
+    font-size: 14px;
+
+    flex: 0 0 auto;
+}
+
+.gov-contact-faq-arrow {
+    flex: 0 0 auto;
+
+    color: #738699;
+
+    font-size: 11px;
+
+    transition: transform 0.3s ease;
+}
+
+.gov-contact-faq-item[open] .gov-contact-faq-arrow {
     transform: rotate(180deg);
+
+    color: var(--gov-contact-primary);
 }
 
-.gov-contact-faq-list details p {
+
+/* =========================================================
+   FAQ ANSWER
+   CONTENT APPEARS DIRECTLY UNDER BOX
+========================================================= */
+
+.gov-contact-faq-answer {
+    overflow: hidden;
+
+    padding: 0 18px 18px 43px;
+}
+
+.gov-contact-faq-answer p {
     margin: 0;
 
-    padding: 0 14px 12px;
+    padding-top: 2px;
 
-    font-size: 17px;
-    line-height: 1.6;
+    color: #66788a;
 
-    color: #666;
+    font-size: 13px;
+
+    line-height: 1.7;
 }
 
 
@@ -4898,83 +5305,102 @@ if (stkServicesHero && stkServicesBackground) {
 ========================================================= */
 
 .gov-contact-help-card {
-    min-height: 100%;
-
-    padding: 25px;
-
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     justify-content: center;
+    align-items: flex-start;
 
-    background: #7bc6ed;
+    padding: 32px;
+
+    border-radius: 13px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #1558a6,
+            #0d3f7a
+        );
+
+    color: #ffffff;
+
+    box-shadow: 0 12px 32px rgba(13, 63, 122, 0.20);
 }
 
 .gov-contact-help-icon {
-    width: 40px;
-    height: 40px;
+    width: 55px;
+    height: 55px;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    place-items: center;
 
-    margin-bottom: 13px;
+    margin-bottom: 18px;
 
-    border-radius: 50%;
+    border-radius: 12px;
 
-    background: rgba(255,255,255,.4);
+    background: rgba(255, 255, 255, 0.14);
 
-    color: #126c9d;
+    font-size: 22px;
+}
 
-    font-size: 17px;
+.gov-contact-help-label {
+    margin-bottom: 7px;
+
+    font-size: 10px;
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+
+    opacity: 0.75;
 }
 
 .gov-contact-help-card h3 {
-    margin: 0 0 9px;
+    margin: 0 0 10px;
 
-    font-size: 15px;
-    font-weight: 700;
+    font-size: 23px;
+
+    line-height: 1.25;
 }
 
 .gov-contact-help-card p {
-    max-width: 180px;
+    margin: 0 0 22px;
 
-    margin: 0 0 18px;
+    color: rgba(255, 255, 255, 0.82);
 
-    font-size: 17px;
-    line-height: 1.55;
+    font-size: 13px;
 
-    color: #17415a;
+    line-height: 1.7;
 }
 
 .gov-contact-chat-btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    gap: 9px;
 
-    gap: 7px;
+    min-height: 44px;
 
-    min-height: 33px;
+    padding: 0 17px;
 
-    padding: 0 15px;
+    border-radius: 6px;
 
-    border-radius: 5px;
+    background: #ffffff;
 
-    background: #2475a8;
-    color: #fff;
+    color: var(--gov-contact-primary);
+
+    font-size: 13px;
+    font-weight: 800;
 
     text-decoration: none;
 
-    font-size: 17px;
-
     transition:
-        background .25s ease,
-        transform .25s ease;
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
 }
 
 .gov-contact-chat-btn:hover {
-    background: #155b86;
     transform: translateY(-2px);
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 
@@ -4987,20 +5413,18 @@ if (stkServicesHero && stkServicesBackground) {
 
     width: 100%;
 
-    height: 300px;
-
-    margin-top: 32px;
+    height: 410px;
 
     overflow: hidden;
 
-    background: #e8edf1;
+    background: #dbe4ec;
 }
 
-.gov-contact-map-section iframe {
+.gov-contact-map {
+    display: block;
+
     width: 100%;
     height: 100%;
-
-    display: block;
 
     border: 0;
 }
@@ -5008,35 +5432,75 @@ if (stkServicesHero && stkServicesBackground) {
 .gov-contact-map-marker {
     position: absolute;
 
-    top: 50%;
     left: 50%;
+    top: 50%;
 
-    width: 65px;
-    height: 65px;
+    transform: translate(-50%, -50%);
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 55px;
+    height: 55px;
 
-    border-radius: 50% 50% 50% 0;
+    display: grid;
+    place-items: center;
 
-    background: #ef2929;
-    color: #fff;
+    border: 5px solid rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
 
-    font-size: 27px;
+    background: var(--gov-contact-primary);
 
-    transform:
-        translate(-50%, -65%)
-        rotate(-45deg);
+    color: #ffffff;
+
+    font-size: 21px;
 
     box-shadow:
-        0 8px 25px rgba(0,0,0,.25);
+        0 8px 25px rgba(0, 0, 0, 0.22);
 
     pointer-events: none;
 }
 
-.gov-contact-map-marker i {
-    transform: rotate(45deg);
+.gov-contact-map-label {
+    position: absolute;
+
+    left: 25px;
+    bottom: 25px;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 12px 16px;
+
+    border-radius: 8px;
+
+    background: rgba(255, 255, 255, 0.96);
+
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.12);
+
+    pointer-events: none;
+}
+
+.gov-contact-map-label > i {
+    color: var(--gov-contact-primary);
+
+    font-size: 18px;
+}
+
+.gov-contact-map-label div {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.gov-contact-map-label strong {
+    color: #26394c;
+
+    font-size: 13px;
+}
+
+.gov-contact-map-label span {
+    color: #718294;
+
+    font-size: 11px;
 }
 
 
@@ -5047,149 +5511,145 @@ if (stkServicesHero && stkServicesBackground) {
 .gov-contact-service-section {
     width: 100%;
 
-    padding: 16px 20px;
+    padding: 60px 20px;
 
-    background: #43a7a5;
+    background:
+        linear-gradient(
+            120deg,
+            #0e467f,
+            #1558a6
+        );
+
+    color: #ffffff;
 }
 
 .gov-contact-service-inner {
-    width: min(1180px, 100%);
+    width: min(1380px, 100%);
+
     margin: 0 auto;
 
     display: grid;
 
-    grid-template-columns:
-        minmax(240px, .75fr)
-        minmax(0, 1.75fr);
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
 
-    align-items: stretch;
+    gap: 55px;
 
-    gap: 20px;
+    align-items: center;
 }
 
-
-/* =========================================================
-   SERVICE TEXT
-========================================================= */
-
 .gov-contact-service-text {
-    padding: 14px 5px;
+    min-width: 0;
+}
+
+.gov-contact-service-text .gov-contact-section-label {
+    color: #8de0ad;
 }
 
 .gov-contact-service-text h2 {
-    margin: 0 0 8px;
+    margin: 0 0 12px;
 
-    font-size: 17px;
-    line-height: 1.4;
+    max-width: 620px;
 
-    color: #071f20;
+    font-size: 31px;
+
+    line-height: 1.25;
 }
 
 .gov-contact-service-text p {
-    margin: 0 0 12px;
+    margin: 0 0 25px;
 
-    font-size: 15px;
+    color: rgba(255, 255, 255, 0.8);
 
-    color: #143b3c;
+    font-size: 14px;
 }
 
 .gov-contact-service-btn {
     display: inline-flex;
     align-items: center;
-    justify-content: center;
+    gap: 10px;
 
-    min-height: 32px;
+    min-height: 45px;
 
-    padding: 0 14px;
+    padding: 0 18px;
 
-    border-radius: 5px;
+    border-radius: 6px;
 
-    background: #1454dc;
-    color: #fff;
+    background: #ffffff;
+
+    color: var(--gov-contact-primary);
+
+    font-size: 13px;
+    font-weight: 800;
 
     text-decoration: none;
 
-    font-size: 15px;
-
     transition:
-        background .25s ease,
-        transform .25s ease;
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
 }
 
 .gov-contact-service-btn:hover {
-    background: #0c3eb2;
     transform: translateY(-2px);
+
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.16);
 }
 
-
-/* =========================================================
-   SERVICE FEATURES
-========================================================= */
-
 .gov-contact-service-features {
-    min-width: 0;
-
     display: grid;
 
-    grid-template-columns:
-        repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
 
-    background: #fff;
+    gap: 15px;
 }
 
 .gov-contact-feature {
-    min-width: 0;
-
-    min-height: 88px;
-
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 
-    gap: 10px;
+    gap: 14px;
 
-    padding: 12px;
+    padding: 18px;
 
-    border-right: 1px solid #d7d7d7;
-}
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 9px;
 
-.gov-contact-feature:last-child {
-    border-right: 0;
+    background: rgba(255, 255, 255, 0.07);
 }
 
 .gov-contact-feature > i {
-    min-width: 27px;
+    flex: 0 0 auto;
 
-    font-size: 21px;
+    width: 39px;
+    height: 39px;
 
-    color: #39a77e;
-}
+    display: grid;
+    place-items: center;
 
-.gov-contact-feature:nth-child(2) > i {
-    color: #111;
-}
+    border-radius: 8px;
 
-.gov-contact-feature:nth-child(3) > i {
-    color: #f39b2f;
-}
+    background: rgba(255, 255, 255, 0.12);
 
-.gov-contact-feature:nth-child(4) > i {
-    color: #8b37d5;
+    color: #ffffff;
+
+    font-size: 15px;
 }
 
 .gov-contact-feature h4 {
-    margin: 0 0 4px;
+    margin: 0 0 5px;
 
-    font-size: 17px;
-    font-weight: 700;
+    color: #ffffff;
+
+    font-size: 14px;
 }
 
 .gov-contact-feature p {
     margin: 0;
 
-    font-size: 12px;
-    line-height: 1.35;
+    color: rgba(255, 255, 255, 0.68);
 
-    color: #555;
+    font-size: 11px;
+
+    line-height: 1.5;
 }
 
 
@@ -5210,122 +5670,173 @@ if (stkServicesHero && stkServicesBackground) {
 
     padding: 20px;
 
-    background: rgba(7, 25, 42, .58);
+    background: rgba(10, 29, 49, 0.65);
+
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
 
     opacity: 0;
     visibility: hidden;
 
     transition:
-        opacity .3s ease,
-        visibility .3s ease;
-
-    backdrop-filter: blur(5px);
+        opacity 0.3s ease,
+        visibility 0.3s ease;
 }
 
-.gov-contact-success-overlay.gov-contact-popup-visible {
+.gov-contact-success-overlay.gov-contact-success-visible {
     opacity: 1;
     visibility: visible;
 }
 
-.gov-contact-success-box {
-    width: min(390px, 100%);
+.gov-contact-success-popup {
+    width: min(430px, 100%);
 
-    padding: 35px 28px;
+    padding: 38px 32px 30px;
 
     text-align: center;
 
-    border-radius: 16px;
+    background: #ffffff;
 
-    background: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+
+    border-radius: 18px;
 
     box-shadow:
-        0 25px 70px rgba(0,0,0,.25);
+        0 25px 80px rgba(0, 0, 0, 0.25);
 
-    transform:
-        translateY(30px)
-        scale(.95);
+    transform: translateY(25px) scale(0.95);
 
-    transition:
-        transform .35s ease;
+    transition: transform 0.4s cubic-bezier(.2,.8,.2,1);
 }
 
-.gov-contact-popup-visible
-.gov-contact-success-box {
-    transform:
-        translateY(0)
-        scale(1);
+.gov-contact-success-visible .gov-contact-success-popup {
+    transform: translateY(0) scale(1);
 }
 
 .gov-contact-success-icon {
-    width: 65px;
-    height: 65px;
+    width: 70px;
+    height: 70px;
 
-    margin: 0 auto 15px;
+    display: grid;
+    place-items: center;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin: 0 auto 18px;
 
     border-radius: 50%;
 
-    background: #ddf8e9;
+    background: #e5f8ec;
 
-    color: #20ae68;
+    color: #168447;
 
-    font-size: 28px;
+    font-size: 29px;
+
+    animation: govContactSuccessPulse 1.8s ease infinite;
 }
 
-.gov-contact-success-box h3 {
-    margin: 0 0 8px;
+.gov-contact-success-small {
+    display: block;
 
-    font-size: 17px;
+    margin-bottom: 7px;
+
+    color: #168447;
+
+    font-size: 10px;
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
 }
 
-.gov-contact-success-box p {
-    margin: 0;
+.gov-contact-success-popup h3 {
+    margin: 0 0 10px;
 
-    color: #666;
+    color: #1c2f42;
+
+    font-size: 27px;
+}
+
+.gov-contact-success-popup p {
+    margin: 0 auto 20px;
+
+    max-width: 350px;
+
+    color: #6b7d8e;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+}
+
+.gov-contact-success-progress {
+    width: 100%;
+    height: 4px;
+
+    overflow: hidden;
+
+    margin-bottom: 10px;
+
+    border-radius: 20px;
+
+    background: #e7edf3;
+}
+
+.gov-contact-success-progress span {
+    display: block;
+
+    width: 0;
+    height: 100%;
+
+    border-radius: inherit;
+
+    background: var(--gov-contact-secondary);
+
+    animation: govContactSuccessProgress 2.3s linear forwards;
+}
+
+.gov-contact-success-popup > small {
+    color: #8a9aaa;
 
     font-size: 11px;
 }
 
-.gov-contact-success-loader {
-    width: 30px;
-    height: 30px;
 
-    margin: 18px auto 0;
+@keyframes govContactSuccessPulse {
 
-    border: 3px solid #dce7ff;
-    border-top-color: var(--gov-contact-primary);
+    0%,
+    100% {
+        transform: scale(1);
+    }
 
-    border-radius: 50%;
-
-    animation:
-        gov-contact-spin .8s linear infinite;
+    50% {
+        transform: scale(1.06);
+    }
 }
 
-@keyframes gov-contact-spin {
+@keyframes govContactSuccessProgress {
+    from {
+        width: 0;
+    }
+
     to {
-        transform: rotate(360deg);
+        width: 100%;
     }
 }
 
 
 /* =========================================================
-   REVEAL ANIMATION
+   SCROLL REVEAL
 ========================================================= */
 
 .gov-contact-reveal {
     opacity: 0;
 
-    transform: translateY(45px);
+    transform: translateY(22px);
 
     transition:
-        opacity .75s cubic-bezier(.2,.7,.2,1),
-        transform .75s cubic-bezier(.2,.7,.2,1);
+        opacity 0.7s ease,
+        transform 0.7s ease;
 }
 
-.gov-contact-reveal.gov-contact-visible {
+.gov-contact-reveal.gov-contact-show {
     opacity: 1;
 
     transform: translateY(0);
@@ -5333,48 +5844,26 @@ if (stkServicesHero && stkServicesBackground) {
 
 
 /* =========================================================
-   STAGGER
+   LAPTOP
 ========================================================= */
 
-.gov-contact-info-card:nth-child(1) {
-    transition-delay: .05s;
-}
+@media (max-width: 1200px) {
 
-.gov-contact-info-card:nth-child(2) {
-    transition-delay: .15s;
-}
+    .gov-contact-info-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
 
-.gov-contact-info-card:nth-child(3) {
-    transition-delay: .25s;
-}
+    .gov-contact-help-section {
+        grid-template-columns: minmax(0, 1fr) 300px;
+    }
 
-.gov-contact-info-card:nth-child(4) {
-    transition-delay: .35s;
-}
+    .gov-contact-service-inner {
+        gap: 35px;
+    }
 
-.gov-contact-form-row .gov-contact-field:nth-child(2) {
-    transition-delay: .12s;
-}
-
-.gov-contact-help-section
-.gov-contact-help-card {
-    transition-delay: .15s;
-}
-
-.gov-contact-feature:nth-child(1) {
-    transition-delay: .05s;
-}
-
-.gov-contact-feature:nth-child(2) {
-    transition-delay: .15s;
-}
-
-.gov-contact-feature:nth-child(3) {
-    transition-delay: .25s;
-}
-
-.gov-contact-feature:nth-child(4) {
-    transition-delay: .35s;
+    .gov-contact-service-text h2 {
+        font-size: 28px;
+    }
 }
 
 
@@ -5382,71 +5871,30 @@ if (stkServicesHero && stkServicesBackground) {
    TABLET
 ========================================================= */
 
-@media (max-width: 1024px) {
+@media (max-width: 900px) {
 
-    .gov-contact-container {
-        width: min(94%, 900px);
+    .gov-contact-page .gov-contact-main {
+        padding: 25px 18px 55px;
     }
-
-    .gov-contact-info-grid {
-        grid-template-columns:
-            repeat(2, minmax(0, 1fr));
-    }
-
-    .gov-contact-info-card:nth-child(2) {
-        border-right: 0;
-    }
-
-    .gov-contact-info-card:nth-child(1),
-    .gov-contact-info-card:nth-child(2) {
-        border-bottom: 1px solid #dedede;
-    }
-
-    .gov-contact-info-card:nth-child(3) {
-        border-right: 1px solid #dedede;
-    }
-
-    .gov-contact-help-section {
-        grid-template-columns:
-            minmax(0, 1.5fr)
-            minmax(230px, .7fr);
-    }
-
-    .gov-contact-service-inner {
-        grid-template-columns: 1fr;
-    }
-
-    .gov-contact-service-text {
-        padding-bottom: 5px;
-    }
-
-}
-
-
-/* =========================================================
-   TABLET / SMALL LAPTOP
-========================================================= */
-
-@media (max-width: 820px) {
 
     .gov-contact-toolbar {
         align-items: stretch;
+
         flex-direction: column;
-        padding: 15px 0;
+
+        gap: 16px;
     }
 
     .gov-contact-search {
         width: 100%;
     }
 
-    .gov-contact-form-row {
-        grid-template-columns: 1fr;
-        gap: 0;
-        margin-bottom: 0;
+    .gov-contact-info-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
-    .gov-contact-form-row .gov-contact-field {
-        margin-bottom: 17px;
+    .gov-contact-form-section {
+        padding: 28px;
     }
 
     .gov-contact-help-section {
@@ -5454,23 +5902,18 @@ if (stkServicesHero && stkServicesBackground) {
     }
 
     .gov-contact-help-card {
-        min-height: 190px;
+        min-height: 280px;
     }
 
-    .gov-contact-service-features {
-        grid-template-columns:
-            repeat(2, minmax(0, 1fr));
+    .gov-contact-service-inner {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
     }
 
-    .gov-contact-feature:nth-child(2) {
-        border-right: 0;
+    .gov-contact-map-section {
+        height: 360px;
     }
-
-    .gov-contact-feature:nth-child(1),
-    .gov-contact-feature:nth-child(2) {
-        border-bottom: 1px solid #d7d7d7;
-    }
-
 }
 
 
@@ -5480,119 +5923,188 @@ if (stkServicesHero && stkServicesBackground) {
 
 @media (max-width: 600px) {
 
-    .gov-contact-container {
-        width: calc(100% - 28px);
-    }
-
-    .gov-contact-toolbar {
-        min-height: auto;
+    .gov-contact-page .gov-contact-main {
+        padding: 20px 13px 45px;
     }
 
     .gov-contact-breadcrumb {
-        font-size: 10px;
+        font-size: 12px;
+    }
+
+    .gov-contact-toolbar {
+        margin-bottom: 24px;
     }
 
     .gov-contact-search {
-        height: 40px;
+        min-height: 45px;
     }
 
     .gov-contact-search input {
-        font-size: 10px;
+        font-size: 12px;
+
+        padding: 11px 8px;
     }
 
     .gov-contact-search button {
-        min-width: 65px;
+        min-height: 45px;
+
+        padding: 0 14px;
+
+        font-size: 12px;
     }
-
-
-    /* INFO */
 
     .gov-contact-info-grid {
         grid-template-columns: 1fr;
+
+        gap: 12px;
     }
 
     .gov-contact-info-card {
-        min-height: 92px;
-
-        border-right: 0 !important;
-        border-bottom: 1px solid #dedede;
+        padding: 17px 15px;
     }
 
-    .gov-contact-info-card:last-child {
-        border-bottom: 0;
+    .gov-contact-info-icon {
+        width: 43px;
+        height: 43px;
+
+        flex-basis: 43px;
+
+        font-size: 17px;
     }
 
-
-    /* FORM */
-
-    .gov-contact-form-section {
-        padding-top: 22px;
-    }
-
-    .gov-contact-section-heading h2 {
+    .gov-contact-info-content a {
         font-size: 15px;
     }
 
+    .gov-contact-info-content p {
+        font-size: 12px;
+    }
+
+    .gov-contact-info-content small {
+        font-size: 11px;
+    }
+
+    .gov-contact-form-section {
+        padding: 22px 16px;
+
+        border-radius: 10px;
+    }
+
+    .gov-contact-section-heading h2 {
+        font-size: 23px;
+    }
+
     .gov-contact-section-heading p {
-        font-size: 9px;
+        font-size: 12px;
+    }
+
+    .gov-contact-form-row {
+        grid-template-columns: 1fr;
+
+        gap: 0;
+
+        margin-bottom: 0;
+    }
+
+    .gov-contact-field {
+        margin-bottom: 17px;
+    }
+
+    .gov-contact-field label {
+        font-size: 12px;
     }
 
     .gov-contact-field input,
     .gov-contact-field select {
-        height: 42px;
+        height: 47px;
+
+        font-size: 13px;
     }
 
     .gov-contact-field textarea {
-        min-height: 120px;
+        min-height: 130px;
+
+        font-size: 13px;
     }
 
-
-    /* FAQ */
-
-    .gov-contact-help-section {
-        margin-top: 22px;
+    .gov-contact-submit {
+        width: 100%;
     }
 
-    .gov-contact-faq-box h3 {
+    .gov-contact-faq-box {
+        padding: 20px 15px;
+    }
+
+    .gov-contact-faq-heading h3 {
+        font-size: 20px;
+    }
+
+    .gov-contact-faq-item summary {
+        padding: 15px 13px;
+
         font-size: 12px;
     }
 
-    .gov-contact-faq-list summary {
-        min-height: 48px;
-
-        padding: 0 12px;
-
-        font-size: 10px;
+    .gov-contact-faq-item summary > span {
+        gap: 8px;
     }
 
+    .gov-contact-faq-answer {
+        padding: 0 13px 15px 35px;
+    }
 
-    /* MAP */
+    .gov-contact-faq-answer p {
+        font-size: 12px;
+    }
+
+    .gov-contact-help-card {
+        min-height: auto;
+
+        padding: 25px 20px;
+    }
+
+    .gov-contact-help-card h3 {
+        font-size: 21px;
+    }
 
     .gov-contact-map-section {
-        height: 250px;
-        margin-top: 25px;
+        height: 300px;
     }
 
     .gov-contact-map-marker {
-        width: 55px;
-        height: 55px;
+        width: 48px;
+        height: 48px;
 
-        font-size: 23px;
+        border-width: 4px;
+
+        font-size: 18px;
     }
 
+    .gov-contact-map-label {
+        left: 12px;
+        bottom: 12px;
 
-    /* CTA */
+        padding: 9px 11px;
+    }
+
+    .gov-contact-map-label strong {
+        font-size: 11px;
+    }
+
+    .gov-contact-map-label span {
+        font-size: 9px;
+    }
 
     .gov-contact-service-section {
-        padding: 22px 14px;
-    }
-
-    .gov-contact-service-inner {
-        gap: 15px;
+        padding: 45px 15px;
     }
 
     .gov-contact-service-text h2 {
-        font-size: 14px;
+        font-size: 24px;
+    }
+
+    .gov-contact-service-text p {
+        font-size: 12px;
     }
 
     .gov-contact-service-features {
@@ -5600,23 +6112,23 @@ if (stkServicesHero && stkServicesBackground) {
     }
 
     .gov-contact-feature {
-        min-height: 75px;
-
-        border-right: 0 !important;
-        border-bottom: 1px solid #d7d7d7;
+        padding: 15px;
     }
 
-    .gov-contact-feature:last-child {
-        border-bottom: 0;
+    .gov-contact-success-popup {
+        padding: 32px 20px 25px;
     }
 
+    .gov-contact-success-icon {
+        width: 62px;
+        height: 62px;
 
-    /* POPUP */
-
-    .gov-contact-success-box {
-        padding: 30px 20px;
+        font-size: 25px;
     }
 
+    .gov-contact-success-popup h3 {
+        font-size: 24px;
+    }
 }
 
 
@@ -5626,871 +6138,778 @@ if (stkServicesHero && stkServicesBackground) {
 
 @media (max-width: 380px) {
 
-    .gov-contact-container {
-        width: calc(100% - 20px);
+    .gov-contact-page .gov-contact-main {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .gov-contact-search button {
+        padding: 0 10px;
     }
 
     .gov-contact-info-card {
-        padding: 14px;
+        gap: 11px;
     }
 
     .gov-contact-info-icon {
-        width: 38px;
-        height: 38px;
-        min-width: 38px;
+        width: 40px;
+        height: 40px;
+
+        flex-basis: 40px;
     }
 
-    .gov-contact-info-title {
-        font-size: 10px;
+    .gov-contact-section-heading h2 {
+        font-size: 21px;
     }
 
-    .gov-contact-info-content p,
-    .gov-contact-info-content small {
-        font-size: 7.5px;
+    .gov-contact-faq-item summary {
+        font-size: 11px;
     }
 
-    .gov-contact-submit {
-        height: 43px;
+    .gov-contact-success-popup {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .gov-contact-page *,
+    .gov-contact-page *::before,
+    .gov-contact-page *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
     }
 
 }
     </style>
 
     <script>
-
         /* =========================================================
-   STACKLY GOVERNMENT CONTACT PAGE JS
-   NAMESPACE: govContact
+   STACKLY GOVERNMENT CONTACT PAGE
+   NON-CONFLICTING JAVASCRIPT
 ========================================================= */
 
-document.addEventListener("DOMContentLoaded", function () {
+(function () {
 
 "use strict";
 
 
 /* =====================================================
-   SCROLL REVEAL
+   DOM READY
 ====================================================== */
 
-const revealElements =
-    document.querySelectorAll(".gov-contact-reveal");
+document.addEventListener("DOMContentLoaded", function () {
 
 
-if (revealElements.length) {
+    /* =================================================
+       ELEMENTS
+    ================================================= */
 
-    const revealObserver =
-        new IntersectionObserver(
-            function (entries) {
+    const govContactForm =
+        document.getElementById("govContactForm");
 
-                entries.forEach(function (entry) {
+    const govContactName =
+        document.getElementById("govContactName");
 
-                    if (entry.isIntersecting) {
+    const govContactEmail =
+        document.getElementById("govContactEmail");
 
-                        entry.target.classList.add(
-                            "gov-contact-visible"
-                        );
+    const govContactPhone =
+        document.getElementById("govContactPhone");
 
-                        revealObserver.unobserve(
-                            entry.target
-                        );
+    const govContactSubject =
+        document.getElementById("govContactSubject");
 
-                    }
+    const govContactDepartment =
+        document.getElementById("govContactDepartment");
 
-                });
+    const govContactMessage =
+        document.getElementById("govContactMessage");
 
-            },
-            {
-                threshold: 0.12,
-                rootMargin: "0px 0px -50px 0px"
-            }
-        );
+    const govContactTerms =
+        document.getElementById("govContactTerms");
 
+    const govContactSuccessOverlay =
+        document.getElementById("govContactSuccessOverlay");
 
-    revealElements.forEach(function (element) {
+    const govContactFormMessage =
+        document.getElementById("govContactFormMessage");
 
-        revealObserver.observe(element);
+    const govContactSearchForm =
+        document.getElementById("govContactSearchForm");
 
-    });
-
-}
-
-
-/* =====================================================
-   SEARCH
-====================================================== */
-
-const searchForm =
-    document.getElementById(
-        "govContactSearchForm"
-    );
-
-const searchInput =
-    document.getElementById(
-        "govContactSearchInput"
-    );
+    const govContactSearchInput =
+        document.getElementById("govContactSearchInput");
 
 
-if (searchForm && searchInput) {
+    /* =================================================
+       VALIDATION HELPERS
+    ================================================== */
 
-    searchForm.addEventListener(
-        "submit",
-        function (event) {
+    function govContactSetError(field, errorId, message) {
 
-            event.preventDefault();
+        const errorElement =
+            document.getElementById(errorId);
 
-            const searchValue =
-                searchInput.value.trim();
+        const parent =
+            field.closest(".gov-contact-field");
 
+        if (parent) {
 
-            /* EMPTY SEARCH */
+            parent.classList.remove(
+                "gov-contact-valid"
+            );
 
-            if (!searchValue) {
-
-                searchInput.focus();
-
-                searchInput.style.border =
-                    "2px solid #e53935";
-
-                searchInput.placeholder =
-                    "Please enter search details";
-
-                setTimeout(function () {
-
-                    searchInput.style.border =
-                        "";
-
-                    searchInput.placeholder =
-                        "Search for service, department, schemes...";
-
-                }, 2500);
-
-                return;
-
-            }
-
-
-            /* FILLED SEARCH */
-
-            window.location.href =
-                "404.html";
-
+            parent.classList.add(
+                "gov-contact-invalid"
+            );
         }
-    );
 
-}
+        if (errorElement) {
 
+            errorElement.textContent = message;
+        }
 
-/* =====================================================
-   CONTACT FORM
-====================================================== */
-
-const contactForm =
-    document.getElementById(
-        "govContactForm"
-    );
+        return false;
+    }
 
 
-if (!contactForm) {
-    return;
-}
+    function govContactSetValid(field, errorId) {
+
+        const errorElement =
+            document.getElementById(errorId);
+
+        const parent =
+            field.closest(".gov-contact-field");
+
+        if (parent) {
+
+            parent.classList.remove(
+                "gov-contact-invalid"
+            );
+
+            parent.classList.add(
+                "gov-contact-valid"
+            );
+        }
+
+        if (errorElement) {
+
+            errorElement.textContent = "";
+        }
+
+        return true;
+    }
 
 
-const nameInput =
-    document.getElementById(
-        "govContactName"
-    );
+    function govContactClearFieldState(field, errorId) {
 
-const emailInput =
-    document.getElementById(
-        "govContactEmail"
-    );
+        const errorElement =
+            document.getElementById(errorId);
 
-const phoneInput =
-    document.getElementById(
-        "govContactPhone"
-    );
+        const parent =
+            field.closest(".gov-contact-field");
 
-const subjectInput =
-    document.getElementById(
-        "govContactSubject"
-    );
+        if (parent) {
 
-const messageInput =
-    document.getElementById(
-        "govContactMessage"
-    );
+            parent.classList.remove(
+                "gov-contact-invalid",
+                "gov-contact-valid"
+            );
+        }
 
-const termsInput =
-    document.getElementById(
-        "govContactTerms"
-    );
+        if (errorElement) {
+
+            errorElement.textContent = "";
+        }
+    }
 
 
-const formMessage =
-    document.getElementById(
-        "govContactFormMessage"
-    );
+    /* =================================================
+       NAME VALIDATION
+    ================================================== */
 
-const successPopup =
-    document.getElementById(
-        "govContactSuccessPopup"
-    );
+    function govContactValidateName() {
 
+        const value =
+            govContactName.value.trim();
 
-/* =====================================================
-   ERROR ELEMENTS
-====================================================== */
+        if (value === "") {
 
-const errors = {
+            return govContactSetError(
+                govContactName,
+                "govContactNameError",
+                "Please enter your full name."
+            );
+        }
 
-    name:
-        document.getElementById(
+        if (value.length < 3) {
+
+            return govContactSetError(
+                govContactName,
+                "govContactNameError",
+                "Name must contain at least 3 characters."
+            );
+        }
+
+        if (!/^[A-Za-zÀ-ÿ\s.'-]+$/.test(value)) {
+
+            return govContactSetError(
+                govContactName,
+                "govContactNameError",
+                "Please enter a valid name."
+            );
+        }
+
+        return govContactSetValid(
+            govContactName,
             "govContactNameError"
-        ),
+        );
+    }
 
-    email:
-        document.getElementById(
+
+    /* =================================================
+       EMAIL VALIDATION
+    ================================================== */
+
+    function govContactValidateEmail() {
+
+        const value =
+            govContactEmail.value.trim();
+
+        const emailPattern =
+            /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+
+        if (value === "") {
+
+            return govContactSetError(
+                govContactEmail,
+                "govContactEmailError",
+                "Please enter your email address."
+            );
+        }
+
+        if (!emailPattern.test(value)) {
+
+            return govContactSetError(
+                govContactEmail,
+                "govContactEmailError",
+                "Please enter a valid email address."
+            );
+        }
+
+        return govContactSetValid(
+            govContactEmail,
             "govContactEmailError"
-        ),
+        );
+    }
 
-    phone:
-        document.getElementById(
+
+    /* =================================================
+       PHONE VALIDATION
+    ================================================== */
+
+    function govContactValidatePhone() {
+
+        const value =
+            govContactPhone.value.trim();
+
+        if (value === "") {
+
+            return govContactSetError(
+                govContactPhone,
+                "govContactPhoneError",
+                "Please enter your mobile number."
+            );
+        }
+
+        if (!/^[6-9][0-9]{9}$/.test(value)) {
+
+            return govContactSetError(
+                govContactPhone,
+                "govContactPhoneError",
+                "Enter a valid 10-digit mobile number."
+            );
+        }
+
+        return govContactSetValid(
+            govContactPhone,
             "govContactPhoneError"
-        ),
+        );
+    }
 
-    subject:
-        document.getElementById(
+
+    /* =================================================
+       SUBJECT VALIDATION
+    ================================================== */
+
+    function govContactValidateSubject() {
+
+        if (govContactSubject.value === "") {
+
+            return govContactSetError(
+                govContactSubject,
+                "govContactSubjectError",
+                "Please select a subject."
+            );
+        }
+
+        return govContactSetValid(
+            govContactSubject,
             "govContactSubjectError"
-        ),
+        );
+    }
 
-    message:
-        document.getElementById(
+
+    /* =================================================
+       MESSAGE VALIDATION
+    ================================================== */
+
+    function govContactValidateMessage() {
+
+        const value =
+            govContactMessage.value.trim();
+
+        if (value === "") {
+
+            return govContactSetError(
+                govContactMessage,
+                "govContactMessageError",
+                "Please enter your message."
+            );
+        }
+
+        if (value.length < 10) {
+
+            return govContactSetError(
+                govContactMessage,
+                "govContactMessageError",
+                "Message must contain at least 10 characters."
+            );
+        }
+
+        return govContactSetValid(
+            govContactMessage,
             "govContactMessageError"
-        ),
-
-    terms:
-        document.getElementById(
-            "govContactTermsError"
-        )
-
-};
-
-
-/* =====================================================
-   HELPERS
-====================================================== */
-
-function setFieldError(
-    input,
-    errorElement,
-    message
-) {
-
-    const field =
-        input.closest(
-            ".gov-contact-field"
         );
-
-
-    if (field) {
-
-        field.classList.add(
-            "gov-contact-invalid"
-        );
-
-        field.classList.remove(
-            "gov-contact-valid"
-        );
-
     }
 
 
-    if (errorElement) {
+    /* =================================================
+       TERMS VALIDATION
+    ================================================== */
 
-        errorElement.textContent =
-            message;
+    function govContactValidateTerms() {
 
-    }
+        const errorElement =
+            document.getElementById(
+                "govContactTermsError"
+            );
 
-}
+        const termsContainer =
+            document.querySelector(
+                ".gov-contact-terms"
+            );
 
+        if (!govContactTerms.checked) {
 
-function setFieldValid(
-    input,
-    errorElement
-) {
+            if (termsContainer) {
 
-    const field =
-        input.closest(
-            ".gov-contact-field"
-        );
+                termsContainer.classList.add(
+                    "gov-contact-invalid"
+                );
+            }
 
+            if (errorElement) {
 
-    if (field) {
+                errorElement.textContent =
+                    "Please accept the Terms & Conditions and Privacy Policy.";
+            }
 
-        field.classList.remove(
-            "gov-contact-invalid"
-        );
-
-        field.classList.add(
-            "gov-contact-valid"
-        );
-
-    }
-
-
-    if (errorElement) {
-
-        errorElement.textContent =
-            "";
-
-    }
-
-}
-
-
-function clearFieldState(
-    input,
-    errorElement
-) {
-
-    const field =
-        input.closest(
-            ".gov-contact-field"
-        );
-
-
-    if (field) {
-
-        field.classList.remove(
-            "gov-contact-invalid",
-            "gov-contact-valid"
-        );
-
-    }
-
-
-    if (errorElement) {
-
-        errorElement.textContent =
-            "";
-
-    }
-
-}
-
-
-/* =====================================================
-   NAME VALIDATION
-====================================================== */
-
-function validateName() {
-
-    const value =
-        nameInput.value.trim();
-
-
-    if (!value) {
-
-        setFieldError(
-            nameInput,
-            errors.name,
-            "Please enter your full name."
-        );
-
-        return false;
-
-    }
-
-
-    if (value.length < 3) {
-
-        setFieldError(
-            nameInput,
-            errors.name,
-            "Name must contain at least 3 characters."
-        );
-
-        return false;
-
-    }
-
-
-    if (!/^[A-Za-z\s.'-]+$/.test(value)) {
-
-        setFieldError(
-            nameInput,
-            errors.name,
-            "Please enter a valid name."
-        );
-
-        return false;
-
-    }
-
-
-    setFieldValid(
-        nameInput,
-        errors.name
-    );
-
-    return true;
-
-}
-
-
-/* =====================================================
-   EMAIL VALIDATION
-====================================================== */
-
-function validateEmail() {
-
-    const value =
-        emailInput.value.trim();
-
-
-    const emailPattern =
-        /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
-
-
-    if (!value) {
-
-        setFieldError(
-            emailInput,
-            errors.email,
-            "Please enter your email address."
-        );
-
-        return false;
-
-    }
-
-
-    if (!emailPattern.test(value)) {
-
-        setFieldError(
-            emailInput,
-            errors.email,
-            "Please enter a valid email address."
-        );
-
-        return false;
-
-    }
-
-
-    setFieldValid(
-        emailInput,
-        errors.email
-    );
-
-    return true;
-
-}
-
-
-/* =====================================================
-   PHONE VALIDATION
-====================================================== */
-
-function validatePhone() {
-
-    const value =
-        phoneInput.value.trim();
-
-
-    if (!value) {
-
-        setFieldError(
-            phoneInput,
-            errors.phone,
-            "Please enter your mobile number."
-        );
-
-        return false;
-
-    }
-
-
-    if (!/^[6-9]\d{9}$/.test(value)) {
-
-        setFieldError(
-            phoneInput,
-            errors.phone,
-            "Please enter a valid 10-digit mobile number."
-        );
-
-        return false;
-
-    }
-
-
-    setFieldValid(
-        phoneInput,
-        errors.phone
-    );
-
-    return true;
-
-}
-
-
-/* =====================================================
-   SUBJECT
-====================================================== */
-
-function validateSubject() {
-
-    if (!subjectInput.value) {
-
-        setFieldError(
-            subjectInput,
-            errors.subject,
-            "Please select a subject."
-        );
-
-        return false;
-
-    }
-
-
-    setFieldValid(
-        subjectInput,
-        errors.subject
-    );
-
-    return true;
-
-}
-
-
-/* =====================================================
-   MESSAGE
-====================================================== */
-
-function validateMessage() {
-
-    const value =
-        messageInput.value.trim();
-
-
-    if (!value) {
-
-        setFieldError(
-            messageInput,
-            errors.message,
-            "Please enter your message."
-        );
-
-        return false;
-
-    }
-
-
-    if (value.length < 10) {
-
-        setFieldError(
-            messageInput,
-            errors.message,
-            "Message must contain at least 10 characters."
-        );
-
-        return false;
-
-    }
-
-
-    setFieldValid(
-        messageInput,
-        errors.message
-    );
-
-    return true;
-
-}
-
-
-/* =====================================================
-   TERMS
-====================================================== */
-
-function validateTerms() {
-
-    const termsContainer =
-        document.querySelector(
-            ".gov-contact-terms"
-        );
-
-
-    if (!termsInput.checked) {
+            return false;
+        }
 
         if (termsContainer) {
 
-            termsContainer.style.color =
-                "#e53935";
-
+            termsContainer.classList.remove(
+                "gov-contact-invalid"
+            );
         }
 
-        errors.terms.textContent =
-            "Please accept the Terms & Conditions and Privacy Policy.";
+        if (errorElement) {
 
-        return false;
+            errorElement.textContent = "";
+        }
 
+        return true;
     }
 
 
-    if (termsContainer) {
+    /* =================================================
+       REMOVE INVALID STATE WHILE TYPING
+    ================================================== */
 
-        termsContainer.style.color =
-            "";
+    govContactName.addEventListener(
+        "input",
+        govContactValidateName
+    );
 
-    }
+    govContactEmail.addEventListener(
+        "input",
+        govContactValidateEmail
+    );
 
-    errors.terms.textContent =
-        "";
+    govContactPhone.addEventListener(
+        "input",
+        function () {
 
-    return true;
+            this.value =
+                this.value.replace(/\D/g, "").slice(0, 10);
 
-}
+            govContactValidatePhone();
+        }
+    );
 
+    govContactSubject.addEventListener(
+        "change",
+        govContactValidateSubject
+    );
 
-/* =====================================================
-   LIVE VALIDATION
-====================================================== */
+    govContactMessage.addEventListener(
+        "input",
+        govContactValidateMessage
+    );
 
-nameInput.addEventListener(
-    "blur",
-    validateName
-);
-
-emailInput.addEventListener(
-    "blur",
-    validateEmail
-);
-
-phoneInput.addEventListener(
-    "blur",
-    validatePhone
-);
-
-subjectInput.addEventListener(
-    "change",
-    validateSubject
-);
-
-messageInput.addEventListener(
-    "blur",
-    validateMessage
-);
+    govContactTerms.addEventListener(
+        "change",
+        govContactValidateTerms
+    );
 
 
-/* =====================================================
-   PHONE ONLY NUMBERS
-====================================================== */
+    /* =================================================
+       FORM SUBMIT
+    ================================================== */
 
-phoneInput.addEventListener(
-    "input",
-    function () {
+    if (govContactForm) {
 
-        this.value =
-            this.value
-                .replace(/\D/g, "")
-                .slice(0, 10);
+        govContactForm.addEventListener(
+            "submit",
+            function (event) {
 
-    }
-);
+                event.preventDefault();
 
 
-/* =====================================================
-   REMOVE ERROR WHILE TYPING
-====================================================== */
+                /* -----------------------------------------
+                   VALIDATE ALL FIELDS
+                ------------------------------------------ */
 
-nameInput.addEventListener(
-    "input",
-    function () {
+                const validName =
+                    govContactValidateName();
 
-        clearFieldState(
-            nameInput,
-            errors.name
-        );
+                const validEmail =
+                    govContactValidateEmail();
 
-    }
-);
+                const validPhone =
+                    govContactValidatePhone();
 
+                const validSubject =
+                    govContactValidateSubject();
 
-emailInput.addEventListener(
-    "input",
-    function () {
+                const validMessage =
+                    govContactValidateMessage();
 
-        clearFieldState(
-            emailInput,
-            errors.email
-        );
-
-    }
-);
+                const validTerms =
+                    govContactValidateTerms();
 
 
-phoneInput.addEventListener(
-    "input",
-    function () {
-
-        clearFieldState(
-            phoneInput,
-            errors.phone
-        );
-
-    }
-);
+                const isValid =
+                    validName &&
+                    validEmail &&
+                    validPhone &&
+                    validSubject &&
+                    validMessage &&
+                    validTerms;
 
 
-messageInput.addEventListener(
-    "input",
-    function () {
+                /* -----------------------------------------
+                   INVALID
+                ------------------------------------------ */
 
-        clearFieldState(
-            messageInput,
-            errors.message
-        );
+                if (!isValid) {
 
-    }
-);
+                    govContactFormMessage.className =
+                        "gov-contact-form-message gov-contact-message-error";
 
+                    govContactFormMessage.textContent =
+                        "Please fill in all required details correctly before submitting.";
 
-/* =====================================================
-   SUBMIT
-====================================================== */
+                    const firstInvalid =
+                        document.querySelector(
+                            ".gov-contact-invalid input, " +
+                            ".gov-contact-invalid select, " +
+                            ".gov-contact-invalid textarea"
+                        );
 
-contactForm.addEventListener(
-    "submit",
-    function (event) {
+                    if (firstInvalid) {
 
-        event.preventDefault();
+                        setTimeout(function () {
 
+                            firstInvalid.focus();
 
-        /* Hide previous message */
+                            firstInvalid.scrollIntoView({
+                                behavior: "smooth",
+                                block: "center"
+                            });
 
-        formMessage.className =
-            "gov-contact-form-message";
+                        }, 100);
+                    }
 
-        formMessage.textContent =
-            "";
-
-
-        /* Validate */
-
-        const validName =
-            validateName();
-
-        const validEmail =
-            validateEmail();
-
-        const validPhone =
-            validatePhone();
-
-        const validSubject =
-            validateSubject();
-
-        const validMessage =
-            validateMessage();
-
-        const validTerms =
-            validateTerms();
+                    return;
+                }
 
 
-        const allValid =
-            validName &&
-            validEmail &&
-            validPhone &&
-            validSubject &&
-            validMessage &&
-            validTerms;
+                /* -----------------------------------------
+                   VALID
+                ------------------------------------------ */
+
+                govContactFormMessage.className =
+                    "gov-contact-form-message";
+
+                govContactFormMessage.textContent = "";
 
 
-        /* =================================================
-           INVALID
-        ================================================== */
+                const submitButton =
+                    govContactForm.querySelector(
+                        ".gov-contact-submit"
+                    );
 
-        if (!allValid) {
+                if (submitButton) {
 
-            formMessage.textContent =
-                "Please fill details correctly.";
+                    submitButton.classList.add(
+                        "gov-contact-loading"
+                    );
 
-            formMessage.classList.add(
-                "gov-contact-show-error"
-            );
-
-
-            const firstInvalid =
-                contactForm.querySelector(
-                    ".gov-contact-invalid input, " +
-                    ".gov-contact-invalid select, " +
-                    ".gov-contact-invalid textarea"
-                );
+                    submitButton.innerHTML =
+                        '<span>Sending...</span>' +
+                        '<i class="fa-solid fa-spinner fa-spin"></i>';
+                }
 
 
-            if (firstInvalid) {
+                /* -----------------------------------------
+                   SHOW SUCCESS POPUP
+                ------------------------------------------ */
 
-                firstInvalid.focus();
+                setTimeout(function () {
 
-                firstInvalid.scrollIntoView({
-                    behavior: "smooth",
-                    block: "center"
-                });
+                    if (govContactSuccessOverlay) {
+
+                        govContactSuccessOverlay.classList.add(
+                            "gov-contact-success-visible"
+                        );
+
+                        govContactSuccessOverlay.setAttribute(
+                            "aria-hidden",
+                            "false"
+                        );
+                    }
+
+                }, 500);
+
+
+                /* -----------------------------------------
+                   REDIRECT TO 404
+                ------------------------------------------ */
+
+                setTimeout(function () {
+
+                    window.location.href =
+                        "404.html";
+
+                }, 2800);
 
             }
-
-            return;
-
-        }
+        );
+    }
 
 
-        /* =================================================
-           VALID
-        ================================================== */
+    /* =================================================
+       FAQ DROPDOWN
+       ONLY ONE FAQ OPEN AT A TIME
+    ================================================== */
 
-        if (successPopup) {
+    const govContactFaqItems =
+        document.querySelectorAll(
+            ".gov-contact-faq-item"
+        );
 
-            successPopup.classList.add(
-                "gov-contact-popup-visible"
+    govContactFaqItems.forEach(function (item) {
+
+        item.addEventListener(
+            "toggle",
+            function () {
+
+                if (!item.open) {
+                    return;
+                }
+
+                govContactFaqItems.forEach(
+                    function (otherItem) {
+
+                        if (
+                            otherItem !== item &&
+                            otherItem.open
+                        ) {
+
+                            otherItem.open = false;
+                        }
+
+                    }
+                );
+
+            }
+        );
+
+    });
+
+
+    /* =================================================
+       SEARCH
+    ================================================== */
+
+    if (govContactSearchForm) {
+
+        govContactSearchForm.addEventListener(
+            "submit",
+            function (event) {
+
+                event.preventDefault();
+
+                const searchValue =
+                    govContactSearchInput.value.trim();
+
+
+                if (searchValue === "") {
+
+                    govContactSearchInput.focus();
+
+                    govContactSearchInput.style.boxShadow =
+                        "0 0 0 3px rgba(212,60,60,.15)";
+
+                    setTimeout(function () {
+
+                        govContactSearchInput.style.boxShadow =
+                            "";
+
+                    }, 1500);
+
+                    return;
+                }
+
+
+                window.location.href =
+                    "404.html";
+
+            }
+        );
+    }
+
+
+    /* =================================================
+       SCROLL REVEAL
+    ================================================== */
+
+    const govContactRevealElements =
+        document.querySelectorAll(
+            ".gov-contact-reveal"
+        );
+
+
+    if ("IntersectionObserver" in window) {
+
+        const govContactRevealObserver =
+            new IntersectionObserver(
+                function (entries, observer) {
+
+                    entries.forEach(
+                        function (entry) {
+
+                            if (entry.isIntersecting) {
+
+                                entry.target.classList.add(
+                                    "gov-contact-show"
+                                );
+
+                                observer.unobserve(
+                                    entry.target
+                                );
+                            }
+
+                        }
+                    );
+
+                },
+                {
+                    threshold: 0.08,
+                    rootMargin: "0px 0px -30px 0px"
+                }
             );
 
-        }
 
+        govContactRevealElements.forEach(
+            function (element) {
 
-        /* Disable button */
+                govContactRevealObserver.observe(
+                    element
+                );
 
-        const submitButton =
-            contactForm.querySelector(
-                ".gov-contact-submit"
-            );
+            }
+        );
 
+    } else {
 
-        if (submitButton) {
+        govContactRevealElements.forEach(
+            function (element) {
 
-            submitButton.disabled = true;
+                element.classList.add(
+                    "gov-contact-show"
+                );
 
-            submitButton.style.opacity =
-                "0.7";
-
-        }
-
-
-        /* =================================================
-           REDIRECT TO 404
-        ================================================== */
-
-        setTimeout(function () {
-
-            window.location.href =
-                "404.html";
-
-        }, 1600);
+            }
+        );
 
     }
-);
+
+
+    /* =================================================
+       PAGE LOAD FALLBACK
+    ================================================== */
+
+    setTimeout(function () {
+
+        govContactRevealElements.forEach(
+            function (element) {
+
+                element.classList.add(
+                    "gov-contact-show"
+                );
+
+            }
+        );
+
+    }, 1200);
+
 
 });
+
+})();
         </script>
 
 <link
@@ -9276,8 +9695,1443 @@ console.log(
 
 });
         </script>
+        <style>
+            /* =========================================================
+   CUSTOM DROPDOWN
+========================================================= */
 
-    
+.gov-contact-custom-dropdown {
+    position: relative;
+
+    width: 100%;
+    min-width: 0;
+}
+
+
+/* =========================================================
+   DROPDOWN BUTTON
+========================================================= */
+
+.gov-contact-dropdown-trigger {
+    width: 100%;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 12px;
+
+    padding: 0 15px;
+
+    border: 1px solid #d5e0eb;
+    border-radius: 7px;
+
+    outline: none;
+
+    background: #fbfdff;
+
+    color: #26384a;
+
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 400;
+
+    cursor: pointer;
+
+    transition:
+        border-color 0.25s ease,
+        box-shadow 0.25s ease,
+        background 0.25s ease;
+}
+
+.gov-contact-dropdown-trigger:hover {
+    border-color: #b9cce0;
+}
+
+.gov-contact-custom-dropdown.gov-contact-dropdown-open
+.gov-contact-dropdown-trigger {
+
+    border-color: var(--gov-contact-primary);
+
+    background: #ffffff;
+
+    box-shadow:
+        0 0 0 3px rgba(21, 88, 166, 0.10);
+}
+
+
+/* =========================================================
+   SELECTED TEXT
+========================================================= */
+
+.gov-contact-dropdown-selected {
+    min-width: 0;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    color: #6e8091;
+
+    text-align: left;
+}
+
+.gov-contact-dropdown-selected.gov-contact-selected-value {
+    color: #26384a;
+}
+
+
+/* =========================================================
+   ARROW
+========================================================= */
+
+.gov-contact-dropdown-trigger > i {
+    flex: 0 0 auto;
+
+    color: #718394;
+
+    font-size: 11px;
+
+    transition: transform 0.25s ease;
+}
+
+.gov-contact-custom-dropdown.gov-contact-dropdown-open
+.gov-contact-dropdown-trigger > i {
+
+    transform: rotate(180deg);
+
+    color: var(--gov-contact-primary);
+}
+
+
+/* =========================================================
+   DROPDOWN MENU
+========================================================= */
+
+.gov-contact-dropdown-menu {
+    position: absolute;
+
+    top: calc(100% + 6px);
+    left: 0;
+
+    width: 100%;
+
+    max-height: 0;
+
+    overflow: hidden;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translateY(-6px);
+
+    background: #ffffff;
+
+    border: 1px solid #d5e0eb;
+    border-radius: 8px;
+
+    box-shadow:
+        0 12px 30px rgba(22, 61, 98, 0.15);
+
+    z-index: 500;
+
+    transition:
+        max-height 0.25s ease,
+        opacity 0.2s ease,
+        transform 0.25s ease,
+        visibility 0.25s ease;
+}
+
+
+/* =========================================================
+   OPEN MENU
+========================================================= */
+
+.gov-contact-custom-dropdown.gov-contact-dropdown-open
+.gov-contact-dropdown-menu {
+
+    max-height: 250px;
+
+    overflow-y: auto;
+
+    opacity: 1;
+    visibility: visible;
+
+    transform: translateY(0);
+}
+
+
+/* =========================================================
+   OPTIONS
+========================================================= */
+
+.gov-contact-dropdown-option {
+    display: block;
+
+    width: 100%;
+
+    min-height: 44px;
+
+    padding: 11px 15px;
+
+    border: 0;
+
+    background: #ffffff;
+
+    color: #34495b;
+
+    font-family: inherit;
+
+    font-size: 13px;
+
+    text-align: left;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease;
+}
+
+.gov-contact-dropdown-option:hover {
+    background: #edf5fd;
+
+    color: var(--gov-contact-primary);
+}
+
+.gov-contact-dropdown-option.gov-contact-option-selected {
+    background: #eaf3fc;
+
+    color: var(--gov-contact-primary);
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   DROPDOWN SCROLLBAR
+========================================================= */
+
+.gov-contact-dropdown-menu::-webkit-scrollbar {
+    width: 5px;
+}
+
+.gov-contact-dropdown-menu::-webkit-scrollbar-track {
+    background: #f3f6f9;
+}
+
+.gov-contact-dropdown-menu::-webkit-scrollbar-thumb {
+    background: #b9c8d7;
+
+    border-radius: 10px;
+}
+
+
+/* =========================================================
+   INVALID DROPDOWN
+========================================================= */
+
+.gov-contact-field.gov-contact-invalid
+.gov-contact-dropdown-trigger {
+
+    border-color: var(--gov-contact-danger);
+
+    background: #fffafa;
+
+    box-shadow:
+        0 0 0 3px rgba(212, 60, 60, 0.08);
+}
+
+
+/* =========================================================
+   VALID DROPDOWN
+========================================================= */
+
+.gov-contact-field.gov-contact-valid
+.gov-contact-dropdown-trigger {
+
+    border-color: #36a269;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .gov-contact-dropdown-trigger {
+        height: 49px;
+
+        font-size: 13px;
+    }
+
+    .gov-contact-dropdown-menu {
+        max-height: 0;
+    }
+
+    .gov-contact-custom-dropdown.gov-contact-dropdown-open
+    .gov-contact-dropdown-menu {
+
+        max-height: 220px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .gov-contact-dropdown-trigger {
+        height: 47px;
+
+        padding: 0 13px;
+
+        font-size: 13px;
+    }
+
+    .gov-contact-dropdown-menu {
+        top: calc(100% + 5px);
+
+        border-radius: 7px;
+    }
+
+    .gov-contact-custom-dropdown.gov-contact-dropdown-open
+    .gov-contact-dropdown-menu {
+
+        max-height: 210px;
+    }
+
+    .gov-contact-dropdown-option {
+        min-height: 43px;
+
+        padding: 10px 13px;
+
+        font-size: 12px;
+    }
+}
+        </style>
+
+        <script>
+            /* =========================================================
+   SUBJECT + DEPARTMENT CUSTOM DROPDOWNS
+========================================================= */
+
+(function () {
+
+const dropdowns =
+    document.querySelectorAll(
+        ".gov-contact-custom-dropdown"
+    );
+
+
+dropdowns.forEach(function (dropdown) {
+
+    const trigger =
+        dropdown.querySelector(
+            ".gov-contact-dropdown-trigger"
+        );
+
+    const selectedText =
+        dropdown.querySelector(
+            ".gov-contact-dropdown-selected"
+        );
+
+    const options =
+        dropdown.querySelectorAll(
+            ".gov-contact-dropdown-option"
+        );
+
+    const dropdownType =
+        dropdown.getAttribute(
+            "data-dropdown"
+        );
+
+
+    const hiddenInput =
+        document.getElementById(
+            dropdownType === "subject"
+                ? "govContactSubject"
+                : "govContactDepartment"
+        );
+
+
+    /* =============================================
+       OPEN / CLOSE
+    ============================================== */
+
+    trigger.addEventListener(
+        "click",
+        function (event) {
+
+            event.stopPropagation();
+
+
+            /* Close every other dropdown */
+
+            dropdowns.forEach(
+                function (otherDropdown) {
+
+                    if (otherDropdown !== dropdown) {
+
+                        otherDropdown.classList.remove(
+                            "gov-contact-dropdown-open"
+                        );
+
+                        const otherTrigger =
+                            otherDropdown.querySelector(
+                                ".gov-contact-dropdown-trigger"
+                            );
+
+                        if (otherTrigger) {
+
+                            otherTrigger.setAttribute(
+                                "aria-expanded",
+                                "false"
+                            );
+                        }
+                    }
+
+                }
+            );
+
+
+            /* Toggle current dropdown */
+
+            const isOpen =
+                dropdown.classList.toggle(
+                    "gov-contact-dropdown-open"
+                );
+
+
+            trigger.setAttribute(
+                "aria-expanded",
+                isOpen ? "true" : "false"
+            );
+
+        }
+    );
+
+
+    /* =============================================
+       SELECT OPTION
+    ============================================== */
+
+    options.forEach(function (option) {
+
+        option.addEventListener(
+            "click",
+            function (event) {
+
+                event.stopPropagation();
+
+
+                const value =
+                    option.getAttribute(
+                        "data-value"
+                    );
+
+                const text =
+                    option.textContent.trim();
+
+
+                /* Update visible text */
+
+                selectedText.textContent =
+                    text;
+
+                selectedText.classList.add(
+                    "gov-contact-selected-value"
+                );
+
+
+                /* Update hidden input */
+
+                if (hiddenInput) {
+
+                    hiddenInput.value =
+                        value;
+
+                    hiddenInput.dispatchEvent(
+                        new Event(
+                            "change",
+                            {
+                                bubbles: true
+                            }
+                        )
+                    );
+                }
+
+
+                /* Selected option */
+
+                options.forEach(
+                    function (otherOption) {
+
+                        otherOption.classList.remove(
+                            "gov-contact-option-selected"
+                        );
+
+                    }
+                );
+
+
+                option.classList.add(
+                    "gov-contact-option-selected"
+                );
+
+
+                /* Close dropdown */
+
+                dropdown.classList.remove(
+                    "gov-contact-dropdown-open"
+                );
+
+                trigger.setAttribute(
+                    "aria-expanded",
+                    "false"
+                );
+
+
+                /* Remove validation error */
+
+                const field =
+                    dropdown.closest(
+                        ".gov-contact-field"
+                    );
+
+                if (field) {
+
+                    field.classList.remove(
+                        "gov-contact-invalid"
+                    );
+
+                    if (dropdownType === "subject") {
+
+                        field.classList.add(
+                            "gov-contact-valid"
+                        );
+                    }
+                }
+
+
+                /* Clear subject error */
+
+                if (dropdownType === "subject") {
+
+                    const error =
+                        document.getElementById(
+                            "govContactSubjectError"
+                        );
+
+                    if (error) {
+
+                        error.textContent = "";
+                    }
+                }
+
+            }
+        );
+
+    });
+
+});
+
+
+/* =================================================
+   CLICK OUTSIDE
+================================================== */
+
+document.addEventListener(
+    "click",
+    function () {
+
+        dropdowns.forEach(
+            function (dropdown) {
+
+                dropdown.classList.remove(
+                    "gov-contact-dropdown-open"
+                );
+
+                const trigger =
+                    dropdown.querySelector(
+                        ".gov-contact-dropdown-trigger"
+                    );
+
+                if (trigger) {
+
+                    trigger.setAttribute(
+                        "aria-expanded",
+                        "false"
+                    );
+                }
+
+            }
+        );
+
+    }
+);
+
+
+/* =================================================
+   ESCAPE KEY
+================================================== */
+
+document.addEventListener(
+    "keydown",
+    function (event) {
+
+        if (event.key === "Escape") {
+
+            dropdowns.forEach(
+                function (dropdown) {
+
+                    dropdown.classList.remove(
+                        "gov-contact-dropdown-open"
+                    );
+
+                }
+            );
+
+        }
+
+    }
+);
+
+})();
+            </script>
+
+            <style>
+                /* =========================================================
+   DROPDOWN OVERFLOW + STACKING FIX
+   STACKLY GOVERNMENT CONTACT
+========================================================= */
+
+/* Allow dropdowns to escape their normal field area */
+.gov-contact-form,
+.gov-contact-form-row,
+.gov-contact-field,
+.gov-contact-full,
+.gov-contact-custom-dropdown {
+    overflow: visible !important;
+}
+
+
+/* =========================================================
+   FORM ROW STACKING
+========================================================= */
+
+.gov-contact-form-row {
+    position: relative;
+    z-index: 1;
+}
+
+
+/* First row should appear above second row */
+.gov-contact-form-row:nth-of-type(1) {
+    z-index: 20;
+}
+
+
+/* Second row */
+.gov-contact-form-row:nth-of-type(2) {
+    z-index: 15;
+}
+
+
+/* Department row / full fields */
+.gov-contact-field {
+    position: relative;
+    z-index: 1;
+}
+
+
+/* =========================================================
+   SUBJECT + DEPARTMENT DROPDOWN WRAPPER
+========================================================= */
+
+.gov-contact-custom-dropdown {
+    position: relative !important;
+
+    width: 100%;
+
+    z-index: 50;
+}
+
+
+/* =========================================================
+   OPEN DROPDOWN MUST BE ABOVE EVERYTHING
+========================================================= */
+
+.gov-contact-custom-dropdown.gov-contact-dropdown-open {
+    z-index: 9999 !important;
+}
+
+
+/* =========================================================
+   DROPDOWN MENU
+========================================================= */
+
+.gov-contact-dropdown-menu {
+    position: absolute !important;
+
+    top: calc(100% + 6px);
+    left: 0;
+    right: 0;
+
+    width: 100%;
+
+    max-height: 250px;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    background: #ffffff;
+
+    border: 1px solid #d5e0eb;
+
+    border-radius: 8px;
+
+    box-shadow:
+        0 15px 35px rgba(15, 45, 75, 0.20);
+
+    z-index: 99999 !important;
+}
+
+
+/* =========================================================
+   OPEN MENU
+========================================================= */
+
+.gov-contact-custom-dropdown.gov-contact-dropdown-open
+.gov-contact-dropdown-menu {
+
+    opacity: 1;
+
+    visibility: visible;
+
+    pointer-events: auto;
+
+    transform: translateY(0);
+
+    max-height: 250px;
+}
+
+
+/* =========================================================
+   OPTIONS ALWAYS ABOVE BACKGROUND CONTENT
+========================================================= */
+
+.gov-contact-dropdown-option {
+    position: relative;
+
+    z-index: 100000;
+
+    background: #ffffff;
+}
+
+
+/* =========================================================
+   HOVER
+========================================================= */
+
+.gov-contact-dropdown-option:hover {
+    background: #edf5fd;
+
+    color: var(--gov-contact-primary);
+}
+
+
+/* =========================================================
+   SUBJECT FIELD
+========================================================= */
+
+.gov-contact-form-row:first-of-type
+.gov-contact-field:nth-child(2) {
+
+    position: relative;
+
+    z-index: 100;
+}
+
+
+/* =========================================================
+   DEPARTMENT FIELD
+========================================================= */
+
+.gov-contact-form
+.gov-contact-field.gov-contact-full {
+
+    position: relative;
+
+    z-index: 80;
+}
+
+
+/* Department open */
+.gov-contact-field.gov-contact-full
+.gov-contact-custom-dropdown.gov-contact-dropdown-open {
+
+    z-index: 9999 !important;
+}
+
+
+/* =========================================================
+   PREVENT OTHER FORM ELEMENTS FROM COVERING DROPDOWN
+========================================================= */
+
+.gov-contact-form-row + .gov-contact-field,
+.gov-contact-form-row ~ .gov-contact-field,
+.gov-contact-terms,
+.gov-contact-submit {
+
+    position: relative;
+
+    z-index: 1;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1024px) {
+
+    .gov-contact-form,
+    .gov-contact-form-row,
+    .gov-contact-field,
+    .gov-contact-full {
+        overflow: visible !important;
+    }
+
+    .gov-contact-dropdown-menu {
+        z-index: 99999 !important;
+
+        max-height: 230px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .gov-contact-form,
+    .gov-contact-form-row,
+    .gov-contact-field,
+    .gov-contact-full,
+    .gov-contact-custom-dropdown {
+        overflow: visible !important;
+    }
+
+
+    /* Make every form layer allow dropdown */
+    .gov-contact-form-row {
+        position: relative;
+
+        z-index: 10;
+    }
+
+
+    /* Subject */
+    .gov-contact-form-row:first-of-type
+    .gov-contact-field:nth-child(2) {
+
+        z-index: 100;
+    }
+
+
+    /* Department */
+    .gov-contact-form
+    .gov-contact-field.gov-contact-full {
+
+        z-index: 90;
+    }
+
+
+    .gov-contact-custom-dropdown {
+        z-index: 1000;
+    }
+
+
+    .gov-contact-custom-dropdown.gov-contact-dropdown-open {
+        z-index: 999999 !important;
+    }
+
+
+    .gov-contact-dropdown-menu {
+        position: absolute !important;
+
+        top: calc(100% + 5px);
+        left: 0;
+
+        width: 100%;
+
+        max-height: 210px;
+
+        overflow-x: hidden;
+        overflow-y: auto;
+
+        z-index: 999999 !important;
+
+        background: #ffffff;
+
+        box-shadow:
+            0 12px 30px rgba(15, 45, 75, 0.22);
+    }
+
+
+    .gov-contact-dropdown-option {
+        position: relative;
+
+        z-index: 1000000;
+
+        min-height: 44px;
+
+        background: #ffffff;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 380px) {
+
+    .gov-contact-dropdown-menu {
+        max-height: 190px;
+    }
+
+    .gov-contact-dropdown-option {
+        min-height: 42px;
+
+        padding: 10px 12px;
+
+        font-size: 12px;
+    }
+}
+
+            </style>
+
+            <style>
+                /* =========================================================
+   SUBJECT DROPDOWN - FINAL STACKING FIX
+========================================================= */
+
+/* The entire first form row must sit above everything below */
+.gov-contact-form-row:first-of-type {
+    position: relative !important;
+    z-index: 99990 !important;
+    isolation: isolate;
+}
+
+
+/* Subject field itself */
+.gov-contact-form-row:first-of-type
+.gov-contact-field:nth-child(2) {
+
+    position: relative !important;
+
+    z-index: 99999 !important;
+
+    isolation: isolate;
+
+    overflow: visible !important;
+}
+
+
+/* Subject dropdown wrapper */
+.gov-contact-form-row:first-of-type
+.gov-contact-field:nth-child(2)
+.gov-contact-custom-dropdown {
+
+    position: relative !important;
+
+    z-index: 999999 !important;
+
+    overflow: visible !important;
+}
+
+
+/* Open subject dropdown */
+.gov-contact-form-row:first-of-type
+.gov-contact-field:nth-child(2)
+.gov-contact-custom-dropdown.gov-contact-dropdown-open {
+
+    position: relative !important;
+
+    z-index: 2147483646 !important;
+}
+
+
+/* Subject dropdown menu */
+.gov-contact-form-row:first-of-type
+.gov-contact-field:nth-child(2)
+.gov-contact-dropdown-menu {
+
+    position: absolute !important;
+
+    top: calc(100% + 6px) !important;
+
+    left: 0 !important;
+
+    right: auto !important;
+
+    width: 100% !important;
+
+    max-height: 250px !important;
+
+    overflow-x: hidden !important;
+
+    overflow-y: auto !important;
+
+    display: block !important;
+
+    z-index: 2147483647 !important;
+
+    background: #ffffff !important;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    pointer-events: none;
+
+    transform: translateY(-5px);
+
+    border: 1px solid #d5e0eb;
+
+    border-radius: 8px;
+
+    box-shadow:
+        0 18px 40px rgba(15, 45, 75, 0.25);
+
+    transition:
+        opacity 0.2s ease,
+        visibility 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+/* OPEN SUBJECT MENU */
+.gov-contact-form-row:first-of-type
+.gov-contact-field:nth-child(2)
+.gov-contact-custom-dropdown.gov-contact-dropdown-open
+.gov-contact-dropdown-menu {
+
+    opacity: 1 !important;
+
+    visibility: visible !important;
+
+    pointer-events: auto !important;
+
+    transform: translateY(0) !important;
+
+    z-index: 2147483647 !important;
+}
+
+
+/* Subject options */
+.gov-contact-form-row:first-of-type
+.gov-contact-field:nth-child(2)
+.gov-contact-dropdown-option {
+
+    position: relative !important;
+
+    display: block !important;
+
+    width: 100% !important;
+
+    min-height: 45px;
+
+    padding: 12px 15px;
+
+    background: #ffffff !important;
+
+    color: #34495b !important;
+
+    border: 0 !important;
+
+    text-align: left;
+
+    cursor: pointer;
+
+    z-index: 2147483647 !important;
+}
+
+
+/* Hover */
+.gov-contact-form-row:first-of-type
+.gov-contact-field:nth-child(2)
+.gov-contact-dropdown-option:hover {
+
+    background: #edf5fd !important;
+
+    color: var(--gov-contact-primary) !important;
+}
+
+
+/* Selected */
+.gov-contact-form-row:first-of-type
+.gov-contact-field:nth-child(2)
+.gov-contact-dropdown-option.gov-contact-option-selected {
+
+    background: #eaf3fc !important;
+
+    color: var(--gov-contact-primary) !important;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .gov-contact-form-row:first-of-type {
+
+        position: relative !important;
+
+        z-index: 99990 !important;
+
+        isolation: isolate;
+
+        overflow: visible !important;
+    }
+
+
+    .gov-contact-form-row:first-of-type
+    .gov-contact-field:nth-child(2) {
+
+        position: relative !important;
+
+        z-index: 999999 !important;
+
+        overflow: visible !important;
+    }
+
+
+    .gov-contact-form-row:first-of-type
+    .gov-contact-field:nth-child(2)
+    .gov-contact-custom-dropdown {
+
+        position: relative !important;
+
+        z-index: 999999 !important;
+
+        overflow: visible !important;
+    }
+
+
+    .gov-contact-form-row:first-of-type
+    .gov-contact-field:nth-child(2)
+    .gov-contact-custom-dropdown.gov-contact-dropdown-open {
+
+        z-index: 2147483646 !important;
+    }
+
+
+    .gov-contact-form-row:first-of-type
+    .gov-contact-field:nth-child(2)
+    .gov-contact-dropdown-menu {
+
+        position: absolute !important;
+
+        top: calc(100% + 5px) !important;
+
+        left: 0 !important;
+
+        width: 100% !important;
+
+        max-height: 210px !important;
+
+        overflow-x: hidden !important;
+
+        overflow-y: auto !important;
+
+        z-index: 2147483647 !important;
+
+        background: #ffffff !important;
+    }
+
+
+    .gov-contact-form-row:first-of-type
+    .gov-contact-field:nth-child(2)
+    .gov-contact-custom-dropdown.gov-contact-dropdown-open
+    .gov-contact-dropdown-menu {
+
+        opacity: 1 !important;
+
+        visibility: visible !important;
+
+        pointer-events: auto !important;
+
+        transform: translateY(0) !important;
+    }
+
+
+    .gov-contact-form-row:first-of-type
+    .gov-contact-field:nth-child(2)
+    .gov-contact-dropdown-option {
+
+        min-height: 43px;
+
+        padding: 10px 13px;
+
+        font-size: 12px;
+
+        z-index: 2147483647 !important;
+    }
+}
+            </style>
+
+    <style>/* =========================================================
+        SUBJECT DROPDOWN - DEFINITIVE FIX
+     ========================================================= */
+     
+     /* Subject field */
+     .gov-contact-field:has(
+         .gov-contact-custom-dropdown[data-dropdown="subject"]
+     ) {
+         position: relative !important;
+         z-index: 999999 !important;
+         overflow: visible !important;
+     }
+     
+     
+     /* Subject dropdown wrapper */
+     .gov-contact-custom-dropdown[data-dropdown="subject"] {
+         position: relative !important;
+     
+         width: 100%;
+     
+         z-index: 999999 !important;
+     
+         overflow: visible !important;
+     }
+     
+     
+     /* Open subject dropdown */
+     .gov-contact-custom-dropdown[data-dropdown="subject"].gov-contact-dropdown-open {
+         z-index: 999999 !important;
+     }
+     
+     
+     /* Subject dropdown menu */
+     .gov-contact-custom-dropdown[data-dropdown="subject"]
+     .gov-contact-dropdown-menu {
+     
+         position: absolute !important;
+     
+         top: calc(100% + 6px) !important;
+         left: 0 !important;
+     
+         width: 100% !important;
+     
+         max-height: 250px !important;
+     
+         overflow-x: hidden !important;
+         overflow-y: auto !important;
+     
+         background: #ffffff !important;
+     
+         border: 1px solid #d5e0eb !important;
+     
+         border-radius: 8px !important;
+     
+         box-shadow:
+             0 15px 35px rgba(15, 45, 75, 0.22) !important;
+     
+         z-index: 2147483647 !important;
+     
+         opacity: 0;
+         visibility: hidden;
+         pointer-events: none;
+     
+         transform: translateY(-5px);
+     
+         transition:
+             opacity 0.2s ease,
+             visibility 0.2s ease,
+             transform 0.2s ease;
+     }
+     
+     
+     /* OPEN */
+     .gov-contact-custom-dropdown[data-dropdown="subject"]
+     .gov-contact-dropdown-menu {
+     
+         z-index: 2147483647 !important;
+     }
+     
+     
+     .gov-contact-custom-dropdown[data-dropdown="subject"].gov-contact-dropdown-open
+     .gov-contact-dropdown-menu {
+     
+         opacity: 1 !important;
+     
+         visibility: visible !important;
+     
+         pointer-events: auto !important;
+     
+         transform: translateY(0) !important;
+     
+         max-height: 250px !important;
+     
+         z-index: 2147483647 !important;
+     }
+     
+     
+     /* Options */
+     .gov-contact-custom-dropdown[data-dropdown="subject"]
+     .gov-contact-dropdown-option {
+     
+         position: relative !important;
+     
+         display: block !important;
+     
+         width: 100% !important;
+     
+         min-height: 44px;
+     
+         padding: 11px 15px;
+     
+         border: 0 !important;
+     
+         outline: none !important;
+     
+         background: #ffffff !important;
+     
+         color: #34495b !important;
+     
+         font-family: inherit;
+     
+         font-size: 13px;
+     
+         text-align: left;
+     
+         cursor: pointer;
+     
+         z-index: 2147483647 !important;
+     }
+     
+     
+     .gov-contact-custom-dropdown[data-dropdown="subject"]
+     .gov-contact-dropdown-option:hover {
+     
+         background: #edf5fd !important;
+     
+         color: var(--gov-contact-primary) !important;
+     }
+     
+     
+     /* =========================================================
+        IMPORTANT:
+        MESSAGE AND OTHER FIELDS MUST STAY BELOW SUBJECT
+     ========================================================= */
+     
+     .gov-contact-form
+     .gov-contact-field:has(
+         #govContactMessage
+     ) {
+         position: relative;
+     
+         z-index: 1 !important;
+     }
+     
+     
+     /* =========================================================
+        MOBILE
+     ========================================================= */
+     
+     @media (max-width: 600px) {
+     
+         .gov-contact-field:has(
+             .gov-contact-custom-dropdown[data-dropdown="subject"]
+         ) {
+     
+             position: relative !important;
+     
+             z-index: 999999 !important;
+     
+             overflow: visible !important;
+         }
+     
+     
+         .gov-contact-custom-dropdown[data-dropdown="subject"] {
+     
+             position: relative !important;
+     
+             z-index: 999999 !important;
+     
+             overflow: visible !important;
+         }
+     
+     
+         .gov-contact-custom-dropdown[data-dropdown="subject"].gov-contact-dropdown-open {
+     
+             z-index: 999999 !important;
+         }
+     
+     
+         .gov-contact-custom-dropdown[data-dropdown="subject"]
+         .gov-contact-dropdown-menu {
+     
+             position: absolute !important;
+     
+             top: calc(100% + 5px) !important;
+     
+             left: 0 !important;
+     
+             width: 100% !important;
+     
+             max-height: 210px !important;
+     
+             overflow-x: hidden !important;
+     
+             overflow-y: auto !important;
+     
+             z-index: 2147483647 !important;
+         }
+     
+     
+         .gov-contact-custom-dropdown[data-dropdown="subject"].gov-contact-dropdown-open
+         .gov-contact-dropdown-menu {
+     
+             opacity: 1 !important;
+     
+             visibility: visible !important;
+     
+             pointer-events: auto !important;
+     
+             transform: translateY(0) !important;
+     
+             z-index: 2147483647 !important;
+         }
+     
+     
+         .gov-contact-custom-dropdown[data-dropdown="subject"]
+         .gov-contact-dropdown-option {
+     
+             min-height: 43px;
+     
+             padding: 10px 13px;
+     
+             font-size: 12px;
+     
+             z-index: 2147483647 !important;
+         }
+     }
+        </style>
 </body>
 
 </html>
