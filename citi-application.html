@@ -219,7 +219,7 @@
 
             <a
                 href="./citi-application.html"
-                class="gov-nav-item">
+                class="gov-nav-item gov-active">
 
                 <span class="gov-nav-icon">
 
@@ -239,7 +239,7 @@
 
             <a
                 href="./payments.html"
-                class="gov-nav-item ">
+                class="gov-nav-item">
 
                 <span class="gov-nav-icon">
 
@@ -267,7 +267,7 @@
 
             <a
                 href="./tasks.html"
-                class="gov-nav-item gov-active">
+                class="gov-nav-item">
 
                 <span class="gov-nav-icon">
 
@@ -604,59 +604,52 @@
 
 </div>
 
+
 <!-- =========================================================
-     CITIZEN GOVERNMENT PORTAL
-     TASKS DASHBOARD
-     
+     STACKLY GOVERNMENT PORTAL
+     CITIZEN APPLICATION DASHBOARD
      CONTENT ONLY
-     Existing sidebar and topbar are not included.
      ========================================================= -->
 
-     <section class="govtask-dashboard">
+     <section class="govapp-dashboard">
 
-        <div class="govtask-background-overlay"></div>
+        <div class="govapp-background-overlay"></div>
     
-        <div class="govtask-container">
+        <div class="govapp-container">
     
     
             <!-- =====================================================
                  PAGE HEADER
                  ===================================================== -->
     
-            <div class="govtask-page-header">
+            <div class="govapp-page-header">
     
-                <div class="govtask-heading">
+                <div class="govapp-page-title">
     
-                    <div class="govtask-breadcrumb">
-                        <i class="fa-solid fa-list-check"></i>
-                        CITIZEN SERVICES / TASKS
+                    <div class="govapp-breadcrumb">
+                        <i class="fa-solid fa-file-lines"></i>
+                        CITIZEN APPLICATIONS
                     </div>
     
                     <h1>
                         My
-                        <span>Tasks</span>
+                        <span>Applications</span>
                     </h1>
     
                     <p>
-                        Track your government service requests, pending
-                        activities, application tasks and important
-                        citizen responsibilities from one place.
+                        Track your government applications, monitor their
+                        current status and view important application updates
+                        from one centralized dashboard.
                     </p>
     
                 </div>
     
     
-                <div class="govtask-header-action">
+                <div class="govapp-header-action">
     
-                    <a
-                        href="404.html"
-                        class="govtask-new-btn"
-                    >
-    
+                    <a href="404.html" class="govapp-new-btn">
                         <i class="fa-solid fa-plus"></i>
-    
-                        New Service Request
-    
+                        New Application
                     </a>
     
                 </div>
@@ -666,116 +659,52 @@
     
     
             <!-- =====================================================
-                 TASK SUMMARY CARDS
+                 APPLICATION STATISTICS
                  ===================================================== -->
     
-            <div class="govtask-summary-grid">
+            <div class="govapp-stat-grid">
     
     
-                <!-- Total Tasks -->
+                <!-- Total -->
     
-                <div class="govtask-summary-card">
+                <div class="govapp-stat-card">
     
-                    <div class="govtask-icon govtask-blue">
-                        <i class="fa-solid fa-list-check"></i>
+                    <div class="govapp-stat-icon govapp-blue">
+                        <i class="fa-solid fa-folder-open"></i>
                     </div>
     
-                    <div class="govtask-summary-content">
+                    <div class="govapp-stat-content">
     
-                        <span>
-                            Total Tasks
-                        </span>
+                        <span>Total Applications</span>
     
-                        <strong>
-                            24
-                        </strong>
+                        <strong>24</strong>
     
                         <small>
-                            All assigned activities
+                            <i class="fa-solid fa-arrow-up"></i>
+                            4 this month
                         </small>
     
                     </div>
     
                 </div>
-    
-    
-    
-                <!-- Completed -->
-    
-                <div class="govtask-summary-card">
-    
-                    <div class="govtask-icon govtask-green">
-                        <i class="fa-solid fa-circle-check"></i>
-                    </div>
-    
-                    <div class="govtask-summary-content">
-    
-                        <span>
-                            Completed
-                        </span>
-    
-                        <strong>
-                            15
-                        </strong>
-    
-                        <small>
-                            63% completed
-                        </small>
-    
-                    </div>
-    
-                </div>
-    
-    
-    
-                <!-- In Progress -->
-    
-                <div class="govtask-summary-card">
-    
-                    <div class="govtask-icon govtask-purple">
-                        <i class="fa-solid fa-spinner"></i>
-                    </div>
-    
-                    <div class="govtask-summary-content">
-    
-                        <span>
-                            In Progress
-                        </span>
-    
-                        <strong>
-                            5
-                        </strong>
-    
-                        <small>
-                            Currently processing
-                        </small>
-    
-                    </div>
-    
-                </div>
-    
     
     
                 <!-- Pending -->
     
-                <div class="govtask-summary-card">
+                <div class="govapp-stat-card">
     
-                    <div class="govtask-icon govtask-orange">
+                    <div class="govapp-stat-icon govapp-orange">
                         <i class="fa-solid fa-clock"></i>
                     </div>
     
-                    <div class="govtask-summary-content">
+                    <div class="govapp-stat-content">
     
-                        <span>
-                            Pending
-                        </span>
+                        <span>Pending</span>
     
-                        <strong>
-                            3
-                        </strong>
+                        <strong>06</strong>
     
                         <small>
-                            Awaiting action
+                            Awaiting verification
                         </small>
     
                     </div>
@@ -783,24 +712,42 @@
                 </div>
     
     
+                <!-- Approved -->
     
-                <!-- Overdue -->
+                <div class="govapp-stat-card">
     
-                <div class="govtask-summary-card">
-    
-                    <div class="govtask-icon govtask-red">
-                        <i class="fa-solid fa-triangle-exclamation"></i>
+                    <div class="govapp-stat-icon govapp-green">
+                        <i class="fa-solid fa-circle-check"></i>
                     </div>
     
-                    <div class="govtask-summary-content">
+                    <div class="govapp-stat-content">
     
-                        <span>
-                            Overdue
-                        </span>
+                        <span>Approved</span>
     
-                        <strong>
-                            1
-                        </strong>
+                        <strong>15</strong>
+    
+                        <small>
+                            Successfully completed
+                        </small>
+    
+                    </div>
+    
+                </div>
+    
+    
+                <!-- Rejected -->
+    
+                <div class="govapp-stat-card">
+    
+                    <div class="govapp-stat-icon govapp-red">
+                        <i class="fa-solid fa-circle-xmark"></i>
+                    </div>
+    
+                    <div class="govapp-stat-content">
+    
+                        <span>Rejected</span>
+    
+                        <strong>03</strong>
     
                         <small>
                             Requires attention
@@ -815,39 +762,51 @@
     
     
             
+    
             <!-- =====================================================
                  CHARTS
                  ===================================================== -->
     
-            <div class="govtask-chart-grid">
+            <div class="govapp-chart-grid">
     
     
-                <!-- Task Activity -->
+                <!-- Application Trend -->
     
-                <div class="govtask-chart-card">
+                <div class="govapp-chart-card">
     
-                    <div class="govtask-chart-header">
+                    <div class="govapp-chart-header">
     
                         <div>
     
                             <span>
-                                TASK ACTIVITY
+                                APPLICATION ACTIVITY
                             </span>
     
                             <h2>
-                                Monthly Task Progress
+                                Application Trends
                             </h2>
     
                         </div>
     
-                        
+                        <select class="govapp-chart-select">
+    
+                            <option>
+                                Last 6 Months
+                            </option>
+    
+                            <option>
+                                Last Year
+                            </option>
+    
+                        </select>
+    
                     </div>
     
     
-                    <div class="govtask-line-chart">
+                    <div class="govapp-line-chart">
     
                         <canvas
-                            id="govtaskActivityChart"
+                            id="govappTrendChart"
                         ></canvas>
     
                     </div>
@@ -856,20 +815,20 @@
     
     
     
-                <!-- Task Status -->
+                <!-- Status Doughnut -->
     
-                <div class="govtask-chart-card">
+                <div class="govapp-chart-card">
     
-                    <div class="govtask-chart-header">
+                    <div class="govapp-chart-header">
     
                         <div>
     
                             <span>
-                                TASK OVERVIEW
+                                APPLICATION STATUS
                             </span>
     
                             <h2>
-                                Task Status
+                                Status Overview
                             </h2>
     
                         </div>
@@ -877,66 +836,33 @@
                     </div>
     
     
-                    <div class="govtask-doughnut">
+                    <div class="govapp-doughnut">
     
                         <canvas
-                            id="govtaskStatusChart"
+                            id="govappStatusChart"
                         ></canvas>
     
                     </div>
     
     
-                    <div class="govtask-legend">
+                    <div class="govapp-status-legend">
     
                         <div>
-    
-                            <span class="govtask-dot green"></span>
-    
-                            Completed
-    
-                            <strong>
-                                63%
-                            </strong>
-    
-                        </div>
-    
-    
-                        <div>
-    
-                            <span class="govtask-dot purple"></span>
-    
-                            In Progress
-    
-                            <strong>
-                                21%
-                            </strong>
-    
-                        </div>
-    
-    
-                        <div>
-    
-                            <span class="govtask-dot orange"></span>
-    
+                            <span class="govapp-dot blue"></span>
                             Pending
-    
-                            <strong>
-                                12%
-                            </strong>
-    
+                            <strong>25%</strong>
                         </div>
     
+                        <div>
+                            <span class="govapp-dot green"></span>
+                            Approved
+                            <strong>63%</strong>
+                        </div>
     
                         <div>
-    
-                            <span class="govtask-dot red"></span>
-    
-                            Overdue
-    
-                            <strong>
-                                4%
-                            </strong>
-    
+                            <span class="govapp-dot red"></span>
+                            Rejected
+                            <strong>12%</strong>
                         </div>
     
                     </div>
@@ -948,36 +874,36 @@
     
     
             <!-- =====================================================
-                 DEPARTMENT TASK CHART
+                 DEPARTMENT APPLICATION GRAPH
                  ===================================================== -->
     
-            <div class="govtask-chart-card govtask-department-chart">
+            <div class="govapp-chart-card govapp-department-chart">
     
-                <div class="govtask-chart-header">
+                <div class="govapp-chart-header">
     
                     <div>
     
                         <span>
-                            GOVERNMENT DEPARTMENTS
+                            DEPARTMENT PERFORMANCE
                         </span>
     
                         <h2>
-                            Tasks by Department
+                            Applications by Department
                         </h2>
     
                     </div>
     
-                    <div class="govtask-total-badge">
-                        24 Total Tasks
+                    <div class="govapp-total-applications">
+                        24 Total Applications
                     </div>
     
                 </div>
     
     
-                <div class="govtask-bar-chart">
+                <div class="govapp-bar-chart">
     
                     <canvas
-                        id="govtaskDepartmentChart"
+                        id="govappDepartmentChart"
                     ></canvas>
     
                 </div>
@@ -987,243 +913,47 @@
     
     
             <!-- =====================================================
-                 PRIORITY + PROGRESS
+                 RECENT APPLICATIONS
                  ===================================================== -->
     
-            <div class="govtask-middle-grid">
+            <div class="govapp-applications-panel">
     
-    
-                <!-- Priority Distribution -->
-    
-                <div class="govtask-panel">
-    
-                    <div class="govtask-panel-header">
-    
-                        <div>
-    
-                            <span>
-                                TASK PRIORITY
-                            </span>
-    
-                            <h2>
-                                Priority Overview
-                            </h2>
-    
-                        </div>
-    
-                    </div>
-    
-    
-                    <div class="govtask-priority-list">
-    
-    
-                        <div class="govtask-priority-row">
-    
-                            <div class="govtask-priority-info">
-    
-                                <div>
-    
-                                    <span class="govtask-priority-dot high"></span>
-    
-                                    <strong>
-                                        High Priority
-                                    </strong>
-    
-                                </div>
-    
-                                <b>
-                                    7 Tasks
-                                </b>
-    
-                            </div>
-    
-                            <div class="govtask-progress">
-    
-                                <span
-                                    style="width:72%"
-                                ></span>
-    
-                            </div>
-    
-                        </div>
-    
-    
-    
-                        <div class="govtask-priority-row">
-    
-                            <div class="govtask-priority-info">
-    
-                                <div>
-    
-                                    <span class="govtask-priority-dot medium"></span>
-    
-                                    <strong>
-                                        Medium Priority
-                                    </strong>
-    
-                                </div>
-    
-                                <b>
-                                    10 Tasks
-                                </b>
-    
-                            </div>
-    
-                            <div class="govtask-progress">
-    
-                                <span
-                                    style="width:88%"
-                                ></span>
-    
-                            </div>
-    
-                        </div>
-    
-    
-    
-                        <div class="govtask-priority-row">
-    
-                            <div class="govtask-priority-info">
-    
-                                <div>
-    
-                                    <span class="govtask-priority-dot low"></span>
-    
-                                    <strong>
-                                        Low Priority
-                                    </strong>
-    
-                                </div>
-    
-                                <b>
-                                    7 Tasks
-                                </b>
-    
-                            </div>
-    
-                            <div class="govtask-progress">
-    
-                                <span
-                                    style="width:60%"
-                                ></span>
-    
-                            </div>
-    
-                        </div>
-    
-                    </div>
-    
-                </div>
-    
-    
-    
-                <!-- Overall Progress -->
-    
-                <div class="govtask-panel">
-    
-                    <div class="govtask-panel-header">
-    
-                        <div>
-    
-                            <span>
-                                OVERALL PERFORMANCE
-                            </span>
-    
-                            <h2>
-                                Task Completion
-                            </h2>
-    
-                        </div>
-    
-                    </div>
-    
-    
-                    <div class="govtask-overall-progress">
-    
-                        <div class="govtask-progress-circle">
-    
-                            <div>
-    
-                                <strong>
-                                    63%
-                                </strong>
-    
-                                <span>
-                                    Completed
-                                </span>
-    
-                            </div>
-    
-                        </div>
-    
-    
-                        <div class="govtask-progress-text">
-    
-                            <h3>
-                                Good progress!
-                            </h3>
-    
-                            <p>
-                                You have completed 15 of your
-                                24 assigned citizen service tasks.
-                            </p>
-    
-                            <a href="404.html">
-                                View All Tasks
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </a>
-    
-                        </div>
-    
-                    </div>
-    
-                </div>
-    
-            </div>
-    
-    
-    
-            <!-- =====================================================
-                 RECENT TASKS
-                 ===================================================== -->
-    
-            <div class="govtask-recent-panel">
-    
-                <div class="govtask-panel-header">
+                <div class="govapp-panel-header">
     
                     <div>
     
                         <span>
-                            TASK RECORDS
+                            APPLICATION RECORDS
                         </span>
     
                         <h2>
-                            Recent Tasks
+                            Recent Applications
                         </h2>
     
                     </div>
     
                     <a href="404.html">
-    
                         View All
-    
                         <i class="fa-solid fa-arrow-right"></i>
-    
                     </a>
     
                 </div>
     
     
-                <div class="govtask-table-wrapper">
+                <div class="govapp-table-wrapper">
     
-                    <table class="govtask-table">
+                    <table class="govapp-table">
     
                         <thead>
     
                             <tr>
     
                                 <th>
-                                    Task
+                                    Application ID
+                                </th>
+    
+                                <th>
+                                    Service
                                 </th>
     
                                 <th>
@@ -1231,15 +961,7 @@
                                 </th>
     
                                 <th>
-                                    Due Date
-                                </th>
-    
-                                <th>
-                                    Priority
-                                </th>
-    
-                                <th>
-                                    Progress
+                                    Submitted
                                 </th>
     
                                 <th>
@@ -1255,126 +977,26 @@
                         </thead>
     
     
-                        <tbody id="govtaskList">
+                        <tbody
+                            id="govappApplicationList"
+                        >
     
     
-                            <!-- Task 1 -->
+                            <!-- Application 1 -->
     
                             <tr
-                                data-status="progress"
-                                data-priority="high"
-                                data-search="property tax payment municipal"
+                                data-status="approved"
+                                data-search="APP-2026-00124 income certificate revenue"
                             >
     
                                 <td>
-    
-                                    <div class="govtask-name">
-    
-                                        <div class="govtask-task-icon blue">
-                                            <i class="fa-solid fa-building"></i>
-                                        </div>
-    
-                                        <div>
-    
-                                            <strong>
-                                                Property Tax Payment
-                                            </strong>
-    
-                                            <span>
-                                                TASK-2026-001
-                                            </span>
-    
-                                        </div>
-    
-                                    </div>
-    
+                                    <strong>
+                                        APP-2026-00124
+                                    </strong>
                                 </td>
     
                                 <td>
-                                    Municipal Administration
-                                </td>
-    
-                                <td>
-                                    18 Aug 2026
-                                </td>
-    
-                                <td>
-    
-                                    <span class="govtask-priority high">
-                                        High
-                                    </span>
-    
-                                </td>
-    
-                                <td>
-    
-                                    <div class="govtask-mini-progress">
-    
-                                        <div>
-                                            <span style="width:70%"></span>
-                                        </div>
-    
-                                        <b>
-                                            70%
-                                        </b>
-    
-                                    </div>
-    
-                                </td>
-    
-                                <td>
-    
-                                    <span class="govtask-status progress">
-                                        In Progress
-                                    </span>
-    
-                                </td>
-    
-                                <td>
-    
-                                    <a
-                                        href="404.html"
-                                        class="govtask-action-btn"
-                                    >
-                                        View
-                                    </a>
-    
-                                </td>
-    
-                            </tr>
-    
-    
-    
-                            <!-- Task 2 -->
-    
-                            <tr
-                                data-status="completed"
-                                data-priority="medium"
-                                data-search="birth certificate revenue"
-                            >
-    
-                                <td>
-    
-                                    <div class="govtask-name">
-    
-                                        <div class="govtask-task-icon green">
-                                            <i class="fa-solid fa-file-lines"></i>
-                                        </div>
-    
-                                        <div>
-    
-                                            <strong>
-                                                Birth Certificate
-                                            </strong>
-    
-                                            <span>
-                                                TASK-2026-002
-                                            </span>
-    
-                                        </div>
-    
-                                    </div>
-    
+                                    Income Certificate
                                 </td>
     
                                 <td>
@@ -1382,37 +1004,14 @@
                                 </td>
     
                                 <td>
-                                    15 Aug 2026
+                                    10 Aug 2026
                                 </td>
     
                                 <td>
     
-                                    <span class="govtask-priority medium">
-                                        Medium
-                                    </span>
-    
-                                </td>
-    
-                                <td>
-    
-                                    <div class="govtask-mini-progress">
-    
-                                        <div>
-                                            <span style="width:100%"></span>
-                                        </div>
-    
-                                        <b>
-                                            100%
-                                        </b>
-    
-                                    </div>
-    
-                                </td>
-    
-                                <td>
-    
-                                    <span class="govtask-status completed">
-                                        Completed
+                                    <span class="govapp-status approved">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                        Approved
                                     </span>
     
                                 </td>
@@ -1421,7 +1020,7 @@
     
                                     <a
                                         href="404.html"
-                                        class="govtask-action-btn"
+                                        class="govapp-view-btn"
                                     >
                                         View
                                     </a>
@@ -1432,36 +1031,21 @@
     
     
     
-                            <!-- Task 3 -->
+                            <!-- Application 2 -->
     
                             <tr
                                 data-status="pending"
-                                data-priority="medium"
-                                data-search="water connection municipal"
+                                data-search="APP-2026-00123 property tax municipal"
                             >
     
                                 <td>
+                                    <strong>
+                                        APP-2026-00123
+                                    </strong>
+                                </td>
     
-                                    <div class="govtask-name">
-    
-                                        <div class="govtask-task-icon cyan">
-                                            <i class="fa-solid fa-droplet"></i>
-                                        </div>
-    
-                                        <div>
-    
-                                            <strong>
-                                                Water Connection Request
-                                            </strong>
-    
-                                            <span>
-                                                TASK-2026-003
-                                            </span>
-    
-                                        </div>
-    
-                                    </div>
-    
+                                <td>
+                                    Property Tax
                                 </td>
     
                                 <td>
@@ -1469,36 +1053,13 @@
                                 </td>
     
                                 <td>
-                                    20 Aug 2026
+                                    09 Aug 2026
                                 </td>
     
                                 <td>
     
-                                    <span class="govtask-priority medium">
-                                        Medium
-                                    </span>
-    
-                                </td>
-    
-                                <td>
-    
-                                    <div class="govtask-mini-progress">
-    
-                                        <div>
-                                            <span style="width:30%"></span>
-                                        </div>
-    
-                                        <b>
-                                            30%
-                                        </b>
-    
-                                    </div>
-    
-                                </td>
-    
-                                <td>
-    
-                                    <span class="govtask-status pending">
+                                    <span class="govapp-status pending">
+                                        <i class="fa-solid fa-clock"></i>
                                         Pending
                                     </span>
     
@@ -1508,7 +1069,7 @@
     
                                     <a
                                         href="404.html"
-                                        class="govtask-action-btn"
+                                        class="govapp-view-btn"
                                     >
                                         View
                                     </a>
@@ -1519,127 +1080,25 @@
     
     
     
-                            <!-- Task 4 -->
+                            <!-- Application 3 -->
     
                             <tr
-                                data-status="overdue"
-                                data-priority="high"
-                                data-search="driving license transport"
+                                data-status="approved"
+                                data-search="APP-2026-00122 welfare scheme social welfare"
                             >
     
                                 <td>
-    
-                                    <div class="govtask-name">
-    
-                                        <div class="govtask-task-icon red">
-                                            <i class="fa-solid fa-id-card"></i>
-                                        </div>
-    
-                                        <div>
-    
-                                            <strong>
-                                                Driving License Renewal
-                                            </strong>
-    
-                                            <span>
-                                                TASK-2026-004
-                                            </span>
-    
-                                        </div>
-    
-                                    </div>
-    
+                                    <strong>
+                                        APP-2026-00122
+                                    </strong>
                                 </td>
     
                                 <td>
-                                    Transport Department
+                                    Welfare Scheme
                                 </td>
     
                                 <td>
-                                    10 Aug 2026
-                                </td>
-    
-                                <td>
-    
-                                    <span class="govtask-priority high">
-                                        High
-                                    </span>
-    
-                                </td>
-    
-                                <td>
-    
-                                    <div class="govtask-mini-progress">
-    
-                                        <div>
-                                            <span style="width:45%"></span>
-                                        </div>
-    
-                                        <b>
-                                            45%
-                                        </b>
-    
-                                    </div>
-    
-                                </td>
-    
-                                <td>
-    
-                                    <span class="govtask-status overdue">
-                                        Overdue
-                                    </span>
-    
-                                </td>
-    
-                                <td>
-    
-                                    <a
-                                        href="404.html"
-                                        class="govtask-action-btn danger"
-                                    >
-                                        Action
-                                    </a>
-    
-                                </td>
-    
-                            </tr>
-    
-    
-    
-                            <!-- Task 5 -->
-    
-                            <tr
-                                data-status="completed"
-                                data-priority="low"
-                                data-search="income certificate revenue"
-                            >
-    
-                                <td>
-    
-                                    <div class="govtask-name">
-    
-                                        <div class="govtask-task-icon purple">
-                                            <i class="fa-solid fa-file-shield"></i>
-                                        </div>
-    
-                                        <div>
-    
-                                            <strong>
-                                                Income Certificate
-                                            </strong>
-    
-                                            <span>
-                                                TASK-2026-005
-                                            </span>
-    
-                                        </div>
-    
-                                    </div>
-    
-                                </td>
-    
-                                <td>
-                                    Revenue Department
+                                    Social Welfare
                                 </td>
     
                                 <td>
@@ -1648,32 +1107,9 @@
     
                                 <td>
     
-                                    <span class="govtask-priority low">
-                                        Low
-                                    </span>
-    
-                                </td>
-    
-                                <td>
-    
-                                    <div class="govtask-mini-progress">
-    
-                                        <div>
-                                            <span style="width:100%"></span>
-                                        </div>
-    
-                                        <b>
-                                            100%
-                                        </b>
-    
-                                    </div>
-    
-                                </td>
-    
-                                <td>
-    
-                                    <span class="govtask-status completed">
-                                        Completed
+                                    <span class="govapp-status approved">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                        Approved
                                     </span>
     
                                 </td>
@@ -1682,7 +1118,105 @@
     
                                     <a
                                         href="404.html"
-                                        class="govtask-action-btn"
+                                        class="govapp-view-btn"
+                                    >
+                                        View
+                                    </a>
+    
+                                </td>
+    
+                            </tr>
+    
+    
+    
+                            <!-- Application 4 -->
+    
+                            <tr
+                                data-status="rejected"
+                                data-search="APP-2026-00121 vehicle permit transport"
+                            >
+    
+                                <td>
+                                    <strong>
+                                        APP-2026-00121
+                                    </strong>
+                                </td>
+    
+                                <td>
+                                    Vehicle Permit
+                                </td>
+    
+                                <td>
+                                    Transport Department
+                                </td>
+    
+                                <td>
+                                    07 Aug 2026
+                                </td>
+    
+                                <td>
+    
+                                    <span class="govapp-status rejected">
+                                        <i class="fa-solid fa-circle-xmark"></i>
+                                        Rejected
+                                    </span>
+    
+                                </td>
+    
+                                <td>
+    
+                                    <a
+                                        href="404.html"
+                                        class="govapp-view-btn"
+                                    >
+                                        View
+                                    </a>
+    
+                                </td>
+    
+                            </tr>
+    
+    
+    
+                            <!-- Application 5 -->
+    
+                            <tr
+                                data-status="pending"
+                                data-search="APP-2026-00120 community certificate revenue"
+                            >
+    
+                                <td>
+                                    <strong>
+                                        APP-2026-00120
+                                    </strong>
+                                </td>
+    
+                                <td>
+                                    Community Certificate
+                                </td>
+    
+                                <td>
+                                    Revenue Department
+                                </td>
+    
+                                <td>
+                                    06 Aug 2026
+                                </td>
+    
+                                <td>
+    
+                                    <span class="govapp-status pending">
+                                        <i class="fa-solid fa-clock"></i>
+                                        Pending
+                                    </span>
+    
+                                </td>
+    
+                                <td>
+    
+                                    <a
+                                        href="404.html"
+                                        class="govapp-view-btn"
                                     >
                                         View
                                     </a>
@@ -1703,128 +1237,269 @@
     
     
             <!-- =====================================================
-                 UPCOMING TASKS
+                 APPLICATION STATUS TIMELINE
                  ===================================================== -->
     
-            <div class="govtask-upcoming-panel">
+            <div class="govapp-bottom-grid">
     
-                <div class="govtask-panel-header">
     
-                    <div>
+                <!-- Timeline -->
     
-                        <span>
-                            UPCOMING ACTIVITIES
-                        </span>
+                <div class="govapp-timeline-panel">
     
-                        <h2>
-                            Upcoming Tasks
-                        </h2>
+                    <div class="govapp-panel-header">
+    
+                        <div>
+    
+                            <span>
+                                APPLICATION TRACKING
+                            </span>
+    
+                            <h2>
+                                Latest Application Status
+                            </h2>
+    
+                        </div>
+    
+                    </div>
+    
+    
+                    <div class="govapp-timeline">
+    
+    
+                        <div class="govapp-timeline-item active">
+    
+                            <div class="govapp-timeline-icon">
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </div>
+    
+                            <div>
+    
+                                <h3>
+                                    Application Submitted
+                                </h3>
+    
+                                <p>
+                                    Your application APP-2026-00123
+                                    has been submitted successfully.
+                                </p>
+    
+                                <small>
+                                    09 Aug 2026 · 10:32 AM
+                                </small>
+    
+                            </div>
+    
+                        </div>
+    
+    
+    
+                        <div class="govapp-timeline-item active">
+    
+                            <div class="govapp-timeline-icon">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+    
+                            <div>
+    
+                                <h3>
+                                    Documents Verified
+                                </h3>
+    
+                                <p>
+                                    Your submitted documents have been
+                                    successfully verified.
+                                </p>
+    
+                                <small>
+                                    09 Aug 2026 · 02:18 PM
+                                </small>
+    
+                            </div>
+    
+                        </div>
+    
+    
+    
+                        <div class="govapp-timeline-item current">
+    
+                            <div class="govapp-timeline-icon">
+                                <i class="fa-solid fa-hourglass-half"></i>
+                            </div>
+    
+                            <div>
+    
+                                <h3>
+                                    Under Department Review
+                                </h3>
+    
+                                <p>
+                                    Your application is currently being
+                                    reviewed by the concerned department.
+                                </p>
+    
+                                <small>
+                                    Current Status
+                                </small>
+    
+                            </div>
+    
+                        </div>
+    
+    
+    
+                        <div class="govapp-timeline-item">
+    
+                            <div class="govapp-timeline-icon">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+    
+                            <div>
+    
+                                <h3>
+                                    Final Decision
+                                </h3>
+    
+                                <p>
+                                    Final approval or rejection will be
+                                    updated here.
+                                </p>
+    
+                                <small>
+                                    Awaiting
+                                </small>
+    
+                            </div>
+    
+                        </div>
     
                     </div>
     
                 </div>
     
     
-                <div class="govtask-upcoming-grid">
     
+                <!-- Quick Actions -->
     
-                    <div class="govtask-upcoming-card">
+                <div class="govapp-actions-panel">
     
-                        <div class="govtask-calendar">
-    
-                            <span>
-                                AUG
-                            </span>
-    
-                            <strong>
-                                18
-                            </strong>
-    
-                        </div>
+                    <div class="govapp-panel-header">
     
                         <div>
     
-                            <strong>
-                                Property Tax Payment
-                            </strong>
-    
                             <span>
-                                Municipal Administration
+                                QUICK ACTIONS
                             </span>
     
-                            <small>
-                                Due in 5 days
-                            </small>
+                            <h2>
+                                Application Services
+                            </h2>
     
                         </div>
     
                     </div>
     
     
+                    <div class="govapp-action-grid">
     
-                    <div class="govtask-upcoming-card">
     
-                        <div class="govtask-calendar">
+                        <a
+                            href="404.html"
+                            class="govapp-action-card"
+                        >
     
-                            <span>
-                                AUG
-                            </span>
+                            <i class="fa-solid fa-file-circle-plus"></i>
     
-                            <strong>
-                                20
-                            </strong>
+                            <div>
     
-                        </div>
+                                <strong>
+                                    Start New Application
+                                </strong>
     
-                        <div>
+                                <span>
+                                    Apply for government services
+                                </span>
     
-                            <strong>
-                                Water Connection Request
-                            </strong>
+                            </div>
     
-                            <span>
-                                Municipal Administration
-                            </span>
+                            <i class="fa-solid fa-arrow-right"></i>
     
-                            <small>
-                                Due in 7 days
-                            </small>
-    
-                        </div>
-    
-                    </div>
+                        </a>
     
     
     
-                    <div class="govtask-upcoming-card">
+                        <a
+                            href="404.html"
+                            class="govapp-action-card"
+                        >
     
-                        <div class="govtask-calendar">
+                            <i class="fa-solid fa-file-arrow-down"></i>
     
-                            <span>
-                                AUG
-                            </span>
+                            <div>
     
-                            <strong>
-                                24
-                            </strong>
+                                <strong>
+                                    Download Documents
+                                </strong>
     
-                        </div>
+                                <span>
+                                    Download approved certificates
+                                </span>
     
-                        <div>
+                            </div>
     
-                            <strong>
-                                Family Certificate
-                            </strong>
+                            <i class="fa-solid fa-arrow-right"></i>
     
-                            <span>
-                                Revenue Department
-                            </span>
+                        </a>
     
-                            <small>
-                                Due in 11 days
-                            </small>
     
-                        </div>
+    
+                        <a
+                            href="404.html"
+                            class="govapp-action-card"
+                        >
+    
+                            <i class="fa-solid fa-bell"></i>
+    
+                            <div>
+    
+                                <strong>
+                                    Application Alerts
+                                </strong>
+    
+                                <span>
+                                    View important notifications
+                                </span>
+    
+                            </div>
+    
+                            <i class="fa-solid fa-arrow-right"></i>
+    
+                        </a>
+    
+    
+    
+                        <a
+                            href="404.html"
+                            class="govapp-action-card"
+                        >
+    
+                            <i class="fa-solid fa-headset"></i>
+    
+                            <div>
+    
+                                <strong>
+                                    Need Help?
+                                </strong>
+    
+                                <span>
+                                    Contact citizen support
+                                </span>
+    
+                            </div>
+    
+                            <i class="fa-solid fa-arrow-right"></i>
+    
+                        </a>
     
                     </div>
     
@@ -1836,24 +1511,26 @@
         </div>
     
     </section>
+    
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    
 
-    <Style>
+    <style>
         /* =========================================================
-   CITIZEN GOVERNMENT PORTAL
-   TASKS DASHBOARD
+   STACKLY GOVERNMENT PORTAL
+   CITIZEN APPLICATION DASHBOARD
 
-   UNIQUE PREFIX:
-   govtask-
-
-   This content is independent from your
-   existing sidebar and topbar.
+   IMPORTANT:
+   All classes use "govapp-" prefix
+   so they do not conflict with your
+   existing sidebar / topbar CSS.
    ========================================================= */
 
 
-.govtask-dashboard,
-.govtask-dashboard * {
+.govapp-dashboard,
+.govapp-dashboard * {
     box-sizing: border-box;
 }
 
@@ -1862,7 +1539,7 @@
    MAIN BACKGROUND
    ========================================================= */
 
-.govtask-dashboard {
+.govapp-dashboard {
 
     position: relative;
 
@@ -1872,8 +1549,8 @@
 
     background-image:
         linear-gradient(
-            rgba(5, 39, 72, 0.88),
-            rgba(3, 45, 82, 0.94)
+            rgba(5, 40, 75, 0.84),
+            rgba(4, 45, 82, 0.91)
         ),
         url("./g5.webp");
 
@@ -1889,25 +1566,25 @@
 }
 
 
-.govtask-background-overlay {
+.govapp-background-overlay {
 
     position: absolute;
 
     inset: 0;
 
-    pointer-events: none;
-
     background:
         radial-gradient(
-            circle at 8% 10%,
-            rgba(0,210,255,0.14),
-            transparent 34%
+            circle at 20% 10%,
+            rgba(0, 205, 255, 0.13),
+            transparent 35%
         ),
         radial-gradient(
-            circle at 94% 82%,
-            rgba(92,103,255,0.13),
+            circle at 85% 80%,
+            rgba(0, 130, 255, 0.12),
             transparent 35%
         );
+
+    pointer-events: none;
 }
 
 
@@ -1915,7 +1592,7 @@
    CONTAINER
    ========================================================= */
 
-.govtask-container {
+.govapp-container {
 
     position: relative;
 
@@ -1932,10 +1609,10 @@
 
 
 /* =========================================================
-   HEADER
+   PAGE HEADER
    ========================================================= */
 
-.govtask-page-header {
+.govapp-page-header {
 
     display: flex;
 
@@ -1947,22 +1624,28 @@
 
     padding: 32px 36px;
 
-    border-radius: 24px;
+    border: 1px solid rgba(255,255,255,0.19);
 
-    border: 1px solid rgba(255,255,255,0.18);
+    border-radius: 24px;
 
     background:
         linear-gradient(
             135deg,
-            rgba(37,101,151,0.80),
-            rgba(22,70,110,0.76)
+            rgba(37,101,151,0.79),
+            rgba(22,70,110,0.74)
         );
 
-    backdrop-filter: blur(6px);
+    backdrop-filter: blur(5px);
 }
 
 
-.govtask-breadcrumb {
+.govapp-page-title {
+
+    min-width: 0;
+}
+
+
+.govapp-breadcrumb {
 
     display: inline-flex;
 
@@ -1976,11 +1659,11 @@
 
     border-radius: 30px;
 
-    color: #5fddff;
+    border: 1px solid rgba(77,218,255,0.35);
 
-    background: rgba(55,200,240,0.11);
+    background: rgba(48,190,239,0.12);
 
-    border: 1px solid rgba(78,219,255,0.32);
+    color: #62ddff;
 
     font-size: 15px;
 
@@ -1990,7 +1673,7 @@
 }
 
 
-.govtask-heading h1 {
+.govapp-page-title h1 {
 
     margin: 0 0 12px;
 
@@ -2004,27 +1687,27 @@
 }
 
 
-.govtask-heading h1 span {
+.govapp-page-title h1 span {
 
-    color: #5cddff;
+    color: #5bdcff;
 }
 
 
-.govtask-heading p {
+.govapp-page-title p {
 
-    max-width: 900px;
+    max-width: 850px;
 
     margin: 0;
 
-    color: rgba(255,255,255,0.88);
+    color: rgba(255,255,255,0.90);
 
-    font-size: 22px;
+    font-size: 21px;
 
     line-height: 1.6;
 }
 
 
-.govtask-new-btn {
+.govapp-new-btn {
 
     display: inline-flex;
 
@@ -2034,9 +1717,9 @@
 
     gap: 10px;
 
-    min-height: 60px;
+    min-height: 57px;
 
-    padding: 0 24px;
+    padding: 0 23px;
 
     border-radius: 12px;
 
@@ -2051,7 +1734,7 @@
 
     text-decoration: none;
 
-    font-size: 20px;
+    font-size: 18px;
 
     font-weight: 800;
 
@@ -2061,67 +1744,65 @@
 }
 
 
-.govtask-new-btn:hover {
+.govapp-new-btn:hover {
 
     transform: translateY(-3px);
 
     box-shadow:
-        0 12px 30px rgba(42,186,245,0.25);
+        0 12px 30px rgba(30,174,240,0.22);
 }
 
 
 /* =========================================================
-   SUMMARY
+   STATISTICS
    ========================================================= */
 
-.govtask-summary-grid {
+.govapp-stat-grid {
 
     display: grid;
 
     grid-template-columns:
-        repeat(5,minmax(0,1fr));
+        repeat(4,minmax(0,1fr));
 
-    gap: 17px;
+    gap: 18px;
 
     margin-top: 22px;
 }
 
 
-.govtask-summary-card {
+.govapp-stat-card {
 
     display: flex;
 
     align-items: center;
 
-    gap: 14px;
+    gap: 15px;
 
-    min-width: 0;
+    padding: 22px;
 
-    padding: 21px;
+    border-radius: 19px;
 
-    border-radius: 18px;
-
-    border: 1px solid rgba(255,255,255,0.16);
+    border: 1px solid rgba(255,255,255,0.17);
 
     background:
-        rgba(47,98,135,0.70);
+        rgba(48,98,135,0.70);
 
-    backdrop-filter: blur(6px);
+    backdrop-filter: blur(5px);
 
     transition: 0.3s ease;
 }
 
 
-.govtask-summary-card:hover {
+.govapp-stat-card:hover {
 
     transform: translateY(-4px);
 
     background:
-        rgba(57,114,153,0.78);
+        rgba(57,115,156,0.76);
 }
 
 
-.govtask-icon {
+.govapp-stat-icon {
 
     width: 62px;
 
@@ -2141,81 +1822,75 @@
 }
 
 
-.govtask-blue {
+.govapp-blue {
 
-    color: #5cddff;
+    color: #5edcff;
 
-    background: rgba(47,190,240,0.14);
+    background: rgba(43,174,229,0.15);
 }
 
 
-.govtask-green {
+.govapp-orange {
 
-    color: #4ee2aa;
+    color: #ffb74d;
 
-    background: rgba(52,210,157,0.14);
+    background: rgba(255,160,60,0.14);
 }
 
 
-.govtask-purple {
+.govapp-green {
 
-    color: #b091ff;
+    color: #51e5ad;
 
-    background: rgba(147,112,255,0.14);
+    background: rgba(43,200,143,0.14);
 }
 
 
-.govtask-orange {
+.govapp-red {
 
-    color: #ffb84d;
+    color: #ff788a;
 
-    background: rgba(255,171,66,0.14);
+    background: rgba(238,84,105,0.14);
 }
 
 
-.govtask-red {
-
-    color: #ff7082;
-
-    background: rgba(242,79,102,0.14);
-}
-
-
-.govtask-summary-content {
+.govapp-stat-content {
 
     min-width: 0;
 }
 
 
-.govtask-summary-content span {
+.govapp-stat-content span {
 
     display: block;
 
-    color: rgba(255,255,255,0.77);
+    color: rgba(255,255,255,0.80);
 
     font-size: 16px;
 }
 
 
-.govtask-summary-content strong {
+.govapp-stat-content strong {
 
     display: block;
 
-    margin: 3px 0;
+    margin: 2px 0;
 
     color: #ffffff;
 
-    font-size: 34px;
+    font-size: 32px;
 }
 
 
-.govtask-summary-content small {
+.govapp-stat-content small {
 
     display: block;
 
-    color: rgba(255,255,255,0.50);
+    color: #50e4ad;
 
     font-size: 13px;
+
+    font-weight: 700;
 }
 
 
@@ -2223,12 +1898,12 @@
    FILTER
    ========================================================= */
 
-.govtask-filter-panel {
+.govapp-filter-panel {
 
     display: grid;
 
     grid-template-columns:
-        1fr 1.5fr 190px 190px;
+        1fr 1.4fr 190px 220px;
 
     align-items: center;
 
@@ -2245,11 +1920,11 @@
     background:
         rgba(45,96,132,0.68);
 
-    backdrop-filter: blur(6px);
+    backdrop-filter: blur(5px);
 }
 
 
-.govtask-filter-title {
+.govapp-filter-heading {
 
     display: flex;
 
@@ -2259,709 +1934,7 @@
 }
 
 
-.govtask-filter-icon {
-
-    width: 50px;
-
-    height: 50px;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    flex-shrink: 0;
-
-    border-radius: 12px;
-
-    color: #5cddff;
-
-    background: rgba(47,190,240,0.14);
-
-    font-size: 20px;
-}
-
-
-.govtask-filter-title strong {
-
-    display: block;
-
-    color: #ffffff;
-
-    font-size: 19px;
-}
-
-
-.govtask-filter-title span {
-
-    display: block;
-
-    margin-top: 3px;
-
-    color: rgba(255,255,255,0.48);
-
-    font-size: 13px;
-}
-
-
-.govtask-search {
-
-    display: flex;
-
-    align-items: center;
-
-    gap: 10px;
-
-    height: 52px;
-
-    padding: 0 15px;
-
-    border-radius: 11px;
-
-    border: 1px solid rgba(255,255,255,0.17);
-
-    background: rgba(255,255,255,0.07);
-}
-
-
-.govtask-search i {
-
-    color: #5cddff;
-
-    font-size: 17px;
-}
-
-
-.govtask-search input {
-
-    width: 100%;
-
-    border: 0;
-
-    outline: 0;
-
-    color: #ffffff;
-
-    background: transparent;
-
-    font-size: 16px;
-}
-
-
-.govtask-search input::placeholder {
-
-    color: rgba(255,255,255,0.45);
-}
-
-
-.govtask-select {
-
-    width: 100%;
-
-    height: 52px;
-
-    padding: 0 12px;
-
-    border-radius: 11px;
-
-    border: 1px solid rgba(255,255,255,0.17);
-
-    outline: none;
-
-    color: #ffffff;
-
-    background: rgba(255,255,255,0.07);
-
-    font-size: 15px;
-}
-
-
-.govtask-select option {
-
-    color: #173c5d;
-
-    background: #ffffff;
-}
-
-
-/* =========================================================
-   CHART GRID
-   ========================================================= */
-
-.govtask-chart-grid {
-
-    display: grid;
-
-    grid-template-columns:
-        minmax(0,1.4fr)
-        minmax(320px,0.75fr);
-
-    gap: 21px;
-
-    margin-top: 23px;
-}
-
-
-.govtask-chart-card,
-.govtask-panel,
-.govtask-recent-panel,
-.govtask-upcoming-panel {
-
-    min-width: 0;
-
-    padding: 25px;
-
-    border-radius: 21px;
-
-    border: 1px solid rgba(255,255,255,0.18);
-
-    background:
-        rgba(48,98,135,0.69);
-
-    backdrop-filter: blur(6px);
-}
-
-
-.govtask-chart-header,
-.govtask-panel-header {
-
-    display: flex;
-
-    align-items: flex-start;
-
-    justify-content: space-between;
-
-    gap: 20px;
-
-    margin-bottom: 18px;
-}
-
-
-.govtask-chart-header span,
-.govtask-panel-header span {
-
-    display: block;
-
-    margin-bottom: 5px;
-
-    color: #5cddff;
-
-    font-size: 12px;
-
-    font-weight: 800;
-
-    letter-spacing: 1px;
-}
-
-
-.govtask-chart-header h2,
-.govtask-panel-header h2 {
-
-    margin: 0;
-
-    color: #ffffff;
-
-    font-size: 29px;
-
-    line-height: 1.25;
-
-    font-weight: 800;
-}
-
-
-.govtask-year-select {
-
-    height: 43px;
-
-    padding: 0 12px;
-
-    border-radius: 9px;
-
-    border: 1px solid rgba(255,255,255,0.18);
-
-    color: #ffffff;
-
-    background: rgba(255,255,255,0.07);
-
-    outline: none;
-
-    font-size: 14px;
-}
-
-
-.govtask-year-select option {
-
-    color: #173c5d;
-
-    background: #ffffff;
-}
-
-
-/* =========================================================
-   LINE CHART
-   ========================================================= */
-
-.govtask-line-chart {
-
-    position: relative;
-
-    width: 100%;
-
-    height: 330px;
-}
-
-
-/* =========================================================
-   DOUGHNUT
-   ========================================================= */
-
-.govtask-doughnut {
-
-    width: 100%;
-
-    max-width: 300px;
-
-    height: 250px;
-
-    margin: auto;
-}
-
-
-.govtask-legend {
-
-    display: flex;
-
-    flex-direction: column;
-
-    gap: 11px;
-
-    margin-top: 10px;
-}
-
-
-.govtask-legend div {
-
-    display: flex;
-
-    align-items: center;
-
-    gap: 9px;
-
-    color: rgba(255,255,255,0.70);
-
-    font-size: 15px;
-}
-
-
-.govtask-legend strong {
-
-    margin-left: auto;
-
-    color: #ffffff;
-}
-
-
-.govtask-dot {
-
-    width: 11px;
-
-    height: 11px;
-
-    flex-shrink: 0;
-
-    border-radius: 50%;
-}
-
-
-.govtask-dot.green {
-    background: #42d89e;
-}
-
-
-.govtask-dot.purple {
-    background: #a67cff;
-}
-
-
-.govtask-dot.orange {
-    background: #ffb84d;
-}
-
-
-.govtask-dot.red {
-    background: #ff687d;
-}
-
-
-/* =========================================================
-   DEPARTMENT CHART
-   ========================================================= */
-
-.govtask-department-chart {
-
-    margin-top: 23px;
-}
-
-
-.govtask-total-badge {
-
-    padding: 9px 14px;
-
-    border-radius: 20px;
-
-    color: #5cddff;
-
-    background: rgba(47,190,240,0.12);
-
-    font-size: 15px;
-
-    font-weight: 800;
-}
-
-
-.govtask-bar-chart {
-
-    position: relative;
-
-    width: 100%;
-
-    height: 320px;
-}
-
-
-/* =========================================================
-   MIDDLE GRID
-   ========================================================= */
-
-.govtask-middle-grid {
-
-    display: grid;
-
-    grid-template-columns: 1fr 1fr;
-
-    gap: 21px;
-
-    margin-top: 23px;
-}
-
-
-/* =========================================================
-   PRIORITY
-   ========================================================= */
-
-.govtask-priority-list {
-
-    display: flex;
-
-    flex-direction: column;
-
-    gap: 25px;
-
-    margin-top: 24px;
-}
-
-
-.govtask-priority-info {
-
-    display: flex;
-
-    justify-content: space-between;
-
-    align-items: center;
-
-    margin-bottom: 10px;
-}
-
-
-.govtask-priority-info > div {
-
-    display: flex;
-
-    align-items: center;
-
-    gap: 9px;
-}
-
-
-.govtask-priority-info strong {
-
-    color: #ffffff;
-
-    font-size: 17px;
-}
-
-
-.govtask-priority-info b {
-
-    color: rgba(255,255,255,0.65);
-
-    font-size: 15px;
-}
-
-
-.govtask-priority-dot {
-
-    width: 12px;
-
-    height: 12px;
-
-    border-radius: 50%;
-}
-
-
-.govtask-priority-dot.high {
-    background: #ff667b;
-}
-
-
-.govtask-priority-dot.medium {
-    background: #ffb84d;
-}
-
-
-.govtask-priority-dot.low {
-    background: #4fddff;
-}
-
-
-.govtask-progress {
-
-    width: 100%;
-
-    height: 9px;
-
-    overflow: hidden;
-
-    border-radius: 20px;
-
-    background: rgba(255,255,255,0.08);
-}
-
-
-.govtask-progress span {
-
-    display: block;
-
-    height: 100%;
-
-    border-radius: inherit;
-
-    background:
-        linear-gradient(
-            90deg,
-            #37b8ee,
-            #62dfff
-        );
-}
-
-
-/* =========================================================
-   OVERALL PROGRESS
-   ========================================================= */
-
-.govtask-overall-progress {
-
-    display: flex;
-
-    align-items: center;
-
-    gap: 25px;
-
-    margin-top: 20px;
-}
-
-
-.govtask-progress-circle {
-
-    width: 170px;
-
-    height: 170px;
-
-    flex-shrink: 0;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    border-radius: 50%;
-
-    background:
-        radial-gradient(
-            circle,
-            rgba(48,98,135,0.95) 58%,
-            transparent 59%
-        );
-
-    border: 14px solid rgba(255,255,255,0.08);
-
-    border-top-color: #48dcaa;
-
-    border-right-color: #48dcaa;
-
-    border-bottom-color: #48dcaa;
-}
-
-
-.govtask-progress-circle div {
-
-    text-align: center;
-}
-
-
-.govtask-progress-circle strong {
-
-    display: block;
-
-    color: #ffffff;
-
-    font-size: 36px;
-}
-
-
-.govtask-progress-circle span {
-
-    color: rgba(255,255,255,0.55);
-
-    font-size: 13px;
-}
-
-
-.govtask-progress-text h3 {
-
-    margin: 0 0 8px;
-
-    color: #ffffff;
-
-    font-size: 25px;
-}
-
-
-.govtask-progress-text p {
-
-    margin: 0 0 14px;
-
-    color: rgba(255,255,255,0.62);
-
-    font-size: 16px;
-
-    line-height: 1.6;
-}
-
-
-.govtask-progress-text a {
-
-    color: #5cddff;
-
-    text-decoration: none;
-
-    font-size: 15px;
-
-    font-weight: 800;
-}
-
-
-/* =========================================================
-   RECENT TASKS
-   ========================================================= */
-
-.govtask-recent-panel {
-
-    margin-top: 23px;
-}
-
-
-.govtask-panel-header > a {
-
-    display: flex;
-
-    align-items: center;
-
-    gap: 7px;
-
-    color: #5cddff;
-
-    text-decoration: none;
-
-    font-size: 15px;
-
-    font-weight: 800;
-}
-
-
-.govtask-table-wrapper {
-
-    width: 100%;
-
-    overflow-x: auto;
-}
-
-
-.govtask-table {
-
-    width: 100%;
-
-    min-width: 1120px;
-
-    border-collapse: collapse;
-}
-
-
-.govtask-table th {
-
-    padding: 15px 12px;
-
-    text-align: left;
-
-    border-bottom: 1px solid rgba(255,255,255,0.12);
-
-    color: rgba(255,255,255,0.46);
-
-    font-size: 12px;
-
-    text-transform: uppercase;
-
-    letter-spacing: 0.5px;
-}
-
-
-.govtask-table td {
-
-    padding: 17px 12px;
-
-    border-bottom: 1px solid rgba(255,255,255,0.08);
-
-    color: rgba(255,255,255,0.65);
-
-    font-size: 14px;
-}
-
-
-.govtask-table tbody tr {
-
-    transition: 0.25s ease;
-}
-
-
-.govtask-table tbody tr:hover {
-
-    background: rgba(255,255,255,0.04);
-}
-
-
-.govtask-name {
-
-    display: flex;
-
-    align-items: center;
-
-    gap: 11px;
-}
-
-
-.govtask-task-icon {
+.govapp-filter-icon {
 
     width: 48px;
 
@@ -2977,84 +1950,485 @@
 
     border-radius: 12px;
 
+    color: #5edcff;
+
+    background: rgba(43,174,229,0.14);
+
     font-size: 19px;
 }
 
 
-.govtask-task-icon.blue {
-
-    color: #5cddff;
-
-    background: rgba(47,190,240,0.13);
-}
-
-
-.govtask-task-icon.green {
-
-    color: #4ee2aa;
-
-    background: rgba(52,210,157,0.13);
-}
-
-
-.govtask-task-icon.cyan {
-
-    color: #5eeeff;
-
-    background: rgba(57,214,239,0.13);
-}
-
-
-.govtask-task-icon.red {
-
-    color: #ff7082;
-
-    background: rgba(242,79,102,0.13);
-}
-
-
-.govtask-task-icon.purple {
-
-    color: #b091ff;
-
-    background: rgba(147,112,255,0.13);
-}
-
-
-.govtask-name strong {
+.govapp-filter-heading strong {
 
     display: block;
 
     color: #ffffff;
 
-    font-size: 15px;
+    font-size: 18px;
 }
 
 
-.govtask-name span {
+.govapp-filter-heading span {
 
     display: block;
 
     margin-top: 3px;
 
-    color: rgba(255,255,255,0.42);
+    color: rgba(255,255,255,0.48);
 
-    font-size: 11px;
+    font-size: 12px;
+}
+
+
+.govapp-search {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    height: 50px;
+
+    padding: 0 15px;
+
+    border-radius: 11px;
+
+    border: 1px solid rgba(255,255,255,0.17);
+
+    background: rgba(255,255,255,0.07);
+}
+
+
+.govapp-search i {
+
+    color: #5edcff;
+
+    font-size: 17px;
+}
+
+
+.govapp-search input {
+
+    width: 100%;
+
+    border: 0;
+
+    outline: none;
+
+    color: #ffffff;
+
+    background: transparent;
+
+    font-size: 15px;
+}
+
+
+.govapp-search input::placeholder {
+
+    color: rgba(255,255,255,0.44);
+}
+
+
+.govapp-select {
+
+    width: 100%;
+
+    height: 50px;
+
+    padding: 0 12px;
+
+    border-radius: 11px;
+
+    border: 1px solid rgba(255,255,255,0.17);
+
+    outline: none;
+
+    color: #ffffff;
+
+    background: rgba(255,255,255,0.07);
+
+    font-size: 14px;
+}
+
+
+.govapp-select option {
+
+    color: #173c5d;
+
+    background: #ffffff;
 }
 
 
 /* =========================================================
-   PRIORITY BADGES
+   CHART GRID
    ========================================================= */
 
-.govtask-priority,
-.govtask-status {
+.govapp-chart-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0,1.4fr)
+        minmax(320px,0.75fr);
+
+    gap: 21px;
+
+    margin-top: 24px;
+}
+
+
+.govapp-chart-card {
+
+    min-width: 0;
+
+    padding: 25px;
+
+    border-radius: 21px;
+
+    border: 1px solid rgba(255,255,255,0.18);
+
+    background:
+        rgba(48,98,135,0.69);
+
+    backdrop-filter: blur(5px);
+}
+
+
+.govapp-chart-header {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    margin-bottom: 18px;
+}
+
+
+.govapp-chart-header span,
+.govapp-panel-header span {
+
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: #5bdcff;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+}
+
+
+.govapp-chart-header h2,
+.govapp-panel-header h2 {
+
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: 28px;
+
+    font-weight: 800;
+}
+
+
+.govapp-chart-select {
+
+    padding: 9px 12px;
+
+    border-radius: 9px;
+
+    border: 1px solid rgba(255,255,255,0.19);
+
+    outline: none;
+
+    color: #ffffff;
+
+    background: rgba(255,255,255,0.07);
+
+    font-size: 13px;
+}
+
+
+.govapp-chart-select option {
+
+    color: #173c5d;
+
+    background: #ffffff;
+}
+
+
+/* =========================================================
+   LINE CHART
+   ========================================================= */
+
+.govapp-line-chart {
+
+    position: relative;
+
+    width: 100%;
+
+    height: 330px;
+}
+
+
+/* =========================================================
+   DOUGHNUT
+   ========================================================= */
+
+.govapp-doughnut {
+
+    position: relative;
+
+    width: 100%;
+
+    max-width: 300px;
+
+    height: 250px;
+
+    margin: auto;
+}
+
+
+.govapp-status-legend {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 11px;
+
+    margin-top: 10px;
+}
+
+
+.govapp-status-legend div {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    color: rgba(255,255,255,0.67);
+
+    font-size: 14px;
+}
+
+
+.govapp-status-legend strong {
+
+    margin-left: auto;
+
+    color: #ffffff;
+}
+
+
+.govapp-dot {
+
+    width: 10px;
+
+    height: 10px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+}
+
+
+.govapp-dot.blue {
+
+    background: #32b8f0;
+}
+
+
+.govapp-dot.green {
+
+    background: #42d89e;
+}
+
+
+.govapp-dot.red {
+
+    background: #ff687d;
+}
+
+
+/* =========================================================
+   DEPARTMENT CHART
+   ========================================================= */
+
+.govapp-department-chart {
+
+    margin-top: 23px;
+}
+
+
+.govapp-total-applications {
+
+    padding: 9px 14px;
+
+    border-radius: 20px;
+
+    color: #5edcff;
+
+    background: rgba(43,174,229,0.13);
+
+    font-size: 14px;
+
+    font-weight: 800;
+}
+
+
+.govapp-bar-chart {
+
+    position: relative;
+
+    width: 100%;
+
+    height: 320px;
+}
+
+
+/* =========================================================
+   APPLICATION TABLE
+   ========================================================= */
+
+.govapp-applications-panel {
+
+    margin-top: 23px;
+
+    padding: 25px;
+
+    border-radius: 21px;
+
+    border: 1px solid rgba(255,255,255,0.18);
+
+    background:
+        rgba(48,98,135,0.69);
+
+    backdrop-filter: blur(5px);
+}
+
+
+.govapp-panel-header {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    margin-bottom: 17px;
+}
+
+
+.govapp-panel-header > a {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    color: #5edcff;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 800;
+}
+
+
+.govapp-table-wrapper {
+
+    width: 100%;
+
+    overflow-x: auto;
+}
+
+
+.govapp-table {
+
+    width: 100%;
+
+    min-width: 850px;
+
+    border-collapse: collapse;
+}
+
+
+.govapp-table th {
+
+    padding: 15px 13px;
+
+    text-align: left;
+
+    border-bottom: 1px solid rgba(255,255,255,0.12);
+
+    color: rgba(255,255,255,0.48);
+
+    font-size: 12px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.5px;
+}
+
+
+.govapp-table td {
+
+    padding: 18px 13px;
+
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+
+    color: rgba(255,255,255,0.67);
+
+    font-size: 14px;
+}
+
+
+.govapp-table tbody tr {
+
+    transition: 0.25s ease;
+}
+
+
+.govapp-table tbody tr:hover {
+
+    background: rgba(255,255,255,0.04);
+}
+
+
+.govapp-table td strong {
+
+    color: #ffffff;
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   STATUS BADGES
+   ========================================================= */
+
+.govapp-status {
 
     display: inline-flex;
 
     align-items: center;
 
-    justify-content: center;
+    gap: 6px;
 
     padding: 7px 10px;
 
@@ -3066,122 +2440,31 @@
 }
 
 
-.govtask-priority.high {
+.govapp-status.approved {
 
-    color: #ff7082;
+    color: #50e4ad;
 
-    background: rgba(242,79,102,0.13);
+    background: rgba(43,200,143,0.13);
 }
 
 
-.govtask-priority.medium {
+.govapp-status.pending {
 
-    color: #ffc35a;
+    color: #ffc45c;
 
-    background: rgba(255,179,62,0.13);
+    background: rgba(255,181,67,0.13);
 }
 
 
-.govtask-priority.low {
+.govapp-status.rejected {
 
-    color: #5cddff;
+    color: #ff788a;
 
-    background: rgba(47,190,240,0.13);
+    background: rgba(238,84,105,0.13);
 }
 
 
-.govtask-status.completed {
-
-    color: #4ee2aa;
-
-    background: rgba(52,210,157,0.13);
-}
-
-
-.govtask-status.progress {
-
-    color: #b091ff;
-
-    background: rgba(147,112,255,0.13);
-}
-
-
-.govtask-status.pending {
-
-    color: #ffc35a;
-
-    background: rgba(255,179,62,0.13);
-}
-
-
-.govtask-status.overdue {
-
-    color: #ff7082;
-
-    background: rgba(242,79,102,0.13);
-}
-
-
-/* =========================================================
-   MINI PROGRESS
-   ========================================================= */
-
-.govtask-mini-progress {
-
-    display: flex;
-
-    align-items: center;
-
-    gap: 8px;
-
-    min-width: 125px;
-}
-
-
-.govtask-mini-progress > div {
-
-    width: 80px;
-
-    height: 7px;
-
-    overflow: hidden;
-
-    border-radius: 10px;
-
-    background: rgba(255,255,255,0.08);
-}
-
-
-.govtask-mini-progress span {
-
-    display: block;
-
-    height: 100%;
-
-    border-radius: inherit;
-
-    background:
-        linear-gradient(
-            90deg,
-            #3abce9,
-            #62e0ff
-        );
-}
-
-
-.govtask-mini-progress b {
-
-    color: rgba(255,255,255,0.66);
-
-    font-size: 12px;
-}
-
-
-/* =========================================================
-   ACTION
-   ========================================================= */
-
-.govtask-action-btn {
+.govapp-view-btn {
 
     display: inline-flex;
 
@@ -3189,19 +2472,19 @@
 
     justify-content: center;
 
-    min-width: 62px;
+    min-width: 55px;
 
-    min-height: 35px;
+    min-height: 34px;
 
     padding: 0 10px;
 
     border-radius: 8px;
 
-    color: #5cddff;
+    color: #5edcff;
 
-    background: rgba(47,190,240,0.08);
+    border: 1px solid rgba(94,220,255,0.24);
 
-    border: 1px solid rgba(47,190,240,0.22);
+    background: rgba(94,220,255,0.08);
 
     text-decoration: none;
 
@@ -3211,111 +2494,159 @@
 }
 
 
-.govtask-action-btn.danger {
-
-    color: #ff7082;
-
-    background: rgba(242,79,102,0.08);
-
-    border-color: rgba(242,79,102,0.22);
-}
-
-
 /* =========================================================
-   UPCOMING
+   BOTTOM
    ========================================================= */
 
-.govtask-upcoming-panel {
+.govapp-bottom-grid {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 21px;
 
     margin-top: 23px;
 }
 
 
-.govtask-upcoming-grid {
+.govapp-timeline-panel,
+.govapp-actions-panel {
 
-    display: grid;
+    min-width: 0;
 
-    grid-template-columns:
-        repeat(3,1fr);
+    padding: 25px;
 
-    gap: 15px;
+    border-radius: 21px;
 
-    margin-top: 20px;
+    border: 1px solid rgba(255,255,255,0.18);
+
+    background:
+        rgba(48,98,135,0.69);
+
+    backdrop-filter: blur(5px);
 }
 
 
-.govtask-upcoming-card {
+/* =========================================================
+   TIMELINE
+   ========================================================= */
+
+.govapp-timeline {
+
+    position: relative;
+
+    margin-top: 22px;
+}
+
+
+.govapp-timeline::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 10px;
+
+    bottom: 10px;
+
+    left: 22px;
+
+    width: 2px;
+
+    background:
+        rgba(255,255,255,0.12);
+}
+
+
+.govapp-timeline-item {
+
+    position: relative;
 
     display: flex;
 
-    align-items: center;
+    align-items: flex-start;
 
-    gap: 14px;
+    gap: 15px;
 
-    min-height: 105px;
-
-    padding: 14px;
-
-    border-radius: 14px;
-
-    border: 1px solid rgba(255,255,255,0.11);
-
-    background: rgba(255,255,255,0.045);
+    padding-bottom: 25px;
 }
 
 
-.govtask-calendar {
+.govapp-timeline-item:last-child {
 
-    width: 62px;
+    padding-bottom: 0;
+}
 
-    height: 68px;
+
+.govapp-timeline-icon {
+
+    position: relative;
+
+    z-index: 2;
+
+    width: 45px;
+
+    height: 45px;
 
     flex-shrink: 0;
 
     display: flex;
 
-    flex-direction: column;
-
     align-items: center;
 
     justify-content: center;
 
-    border-radius: 12px;
+    border-radius: 50%;
+
+    color: rgba(255,255,255,0.35);
+
+    background:
+        #315f7f;
+
+    border: 3px solid #2b5979;
+
+    font-size: 16px;
+}
+
+
+.govapp-timeline-item.active
+.govapp-timeline-icon {
+
+    color: #ffffff;
 
     background:
         linear-gradient(
             135deg,
-            #168ff5,
-            #4bc9ee
+            #1e9edb,
+            #54d8ef
         );
 
+    border-color:
+        rgba(87,222,255,0.5);
+}
+
+
+.govapp-timeline-item.current
+.govapp-timeline-icon {
+
     color: #ffffff;
+
+    background:
+        linear-gradient(
+            135deg,
+            #e59b2c,
+            #ffc65a
+        );
+
+    border-color:
+        rgba(255,198,90,0.5);
 }
 
 
-.govtask-calendar span {
+.govapp-timeline-item h3 {
 
-    font-size: 11px;
-
-    font-weight: 800;
-}
-
-
-.govtask-calendar strong {
-
-    font-size: 26px;
-}
-
-
-.govtask-upcoming-card > div:last-child {
-
-    min-width: 0;
-}
-
-
-.govtask-upcoming-card strong {
-
-    display: block;
+    margin: 2px 0 5px;
 
     color: #ffffff;
 
@@ -3323,29 +2654,126 @@
 }
 
 
-.govtask-upcoming-card span {
+.govapp-timeline-item p {
 
-    display: block;
+    margin: 0 0 5px;
 
-    margin-top: 4px;
+    color: rgba(255,255,255,0.57);
 
-    color: rgba(255,255,255,0.50);
+    font-size: 13px;
 
-    font-size: 12px;
+    line-height: 1.5;
 }
 
 
-.govtask-upcoming-card small {
+.govapp-timeline-item small {
+
+    color: rgba(255,255,255,0.39);
+
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   ACTION CARDS
+   ========================================================= */
+
+.govapp-action-grid {
+
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    gap: 12px;
+
+    margin-top: 21px;
+}
+
+
+.govapp-action-card {
+
+    display: grid;
+
+    grid-template-columns:
+        48px 1fr 18px;
+
+    align-items: center;
+
+    gap: 12px;
+
+    min-height: 76px;
+
+    padding: 13px;
+
+    border-radius: 14px;
+
+    border: 1px solid rgba(255,255,255,0.12);
+
+    background: rgba(255,255,255,0.045);
+
+    text-decoration: none;
+
+    transition: 0.3s ease;
+}
+
+
+.govapp-action-card:hover {
+
+    transform: translateX(4px);
+
+    background: rgba(255,255,255,0.075);
+}
+
+
+.govapp-action-card > i:first-child {
+
+    width: 48px;
+
+    height: 48px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 12px;
+
+    color: #5edcff;
+
+    background: rgba(43,174,229,0.13);
+
+    font-size: 20px;
+}
+
+
+.govapp-action-card strong {
 
     display: block;
 
-    margin-top: 6px;
+    color: #ffffff;
 
-    color: #5cddff;
+    font-size: 15px;
+}
 
-    font-size: 12px;
 
-    font-weight: 700;
+.govapp-action-card span {
+
+    display: block;
+
+    margin-top: 3px;
+
+    color: rgba(255,255,255,0.48);
+
+    font-size: 11px;
+}
+
+
+.govapp-action-card > i:last-child {
+
+    color: #5edcff;
+
+    font-size: 13px;
 }
 
 
@@ -3355,16 +2783,14 @@
 
 @media (max-width: 1300px) {
 
-    .govtask-container {
+    .govapp-container {
 
         padding: 28px 30px 55px;
     }
 
+    .govapp-stat-card {
 
-    .govtask-summary-grid {
-
-        grid-template-columns:
-            repeat(3,minmax(0,1fr));
+        padding: 19px;
     }
 
 }
@@ -3376,13 +2802,13 @@
 
 @media (max-width: 1100px) {
 
-    .govtask-container {
+    .govapp-container {
 
         padding: 25px 23px 50px;
     }
 
 
-    .govtask-page-header {
+    .govapp-page-header {
 
         flex-direction: column;
 
@@ -3390,41 +2816,35 @@
     }
 
 
-    .govtask-summary-grid {
+    .govapp-stat-grid {
 
         grid-template-columns:
             repeat(2,minmax(0,1fr));
     }
 
 
-    .govtask-filter-panel {
+    .govapp-filter-panel {
 
         grid-template-columns:
             1fr 1fr;
     }
 
 
-    .govtask-filter-title {
+    .govapp-filter-heading {
 
         grid-column: 1 / -1;
     }
 
 
-    .govtask-chart-grid {
+    .govapp-chart-grid {
 
         grid-template-columns: 1fr;
     }
 
 
-    .govtask-middle-grid {
+    .govapp-bottom-grid {
 
         grid-template-columns: 1fr;
-    }
-
-
-    .govtask-upcoming-grid {
-
-        grid-template-columns: 1fr 1fr;
     }
 
 }
@@ -3436,31 +2856,31 @@
 
 @media (max-width: 768px) {
 
-    .govtask-dashboard {
+    .govapp-dashboard {
 
         background-attachment: scroll;
     }
 
 
-    .govtask-container {
+    .govapp-container {
 
         padding: 22px 18px 45px;
     }
 
 
-    .govtask-page-header {
+    .govapp-page-header {
 
         padding: 28px 23px;
     }
 
 
-    .govtask-heading h1 {
+    .govapp-page-title h1 {
 
         font-size: 44px;
     }
 
 
-    .govtask-heading p {
+    .govapp-page-title p {
 
         font-size: 22px;
 
@@ -3468,36 +2888,42 @@
     }
 
 
-    .govtask-new-btn {
+    .govapp-new-btn {
 
-        min-height: 62px;
+        min-height: 59px;
 
-        font-size: 21px;
+        font-size: 20px;
     }
 
 
-    .govtask-summary-content span {
+    .govapp-stat-content span {
 
         font-size: 18px;
     }
 
 
-    .govtask-summary-content strong {
+    .govapp-stat-content strong {
 
-        font-size: 35px;
+        font-size: 33px;
     }
 
 
-    .govtask-chart-header h2,
-    .govtask-panel-header h2 {
+    .govapp-stat-content small {
+
+        font-size: 15px;
+    }
+
+
+    .govapp-chart-header h2,
+    .govapp-panel-header h2 {
 
         font-size: 29px;
     }
 
 
-    .govtask-upcoming-grid {
+    .govapp-table td {
 
-        grid-template-columns: 1fr;
+        font-size: 16px;
     }
 
 }
@@ -3509,7 +2935,7 @@
 
 @media (max-width: 600px) {
 
-    .govtask-container {
+    .govapp-container {
 
         padding: 17px 13px 40px;
     }
@@ -3517,7 +2943,7 @@
 
     /* HEADER */
 
-    .govtask-page-header {
+    .govapp-page-header {
 
         padding: 25px 19px;
 
@@ -3525,21 +2951,21 @@
     }
 
 
-    .govtask-breadcrumb {
+    .govapp-breadcrumb {
 
         font-size: 16px;
-
-        line-height: 1.4;
     }
 
 
-    .govtask-heading h1 {
+    .govapp-page-title h1 {
 
         font-size: 40px;
+
+        line-height: 1.12;
     }
 
 
-    .govtask-heading p {
+    .govapp-page-title p {
 
         font-size: 22px;
 
@@ -3547,25 +2973,25 @@
     }
 
 
-    .govtask-header-action {
+    .govapp-header-action {
 
         width: 100%;
     }
 
 
-    .govtask-new-btn {
+    .govapp-new-btn {
 
         width: 100%;
 
-        min-height: 67px;
+        min-height: 64px;
 
         font-size: 22px;
     }
 
 
-    /* SUMMARY */
+    /* STATISTICS */
 
-    .govtask-summary-grid {
+    .govapp-stat-grid {
 
         grid-template-columns: 1fr;
 
@@ -3573,37 +2999,37 @@
     }
 
 
-    .govtask-summary-card {
+    .govapp-stat-card {
 
-        min-height: 112px;
+        min-height: 108px;
 
         padding: 21px;
     }
 
 
-    .govtask-icon {
+    .govapp-stat-icon {
 
-        width: 68px;
+        width: 67px;
 
-        height: 68px;
+        height: 67px;
 
-        font-size: 29px;
+        font-size: 28px;
     }
 
 
-    .govtask-summary-content span {
+    .govapp-stat-content span {
 
         font-size: 21px;
     }
 
 
-    .govtask-summary-content strong {
+    .govapp-stat-content strong {
 
-        font-size: 38px;
+        font-size: 37px;
     }
 
 
-    .govtask-summary-content small {
+    .govapp-stat-content small {
 
         font-size: 16px;
     }
@@ -3611,7 +3037,7 @@
 
     /* FILTER */
 
-    .govtask-filter-panel {
+    .govapp-filter-panel {
 
         grid-template-columns: 1fr;
 
@@ -3619,47 +3045,47 @@
     }
 
 
-    .govtask-filter-title {
+    .govapp-filter-heading {
 
         grid-column: auto;
     }
 
 
-    .govtask-filter-title strong {
+    .govapp-filter-heading strong {
 
-        font-size: 22px;
+        font-size: 21px;
     }
 
 
-    .govtask-filter-title span {
+    .govapp-filter-heading span {
 
-        font-size: 15px;
+        font-size: 14px;
     }
 
 
-    .govtask-search {
+    .govapp-search {
 
-        height: 61px;
+        height: 58px;
     }
 
 
-    .govtask-search input {
+    .govapp-search input {
 
-        font-size: 19px;
+        font-size: 18px;
     }
 
 
-    .govtask-select {
+    .govapp-select {
 
-        height: 61px;
+        height: 58px;
 
-        font-size: 19px;
+        font-size: 18px;
     }
 
 
     /* CHARTS */
 
-    .govtask-chart-card {
+    .govapp-chart-card {
 
         padding: 21px 18px;
 
@@ -3667,21 +3093,21 @@
     }
 
 
-    .govtask-chart-header {
+    .govapp-chart-header {
 
         flex-direction: column;
     }
 
 
-    .govtask-chart-header span,
-    .govtask-panel-header span {
+    .govapp-chart-header span,
+    .govapp-panel-header span {
 
         font-size: 13px;
     }
 
 
-    .govtask-chart-header h2,
-    .govtask-panel-header h2 {
+    .govapp-chart-header h2,
+    .govapp-panel-header h2 {
 
         font-size: 30px;
 
@@ -3689,238 +3115,195 @@
     }
 
 
-    .govtask-year-select {
+    .govapp-chart-select {
 
         width: 100%;
 
-        height: 52px;
-
-        font-size: 18px;
-    }
-
-
-    .govtask-line-chart {
-
-        height: 290px;
-    }
-
-
-    .govtask-doughnut {
-
-        height: 285px;
-    }
-
-
-    .govtask-legend div {
-
-        font-size: 18px;
-    }
-
-
-    .govtask-bar-chart {
-
-        height: 310px;
-    }
-
-
-    /* PRIORITY */
-
-    .govtask-panel {
-
-        padding: 21px 18px;
-    }
-
-
-    .govtask-priority-info strong {
-
-        font-size: 20px;
-    }
-
-
-    .govtask-priority-info b {
-
-        font-size: 18px;
-    }
-
-
-    .govtask-priority-list {
-
-        gap: 28px;
-    }
-
-
-    .govtask-progress {
-
-        height: 11px;
-    }
-
-
-    /* OVERALL */
-
-    .govtask-overall-progress {
-
-        flex-direction: column;
-
-        align-items: flex-start;
-
-        gap: 22px;
-    }
-
-
-    .govtask-progress-circle {
-
-        width: 180px;
-
-        height: 180px;
-
-        align-self: center;
-    }
-
-
-    .govtask-progress-circle strong {
-
-        font-size: 39px;
-    }
-
-
-    .govtask-progress-circle span {
-
-        font-size: 15px;
-    }
-
-
-    .govtask-progress-text h3 {
-
-        font-size: 27px;
-    }
-
-
-    .govtask-progress-text p {
-
-        font-size: 20px;
-
-        line-height: 1.6;
-    }
-
-
-    .govtask-progress-text a {
-
-        font-size: 19px;
-    }
-
-
-    /* TABLE */
-
-    .govtask-recent-panel {
-
-        padding: 21px 18px;
-    }
-
-
-    .govtask-table {
-
-        min-width: 1120px;
-    }
-
-
-    .govtask-table th {
-
-        font-size: 14px;
-    }
-
-
-    .govtask-table td {
-
-        padding: 19px 13px;
+        height: 50px;
 
         font-size: 17px;
     }
 
 
-    .govtask-name strong {
+    .govapp-line-chart {
+
+        height: 290px;
+    }
+
+
+    .govapp-doughnut {
+
+        height: 280px;
+    }
+
+
+    .govapp-status-legend div {
 
         font-size: 18px;
     }
 
 
-    .govtask-name span {
-
-        font-size: 14px;
-    }
-
-
-    .govtask-priority,
-    .govtask-status {
-
-        padding: 9px 12px;
-
-        font-size: 15px;
-    }
-
-
-    .govtask-action-btn {
-
-        min-height: 44px;
-
-        font-size: 15px;
-    }
-
-
-    /* UPCOMING */
-
-    .govtask-upcoming-panel {
+    .govapp-department-chart {
 
         padding: 21px 18px;
     }
 
 
-    .govtask-upcoming-card {
-
-        min-height: 118px;
-
-        padding: 17px;
-    }
-
-
-    .govtask-calendar {
-
-        width: 68px;
-
-        height: 76px;
-    }
-
-
-    .govtask-calendar span {
-
-        font-size: 13px;
-    }
-
-
-    .govtask-calendar strong {
-
-        font-size: 29px;
-    }
-
-
-    .govtask-upcoming-card strong {
-
-        font-size: 20px;
-
-        line-height: 1.4;
-    }
-
-
-    .govtask-upcoming-card span {
+    .govapp-total-applications {
 
         font-size: 16px;
+    }
+
+
+    .govapp-bar-chart {
+
+        height: 300px;
+    }
+
+
+    /* APPLICATION TABLE */
+
+    .govapp-applications-panel {
+
+        padding: 21px 18px;
+    }
+
+
+    .govapp-panel-header > a {
+
+        font-size: 17px;
+    }
+
+
+    .govapp-table {
+
+        min-width: 900px;
+    }
+
+
+    .govapp-table th {
+
+        font-size: 14px;
+    }
+
+
+    .govapp-table td {
+
+        font-size: 17px;
+
+        padding: 19px 13px;
+    }
+
+
+    .govapp-table td strong {
+
+        font-size: 17px;
+    }
+
+
+    .govapp-status {
+
+        font-size: 15px;
+
+        padding: 8px 11px;
+    }
+
+
+    .govapp-view-btn {
+
+        min-height: 42px;
+
+        font-size: 15px;
+    }
+
+
+    /* BOTTOM */
+
+    .govapp-timeline-panel,
+    .govapp-actions-panel {
+
+        padding: 21px 18px;
+    }
+
+
+    .govapp-timeline-item {
+
+        gap: 13px;
+    }
+
+
+    .govapp-timeline-icon {
+
+        width: 50px;
+
+        height: 50px;
+
+        font-size: 19px;
+    }
+
+
+    .govapp-timeline::before {
+
+        left: 24px;
+    }
+
+
+    .govapp-timeline-item h3 {
+
+        font-size: 21px;
+    }
+
+
+    .govapp-timeline-item p {
+
+        font-size: 17px;
+
+        line-height: 1.55;
+    }
+
+
+    .govapp-timeline-item small {
+
+        font-size: 14px;
+    }
+
+
+    .govapp-action-card {
+
+        min-height: 86px;
+
+        grid-template-columns:
+            55px 1fr 20px;
+    }
+
+
+    .govapp-action-card > i:first-child {
+
+        width: 55px;
+
+        height: 55px;
+
+        font-size: 22px;
+    }
+
+
+    .govapp-action-card strong {
+
+        font-size: 20px;
+    }
+
+
+    .govapp-action-card span {
+
+        font-size: 15px;
 
         line-height: 1.4;
     }
 
 
-    .govtask-upcoming-card small {
+    .govapp-action-card > i:last-child {
 
-        font-size: 15px;
+        font-size: 16px;
     }
 
 }
@@ -3932,7 +3315,7 @@
 
 @media (max-width: 380px) {
 
-    .govtask-container {
+    .govapp-container {
 
         padding-left: 10px;
 
@@ -3940,710 +3323,580 @@
     }
 
 
-    .govtask-heading h1 {
+    .govapp-page-title h1 {
 
         font-size: 37px;
     }
 
 
-    .govtask-heading p {
+    .govapp-page-title p {
 
         font-size: 22px;
     }
 
 
-    .govtask-summary-content span {
+    .govapp-stat-content span {
 
         font-size: 20px;
     }
 
 
-    .govtask-summary-content strong {
+    .govapp-stat-content strong {
 
-        font-size: 35px;
+        font-size: 34px;
     }
 
 
-    .govtask-chart-header h2,
-    .govtask-panel-header h2 {
+    .govapp-chart-header h2,
+    .govapp-panel-header h2 {
 
         font-size: 28px;
     }
 
 
-    .govtask-progress-text h3 {
-
-        font-size: 25px;
-    }
-
-
-    .govtask-progress-text p {
+    .govapp-timeline-item h3 {
 
         font-size: 20px;
     }
 
+
+    .govapp-timeline-item p {
+
+        font-size: 17px;
+    }
+
 }
-    </Style>
+    </style>
 
     <script>
         /* =========================================================
-   CITIZEN GOVERNMENT PORTAL
-   TASKS DASHBOARD JAVASCRIPT
+   STACKLY GOVERNMENT PORTAL
+   CITIZEN APPLICATION DASHBOARD
    ========================================================= */
 
-document.addEventListener(
-    "DOMContentLoaded",
-    function () {
+document.addEventListener("DOMContentLoaded", function () {
 
 
-        /* =====================================================
-           CHART DEFAULTS
-           ===================================================== */
+/* =====================================================
+   CHART DEFAULTS
+   ===================================================== */
 
-        Chart.defaults.font.family =
-            "Arial, Helvetica, sans-serif";
+Chart.defaults.font.family =
+    "Arial, Helvetica, sans-serif";
 
-        Chart.defaults.color =
-            "rgba(255,255,255,0.72)";
-
-
-        /* =====================================================
-           MONTHLY TASK ACTIVITY
-           ===================================================== */
-
-        const activityCanvas =
-            document.getElementById(
-                "govtaskActivityChart"
-            );
+Chart.defaults.color =
+    "rgba(255,255,255,0.72)";
 
 
-        if (activityCanvas) {
+/* =====================================================
+   APPLICATION TREND CHART
+   ===================================================== */
 
-            new Chart(
-                activityCanvas,
+const trendCanvas =
+    document.getElementById(
+        "govappTrendChart"
+    );
+
+
+if (trendCanvas) {
+
+    new Chart(trendCanvas, {
+
+        type: "line",
+
+        data: {
+
+            labels: [
+                "Mar",
+                "Apr",
+                "May",
+                "Jun",
+                "Jul",
+                "Aug"
+            ],
+
+            datasets: [
+
                 {
+                    label:
+                        "Applications",
 
-                    type: "line",
+                    data: [
+                        12,
+                        15,
+                        18,
+                        20,
+                        22,
+                        24
+                    ],
 
-                    data: {
+                    borderColor:
+                        "#55ddff",
 
-                        labels: [
-                            "Mar",
-                            "Apr",
-                            "May",
-                            "Jun",
-                            "Jul",
-                            "Aug"
-                        ],
+                    backgroundColor:
+                        "rgba(85,221,255,0.13)",
 
-                        datasets: [
+                    borderWidth: 3,
 
-                            {
+                    fill: true,
 
-                                label:
-                                    "Completed",
+                    tension: 0.42,
 
-                                data: [
-                                    2,
-                                    4,
-                                    3,
-                                    5,
-                                    7,
-                                    9
-                                ],
+                    pointRadius: 5,
 
-                                borderColor:
-                                    "#42d89e",
+                    pointHoverRadius: 8,
 
-                                backgroundColor:
-                                    "rgba(66,216,158,0.12)",
+                    pointBackgroundColor:
+                        "#55ddff",
 
-                                borderWidth: 3,
+                    pointBorderColor:
+                        "#ffffff",
 
-                                fill: true,
+                    pointBorderWidth: 2
+                }
 
-                                tension: 0.4,
+            ]
 
-                                pointRadius: 5,
+        },
 
-                                pointHoverRadius: 8,
+        options: {
 
-                                pointBackgroundColor:
-                                    "#42d89e",
+            responsive: true,
 
-                                pointBorderColor:
-                                    "#ffffff",
+            maintainAspectRatio: false,
 
-                                pointBorderWidth: 2
+            plugins: {
 
-                            },
+                legend: {
+                    display: false
+                },
 
-                            {
+                tooltip: {
 
-                                label:
-                                    "Assigned",
+                    backgroundColor:
+                        "rgba(6,38,67,0.96)",
 
-                                data: [
-                                    4,
-                                    6,
-                                    7,
-                                    8,
-                                    9,
-                                    12
-                                ],
+                    titleColor:
+                        "#ffffff",
 
-                                borderColor:
-                                    "#5cddff",
+                    bodyColor:
+                        "#ffffff",
 
-                                backgroundColor:
-                                    "rgba(92,221,255,0.07)",
+                    padding: 12
 
-                                borderWidth: 3,
+                }
 
-                                fill: true,
+            },
 
-                                tension: 0.4,
+            scales: {
 
-                                pointRadius: 5,
+                x: {
 
-                                pointHoverRadius: 8,
+                    grid: {
+                        display: false
+                    },
 
-                                pointBackgroundColor:
-                                    "#5cddff",
+                    ticks: {
 
-                                pointBorderColor:
-                                    "#ffffff",
+                        color:
+                            "rgba(255,255,255,0.65)",
 
-                                pointBorderWidth: 2
+                        font: {
+                            size: 13
+                        }
 
-                            }
+                    }
 
-                        ]
+                },
+
+                y: {
+
+                    beginAtZero: true,
+
+                    grid: {
+
+                        color:
+                            "rgba(255,255,255,0.08)"
 
                     },
 
-                    options: {
+                    ticks: {
 
-                        responsive: true,
+                        color:
+                            "rgba(255,255,255,0.65)",
 
-                        maintainAspectRatio: false,
-
-                        interaction: {
-
-                            intersect: false,
-
-                            mode: "index"
-
-                        },
-
-                        plugins: {
-
-                            legend: {
-
-                                display: true,
-
-                                position: "top",
-
-                                align: "end",
-
-                                labels: {
-
-                                    color:
-                                        "rgba(255,255,255,0.70)",
-
-                                    usePointStyle: true,
-
-                                    padding: 15,
-
-                                    font: {
-                                        size: 13
-                                    }
-
-                                }
-
-                            },
-
-                            tooltip: {
-
-                                backgroundColor:
-                                    "rgba(5,35,62,0.96)",
-
-                                titleColor:
-                                    "#ffffff",
-
-                                bodyColor:
-                                    "#ffffff",
-
-                                padding: 12
-
-                            }
-
-                        },
-
-                        scales: {
-
-                            x: {
-
-                                grid: {
-                                    display: false
-                                },
-
-                                ticks: {
-
-                                    color:
-                                        "rgba(255,255,255,0.65)",
-
-                                    font: {
-                                        size: 13
-                                    }
-
-                                }
-
-                            },
-
-                            y: {
-
-                                beginAtZero: true,
-
-                                grid: {
-
-                                    color:
-                                        "rgba(255,255,255,0.08)"
-
-                                },
-
-                                ticks: {
-
-                                    color:
-                                        "rgba(255,255,255,0.65)",
-
-                                    stepSize: 2,
-
-                                    font: {
-                                        size: 12
-                                    }
-
-                                }
-
-                            }
-
+                        font: {
+                            size: 12
                         }
 
                     }
 
                 }
-            );
+
+            }
 
         }
 
+    });
 
-        /* =====================================================
-           TASK STATUS DOUGHNUT
-           ===================================================== */
-
-        const statusCanvas =
-            document.getElementById(
-                "govtaskStatusChart"
-            );
+}
 
 
-        if (statusCanvas) {
 
-            new Chart(
-                statusCanvas,
+/* =====================================================
+   STATUS DOUGHNUT
+   ===================================================== */
+
+const statusCanvas =
+    document.getElementById(
+        "govappStatusChart"
+    );
+
+
+if (statusCanvas) {
+
+    new Chart(statusCanvas, {
+
+        type: "doughnut",
+
+        data: {
+
+            labels: [
+                "Pending",
+                "Approved",
+                "Rejected"
+            ],
+
+            datasets: [
+
                 {
 
-                    type: "doughnut",
+                    data: [
+                        25,
+                        63,
+                        12
+                    ],
 
-                    data: {
+                    backgroundColor: [
 
-                        labels: [
-                            "Completed",
-                            "In Progress",
-                            "Pending",
-                            "Overdue"
-                        ],
+                        "#32b8f0",
+                        "#42d89e",
+                        "#ff687d"
 
-                        datasets: [
+                    ],
 
-                            {
+                    borderColor:
+                        "rgba(255,255,255,0.08)",
 
-                                data: [
-                                    63,
-                                    21,
-                                    12,
-                                    4
-                                ],
+                    borderWidth: 2,
 
-                                backgroundColor: [
+                    hoverOffset: 8
 
-                                    "#42d89e",
-                                    "#a67cff",
-                                    "#ffb84d",
-                                    "#ff687d"
+                }
 
-                                ],
+            ]
 
-                                borderColor:
-                                    "rgba(255,255,255,0.08)",
+        },
 
-                                borderWidth: 2,
+        options: {
 
-                                hoverOffset: 8
+            responsive: true,
 
-                            }
+            maintainAspectRatio: false,
 
-                        ]
+            cutout: "65%",
 
+            plugins: {
+
+                legend: {
+                    display: false
+                },
+
+                tooltip: {
+
+                    backgroundColor:
+                        "rgba(6,38,67,0.96)",
+
+                    titleColor:
+                        "#ffffff",
+
+                    bodyColor:
+                        "#ffffff",
+
+                    padding: 12
+
+                }
+
+            }
+
+        }
+
+    });
+
+}
+
+
+
+/* =====================================================
+   DEPARTMENT BAR CHART
+   ===================================================== */
+
+const departmentCanvas =
+    document.getElementById(
+        "govappDepartmentChart"
+    );
+
+
+if (departmentCanvas) {
+
+    new Chart(departmentCanvas, {
+
+        type: "bar",
+
+        data: {
+
+            labels: [
+
+                "Revenue",
+                "Municipal",
+                "Welfare",
+                "Transport",
+                "Health",
+                "Education"
+
+            ],
+
+            datasets: [
+
+                {
+
+                    label:
+                        "Applications",
+
+                    data: [
+
+                        8,
+                        5,
+                        4,
+                        3,
+                        2,
+                        2
+
+                    ],
+
+                    backgroundColor: [
+
+                        "#32b8f0",
+                        "#42d89e",
+                        "#a67cff",
+                        "#ffd34d",
+                        "#ff7182",
+                        "#5ce4ff"
+
+                    ],
+
+                    borderRadius: 8,
+
+                    borderSkipped: false
+
+                }
+
+            ]
+
+        },
+
+        options: {
+
+            responsive: true,
+
+            maintainAspectRatio: false,
+
+            plugins: {
+
+                legend: {
+                    display: false
+                },
+
+                tooltip: {
+
+                    backgroundColor:
+                        "rgba(6,38,67,0.96)",
+
+                    titleColor:
+                        "#ffffff",
+
+                    bodyColor:
+                        "#ffffff",
+
+                    padding: 12
+
+                }
+
+            },
+
+            scales: {
+
+                x: {
+
+                    grid: {
+                        display: false
                     },
 
-                    options: {
+                    ticks: {
 
-                        responsive: true,
+                        color:
+                            "rgba(255,255,255,0.68)",
 
-                        maintainAspectRatio: false,
-
-                        cutout: "64%",
-
-                        plugins: {
-
-                            legend: {
-                                display: false
-                            },
-
-                            tooltip: {
-
-                                backgroundColor:
-                                    "rgba(5,35,62,0.96)",
-
-                                titleColor:
-                                    "#ffffff",
-
-                                bodyColor:
-                                    "#ffffff",
-
-                                padding: 12
-
-                            }
-
+                        font: {
+                            size: 12
                         }
 
                     }
 
-                }
-            );
+                },
 
-        }
+                y: {
 
+                    beginAtZero: true,
 
-        /* =====================================================
-           DEPARTMENT TASK CHART
-           ===================================================== */
+                    ticks: {
 
-        const departmentCanvas =
-            document.getElementById(
-                "govtaskDepartmentChart"
-            );
+                        stepSize: 2,
 
+                        color:
+                            "rgba(255,255,255,0.65)",
 
-        if (departmentCanvas) {
-
-            new Chart(
-                departmentCanvas,
-                {
-
-                    type: "bar",
-
-                    data: {
-
-                        labels: [
-
-                            "Revenue",
-                            "Municipal",
-                            "Transport",
-                            "Health",
-                            "Education",
-                            "Welfare"
-
-                        ],
-
-                        datasets: [
-
-                            {
-
-                                label:
-                                    "Tasks",
-
-                                data: [
-                                    6,
-                                    7,
-                                    4,
-                                    3,
-                                    2,
-                                    2
-                                ],
-
-                                backgroundColor: [
-
-                                    "#5cddff",
-                                    "#42d89e",
-                                    "#a67cff",
-                                    "#ffb84d",
-                                    "#ff687d",
-                                    "#57e2df"
-
-                                ],
-
-                                borderRadius: 8,
-
-                                borderSkipped: false
-
-                            }
-
-                        ]
+                        font: {
+                            size: 12
+                        }
 
                     },
 
-                    options: {
+                    grid: {
 
-                        responsive: true,
-
-                        maintainAspectRatio: false,
-
-                        plugins: {
-
-                            legend: {
-                                display: false
-                            },
-
-                            tooltip: {
-
-                                backgroundColor:
-                                    "rgba(5,35,62,0.96)",
-
-                                titleColor:
-                                    "#ffffff",
-
-                                bodyColor:
-                                    "#ffffff",
-
-                                padding: 12,
-
-                                callbacks: {
-
-                                    label:
-                                        function (context) {
-
-                                            return " " +
-                                                context.raw +
-                                                " tasks";
-
-                                        }
-
-                                }
-
-                            }
-
-                        },
-
-                        scales: {
-
-                            x: {
-
-                                grid: {
-                                    display: false
-                                },
-
-                                ticks: {
-
-                                    color:
-                                        "rgba(255,255,255,0.67)",
-
-                                    font: {
-                                        size: 13
-                                    }
-
-                                }
-
-                            },
-
-                            y: {
-
-                                beginAtZero: true,
-
-                                grid: {
-
-                                    color:
-                                        "rgba(255,255,255,0.08)"
-
-                                },
-
-                                ticks: {
-
-                                    color:
-                                        "rgba(255,255,255,0.67)",
-
-                                    stepSize: 1,
-
-                                    font: {
-                                        size: 12
-                                    }
-
-                                }
-
-                            }
-
-                        }
+                        color:
+                            "rgba(255,255,255,0.08)"
 
                     }
 
                 }
-            );
+
+            }
 
         }
 
+    });
 
-        /* =====================================================
-           SEARCH + STATUS + PRIORITY FILTER
-           ===================================================== */
+}
 
-        const searchInput =
-            document.getElementById(
-                "govtaskSearch"
+
+
+/* =====================================================
+   APPLICATION SEARCH + STATUS FILTER
+   ===================================================== */
+
+const searchInput =
+    document.getElementById(
+        "govappSearch"
+    );
+
+
+const statusFilter =
+    document.getElementById(
+        "govappStatusFilter"
+    );
+
+
+const applicationRows =
+    document.querySelectorAll(
+        "#govappApplicationList tr"
+    );
+
+
+function filterApplications() {
+
+    const searchValue =
+        searchInput
+            ? searchInput.value
+                .toLowerCase()
+                .trim()
+            : "";
+
+
+    const selectedStatus =
+        statusFilter
+            ? statusFilter.value
+            : "all";
+
+
+    applicationRows.forEach(function (row) {
+
+        const rowSearch =
+            (
+                row.getAttribute(
+                    "data-search"
+                ) || ""
+            ).toLowerCase();
+
+
+        const rowStatus =
+            row.getAttribute(
+                "data-status"
             );
 
 
-        const statusFilter =
-            document.getElementById(
-                "govtaskStatusFilter"
+        const searchMatch =
+            rowSearch.includes(
+                searchValue
             );
 
 
-        const priorityFilter =
-            document.getElementById(
-                "govtaskPriorityFilter"
-            );
+        const statusMatch =
+            selectedStatus === "all" ||
+            rowStatus === selectedStatus;
 
 
-        const taskRows =
-            document.querySelectorAll(
-                "#govtaskList tr"
-            );
+        if (
+            searchMatch &&
+            statusMatch
+        ) {
 
+            row.style.display = "";
 
-        function filterTasks() {
+        } else {
 
-            const searchValue =
-                searchInput
-                    ? searchInput.value
-                        .toLowerCase()
-                        .trim()
-                    : "";
-
-
-            const selectedStatus =
-                statusFilter
-                    ? statusFilter.value
-                    : "all";
-
-
-            const selectedPriority =
-                priorityFilter
-                    ? priorityFilter.value
-                    : "all";
-
-
-            taskRows.forEach(
-                function (row) {
-
-                    const searchText =
-                        (
-                            row.getAttribute(
-                                "data-search"
-                            ) || ""
-                        ).toLowerCase();
-
-
-                    const rowStatus =
-                        row.getAttribute(
-                            "data-status"
-                        );
-
-
-                    const rowPriority =
-                        row.getAttribute(
-                            "data-priority"
-                        );
-
-
-                    const searchMatch =
-                        searchText.includes(
-                            searchValue
-                        );
-
-
-                    const statusMatch =
-                        selectedStatus === "all" ||
-                        rowStatus === selectedStatus;
-
-
-                    const priorityMatch =
-                        selectedPriority === "all" ||
-                        rowPriority === selectedPriority;
-
-
-                    if (
-                        searchMatch &&
-                        statusMatch &&
-                        priorityMatch
-                    ) {
-
-                        row.style.display = "";
-
-                    } else {
-
-                        row.style.display = "none";
-
-                    }
-
-                }
-            );
+            row.style.display = "none";
 
         }
 
+    });
 
-        if (searchInput) {
-
-            searchInput.addEventListener(
-                "input",
-                filterTasks
-            );
-
-        }
+}
 
 
-        if (statusFilter) {
+if (searchInput) {
 
-            statusFilter.addEventListener(
-                "change",
-                filterTasks
-            );
+    searchInput.addEventListener(
+        "input",
+        filterApplications
+    );
 
-        }
+}
 
 
-        if (priorityFilter) {
+if (statusFilter) {
 
-            priorityFilter.addEventListener(
-                "change",
-                filterTasks
-            );
+    statusFilter.addEventListener(
+        "change",
+        filterApplications
+    );
 
-        }
+}
 
-    }
-);
+});
     </script>
+
+
 
 <style>
     /* ==========================================================
